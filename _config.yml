@@ -1,0 +1,43 @@
+title: GGZ Tools
+description: >-
+  Praktische tools voor de geestelijke gezondheidszorg. Duidelijk, overzichtelijk
+  en met aandacht voor mens en vak.
+url: "https://ggztools.nl"
+baseurl: ""
+lang: nl
+locale: nl_NL
+
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+header_pages:
+  - title: Home
+    url: /
+  - title: Over ons
+    url: /over-ons/
+  - title: Aan de slag
+    url: /aan-de-slag/
+  - title: Visie
+    url: /visie/
+
+contact:
+  email: info@ggztools.nl
+
+authors:
+  - name: Jan-Willem Manenschijn
+    role: Oprichter
+  - name: Rianne van Kesteren
+    role: Oprichter

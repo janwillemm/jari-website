@@ -1,0 +1,47 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-logo" href="{{ '/' | relative_url }}">
+      <span class="site-logo__mark" aria-hidden="true"></span>
+      <span class="site-logo__text">
+        <strong>GGZ Tools</strong>
+        <small>Praktisch &amp; menselijk</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Hoofdnavigatie">
+      <ul>
+        {% for item in site.header_pages %}
+          {% assign item_url = item.url | relative_url %}
+          {% assign current_path = page.url | relative_url %}
+          <li>
+            <a href="{{ item_url }}"
+               {% if current_path == item_url or current_path == item.url %}aria-current="page"{% endif %}>
+              {{ item.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('site-nav');
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', function () {
+      var expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('is-open');
+    });
+  });
+</script>

@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="page">
+  <header class="page-header">
+    <div class="container">
+      {% if page.subtitle %}
+        <p class="page-eyebrow">{{ page.subtitle }}</p>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+      {% if page.intro %}
+        <p class="page-intro">{{ page.intro }}</p>
+      {% endif %}
+    </div>
+  </header>
+  <div class="page-content container">
+    {{ content }}
+  </div>
+</article>

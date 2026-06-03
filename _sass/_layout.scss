@@ -1,0 +1,265 @@
+@import "variables";
+
+// Header
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba($color-bg, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $color-border;
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-md;
+  min-height: 4.5rem;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.site-logo__mark {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: $radius-md;
+  background: linear-gradient(135deg, $color-primary-light, $color-bg-hero);
+  border: 2px solid rgba($color-primary, 0.2);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0.55rem;
+    border-radius: 50% 50% 50% 0;
+    background: $color-primary;
+    transform: rotate(-45deg);
+    opacity: 0.85;
+  }
+}
+
+.site-logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+
+  strong {
+    font-family: $font-heading;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  small {
+    font-size: 0.75rem;
+    color: $color-text-muted;
+    letter-spacing: 0.02em;
+  }
+}
+
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  background: $color-surface;
+  cursor: pointer;
+
+  @media (min-width: $bp-md) {
+    display: none;
+  }
+}
+
+.nav-toggle__bar {
+  display: block;
+  width: 1.125rem;
+  height: 2px;
+  margin-inline: auto;
+  background: $color-text;
+  border-radius: 1px;
+}
+
+.site-nav {
+  @media (max-width: #{$bp-md - 0.0625rem}) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: $color-surface;
+    border-bottom: 1px solid $color-border;
+    box-shadow: $shadow-soft;
+    display: none;
+
+    &.is-open {
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: $space-sm;
+    }
+
+    a {
+      display: block;
+      padding: $space-sm;
+      text-decoration: none;
+      border-radius: $radius-sm;
+
+      &:hover,
+      &[aria-current="page"] {
+        background: $color-bg-alt;
+      }
+    }
+  }
+
+  @media (min-width: $bp-md) {
+    ul {
+      display: flex;
+      gap: 0.25rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      display: block;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: $color-text-muted;
+      border-radius: $radius-pill;
+      font-weight: 500;
+      font-size: 0.9375rem;
+      transition: background 0.2s ease, color 0.2s ease;
+
+      &:hover,
+      &[aria-current="page"] {
+        color: $color-primary-dark;
+        background: $color-primary-light;
+      }
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  margin-top: auto;
+  background: $color-bg-alt;
+  border-top: 1px solid $color-border;
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: $space-lg;
+  padding-block: $space-xl;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+.site-footer__title {
+  font-family: $font-heading;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: $space-xs;
+}
+
+.site-footer__label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-text-muted;
+  margin-bottom: $space-sm;
+}
+
+.site-footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: $color-text;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  li + li {
+    margin-top: 0.5rem;
+  }
+}
+
+.site-footer__bottom {
+  border-top: 1px solid $color-border;
+  padding-block: $space-md;
+
+  p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: $color-text-light;
+  }
+}
+
+// Page layout
+.page-header {
+  padding-block: $space-xl $space-lg;
+  background: linear-gradient(180deg, $color-bg-hero 0%, $color-bg 100%);
+}
+
+.page-eyebrow {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-primary;
+  margin-bottom: $space-xs;
+}
+
+.page-intro {
+  font-size: 1.25rem;
+  color: $color-text-muted;
+  max-width: 42rem;
+  margin-top: $space-sm;
+  line-height: 1.6;
+}
+
+.page-content {
+  padding-block: $space-lg $space-xl;
+
+  h2 {
+    margin-top: $space-lg;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content {
+  flex: 1;
+}

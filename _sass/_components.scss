@@ -1,0 +1,408 @@
+@import "variables";
+
+// Buttons
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  font-family: $font-body;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: $radius-pill;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.btn--primary {
+  background: $color-primary;
+  color: white;
+
+  &:hover {
+    color: white;
+    background: $color-primary-dark;
+    box-shadow: $shadow-soft;
+  }
+}
+
+.btn--secondary {
+  background: $color-surface;
+  color: $color-primary-dark;
+  border-color: $color-primary-light;
+
+  &:hover {
+    background: $color-primary-light;
+    color: $color-primary-dark;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm;
+  margin-top: $space-md;
+}
+
+// Hero
+.hero {
+  padding-block: $space-xl $space-2xl;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 20%, rgba($color-primary-light, 0.5), transparent),
+    radial-gradient(ellipse 60% 50% at 10% 80%, rgba($color-accent-soft, 0.6), transparent),
+    linear-gradient(180deg, $color-bg-hero 0%, $color-bg 100%);
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: grid;
+  gap: $space-xl;
+  align-items: center;
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.hero__eyebrow {
+  display: inline-block;
+  padding: 0.35rem 0.875rem;
+  background: $color-surface;
+  border-radius: $radius-pill;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: $color-primary;
+  letter-spacing: 0.04em;
+  margin-bottom: $space-sm;
+  box-shadow: $shadow-soft;
+}
+
+.hero__title {
+  margin-bottom: $space-sm;
+}
+
+.hero__lead {
+  font-size: 1.2rem;
+  color: $color-text-muted;
+  max-width: 34rem;
+  line-height: 1.65;
+}
+
+.hero__visual {
+  position: relative;
+  min-height: 18rem;
+  border-radius: $radius-lg;
+  background: $color-surface;
+  box-shadow: $shadow-card;
+  padding: $space-lg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: $space-sm;
+}
+
+.hero__visual-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-text-light;
+}
+
+.hero__pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.4rem 0.875rem;
+  background: $color-bg-alt;
+  border-radius: $radius-pill;
+  font-size: 0.875rem;
+  color: $color-text-muted;
+}
+
+.pill--accent {
+  background: $color-accent-soft;
+  color: darken($color-accent, 18%);
+}
+
+// Sections
+.section {
+  padding-block: $space-xl;
+}
+
+.section--alt {
+  background: $color-bg-alt;
+}
+
+.section__header {
+  max-width: 38rem;
+  margin-bottom: $space-lg;
+}
+
+.section__eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-accent;
+  margin-bottom: $space-xs;
+}
+
+.section__lead {
+  color: $color-text-muted;
+  font-size: 1.0625rem;
+}
+
+// Cards
+.card-grid {
+  display: grid;
+  gap: $space-md;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: $space-lg;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: $shadow-soft;
+    transform: translateY(-2px);
+  }
+}
+
+.card__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: $radius-sm;
+  background: $color-primary-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: $space-sm;
+}
+
+.card__title {
+  margin-bottom: $space-xs;
+}
+
+.card__text {
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  margin-bottom: $space-sm;
+}
+
+.card__link {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+
+  &::after {
+    content: " →";
+  }
+}
+
+// Team cards
+.team-grid {
+  display: grid;
+  gap: $space-md;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.team-card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: $space-lg;
+  display: flex;
+  gap: $space-md;
+  align-items: flex-start;
+}
+
+.team-card__avatar {
+  flex-shrink: 0;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background: linear-gradient(145deg, $color-primary-light, $color-accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-heading;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $color-primary-dark;
+}
+
+.team-card__role {
+  font-size: 0.875rem;
+  color: $color-primary;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.team-card__bio {
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+// Values / visie
+.values-list {
+  display: grid;
+  gap: $space-md;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.value-item {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: $space-lg;
+}
+
+.value-item__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: $color-primary-light;
+  color: $color-primary-dark;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: $space-sm;
+}
+
+.value-item h3 {
+  color: $color-primary-dark;
+}
+
+.value-item p {
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+// Tool cards (aan de slag)
+.tool-list {
+  display: grid;
+  gap: $space-md;
+}
+
+.tool-item {
+  display: grid;
+  gap: $space-sm;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: $space-lg;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: $space-md;
+  }
+}
+
+.tool-item__status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: $radius-pill;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tool-item__status--live {
+  background: $color-primary-light;
+  color: $color-primary-dark;
+}
+
+.tool-item__status--soon {
+  background: $color-accent-soft;
+  color: darken($color-accent, 15%);
+}
+
+.tool-item__desc {
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+// CTA band
+.cta-band {
+  padding-block: $space-xl;
+  background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-band h2 {
+  color: white;
+  margin-bottom: $space-sm;
+}
+
+.cta-band p {
+  color: rgba(white, 0.88);
+  max-width: 32rem;
+  margin-inline: auto;
+  margin-bottom: $space-md;
+}
+
+.cta-band .btn--secondary {
+  background: white;
+  border-color: white;
+  color: $color-primary-dark;
+
+  &:hover {
+    background: $color-primary-light;
+  }
+}
+
+// Quote / highlight
+.highlight-box {
+  background: $color-primary-light;
+  border-radius: $radius-md;
+  padding: $space-lg;
+  border-left: 4px solid $color-primary;
+
+  p {
+    margin: 0;
+    font-family: $font-heading;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: $color-primary-dark;
+  }
+}

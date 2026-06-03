@@ -1,0 +1,90 @@
+---
+layout: page
+title: Visie
+subtitle: Wat wij belangrijk vinden
+intro: >-
+  Onze visie op de geestelijke gezondheidszorg vormt de basis van alles wat we bouwen.
+  Dit zijn de waarden waar wij voor staan.
+---
+
+<div class="highlight-box">
+  <p>
+    Technologie in de GGZ moet de relatie tussen zorgverlener en cliënt versterken —
+    nooit vervangen.
+  </p>
+</div>
+
+## Onze kernwaarden
+
+<ul class="values-list">
+  <li class="value-item">
+    <span class="value-item__number">1</span>
+    <h3>Mensgericht</h3>
+    <p>
+      Elke tool begint bij de mens. We ontwerpen vanuit de relatie tussen zorgverlener
+      en cliënt, niet vanuit technische mogelijkheden.
+    </p>
+  </li>
+
+  <li class="value-item">
+    <span class="value-item__number">2</span>
+    <h3>Rust &amp; overzicht</h3>
+    <p>
+      De GGZ is al complex genoeg. Onze tools brengen structuur en helderheid,
+      zonder extra ruis of visuele drukte.
+    </p>
+  </li>
+
+  <li class="value-item">
+    <span class="value-item__number">3</span>
+    <h3>Praktisch toepasbaar</h3>
+    <p>
+      Geen theorie die mooi klinkt op papier, maar oplossingen die morgen al
+      verschil maken in de behandelkamer of op de werkvloer.
+    </p>
+  </li>
+
+  <li class="value-item">
+    <span class="value-item__number">4</span>
+    <h3>Samen ontwikkelen</h3>
+    <p>
+      We luisteren naar zorgverleners en betrekken hen bij het ontwerp.
+      De beste tools ontstaan in samenwerking met de praktijk.
+    </p>
+  </li>
+
+  <li class="value-item">
+    <span class="value-item__number">5</span>
+    <h3>Veilig &amp; betrouwbaar</h3>
+    <p>
+      Vertrouwelijke gegevens verdienen de hoogste zorgvuldigheid.
+      Privacy en veiligheid zijn geen optie, maar uitgangspunt.
+    </p>
+  </li>
+
+  <li class="value-item">
+    <span class="value-item__number">6</span>
+    <h3>Speels waar het kan</h3>
+    <p>
+      Zorg is serieus werk, maar dat betekent niet dat alles strak en kil hoeft te zijn.
+      Een vleugje warmte en speelsheid maakt tools menselijker en toegankelijker.
+    </p>
+  </li>
+</ul>
+
+## Hoe dit zich vertaalt in ons werk
+
+We kiezen bewust voor een rustige, warme vormgeving — vergelijkbaar met hoe je je
+zou willen voelen in een goede behandelruimte: veilig, overzichtelijk en uitnodigend.
+
+Dat betekent onder andere:
+
+- **Veel witruimte** — zodat je ogen rust krijgen en je je kunt concentreren
+- **Warme kleuren** — groen en zachte accenten die vertrouwen uitstralen
+- **Duidelijke taal** — geen jargon, geen dubbelzinnigheid
+- **Eenvoudige navigatie** — je vindt direct wat je zoekt
+
+## Meewerken aan onze visie?
+
+Deel je onze kijk op goede GGZ? We horen graag van je.
+Neem contact op via [{{ site.contact.email }}](mailto:{{ site.contact.email }}).
