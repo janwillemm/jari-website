@@ -361,6 +361,128 @@
   margin: 0;
 }
 
+// Tool showcase (aan de slag — uitgebreide toolpagina's)
+.tool-showcases {
+  display: grid;
+  gap: $space-xl;
+  margin-top: $space-lg;
+}
+
+.tool-showcase {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  overflow: hidden;
+}
+
+.tool-showcase__header {
+  padding: $space-lg $space-lg 0;
+}
+
+.tool-showcase__badge {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: $radius-pill;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: $space-sm;
+}
+
+.tool-showcase__badge--live {
+  background: $color-primary-light;
+  color: $color-primary-dark;
+}
+
+.tool-showcase__badge--beta {
+  background: $color-accent-soft;
+  color: #9a6b58;
+}
+
+.tool-showcase__title {
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
+  margin-bottom: $space-xs;
+}
+
+.tool-showcase__lead {
+  color: $color-text-muted;
+  font-size: 1.0625rem;
+  max-width: 42rem;
+  margin-bottom: $space-md;
+}
+
+.tool-showcase__image {
+  margin: 0;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  background: $color-bg-alt;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  figcaption {
+    padding: $space-sm $space-lg;
+    font-size: 0.875rem;
+    color: $color-text-light;
+    text-align: center;
+  }
+}
+
+.tool-showcase__body {
+  padding: $space-lg;
+  display: grid;
+  gap: $space-lg;
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+.tool-showcase__section h3 {
+  color: $color-primary-dark;
+  margin-bottom: $space-sm;
+}
+
+.tool-showcase__section p {
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+}
+
+.tool-showcase__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: $space-sm;
+}
+
+.tool-showcase__features li {
+  padding: $space-sm $space-md;
+  background: $color-bg-alt;
+  border-radius: $radius-sm;
+  font-size: 0.9375rem;
+  color: $color-text-muted;
+
+  strong {
+    color: $color-text;
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+}
+
+.tool-showcase__note {
+  grid-column: 1 / -1;
+  padding: $space-md $space-lg;
+  background: $color-primary-light;
+  border-radius: $radius-md;
+  font-size: 0.9375rem;
+  color: $color-primary-dark;
+  margin: 0;
+}
+
 // CTA band
 .cta-band {
   padding-block: $space-xl;
