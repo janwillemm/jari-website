@@ -36,6 +36,8 @@ header_pages:
     url: /over-ons/
   - title: Aan de slag
     url: /aan-de-slag/
+  - title: Prijs
+    url: /prijs/
   - title: Visie
     url: /visie/
 

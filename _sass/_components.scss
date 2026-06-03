@@ -956,6 +956,39 @@
   }
 }
 
+.pricing-status {
+  padding: $space-lg;
+  background: $color-primary-light;
+  border: 1px solid rgba($color-primary, 0.2);
+  border-radius: $radius-lg;
+  margin-bottom: $space-lg;
+
+  p {
+    margin: 0;
+    color: $color-text-muted;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    max-width: 40rem;
+  }
+}
+
+.pricing-status__badge {
+  display: inline-block;
+  margin: 0 0 $space-sm;
+  padding: 0.25rem 0.75rem;
+  background: $color-surface;
+  border-radius: $radius-pill;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-primary-dark;
+}
+
+.pricing-cta {
+  margin: $space-md 0 $space-xl;
+}
+
 // CTA band
 .cta-band {
   padding-block: $space-xl;
