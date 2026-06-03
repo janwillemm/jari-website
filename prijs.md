@@ -18,12 +18,15 @@ intro: >-
 
 ## Tool gebruiken?
 
-Stuur een mailtje als je een tool wilt inzetten in je praktijk. We koppelen je
+Stuur ons een bericht als je een tool wilt inzetten in je praktijk. We koppelen je
 dan aan de juiste toegang en denken graag met je mee.
 
-<div class="pricing-cta">
-  <a class="btn btn--primary" href="mailto:ggztools@manenschijn.com">ggztools@manenschijn.com</a>
-</div>
+{% include contact-form.html
+   heading="Tool aanvragen"
+   intro="Vertel kort welke tool je wilt gebruiken en waarvoor. We reageren per e-mail."
+   subject="Tool aanvraag via ggztools.nl"
+   context="Prijs"
+%}
 
 ## Samen sterker
 
@@ -31,5 +34,12 @@ We willen wél graag feedback en input van je. Samen staan we sterker — en kun
 we tools maken die écht nuttig zijn en écht gebruikt worden door mensen in het
 vakgebied.
 
-Heb je ideeën, opmerkingen of ervaringen uit de praktijk? Deel ze gerust via
-[ggztools@manenschijn.com](mailto:ggztools@manenschijn.com) — elke stem telt.
+Heb je ideeën, opmerkingen of ervaringen uit de praktijk? Laat het ons weten via
+het formulier hieronder — elke stem telt.
+
+{% include contact-form.html
+   heading="Deel je feedback"
+   intro="We horen graag wat je in de praktijk tegenkomt."
+   subject="Feedback via prijspagina"
+   context="Prijs — feedback"
+%}

@@ -229,14 +229,16 @@ met kinderen en jongeren. Rustig vormgegeven, direct toepasbaar en afgestemd op 
   <h2>Heb jij een idee?</h2>
   <p>
     Iets creatiefs. Iets waarvan je denkt: <em>waarom is dit er niet?!</em>
-    Een idee voor een handige tool.
-  </p>
-  <p>
-    Mail het naar ons op
-    <a href="mailto:ggztools@manenschijn.com">ggztools@manenschijn.com</a>
-    — en wie weet kunnen we ’m voor je maken!
+    Een idee voor een handige tool — en wie weet kunnen we ’m voor je maken!
   </p>
 </div>
+
+{% include contact-form.html
+   heading="Deel je idee"
+   intro="Vertel wat je mist in de praktijk. Hoe concreter, hoe beter."
+   subject="Tool-idee via Aan de slag"
+   context="Aan de slag"
+%}
 
 ## Binnenkort beschikbaar
 

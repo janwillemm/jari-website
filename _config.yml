@@ -43,6 +43,16 @@ header_pages:
 
 contact:
   email: info@ggztools.nl
+  tools_email: ggztools@manenschijn.com
+
+# Formspree — standaard voor contactformulieren op statische Jekyll-sites.
+# 1. Maak gratis account op https://formspree.io
+# 2. Klik "+ New form" en stel ggztools@manenschijn.com in als ontvanger
+# 3. Kopieer het form ID (8 tekens) uit de endpoint-URL
+# Zie: https://formspree.io/guides/jekyll/
+formspree:
+  production_id: ""
+  development_id: ""
 
 authors:
   - name: Jan-Willem Manenschijn

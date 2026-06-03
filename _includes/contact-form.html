@@ -1,0 +1,72 @@
+{% comment %}
+  Standaard Jekyll-contactformulier via Formspree.
+  Gebruik: {% include contact-form.html heading="..." subject="..." context="..." %}
+  Zie https://formspree.io/guides/jekyll/
+{% endcomment %}
+
+{% assign formspree_id = site.formspree.production_id %}
+{% if jekyll.environment != "production" and site.formspree.development_id != "" %}
+  {% assign formspree_id = site.formspree.development_id %}
+{% endif %}
+
+{% assign form_subject = include.subject | default: "Bericht via ggztools.nl" %}
+{% assign form_context = include.context | default: page.title | default: "Website" %}
+
+<div class="contact-form-block">
+  {% if include.heading %}
+    <h2 class="contact-form__heading">{{ include.heading }}</h2>
+  {% endif %}
+
+  {% if include.intro %}
+    <p class="contact-form__intro">{{ include.intro }}</p>
+  {% endif %}
+
+  {% if formspree_id == "" or formspree_id == nil %}
+    <p class="contact-form__fallback">
+      Het formulier is nog niet gekoppeld. Mail ons op
+      <a href="mailto:{{ site.contact.tools_email }}">{{ site.contact.tools_email }}</a>.
+    </p>
+  {% else %}
+    <form class="contact-form"
+          action="https://formspree.io/f/{{ formspree_id }}"
+          method="POST"
+          accept-charset="UTF-8">
+      <input type="hidden" name="_subject" value="{{ form_subject | escape }}">
+      <input type="hidden" name="_next" value="{{ '/bedankt/' | absolute_url }}">
+      <input type="hidden" name="pagina" value="{{ form_context | escape }}">
+
+      <div class="contact-form__field">
+        <label class="contact-form__label" for="contact-name-{{ form_context | slugify }}">Naam</label>
+        <input class="contact-form__input"
+               type="text"
+               id="contact-name-{{ form_context | slugify }}"
+               name="name"
+               autocomplete="name"
+               required>
+      </div>
+
+      <div class="contact-form__field">
+        <label class="contact-form__label" for="contact-email-{{ form_context | slugify }}">E-mail</label>
+        <input class="contact-form__input"
+               type="email"
+               id="contact-email-{{ form_context | slugify }}"
+               name="email"
+               autocomplete="email"
+               required>
+      </div>
+
+      <div class="contact-form__field">
+        <label class="contact-form__label" for="contact-message-{{ form_context | slugify }}">Bericht</label>
+        <textarea class="contact-form__textarea"
+                  id="contact-message-{{ form_context | slugify }}"
+                  name="message"
+                  rows="5"
+                  required></textarea>
+      </div>
+
+      <input type="text" name="_gotcha" class="contact-form__gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <button class="btn btn--primary contact-form__submit" type="submit">Versturen</button>
+    </form>
+  {% endif %}
+</div>

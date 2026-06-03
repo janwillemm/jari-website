@@ -111,5 +111,11 @@ GGZ Tools bouwt hulpmiddelen die:
 
 ## Contact
 
-Heb je vragen, een idee, of wil je samenwerken? We horen het graag via
-[{{ site.contact.email }}](mailto:{{ site.contact.email }}).
+Heb je vragen, een idee, of wil je samenwerken? We horen het graag.
+
+{% include contact-form.html
+   heading="Neem contact op"
+   intro="Stuur ons een bericht — we reageren zo snel mogelijk."
+   subject="Contact via Over ons"
+   context="Over ons"
+%}

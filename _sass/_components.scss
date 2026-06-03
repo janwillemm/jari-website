@@ -989,6 +989,84 @@
   margin: $space-md 0 $space-xl;
 }
 
+// Contactformulier (Formspree + Jekyll include)
+.contact-form-block {
+  margin-block: $space-lg;
+  padding: $space-lg;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-soft;
+}
+
+.contact-form__heading {
+  font-size: 1.25rem;
+  margin: 0 0 $space-xs;
+}
+
+.contact-form__intro,
+.contact-form__fallback {
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin: 0 0 $space-md;
+  max-width: 40rem;
+}
+
+.contact-form {
+  display: grid;
+  gap: $space-sm;
+  max-width: 32rem;
+}
+
+.contact-form__field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.contact-form__label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $color-text;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  background: $color-bg;
+  font-family: $font-body;
+  font-size: 1rem;
+  color: $color-text;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:focus {
+    outline: none;
+    border-color: rgba($color-primary, 0.5);
+    box-shadow: 0 0 0 3px rgba($color-primary, 0.12);
+  }
+}
+
+.contact-form__textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+.contact-form__gotcha {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.contact-form__submit {
+  justify-self: start;
+  margin-top: 0.25rem;
+}
+
 // CTA band
 .cta-band {
   padding-block: $space-xl;
