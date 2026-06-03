@@ -41,6 +41,8 @@ Het bestand `CNAME` wijst naar `ggztools.nl`. Configureer bij je DNS-provider:
 
 Vervolgens in GitHub **Settings → Pages → Custom domain** invullen: `ggztools.nl`.
 
+**Let op:** zolang je de site via `janwillemm.github.io/jari-website/` bekijkt, gebruikt de build automatisch het juiste pad (`/jari-website`) voor CSS en links. Zodra `ggztools.nl` actief is als custom domain, pas de workflow aan: verwijder `--baseurl "${{ steps.pages.outputs.base_path }}"` uit de build-stap zodat assets op het domein root werken.
+
 ## Structuur
 
 ```
