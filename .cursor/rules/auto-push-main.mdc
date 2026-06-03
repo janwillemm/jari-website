@@ -1,0 +1,17 @@
+---
+description: Commit en push wijzigingen automatisch naar main na elke taak
+alwaysApply: true
+---
+
+# Automatisch committen en pushen
+
+Na het afronden van een taak met codewijzigingen:
+
+1. Controleer `git status` en `git diff` — commit geen secrets (`.env`, credentials, etc.).
+2. Stage alle relevante bestanden voor de taak.
+3. Maak een commit met een korte, duidelijke boodschap (1–2 zinnen, focus op het waarom).
+4. Push naar `main`: `git push origin main`
+
+Doe dit standaard aan het einde van elke taak, tenzij de gebruiker expliciet vraagt om niet te committen of pushen.
+
+Gebruik nooit `--force`, `--no-verify`, of andere destructieve git-commando's tenzij de gebruiker dat expliciet vraagt.

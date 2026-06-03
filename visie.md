@@ -72,6 +72,16 @@ intro: >-
   </li>
 </ul>
 
+## Wat ons onderscheidt
+
+<div class="unique-position unique-position--visie">
+  <p class="unique-position__lead">
+    Onze visie is niet alleen mooi op papier — wij kunnen haar ook toetsen aan de
+    werkelijkheid van de behandelkamer en de werkvloer.
+  </p>
+  {% include unique-position.html %}
+</div>
+
 ## Hoe dit zich vertaalt in ons werk
 
 We kiezen bewust voor een rustige, warme vormgeving — vergelijkbaar met hoe je je

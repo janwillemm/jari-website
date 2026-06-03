@@ -18,14 +18,54 @@ title: Home
       </div>
     </div>
 
-    <div class="hero__visual" aria-hidden="true">
+    <div class="hero__visual">
       <span class="hero__visual-label">Waar we aan werken</span>
-      <div class="hero__pill-row">
-        <span class="pill">Overzicht</span>
-        <span class="pill">Eenvoud</span>
-        <span class="pill pill--accent">Mensgericht</span>
-        <span class="pill">Praktisch</span>
-        <span class="pill">Samenwerking</span>
+
+      <div class="tool-slider" data-tool-slider tabindex="0" aria-roledescription="carousel" aria-label="Onze tools">
+        <div class="tool-slider__viewport">
+          <div class="tool-slider__track" data-slider-track>
+            {% for tool in site.tools %}
+              <article class="tool-slider__slide{% if forloop.first %} is-active{% endif %}"
+                       role="group"
+                       aria-roledescription="slide"
+                       aria-label="{{ forloop.index }} van {{ site.tools.size }}: {{ tool.name }}"
+                       {% unless forloop.first %}hidden{% endunless %}>
+                <div class="tool-slider__media">
+                  <img src="{{ tool.image | relative_url }}"
+                       alt="{{ tool.alt }}"
+                       loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                       width="480"
+                       height="270">
+                </div>
+                <div class="tool-slider__body">
+                  <span class="tool-slider__badge tool-slider__badge--{{ tool.status }}">{{ tool.status_label }}</span>
+                  <h3 class="tool-slider__title">{{ tool.name }}</h3>
+                  <p class="tool-slider__summary">{{ tool.summary }}</p>
+                  <a class="tool-slider__link" href="{{ '/aan-de-slag/' | relative_url }}">Meer over deze tool</a>
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="tool-slider__nav">
+          <button type="button" class="tool-slider__arrow" data-slider-prev aria-label="Vorige tool">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <div class="tool-slider__dots" role="tablist" aria-label="Kies een tool">
+            {% for tool in site.tools %}
+              <button type="button"
+                      class="tool-slider__dot{% if forloop.first %} is-active{% endif %}"
+                      role="tab"
+                      data-slider-dot="{{ forloop.index0 }}"
+                      aria-label="{{ tool.name }}"
+                      aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"></button>
+            {% endfor %}
+          </div>
+          <button type="button" class="tool-slider__arrow" data-slider-next aria-label="Volgende tool">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

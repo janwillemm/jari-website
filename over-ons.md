@@ -62,6 +62,12 @@ intro: >-
 
 </div>
 
+## Onze unieke positie
+
+<div class="unique-position">
+  {% include unique-position.html %}
+</div>
+
 <div class="team-together">
   <h2>Samen sterker</h2>
   <p>

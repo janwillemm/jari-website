@@ -41,3 +41,17 @@ authors:
     role: Creatieve techneut
   - name: Rianne Manenschijn
     role: Creatieve orthopedagoog-generalist
+
+tools:
+  - name: Context Driehoek
+    status: live
+    status_label: Beschikbaar
+    summary: Gezins-, kind- en omgevingfactoren in één overzicht voor casusconceptualisatie.
+    image: /assets/images/tools/context-driehoek.png
+    alt: Screenshot van Context Driehoek
+  - name: EMDR — Bilaterale lichtbol
+    status: beta
+    status_label: In ontwikkeling
+    summary: Visuele bilaterale stimulatie om tempo, beeld en duur af te stemmen.
+    image: /assets/images/tools/emdr-lichtbol.png
+    alt: Screenshot van het EMDR stimulatieveld
