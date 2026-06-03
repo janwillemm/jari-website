@@ -83,31 +83,40 @@ title: Home
       <p class="section__eyebrow">Over ons</p>
       <h2>Jan-Willem &amp; Rianne</h2>
       <p class="section__lead">
-        GGZ Tools is opgericht door Jan-Willem Manenschijn en Rianne van Kesteren.
-        Samen combineren zij ervaring in de zorg met een passie voor doordachte,
-        menselijke technologie.
+        Creatieve techneut en creatieve orthopedagoog-generalist — samen bouwen
+        zij aan tools die professionals in de GGZ écht verder helpen.
       </p>
     </div>
 
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-card__avatar" aria-hidden="true">JW</div>
+        <img class="team-card__photo"
+             src="{{ '/assets/images/team/jan-willem-manenschijn.jpg' | relative_url }}"
+             alt="Jan-Willem Manenschijn"
+             loading="lazy"
+             width="72"
+             height="72">
         <div>
           <p class="team-card__role">Jan-Willem Manenschijn</p>
           <p class="team-card__bio">
-            Richt zich op het vertalen van complexe vraagstukken naar heldere,
-            bruikbare oplossingen voor de GGZ-praktijk.
+            Creatieve techneut. Vertaalt complexe vraagstukken naar heldere,
+            werkende tools — met AI, prototypes en veel enthousiasme.
           </p>
         </div>
       </div>
 
       <div class="team-card">
-        <div class="team-card__avatar" aria-hidden="true">RK</div>
+        <img class="team-card__photo"
+             src="{{ '/assets/images/team/rianne-manenschijn.jpg' | relative_url }}"
+             alt="Rianne Manenschijn"
+             loading="lazy"
+             width="72"
+             height="72">
         <div>
-          <p class="team-card__role">Rianne van Kesteren</p>
+          <p class="team-card__role">Rianne Manenschijn</p>
           <p class="team-card__bio">
-            Brengt zorginhoudelijke expertise en oog voor de menselijke kant
-            mee in alles wat we bouwen.
+            Creatieve orthopedagoog-generalist. Brengt ideeën vanuit de
+            praktijk en zorgt dat elke tool aansluit bij het echte werk.
           </p>
         </div>
       </div>

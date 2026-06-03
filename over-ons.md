@@ -3,43 +3,90 @@ layout: page
 title: Over ons
 subtitle: Wie wij zijn
 intro: >-
-  GGZ Tools is opgericht door Jan-Willem Manenschijn en Rianne van Kesteren.
-  Wij geloven dat goede zorg begint met overzicht, aandacht en de juiste hulpmiddelen.
+  Wij zijn Jan-Willem Manenschijn en Rianne Manenschijn — creatief, warm en
+  gedreven om de GGZ te versterken met tools die écht helpen.
 ---
 
 <div class="team-grid">
-  <div class="team-card">
-    <div class="team-card__avatar" aria-hidden="true">JW</div>
+
+  <article class="team-card team-card--profile">
+    <img class="team-card__photo"
+         src="{{ '/assets/images/team/jan-willem-manenschijn.jpg' | relative_url }}"
+         alt="Foto van Jan-Willem Manenschijn"
+         loading="lazy"
+         width="112"
+         height="112">
     <div>
       <h2 style="margin-bottom: 0.25rem; font-size: 1.25rem;">Jan-Willem Manenschijn</h2>
-      <p class="team-card__role">Mede-oprichter</p>
+      <p class="team-card__role">Creatieve techneut</p>
+      <p class="team-card__tagline">“Vage ideeën concreet maken — met oog voor de mens.”</p>
       <p class="team-card__bio">
-        Jan-Willem heeft een achtergrond in technologie en de geestelijke gezondheidszorg.
-        Hij richt zich op het ontwerpen van tools die complexiteit wegnemen en professionals
-        helpen om zich te richten op wat echt telt: de mens voor je.
+        Jan-Willem is een enthousiaste creatieveling met een hart voor onderwijs, techniek
+        en maatschappelijke impact. Met een achtergrond in informatica (TU Delft) en jaren
+        ervaring als serious game designer en CTO, weet hij complexe vraagstukken te
+        vertalen naar heldere, werkende oplossingen.
+      </p>
+      <p class="team-card__bio" style="margin-top: 0.75rem;">
+        Hij onderneemt niet voor de winst, maar voor het verschil dat je kunt maken.
+        Snelle denker, prototype-bouwer, optimist — en altijd met een open blik naar
+        de wereld én naar de mensen om hem heen.
       </p>
     </div>
-  </div>
+  </article>
 
-  <div class="team-card">
-    <div class="team-card__avatar" aria-hidden="true">RK</div>
+  <article class="team-card team-card--profile">
+    <img class="team-card__photo"
+         src="{{ '/assets/images/team/rianne-manenschijn.jpg' | relative_url }}"
+         alt="Foto van Rianne Manenschijn"
+         loading="lazy"
+         width="112"
+         height="112">
     <div>
-      <h2 style="margin-bottom: 0.25rem; font-size: 1.25rem;">Rianne van Kesteren</h2>
-      <p class="team-card__role">Mede-oprichter</p>
+      <h2 style="margin-bottom: 0.25rem; font-size: 1.25rem;">Rianne Manenschijn</h2>
+      <p class="team-card__role">Creatieve orthopedagoog-generalist</p>
+      <p class="team-card__tagline">“Kijken naar het hele plaatje — met warmte en nieuwsgierigheid.”</p>
       <p class="team-card__bio">
-        Rianne brengt diepgaande kennis van de GGZ-praktijk mee. Zij zorgt ervoor dat
-        elke tool aansluit bij de realiteit van zorgverleners en cliënten — praktisch,
-        warm en doordacht.
+        Rianne is orthopedagoog-generalist en regiebehandelaar, verbonden aan
+        PsychoWijs. Zij werkt contextueel en systemisch: niet alleen naar het kind,
+        maar naar het gezin, de school en de omgeving eromheen. Precies dat brede
+        perspectief dat in de GGZ zo hard nodig is.
+      </p>
+      <p class="team-card__bio" style="margin-top: 0.75rem;">
+        Ze schrijft voor De Pedagoog (NVO), is ambassadeur voor de opleiding
+        orthopedagoog-generalist, en heeft oneindig veel ideeën over hoe zorg
+        praktischer, menselijker en toegankelijker kan. En ja — ze stopt niet bij
+        ideeën alleen. Ze wil dat het écht gebruikt wordt.
       </p>
     </div>
-  </div>
+  </article>
+
+</div>
+
+<div class="team-together">
+  <h2>Samen sterker</h2>
+  <p>
+    Wij vinden elkaar in een gedeelde passie: tools maken die professionals in de
+    geestelijke gezondheidszorg écht verder helpen. Jan-Willem is de afgelopen jaren
+    steeds meer de wereld van AI en slimme technologie ingedoken. Rianne komt
+    voortdurend met ideeën vanuit de praktijk — “zou het niet mooi zijn als…”,
+    “wat als we…” — en Jan-Willem kan die ideeën opeens heel makkelijk
+    verwezenlijken.
+  </p>
+  <p>
+    Rianne vindt dat fantastisch om te zien. En wij vinden het allebei fantastisch
+    als iemand zegt: <em>“Dit gebruik ik echt in mijn werk.”</em> Daar doen we het
+    voor. We willen dat meer mensen deze tools gaan gebruiken — niet omdat het
+    moet, maar omdat het helpt. Omdat het rust geeft, overzicht brengt, en ruimte
+    laat voor wat in de GGZ het allerbelangrijkste is: de relatie met de mens
+    voor je.
+  </p>
 </div>
 
 ## Waarom GGZ Tools?
 
-We zagen dat professionals in de geestelijke gezondheidszorg te vaak worstelen met
-ingewikkelde systemen die meer tijd kosten dan ze opleveren. Daar willen wij
-iets aan veranderen.
+We zagen dat professionals te vaak worstelen met ingewikkelde systemen die meer
+tijd kosten dan ze opleveren. Daar willen wij iets aan veranderen — samen, vanuit
+onze eigen vakgebieden, met liefde voor het vak.
 
 GGZ Tools bouwt hulpmiddelen die:
 
@@ -49,11 +96,11 @@ GGZ Tools bouwt hulpmiddelen die:
 
 <div class="highlight-box" style="margin-top: 2rem;">
   <p>
-    "Goede zorg vraagt om aandacht. Onze tools moeten ruimte geven, niet innemen."
+    “Goede zorg vraagt om aandacht. Onze tools moeten ruimte geven, niet innemen.”
   </p>
 </div>
 
 ## Contact
 
-Heb je vragen of wil je samenwerken? Neem gerust contact op via
+Heb je vragen, een idee, of wil je samenwerken? We horen het graag via
 [{{ site.contact.email }}](mailto:{{ site.contact.email }}).

@@ -185,8 +185,21 @@ Elke tool is rustig vormgegeven en gericht op directe toepasbaarheid — zonder 
 
 </div>
 
+<div class="ideas-cta">
+  <h2>Heb jij een idee?</h2>
+  <p>
+    Iets creatiefs. Iets waarvan je denkt: <em>waarom is dit er niet?!</em>
+    Een idee voor een handige tool.
+  </p>
+  <p>
+    Mail het naar ons op
+    <a href="mailto:ggztools@manenschijn.com">ggztools@manenschijn.com</a>
+    — en wie weet kunnen we ’m voor je maken!
+  </p>
+</div>
+
 ## Binnenkort beschikbaar
 
 We werken aan meer tools op basis van wat professionals in de praktijk nodig hebben.
-Heb je een idee of specifieke behoefte? Laat het ons weten via
+Heb je vragen? Neem gerust contact op via
 [{{ site.contact.email }}](mailto:{{ site.contact.email }}).

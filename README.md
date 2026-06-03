@@ -5,7 +5,7 @@ Website voor [ggztools.nl](https://ggztools.nl), gebouwd met [Jekyll](https://je
 ## Pagina's
 
 - **Home** — introductie en overzicht
-- **Over ons** — Jan-Willem Manenschijn & Rianne van Kesteren
+- **Over ons** — Jan-Willem Manenschijn & Rianne Manenschijn
 - **Aan de slag** — beschikbare tools
 - **Visie** — kernwaarden in de GGZ
 

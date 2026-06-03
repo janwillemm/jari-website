@@ -257,6 +257,60 @@
   color: $color-primary-dark;
 }
 
+.team-card__photo {
+  flex-shrink: 0;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid $color-primary-light;
+  box-shadow: $shadow-soft;
+}
+
+.team-card--profile {
+  align-items: flex-start;
+
+  @media (min-width: $bp-md) {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.team-card--profile .team-card__photo {
+  width: 7rem;
+  height: 7rem;
+}
+
+.team-card__tagline {
+  font-family: $font-heading;
+  font-size: 1rem;
+  color: $color-primary-dark;
+  margin: 0 0 $space-sm;
+  font-style: italic;
+}
+
+.team-together {
+  margin-top: $space-xl;
+  padding: $space-xl;
+  background: linear-gradient(145deg, $color-bg-hero, $color-accent-soft);
+  border-radius: $radius-lg;
+  border: 1px solid $color-border;
+}
+
+.team-together h2 {
+  margin-bottom: $space-sm;
+}
+
+.team-together p {
+  color: $color-text-muted;
+  max-width: 40rem;
+}
+
+.team-together p + p {
+  margin-top: $space-sm;
+}
+
 .team-card__role {
   font-size: 0.875rem;
   color: $color-primary;
@@ -481,6 +535,37 @@
   font-size: 0.9375rem;
   color: $color-primary-dark;
   margin: 0;
+}
+
+.ideas-cta {
+  margin-top: $space-xl;
+  padding: $space-xl;
+  background: linear-gradient(145deg, $color-accent-soft, $color-bg-hero);
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  text-align: center;
+
+  h2 {
+    margin-bottom: $space-sm;
+    color: $color-primary-dark;
+  }
+
+  p {
+    color: $color-text-muted;
+    font-size: 1.0625rem;
+    max-width: 32rem;
+    margin-inline: auto;
+    margin-bottom: 0;
+  }
+
+  p + p {
+    margin-top: $space-sm;
+  }
+
+  a {
+    font-weight: 600;
+    white-space: nowrap;
+  }
 }
 
 // CTA band
