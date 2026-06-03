@@ -3,9 +3,12 @@ layout: page
 title: Over ons
 subtitle: Wie wij zijn
 intro: >-
-  Wij zijn Jan-Willem Manenschijn en Rianne Manenschijn — creatief, warm en
-  gedreven om de GGZ te versterken met tools die écht helpen.
+  Jan-Willem Manenschijn en Rianne Manenschijn — het team achter GGZ Tools.
 ---
+
+<div class="mission-statement mission-statement--page">
+  {% include mission.html %}
+</div>
 
 <div class="team-grid">
 

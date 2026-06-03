@@ -94,6 +94,13 @@
   line-height: 1.65;
 }
 
+.hero__mission-tagline {
+  display: block;
+  margin-top: 0.65rem;
+  color: $color-primary-dark;
+  font-weight: 600;
+}
+
 .hero__visual {
   position: relative;
   border-radius: $radius-lg;
@@ -980,6 +987,39 @@
 }
 
 // Quote / highlight
+.mission-statement {
+  margin-block: $space-lg;
+  padding: $space-lg;
+  background: linear-gradient(145deg, $color-bg-hero, $color-surface);
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+}
+
+.mission-statement--page {
+  margin-top: 0;
+}
+
+.mission-statement--compact {
+  margin-block: $space-md $space-lg;
+  padding: $space-md $space-lg;
+}
+
+.mission-statement__text {
+  margin: 0;
+  color: $color-text-muted;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  max-width: 42rem;
+}
+
+.mission-statement__tagline {
+  margin: $space-sm 0 0;
+  font-family: $font-heading;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $color-primary-dark;
+}
+
 .highlight-box {
   background: $color-primary-light;
   border-radius: $radius-md;

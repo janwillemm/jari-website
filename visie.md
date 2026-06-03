@@ -3,9 +3,12 @@ layout: page
 title: Visie
 subtitle: Wat wij belangrijk vinden
 intro: >-
-  Onze visie op de geestelijke gezondheidszorg vormt de basis van alles wat we bouwen.
-  Dit zijn de waarden waar wij voor staan.
+  Onze waarden en overtuigingen — voortkomend uit ons hoofddoel als innovatiestudio.
 ---
+
+<div class="mission-statement mission-statement--page">
+  {% include mission.html %}
+</div>
 
 <div class="highlight-box">
   <p>

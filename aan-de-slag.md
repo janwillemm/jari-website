@@ -3,12 +3,16 @@ layout: page
 title: Aan de slag
 subtitle: Onze tools
 intro: >-
-  Hier vind je een overzicht van de tools die GGZ Tools aanbiedt.
-  Praktisch, overzichtelijk en gemaakt voor de dagelijkse praktijk.
+  Interactieve interventies uit onze innovatiestudio voor de jeugd-GGZ —
+  gemaakt om door behandelaren én kinderen daadwerkelijk gebruikt te worden.
 ---
 
-Onze tools zijn ontworpen om je te ondersteunen in je werk als zorgprofessional.
-Elke tool is rustig vormgegeven en gericht op directe toepasbaarheid — zonder ingewikkelde systemen, maar met aandacht voor wat in de praktijk werkt.
+<div class="mission-statement mission-statement--compact">
+  {% include mission.html %}
+</div>
+
+Onze tools zijn ontworpen om je te ondersteunen in je werk als zorgprofessional
+met kinderen en jongeren. Rustig vormgegeven, direct toepasbaar en afgestemd op de praktijk.
 
 <div class="tool-showcases">
 

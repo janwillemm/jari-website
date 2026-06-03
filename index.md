@@ -6,11 +6,11 @@ title: Home
 <section class="hero">
   <div class="container hero__inner">
     <div class="hero__content">
-      <span class="hero__eyebrow">Geestelijke gezondheidszorg</span>
-      <h1 class="hero__title">Tools die ruimte geven aan goede zorg</h1>
+      <span class="hero__eyebrow">{{ site.tagline }}</span>
+      <h1 class="hero__title">Interactieve interventies voor de jeugd-GGZ</h1>
       <p class="hero__lead">
-        GGZ Tools ontwikkelt praktische hulpmiddelen voor professionals in de geestelijke
-        gezondheidszorg. Duidelijk, overzichtelijk en met aandacht voor mens én vak.
+        {{ site.mission }}
+        <strong class="hero__mission-tagline">{{ site.mission_tagline }}</strong>
       </p>
       <div class="btn-group">
         <a class="btn btn--primary" href="{{ '/aan-de-slag/' | relative_url }}">Aan de slag</a>
@@ -75,11 +75,10 @@ title: Home
   <div class="container">
     <div class="section__header">
       <p class="section__eyebrow">Wat we doen</p>
-      <h2>Praktische tools voor de GGZ</h2>
+      <h2>Tools die behandelaren én kinderen gebruiken</h2>
       <p class="section__lead">
-        Wij maken digitale hulpmiddelen die professionals ondersteunen in hun dagelijkse werk.
-        Geen ingewikkelde systemen, maar tools die direct helpen — rustig vormgegeven en
-        afgestemd op de praktijk.
+        Behandelinhoud, pedagogiek, technologie, serious gaming en AI komen bij ons samen
+        in interactieve interventies — ontworpen om écht ingezet te worden in de praktijk.
       </p>
     </div>
 
@@ -123,8 +122,8 @@ title: Home
       <p class="section__eyebrow">Over ons</p>
       <h2>Jan-Willem &amp; Rianne</h2>
       <p class="section__lead">
-        Creatieve techneut en creatieve orthopedagoog-generalist — samen bouwen
-        zij aan tools die professionals in de GGZ écht verder helpen.
+        Creatieve techneut en creatieve orthopedagoog-generalist — samen vormen zij
+        de innovatiestudio achter GGZ Tools.
       </p>
     </div>
 
@@ -172,8 +171,8 @@ title: Home
   <div class="container">
     <h2>Klaar om aan de slag te gaan?</h2>
     <p>
-      Ontdek welke tools beschikbaar zijn en hoe je ze kunt inzetten
-      in je dagelijkse werk als zorgprofessional.
+      Ontdek onze interactieve interventies en hoe je ze kunt inzetten
+      in je werk met kinderen en jongeren.
     </p>
     <a class="btn btn--secondary" href="{{ '/aan-de-slag/' | relative_url }}">Naar Aan de slag</a>
   </div>
