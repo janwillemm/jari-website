@@ -7,10 +7,11 @@ title: Home
   <div class="container hero__inner">
     <div class="hero__content">
       <span class="hero__eyebrow">{{ site.tagline }}</span>
-      <h1 class="hero__title">Interactieve interventies voor de jeugd-GGZ</h1>
+      <h1 class="hero__title">Tools die ruimte geven aan goede zorg</h1>
       <p class="hero__lead">
-        {{ site.mission }}
-        <strong class="hero__mission-tagline">{{ site.mission_tagline }}</strong>
+        Wij zijn een innovatiestudio voor de jeugd-GGZ. Behandelinhoud, pedagogiek,
+        technologie, serious gaming en AI komen bij ons samen in interactieve
+        interventies — gemaakt om écht gebruikt te worden, door behandelaren én kinderen.
       </p>
       <div class="btn-group">
         <a class="btn btn--primary" href="{{ '/aan-de-slag/' | relative_url }}">Aan de slag</a>
@@ -75,10 +76,11 @@ title: Home
   <div class="container">
     <div class="section__header">
       <p class="section__eyebrow">Wat we doen</p>
-      <h2>Tools die behandelaren én kinderen gebruiken</h2>
+      <h2>Praktische tools voor de jeugd-GGZ</h2>
       <p class="section__lead">
-        Behandelinhoud, pedagogiek, technologie, serious gaming en AI komen bij ons samen
-        in interactieve interventies — ontworpen om écht ingezet te worden in de praktijk.
+        Wij maken digitale hulpmiddelen die professionals ondersteunen in hun dagelijkse werk
+        met kinderen en jongeren. Geen ingewikkelde systemen, maar interventies die direct
+        helpen — rustig vormgegeven en afgestemd op de praktijk.
       </p>
     </div>
 
@@ -122,8 +124,8 @@ title: Home
       <p class="section__eyebrow">Over ons</p>
       <h2>Jan-Willem &amp; Rianne</h2>
       <p class="section__lead">
-        Creatieve techneut en creatieve orthopedagoog-generalist — samen vormen zij
-        de innovatiestudio achter GGZ Tools.
+        Creatieve techneut en orthopedagoog-generalist — samen bouwen zij aan
+        interactieve interventies die in de jeugd-GGZ écht worden gebruikt.
       </p>
     </div>
 

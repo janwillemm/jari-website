@@ -3,16 +3,13 @@ layout: page
 title: Aan de slag
 subtitle: Onze tools
 intro: >-
-  Interactieve interventies uit onze innovatiestudio voor de jeugd-GGZ —
-  gemaakt om door behandelaren én kinderen daadwerkelijk gebruikt te worden.
+  Hier vind je onze interactieve interventies — rustig vormgegeven en gemaakt om
+  direct te gebruiken in je werk met kinderen en jongeren.
 ---
 
-<div class="mission-statement mission-statement--compact">
-  {% include mission.html %}
-</div>
-
-Onze tools zijn ontworpen om je te ondersteunen in je werk als zorgprofessional
-met kinderen en jongeren. Rustig vormgegeven, direct toepasbaar en afgestemd op de praktijk.
+Onze tools ondersteunen je als zorgprofessional in de jeugd-GGZ. Elke interventie
+is gericht op directe toepasbaarheid — zonder ingewikkelde systemen, met aandacht
+voor wat in de praktijk werkt voor behandelaren én kinderen.
 
 <div class="tool-showcases">
 

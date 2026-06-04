@@ -3,12 +3,9 @@ layout: page
 title: Visie
 subtitle: Wat wij belangrijk vinden
 intro: >-
-  Onze waarden en overtuigingen — voortkomend uit ons hoofddoel als innovatiestudio.
+  Onze waarden vormen de basis van elke interventie die we bouwen — altijd met het
+  oog op behandelaren én kinderen in de jeugd-GGZ.
 ---
-
-<div class="mission-statement mission-statement--page">
-  {% include mission.html %}
-</div>
 
 <div class="highlight-box">
   <p>
@@ -24,8 +21,8 @@ intro: >-
     <span class="value-item__number">1</span>
     <h3>Mensgericht</h3>
     <p>
-      Elke tool begint bij de mens. We ontwerpen vanuit de relatie tussen zorgverlener
-      en cliënt, niet vanuit technische mogelijkheden.
+      Elke interventie begint bij de mens. We ontwerpen vanuit de relatie tussen
+      behandelaar, kind en context — niet vanuit technische mogelijkheden.
     </p>
   </li>
 
@@ -42,8 +39,8 @@ intro: >-
     <span class="value-item__number">3</span>
     <h3>Praktisch toepasbaar</h3>
     <p>
-      Geen theorie die mooi klinkt op papier, maar oplossingen die morgen al
-      verschil maken in de behandelkamer of op de werkvloer.
+      Geen theorie die mooi klinkt op papier, maar interventies die morgen al
+      verschil maken — in de behandelkamer, op school of thuis.
     </p>
   </li>
 
@@ -70,7 +67,8 @@ intro: >-
     <h3>Speels waar het kan</h3>
     <p>
       Zorg is serieus werk, maar dat betekent niet dat alles strak en kil hoeft te zijn.
-      Een vleugje warmte en speelsheid maakt tools menselijker en toegankelijker.
+      Serious gaming en een vleugje speelsheid maken interventies menselijker en
+      toegankelijker — voor behandelaar én kind.
     </p>
   </li>
 </ul>

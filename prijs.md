@@ -12,7 +12,7 @@ intro: >-
   <p>
     Je hebt geluk: op dit moment kun je al onze tools gebruiken zonder kosten.
     We zijn nog bezig met het uitdenken van een duurzaam prijsmodel dat past bij
-    onze innovatiestudio en de jeugd-GGZ.
+    hoe wij werken: interactieve interventies voor de jeugd-GGZ, gebouwd vanuit de praktijk.
   </p>
 </div>
 

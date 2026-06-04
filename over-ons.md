@@ -3,12 +3,9 @@ layout: page
 title: Over ons
 subtitle: Wie wij zijn
 intro: >-
-  Jan-Willem Manenschijn en Rianne Manenschijn — het team achter GGZ Tools.
+  Jan-Willem en Rianne — techneut en orthopedagoog-generalist. Samen maken ze
+  interactieve interventies voor de jeugd-GGZ die in de praktijk landen.
 ---
-
-<div class="mission-statement mission-statement--page">
-  {% include mission.html %}
-</div>
 
 <div class="team-grid">
 
@@ -74,28 +71,28 @@ intro: >-
 <div class="team-together">
   <h2>Samen sterker</h2>
   <p>
-    Wij vinden elkaar in een gedeelde passie: tools maken die professionals in de
-    geestelijke gezondheidszorg écht verder helpen. Jan-Willem is de afgelopen jaren
-    steeds meer de wereld van AI en slimme technologie ingedoken. Rianne komt
-    voortdurend met ideeën vanuit de praktijk — “zou het niet mooi zijn als…”,
-    “wat als we…” — en Jan-Willem kan die ideeën opeens heel makkelijk
-    verwezenlijken.
+    Wij vinden elkaar in een gedeelde passie: interventies maken die behandelaren
+    én kinderen écht gebruiken. Jan-Willem brengt serious gaming, AI en software;
+    Rianne brengt behandelinhoud en de werkvloer. Rianne komt voortdurend met
+    ideeën vanuit de praktijk — “zou het niet mooi zijn als…”, “wat als we…” —
+    en Jan-Willem kan die ideeën opeens heel makkelijk verwezenlijken.
   </p>
   <p>
     Rianne vindt dat fantastisch om te zien. En wij vinden het allebei fantastisch
     als iemand zegt: <em>“Dit gebruik ik echt in mijn werk.”</em> Daar doen we het
     voor. We willen dat meer mensen deze tools gaan gebruiken — niet omdat het
     moet, maar omdat het helpt. Omdat het rust geeft, overzicht brengt, en ruimte
-    laat voor wat in de GGZ het allerbelangrijkste is: de relatie met de mens
-    voor je.
+    laat voor wat in de jeugd-GGZ het allerbelangrijkste is: de relatie met het
+    kind en de mensen om het heen.
   </p>
 </div>
 
 ## Waarom GGZ Tools?
 
-We zagen dat professionals te vaak worstelen met ingewikkelde systemen die meer
-tijd kosten dan ze opleveren. Daar willen wij iets aan veranderen — samen, vanuit
-onze eigen vakgebieden, met liefde voor het vak.
+We zagen dat behandelaren in de jeugd-GGZ te vaak worstelen met ingewikkelde systemen
+die meer tijd kosten dan ze opleveren. Daar willen wij iets aan veranderen — met
+interactieve interventies die pedagogiek en technologie verbinden, vanuit liefde
+voor het vak.
 
 GGZ Tools bouwt hulpmiddelen die:
 
