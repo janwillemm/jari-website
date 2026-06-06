@@ -96,8 +96,6 @@ technologie, serious gaming en AI samenkomen.
 
 </div>
 
-## Missie en visie
-
 <div class="statement-pair">
   <figure class="statement">
     <figcaption class="statement__label">Missie</figcaption>

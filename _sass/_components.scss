@@ -1393,27 +1393,23 @@
 
 // Open editorial statements (missie / visie)
 .statement-pair {
-  display: flex;
-  flex-direction: column;
-  gap: $space-xl;
-  margin: $space-sm 0 $space-lg;
+  display: grid;
+  gap: $space-lg;
+  margin: $space-lg 0;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-xl;
+  }
 }
 
 .statement {
   margin: 0;
   padding-left: $space-md;
   border-left: 4px solid $color-accent;
-  max-width: 38rem;
 
   &--warm {
     border-left-color: $color-accent-warm;
-  }
-
-  @media (min-width: $bp-md) {
-    &:nth-child(2) {
-      margin-left: clamp(2rem, 14vw, 9rem);
-      max-width: 34rem;
-    }
   }
 }
 
