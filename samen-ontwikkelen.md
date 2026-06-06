@@ -1,9 +1,8 @@
 ---
 layout: page
-content_measure: true
 heading: Samen ontwikkelen
 intro: >-
-  Heb jij een idee voor een interactieve interventie? Denk aan een werkvorm, spel
+  Heb jij een idee voor een interactieve interventie? Bijvoorbeeld een werkvorm, spel
   of model? Wij helpen je graag om dat idee werkelijkheid te maken.
 ---
 
