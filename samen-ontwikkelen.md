@@ -113,14 +113,6 @@ mogelijk is binnen korte tijd.
   zoveel mogelijk professionals haalbaar blijft.
 </p>
 
-<p>Wat bepaalt de prijs? Dat hangt af van:</p>
-
-<ul class="pricing-drivers">
-  <li>Complexiteit en scope van het idee</li>
-  <li>Doelgroep en gewenste vorm (spel, tool, e-learning, animatie…)</li>
-  <li>Timeline en testfases</li>
-</ul>
-
 <p>
   Een belangrijk onderdeel van ons model is dat tools die we samen ontwikkelen,
   uiteraard in overleg, ook beschikbaar kunnen worden gesteld aan andere professionals.
