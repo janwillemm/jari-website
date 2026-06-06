@@ -31,22 +31,10 @@
 }
 
 .site-logo__mark {
-  width: 2.5rem;
   height: 2.5rem;
-  border-radius: $radius-md;
-  background: linear-gradient(135deg, $color-primary-light, $color-bg-hero);
-  border: 2px solid rgba($color-primary, 0.2);
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0.55rem;
-    border-radius: 50% 50% 50% 0;
-    background: $color-primary;
-    transform: rotate(-45deg);
-    opacity: 0.85;
-  }
+  width: auto;
+  flex-shrink: 0;
+  display: block;
 }
 
 .site-logo__text {
@@ -190,11 +178,11 @@
   }
 }
 
-.site-footer__title {
-  font-family: $font-heading;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: $space-xs;
+.site-footer__logo {
+  height: 3rem;
+  width: auto;
+  display: block;
+  margin-bottom: $space-sm;
 }
 
 .site-footer__label {

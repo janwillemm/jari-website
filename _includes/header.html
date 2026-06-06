@@ -1,9 +1,17 @@
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="site-logo" href="{{ '/' | relative_url }}">
-      <span class="site-logo__mark" aria-hidden="true"></span>
+      <img
+        class="site-logo__mark"
+        src="{{ '/assets/images/brand/logo-mark.png' | relative_url }}"
+        alt=""
+        aria-hidden="true"
+        width="512"
+        height="288"
+        decoding="async"
+      />
       <span class="site-logo__text">
-        <strong>GGZ Tools</strong>
+        <strong>{{ site.title }}</strong>
         <small>{{ site.tagline }}</small>
       </span>
     </a>

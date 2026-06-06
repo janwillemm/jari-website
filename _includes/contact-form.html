@@ -9,8 +9,8 @@
   {% assign formspree_id = site.formspree.development_id %}
 {% endif %}
 
-{% assign form_subject = include.subject | default: "Bericht via ggztools.nl" %}
-{% assign form_context = include.context | default: page.title | default: "Website" %}
+{% assign form_subject = include.subject | default: "Bericht via interact-ggz.nl" %}
+{% assign form_context = include.context | default: page.heading | default: "Website" %}
 
 <div class="contact-form-block">
   {% if include.heading %}

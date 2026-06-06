@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Aan de slag
+heading: Aan de slag
 subtitle: Onze tools
 intro: >-
   Hier vind je onze interactieve interventies — rustig vormgegeven en gemaakt om

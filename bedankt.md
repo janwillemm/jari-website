@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bedankt
+heading: Bedankt
 subtitle: Bericht ontvangen
 intro: >-
   We hebben je bericht ontvangen en nemen zo snel mogelijk contact met je op.

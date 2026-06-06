@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Prijs
+heading: Prijs
 subtitle: Tarieven
 intro: >-
   We zijn ons prijsmodel nog aan het verkennen. Voor nu delen we alles gratis —
@@ -24,7 +24,7 @@ dan aan de juiste toegang en denken graag met je mee.
 {% include contact-form.html
    heading="Tool aanvragen"
    intro="Vertel kort welke tool je wilt gebruiken en waarvoor. We reageren per e-mail."
-   subject="Tool aanvraag via ggztools.nl"
+   subject="Tool aanvraag via interact-ggz.nl"
    context="Prijs"
 %}
 

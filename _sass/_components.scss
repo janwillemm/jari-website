@@ -1,3 +1,4 @@
+@use "sass:color";
 @import "variables";
 
 // Buttons
@@ -55,7 +56,8 @@
   padding-block: $space-xl $space-2xl;
   background:
     radial-gradient(ellipse 80% 60% at 70% 20%, rgba($color-primary-light, 0.5), transparent),
-    radial-gradient(ellipse 60% 50% at 10% 80%, rgba($color-accent-soft, 0.6), transparent),
+    radial-gradient(ellipse 50% 40% at 85% 75%, rgba($color-accent-soft, 0.55), transparent),
+    radial-gradient(ellipse 35% 30% at 5% 90%, rgba($color-accent-warm-soft, 0.35), transparent),
     linear-gradient(180deg, $color-bg-hero 0%, $color-bg 100%);
   overflow: hidden;
 }
@@ -73,11 +75,11 @@
 .hero__eyebrow {
   display: inline-block;
   padding: 0.35rem 0.875rem;
-  background: $color-surface;
+  background: $color-accent-warm-soft;
   border-radius: $radius-pill;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: $color-primary;
+  color: $color-accent-warm;
   letter-spacing: 0.04em;
   margin-bottom: $space-sm;
   box-shadow: $shadow-soft;
@@ -286,7 +288,7 @@
 
 .pill--accent {
   background: $color-accent-soft;
-  color: darken($color-accent, 18%);
+  color: color.adjust($color-accent, $lightness: -18%);
 }
 
 // Sections
@@ -634,7 +636,7 @@
 
 .tool-item__status--soon {
   background: $color-accent-soft;
-  color: darken($color-accent, 15%);
+  color: color.adjust($color-accent, $lightness: -15%);
 }
 
 .tool-item__desc {

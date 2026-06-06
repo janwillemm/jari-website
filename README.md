@@ -1,6 +1,6 @@
-# GGZ Tools
+# Interact-GGZ
 
-Website voor [ggztools.nl](https://ggztools.nl), gebouwd met [Jekyll](https://jekyllrb.com/) en gedeployed via GitHub Pages.
+Website voor [interact-ggz.nl](https://interact-ggz.nl), gebouwd met [Jekyll](https://jekyllrb.com/) en gedeployed via GitHub Pages.
 
 ## Pagina's
 
@@ -29,7 +29,7 @@ Open [http://localhost:4000](http://localhost:4000).
 
 ### Custom domain
 
-Het bestand `CNAME` wijst naar `ggztools.nl`. Configureer bij je DNS-provider:
+Het bestand `CNAME` wijst naar `interact-ggz.nl`. Configureer bij je DNS-provider:
 
 | Type  | Name | Value                    |
 |-------|------|--------------------------|
@@ -39,9 +39,9 @@ Het bestand `CNAME` wijst naar `ggztools.nl`. Configureer bij je DNS-provider:
 | A     | @    | 185.199.111.153          |
 | CNAME | www  | `<jouw-github-username>.github.io` |
 
-Vervolgens in GitHub **Settings → Pages → Custom domain** invullen: `ggztools.nl`.
+Vervolgens in GitHub **Settings → Pages → Custom domain** invullen: `interact-ggz.nl`.
 
-**Let op:** zolang je de site via `janwillemm.github.io/jari-website/` bekijkt, gebruikt de build automatisch het juiste pad (`/jari-website`) voor CSS en links. Zodra `ggztools.nl` actief is als custom domain, pas de workflow aan: verwijder `--baseurl "${{ steps.pages.outputs.base_path }}"` uit de build-stap zodat assets op het domein root werken.
+**Let op:** zolang je de site via `janwillemm.github.io/jari-website/` bekijkt, gebruikt de build automatisch het juiste pad (`/jari-website`) voor CSS en links. Zodra `interact-ggz.nl` actief is als custom domain, pas de workflow aan: verwijder `--baseurl "${{ steps.pages.outputs.base_path }}"` uit de build-stap zodat assets op het domein root werken.
 
 ## Structuur
 

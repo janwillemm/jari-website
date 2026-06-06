@@ -1,21 +1,23 @@
-// Kleurenpalet: warm, rustig, met een speels accent
+// Kleurenpalet: warm, rustig, petrol + turquoise accent
 $color-bg: #faf8f5;
 $color-bg-alt: #f2efe8;
-$color-bg-hero: #e8f0eb;
+$color-bg-hero: #e0f2f4;
 $color-surface: #ffffff;
 
-$color-text: #2c3330;
-$color-text-muted: #5f6b66;
-$color-text-light: #8a9690;
+$color-text: #1c2b30;
+$color-text-muted: #4a5e63;
+$color-text-light: #6b7f85;
 
-$color-primary: #4a7c6f;
-$color-primary-dark: #3a6358;
-$color-primary-light: #d4e8df;
+$color-primary: #134e4a;
+$color-primary-dark: #0f4c5c;
+$color-primary-light: #c5e4ea;
 
-$color-accent: #c4846a;
-$color-accent-soft: #f3e4dc;
+$color-accent: #14b8a6;
+$color-accent-soft: #ccfbf1;
+$color-accent-warm: #f1b062;
+$color-accent-warm-soft: #ffedd5;
 
-$color-border: #e4dfd6;
+$color-border: #dde4e6;
 
 $font-heading: "Fraunces", Georgia, "Times New Roman", serif;
 $font-body: "DM Sans", system-ui, -apple-system, sans-serif;
@@ -25,8 +27,8 @@ $radius-md: 1rem;
 $radius-lg: 1.5rem;
 $radius-pill: 999px;
 
-$shadow-soft: 0 4px 24px rgba(44, 51, 48, 0.06);
-$shadow-card: 0 8px 32px rgba(44, 51, 48, 0.08);
+$shadow-soft: 0 4px 24px rgba(28, 43, 48, 0.06);
+$shadow-card: 0 8px 32px rgba(28, 43, 48, 0.08);
 
 $container-max: 72rem;
 $space-xs: 0.5rem;

@@ -1,0 +1,63 @@
+{% comment %}
+  First-party Umami analytics with shared visitor ID cookie (_vid) on .interact-ggz.nl.
+  Set umami.website_id in _config.yml after creating the website in Umami.
+{% endcomment %}
+{% if site.umami.website_id != "" %}
+<script>
+(function () {
+  var COOKIE = "_vid";
+  var MAX_AGE = 365 * 24 * 60 * 60;
+  var WEBSITE_ID = {{ site.umami.website_id | jsonify }};
+  var SCRIPT_URL = {{ site.umami.script_url | default: "https://analytics.interact-ggz.nl/script.js" | jsonify }};
+
+  function cookieDomain() {
+    var host = location.hostname;
+    if (host === "localhost" || host === "127.0.0.1") return "";
+    if (host === "interact-ggz.nl" || host.slice(-16) === ".interact-ggz.nl") {
+      return ".interact-ggz.nl";
+    }
+    return "";
+  }
+
+  function read(name) {
+    var match = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]*)"));
+    return match ? decodeURIComponent(match[1]) : null;
+  }
+
+  function write(name, value) {
+    var domain = cookieDomain();
+    var parts = [
+      name + "=" + encodeURIComponent(value),
+      "path=/",
+      "max-age=" + MAX_AGE,
+      "SameSite=Lax",
+    ];
+    if (domain) parts.push("domain=" + domain);
+    if (location.protocol === "https:") parts.push("Secure");
+    document.cookie = parts.join("; ");
+  }
+
+  function visitorId() {
+    var existing = read(COOKIE);
+    if (existing) return existing;
+    var id =
+      window.crypto && window.crypto.randomUUID
+        ? window.crypto.randomUUID()
+        : "v-" + Date.now() + "-" + Math.random().toString(36).slice(2, 11);
+    write(COOKIE, id);
+    return id;
+  }
+
+  visitorId();
+
+  if (!WEBSITE_ID) return;
+
+  var script = document.createElement("script");
+  script.defer = true;
+  script.src = SCRIPT_URL;
+  script.setAttribute("data-website-id", WEBSITE_ID);
+  script.setAttribute("data-domains", "interact-ggz.nl,portal.interact-ggz.nl");
+  document.head.appendChild(script);
+})();
+</script>
+{% endif %}

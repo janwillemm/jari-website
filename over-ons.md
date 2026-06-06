@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Over ons
+heading: Over ons
 subtitle: Wie wij zijn
 intro: >-
   Jan-Willem en Rianne — techneut en orthopedagoog-generalist. Samen maken ze
@@ -87,14 +87,14 @@ intro: >-
   </p>
 </div>
 
-## Waarom GGZ Tools?
+## Waarom Interact-GGZ?
 
 We zagen dat behandelaren in de jeugd-GGZ te vaak worstelen met ingewikkelde systemen
 die meer tijd kosten dan ze opleveren. Daar willen wij iets aan veranderen — met
 interactieve interventies die pedagogiek en technologie verbinden, vanuit liefde
 voor het vak.
 
-GGZ Tools bouwt hulpmiddelen die:
+Interact-GGZ bouwt hulpmiddelen die:
 
 - **Rust geven** — overzichtelijke interfaces zonder visuele ruis
 - **Tijd besparen** — direct toepasbaar in de dagelijkse praktijk

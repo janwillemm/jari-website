@@ -1,14 +1,9 @@
-title: GGZ Tools
+title: Interact-GGZ
 description: >-
-  Innovatiestudio voor de jeugd-GGZ. We maken interactieve interventies waar
-  behandelinhoud, pedagogiek, technologie, serious gaming en AI samenkomen.
-tagline: Innovatiestudio jeugd-GGZ
-mission: >-
-  Wij zijn een innovatiestudio voor de jeugd-ggz: een plek waar behandelinhoud,
-  pedagogiek, technologie, serious gaming en AI samenkomen om tools te maken die
-  behandelaren én kinderen daadwerkelijk gebruiken.
-mission_tagline: We maken interactieve interventies!
-url: "https://ggztools.nl"
+  Wij zijn een innovatiestudio voor de jeugd-ggz. Innovatie en creatieviteit in de jeugd-ggz.
+tagline: Innovatie en creatieviteit in de jeugd-ggz.
+mission: Wij zijn een innovatiestudio voor de jeugd-ggz
+url: "https://interact-ggz.nl"
 baseurl: ""
 lang: nl
 locale: nl_NL
@@ -42,7 +37,7 @@ header_pages:
     url: /visie/
 
 contact:
-  email: info@ggztools.nl
+  email: info@interact-ggz.nl
   tools_email: ggztools@manenschijn.com
 
 # Formspree — standaard voor contactformulieren op statische Jekyll-sites.
@@ -53,6 +48,11 @@ contact:
 formspree:
   production_id: ""
   development_id: ""
+
+# Umami analytics (self-hosted). Leave website_id empty to disable tracking locally.
+umami:
+  website_id: ""
+  script_url: "https://analytics.interact-ggz.nl/script.js"
 
 authors:
   - name: Jan-Willem Manenschijn

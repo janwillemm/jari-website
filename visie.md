@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Visie
+heading: Visie
 subtitle: Wat wij belangrijk vinden
 intro: >-
   Onze waarden vormen de basis van elke interventie die we bouwen — altijd met het
