@@ -4,7 +4,7 @@ heading: Over ons
 subtitle: Wie wij zijn
 intro: >-
   Jan-Willem en Rianne — techneut en orthopedagoog-generalist. Samen maken ze
-  interactieve interventies voor de jeugd-GGZ die in de praktijk landen.
+  tools voor de jeugd-GGZ die in de praktijk landen.
 ---
 
 In januari 2020 ontmoeten wij elkaar. Jan-Willem een spelletjesfanaat en bedrijfseigenaar
@@ -22,7 +22,7 @@ boeken die we willen schrijven en bedrijven die we willen opzetten over tafel vl
 Aan creativiteit en ideeën geen gebrek bij ons thuis.
 
 De afgelopen periode hebben we met behulp van AI een aantal van onze ideeën voor
-interventies in de GGZ werkelijkheid kunnen maken. Tijd dus om deze met de wereld te
+tools in de GGZ werkelijkheid kunnen maken. Tijd dus om deze met de wereld te
 delen! Tijd voor onze innovatiestudio voor de jeugd-GGZ waar behandelinhoud, pedagogiek,
 technologie, serious gaming en AI samenkomen.
 
@@ -99,8 +99,7 @@ technologie, serious gaming en AI samenkomen.
 
 <div class="highlight-box">
   <p>
-    Wij vertalen ideeën uit de jeugd-GGZ naar spellen, interactieve interventies en
-    digitale ervaringen die direct bruikbaar zijn in de praktijk. Door pedagogiek,
+    Wij vertalen ideeën uit de jeugd-GGZ naar spellen en tools die direct bruikbaar zijn in de praktijk. Door pedagogiek,
     psychologie, technologie en creativiteit te combineren helpen we professionals om
     kinderen, jongeren en gezinnen op nieuwe manieren te ondersteunen.
   </p>
@@ -112,7 +111,7 @@ technologie, serious gaming en AI samenkomen.
   <p>
     Wij geloven dat zorg niet alleen effectief, maar ook begrijpelijk, ervaringsgericht
     en inspirerend mag zijn. Daarom werken we aan een jeugd-GGZ waarin goede ideeën,
-    wetenschappelijke kennis en praktijkervaring samenkomen in interventies die mensen
+    wetenschappelijke kennis en praktijkervaring samenkomen in tools die mensen
     raken en in beweging brengen.
   </p>
 </div>

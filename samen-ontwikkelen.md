@@ -2,9 +2,9 @@
 layout: page
 content_measure: true
 heading: Samen ontwikkelen
-subtitle: Van idee naar interventie
+subtitle: Van idee naar tool
 intro: >-
-  Heb jij een idee voor een spel, werkvorm of interactieve interventie?
+  Heb jij een idee voor een spel, werkvorm of tool?
   Wij helpen je graag om dat idee werkelijkheid te maken.
 ---
 
@@ -18,7 +18,7 @@ Juist daar helpen wij graag bij.
 ## Welke ideeën zijn welkom?
 
 Alles is welkom. Denk groots en buiten de box. Er kan met behulp van AI waarschijnlijk
-zoveel meer dan je denkt. Je kunt kijken [welke interventies wij al hebben gemaakt]({{ '/interactieve-interventies/' | relative_url }})
+zoveel meer dan je denkt. Je kunt kijken [welke tools wij al hebben gemaakt]({{ '/tools/' | relative_url }})
 en aan welke we werken om te zien welke mogelijkheden er in ieder geval zijn. Je kunt
 bijvoorbeeld denken aan een spel voor je team of een spel voor cliënten, een ervaring
 om een therapievorm meer voelbaar te maken, een werkblad dat interactief is, een e-learning,
@@ -61,7 +61,7 @@ mogelijk is binnen korte tijd.
 
 ## Hoe werkt het?
 
-<p class="process-steps__indicator" aria-hidden="true">Vijf stappen van idee naar interventie</p>
+<p class="process-steps__indicator" aria-hidden="true">Vijf stappen van idee naar tool</p>
 
 <ol class="process-steps" aria-label="Proces in vijf stappen">
   <li class="process-step">
@@ -96,7 +96,7 @@ mogelijk is binnen korte tijd.
     <span class="process-step__number">5</span>
     <div>
       <h3 class="process-step__title">Lanceren</h3>
-      <p>Een bruikbare interventie die ingezet kan worden in de praktijk.</p>
+      <p>Een bruikbare tool die ingezet kan worden in de praktijk.</p>
     </div>
   </li>
 </ol>
@@ -128,7 +128,7 @@ mogelijk is binnen korte tijd.
 </ul>
 
 <p>
-  Een belangrijk onderdeel van ons model is dat interventies die we samen ontwikkelen,
+  Een belangrijk onderdeel van ons model is dat tools die we samen ontwikkelen,
   uiteraard in overleg, ook beschikbaar kunnen worden gesteld aan andere professionals.
   Daardoor kunnen meer mensen profiteren van een goed idee en blijven de kosten voor
   individuele opdrachtgevers relatief laag.
@@ -146,7 +146,7 @@ mogelijk is binnen korte tijd.
   <p>
     Samen ontwikkelen betekent voor ons ook samen verantwoordelijkheid nemen voor het
     eindresultaat. Mocht je het gevoel hebben dat we jouw idee onvoldoende hebben vertaald
-    naar een bruikbare en passende interventie, dan gaan we eerst samen kijken hoe we dit
+    naar een bruikbare en passende tool, dan gaan we eerst samen kijken hoe we dit
     kunnen verbeteren. Komen we er samen niet uit, dan hoef je niet te betalen of krijg je
     je geld terug. We vinden vertrouwen belangrijker dan een factuur.
   </p>

@@ -5,7 +5,7 @@ Website voor [interactggz.nl](https://interactggz.nl), gebouwd met [Jekyll](http
 ## Pagina's
 
 - **Home** — introductie en overzicht
-- **Interactieve interventies** — beschikbare tools
+- **Tools** — overzicht van beschikbare tools
 - **Samen ontwikkelen** — samenwerking, proces en tarieven
 - **Over ons** — Jan-Willem Manenschijn & Rianne Manenschijn, missie, visie en waarden
 

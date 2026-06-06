@@ -1,6 +1,6 @@
 title: Interact-GGZ
 description: >-
-  Innovatiestudio voor de jeugd-ggz. Wij maken de jeugd-GGZ creatiever, speelser en innovatiever.
+  Innovatiestudio voor de jeugd-ggz. Wij maken de jeugd-GGZ creatiever, innovatiever en meer ervaringsgericht.
 tagline: Innovatie en creativiteit in de (jeugd-)ggz
 mission: Innovatiestudio voor de jeugd-ggz
 url: "https://interactggz.nl"
@@ -27,8 +27,8 @@ exclude:
 header_pages:
   - title: Home
     url: /
-  - title: Interactieve interventies
-    url: /interactieve-interventies/
+  - title: Tools
+    url: /tools/
   - title: Samen ontwikkelen
     url: /samen-ontwikkelen/
   - title: Over ons

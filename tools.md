@@ -1,13 +1,13 @@
 ---
 layout: page
-heading: Interactieve interventies
+heading: Tools
 subtitle: Onze tools
 intro: >-
-  Hier vind je onze interactieve interventies — rustig vormgegeven en gemaakt om
+  Hier vind je onze tools — rustig vormgegeven en gemaakt om
   direct te gebruiken in je werk met kinderen en jongeren.
 ---
 
-Onze tools ondersteunen je als zorgprofessional in de jeugd-GGZ. Elke interventie
+Onze tools ondersteunen je als zorgprofessional in de jeugd-GGZ. Elke tool
 is gericht op directe toepasbaarheid — zonder ingewikkelde systemen, met aandacht
 voor wat in de praktijk werkt voor behandelaren én kinderen.
 
@@ -224,6 +224,6 @@ voor wat in de praktijk werkt voor behandelaren én kinderen.
 
 ## Binnenkort beschikbaar
 
-We werken aan meer interventies op basis van wat professionals in de praktijk nodig hebben.
+We werken aan meer tools op basis van wat professionals in de praktijk nodig hebben.
 Heb je vragen? Neem gerust contact op via
 [{{ site.contact.email }}](mailto:{{ site.contact.email }}).
