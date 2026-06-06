@@ -100,25 +100,25 @@ technologie, serious gaming en AI samenkomen.
 
 ## Missie en visie
 
-<div class="highlight-boxes">
-  <div class="highlight-box">
-    <h3 class="highlight-box__title">Missie</h3>
-    <p>
+<div class="statement-pair">
+  <figure class="statement">
+    <figcaption class="statement__label">Missie</figcaption>
+    <blockquote class="statement__text">
       Wij vertalen ideeën uit de jeugd-GGZ naar spellen en tools die direct bruikbaar zijn in de praktijk. Door pedagogiek,
       psychologie, technologie en creativiteit te combineren helpen we professionals om
       kinderen, jongeren en gezinnen op nieuwe manieren te ondersteunen.
-    </p>
-  </div>
+    </blockquote>
+  </figure>
 
-  <div class="highlight-box">
-    <h3 class="highlight-box__title">Visie</h3>
-    <p>
+  <figure class="statement statement--warm">
+    <figcaption class="statement__label">Visie</figcaption>
+    <blockquote class="statement__text">
       Wij geloven dat zorg niet alleen effectief, maar ook begrijpelijk, ervaringsgericht
       en inspirerend mag zijn. Daarom werken we aan een jeugd-GGZ waarin goede ideeën,
       wetenschappelijke kennis en praktijkervaring samenkomen in tools die mensen
       raken en in beweging brengen.
-    </p>
-  </div>
+    </blockquote>
+  </figure>
 </div>
 
 ## Onze waarden

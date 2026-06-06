@@ -308,6 +308,16 @@
   background: $color-bg-section;
 }
 
+.section--surface {
+  background: $color-surface;
+  border-block: 1px solid $color-border;
+}
+
+.community-cta {
+  margin-top: $space-lg;
+  text-align: center;
+}
+
 .section__header {
   max-width: 38rem;
   margin-bottom: $space-lg;
@@ -1286,6 +1296,52 @@
   font-family: $font-heading;
   font-size: 1.25rem;
   font-weight: 600;
+  color: $color-primary-dark;
+}
+
+// Open editorial statements (missie / visie)
+.statement-pair {
+  display: grid;
+  gap: $space-lg;
+  margin: $space-sm 0 $space-lg;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-xl;
+  }
+}
+
+.statement {
+  margin: 0;
+  padding-left: $space-md;
+  border-left: 4px solid $color-accent;
+
+  &--warm {
+    border-left-color: $color-accent-warm;
+  }
+}
+
+.statement__label {
+  margin: 0 0 $space-xs;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-accent;
+
+  .statement--warm & {
+    color: color.adjust($color-accent-warm, $lightness: -18%);
+  }
+}
+
+.statement__text {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: $font-heading;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.55;
   color: $color-primary-dark;
 }
 
