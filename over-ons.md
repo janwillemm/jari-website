@@ -7,6 +7,36 @@ intro: >-
   interactieve interventies voor de jeugd-GGZ die in de praktijk landen.
 ---
 
+In januari 2020 ontmoeten wij elkaar. Jan-Willem een spelletjesfanaat en bedrijfseigenaar
+van een serious game bedrijf en Rianne een orthopedagoog in hart en nieren (die eigenlijk
+niet zo van spelletjes houdt). We hadden beiden van onze passie ons werk gemaakt en werk
+is een belangrijk deel van onze identiteit. In eerste instantie dachten we dat onze banen
+niet verder van elkaar af konden liggen, maar het duurde niet lang voordat we de gemene
+deler vonden. Wij gaan allebei AAN op ontwikkeling van mensen en organisaties en
+ervaringsgericht leren. Jan-Willem bereikt dit middels spel en ervaringen, Rianne door
+middel van therapie en het stimuleren van reflectie. We zijn er beiden van overtuigd dat
+spel, taal, interactie en ervaringen de ingang zijn tot inzicht en verandering.
+
+Het duurde dan ook niet lang voordat de ideeën voor innovaties, spellen voor in de GGZ,
+boeken die we willen schrijven en bedrijven die we willen opzetten over tafel vlogen.
+Aan creativiteit en ideeën geen gebrek bij ons thuis.
+
+De afgelopen periode hebben we met behulp van AI een aantal van onze ideeën voor
+interventies in de GGZ werkelijkheid kunnen maken. Tijd dus om deze met de wereld te
+delen! Tijd voor onze innovatiestudio voor de jeugd-GGZ waar behandelinhoud, pedagogiek,
+technologie, serious gaming en AI samenkomen.
+
+<div class="team-together">
+  <h2>Samen sterker</h2>
+  <p>
+    Wij vullen elkaar op persoonlijk en professioneel gebied enorm aan. We bruisen beiden
+    van de ideeën, Rianne is degene die ervoor zorgt dat we overgaan tot actie, Jan-Willem
+    is degene die de ideeën kan omtoveren tot realiteit. Vervolgens perfectioneert Rianne
+    de details en Jan-Willem heeft het lef om ons te motiveren om onze resultaten ook met
+    de wereld te delen.
+  </p>
+</div>
+
 <div class="team-grid">
 
   <article class="team-card team-card--profile">
@@ -28,7 +58,7 @@ intro: >-
       </p>
       <p class="team-card__bio" style="margin-top: 0.75rem;">
         Hij onderneemt niet voor de winst, maar voor het verschil dat je kunt maken.
-        Snelle denker, prototype-bouwer, optimist — en altijd met een open blik naar
+        Snelle denker, prototype-bouwer, optimist. Altijd met een open blik naar
         de wereld én naar de mensen om hem heen.
       </p>
     </div>
@@ -46,73 +76,116 @@ intro: >-
       <p class="team-card__role">Creatieve orthopedagoog-generalist</p>
       <p class="team-card__tagline">“Kijken naar het hele plaatje — met warmte en nieuwsgierigheid.”</p>
       <p class="team-card__bio">
-        Rianne is orthopedagoog-generalist en regiebehandelaar, verbonden aan
-        PsychoWijs. Zij werkt contextueel en systemisch: niet alleen naar het kind,
-        maar naar het gezin, de school en de omgeving eromheen. Precies dat brede
-        perspectief dat in de GGZ zo hard nodig is.
+        Rianne is een gepassioneerde orthopedagoog-generalist en een positief kritische denker.
+        Ze heeft een duidelijke visie voor de GGZ en werkt mee aan een wereld waarin
+        classificaties bij kinderen minder leidend zijn. Ze zoekt graag samen met gezinnen
+        naar wie ze zijn, wat ze hebben meegemaakt, waar ze vandaan komen en waar ze naartoe
+        willen. Op die manier probeert ze de klachten van een kind en gezin in hun context
+        te begrijpen.
       </p>
       <p class="team-card__bio" style="margin-top: 0.75rem;">
-        Ze schrijft voor De Pedagoog (NVO), is ambassadeur voor de opleiding
-        orthopedagoog-generalist, en heeft oneindig veel ideeën over hoe zorg
-        praktischer, menselijker en toegankelijker kan. En ja — ze stopt niet bij
-        ideeën alleen. Ze wil dat het écht gebruikt wordt.
+        Rianne is dol op zaadjes planten. Ze probeert kritisch denken en andere perspectieven
+        te stimuleren. Dit doet ze binnen therapie, in het contact met collega’s, als docent
+        aan de universiteit en als redactielid van de Pedagoog (NVO). Rianne heeft oneindig
+        veel ideeën over hoe zorg praktischer, menselijker en toegankelijker kan. En het
+        liefst heeft ze dat deze ideeën realiteit worden en echt worden gebruikt.
       </p>
     </div>
   </article>
 
 </div>
 
-## Onze unieke positie
+## Missie
 
-<div class="unique-position">
-  {% include unique-position.html %}
-</div>
-
-<div class="team-together">
-  <h2>Samen sterker</h2>
+<div class="highlight-box">
   <p>
-    Wij vinden elkaar in een gedeelde passie: interventies maken die behandelaren
-    én kinderen écht gebruiken. Jan-Willem brengt serious gaming, AI en software;
-    Rianne brengt behandelinhoud en de werkvloer. Rianne komt voortdurend met
-    ideeën vanuit de praktijk — “zou het niet mooi zijn als…”, “wat als we…” —
-    en Jan-Willem kan die ideeën opeens heel makkelijk verwezenlijken.
-  </p>
-  <p>
-    Rianne vindt dat fantastisch om te zien. En wij vinden het allebei fantastisch
-    als iemand zegt: <em>“Dit gebruik ik echt in mijn werk.”</em> Daar doen we het
-    voor. We willen dat meer mensen deze tools gaan gebruiken — niet omdat het
-    moet, maar omdat het helpt. Omdat het rust geeft, overzicht brengt, en ruimte
-    laat voor wat in de jeugd-GGZ het allerbelangrijkste is: de relatie met het
-    kind en de mensen om het heen.
+    Wij vertalen ideeën uit de jeugd-GGZ naar spellen, interactieve interventies en
+    digitale ervaringen die direct bruikbaar zijn in de praktijk. Door pedagogiek,
+    psychologie, technologie en creativiteit te combineren helpen we professionals om
+    kinderen, jongeren en gezinnen op nieuwe manieren te ondersteunen.
   </p>
 </div>
 
-## Waarom Interact-GGZ?
+## Visie
 
-We zagen dat behandelaren in de jeugd-GGZ te vaak worstelen met ingewikkelde systemen
-die meer tijd kosten dan ze opleveren. Daar willen wij iets aan veranderen — met
-interactieve interventies die pedagogiek en technologie verbinden, vanuit liefde
-voor het vak.
-
-Interact-GGZ bouwt hulpmiddelen die:
-
-- **Rust geven** — overzichtelijke interfaces zonder visuele ruis
-- **Tijd besparen** — direct toepasbaar in de dagelijkse praktijk
-- **Mensgericht zijn** — ontworpen vanuit de relatie tussen zorgverlener en cliënt
-
-<div class="highlight-box" style="margin-top: 2rem;">
+<div class="highlight-box">
   <p>
-    “Goede zorg vraagt om aandacht. Onze tools moeten ruimte geven, niet innemen.”
+    Wij geloven dat zorg niet alleen effectief, maar ook begrijpelijk, ervaringsgericht
+    en inspirerend mag zijn. Daarom werken we aan een jeugd-GGZ waarin goede ideeën,
+    wetenschappelijke kennis en praktijkervaring samenkomen in interventies die mensen
+    raken en in beweging brengen.
   </p>
 </div>
 
-## Contact
+## Onze waarden
 
-Heb je vragen, een idee, of wil je samenwerken? We horen het graag.
+<ul class="values-list">
+  <li class="value-item">
+    <h3>Ontwikkeling</h3>
+    <p>
+      Wij geloven dat mensen, ideeën en organisaties zich kunnen blijven ontwikkelen.
+      En wij vinden het geweldig om daaraan mee te werken. Wij denken niet snel in kaders
+      als problemen oplossen, symptomen verminderen of resultaten verbeteren. Wij denken
+      in termen als ontdekken, groeien, leren, perspectieven veranderen en mogelijkheden
+      vergroten. Wij hopen ook onszelf altijd te blijven ontwikkelen en nieuwe dingen te
+      leren. Dat maakt het leven interessant. We staan zeer open voor feedback. Zie je
+      iets aan onze tools wat kan verbeteren, laat het ons weten! Op die manier kunnen we
+      de tools steeds beter maken en nog bruikbaarder voor meer professionals.
+    </p>
+  </li>
+
+  <li class="value-item">
+    <h3>Verbinding</h3>
+    <p>
+      Wij geloven dat de beste ideeën in verbinding ontstaan. Daarom zoeken wij actief
+      de verbinding tussen mensen, disciplines, kennis en ervaringen. We proberen de
+      technische wereld en de zorg met elkaar te verbinden. We verbinden theorie en praktijk,
+      wetenschap en creativiteit. En de verbinding tussen ons tweeën is de motor achter
+      onze missie.
+    </p>
+  </li>
+
+  <li class="value-item">
+    <h3>Creativiteit</h3>
+    <p>
+      Wij zoeken altijd naar nieuwe manieren om leren, begrijpen en veranderen mogelijk
+      te maken. De reden dat ons leven nooit saai wordt. We zijn beiden allergisch voor
+      standaardoplossingen en uitspraken zoals ‘zo doen we het altijd’. We denken graag
+      buiten de gebaande paden en stellen onszelf vaak de vraag ‘kan dit ook anders?’.
+      Door nieuwsgierig te blijven en vragen te stellen ontstaan oplossingen die beter
+      aansluiten bij de leefwereld van kinderen, jongeren, gezinnen en professionals.
+    </p>
+  </li>
+
+  <li class="value-item">
+    <h3>Verantwoordelijkheid</h3>
+    <p>
+      We voelen ons verantwoordelijk voor de ervaringen die we neerzetten en de wereld
+      om ons heen. We vinden het belangrijk om daar over na te denken en aandacht aan
+      te besteden.
+    </p>
+    <p style="margin-top: 0.75rem;">
+      Onze tools ontstaan op het snijvlak van wetenschappelijke kennis, praktijkervaring
+      en creativiteit. Tegelijkertijd zijn onze tools zelf niet wetenschappelijk onderzocht
+      en doen wij geen uitspraken over specifieke effecten of behandelresultaten. We zien
+      ze als hulpmiddelen die professionals kunnen ondersteunen in hun werk, niet als
+      vervanging van professionele expertise of klinisch oordeel. Hoe en wanneer een tool
+      wordt ingezet, blijft altijd een professionele afweging van de gebruiker.
+    </p>
+    <p style="margin-top: 0.75rem;">
+      Daarnaast zijn wij enthousiast over de mogelijkheden van technologie en AI.
+      Tegelijkertijd realiseren we ons dat deze technologieën energie en grondstoffen
+      verbruiken en daarmee impact hebben op het milieu. Daarom proberen we bewust om
+      te gaan met de technologie die we gebruiken. We bouwen zo efficiënt mogelijk,
+      vermijden onnodige digitale verspilling en zoeken voortdurend naar manieren om
+      onze ecologische voetafdruk te verkleinen. We doneren elke maand een percentage
+      van onze omzet aan een klimaatvriendelijk doel om op deze wijze het energiegebruik
+      enigszins te compenseren.
+    </p>
+  </li>
+</ul>
 
 {% include contact-form.html
    heading="Neem contact op"
-   intro="Stuur ons een bericht — we reageren zo snel mogelijk."
-   subject="Contact via Over ons"
-   context="Over ons"
-%}
+   intro="Heb je een vraag over Interact-GGZ of onze tools? Stuur ons een bericht."
+   context="Over ons" %}

@@ -1,0 +1,184 @@
+{% comment %}
+  Contactblok voor Samen ontwikkelen — mailto als primaire actie.
+  Webformulier via jari-portal API wanneer site.contact_form.endpoint is ingevuld.
+  Gebruik: {% include idea-form.html %}
+{% endcomment %}
+
+{% assign form_endpoint = site.contact_form.endpoint %}
+{% assign form_context = "Samen ontwikkelen" %}
+{% assign mail_subject = "Idee via Samen ontwikkelen" %}
+
+{% capture mail_body %}Naam:
+
+
+E-mail:
+
+
+Telefoon:
+
+
+--- Je idee ---
+Vertel ons over je idee:
+
+
+Wat zou je willen maken?
+
+
+--- Context ---
+Voor wie is het bedoeld?
+
+
+Welk probleem lost het op?
+
+
+Hoe ver ben je al?
+
+{% endcapture %}
+
+<div class="contact-form-block" id="contact-idee">
+  <h2 class="contact-form__heading">Vertel ons over je idee</h2>
+  <p class="contact-form__intro">
+    Mail ons je idee — hoe concreter, hoe beter we kunnen meedenken. We reageren zo snel mogelijk.
+  </p>
+
+  <div class="contact-form__actions">
+    <a class="btn btn--primary contact-form__submit"
+       href="mailto:{{ site.contact.email }}?subject={{ mail_subject | uri_escape }}&body={{ mail_body | strip | uri_escape }}">
+      Open in e-mail
+    </a>
+    <a class="contact-form__email-link" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+  </div>
+
+  <div class="mail-template" aria-label="Mailsjabloon">
+    <p class="mail-template__hint">
+      Vul onderstaande punten in je e-mail in, of kopieer het sjabloon als je liever zelf mailt.
+    </p>
+
+    <div class="contact-form__section">
+      <h3 class="contact-form__section-title">Contact</h3>
+      <ul class="mail-template__list">
+        <li><strong>Naam</strong></li>
+        <li><strong>E-mail</strong></li>
+        <li><strong>Telefoon</strong> <span class="mail-template__optional">(optioneel)</span></li>
+      </ul>
+    </div>
+
+    <div class="contact-form__section">
+      <h3 class="contact-form__section-title">Je idee</h3>
+      <ul class="mail-template__list">
+        <li><strong>Vertel ons over je idee</strong></li>
+        <li><strong>Wat zou je willen maken?</strong></li>
+      </ul>
+    </div>
+
+    <div class="contact-form__section">
+      <h3 class="contact-form__section-title">Context</h3>
+      <ul class="mail-template__list">
+        <li><strong>Voor wie is het bedoeld?</strong></li>
+        <li><strong>Welk probleem lost het op?</strong></li>
+        <li><strong>Hoe ver ben je al?</strong></li>
+      </ul>
+    </div>
+
+    <textarea class="mail-template__copy" readonly rows="16" aria-label="Kopieerbaar mailsjabloon">{{ mail_body | strip }}</textarea>
+  </div>
+
+  {% if form_endpoint != "" and form_endpoint != nil %}
+    <div class="contact-form__divider" role="separator" aria-label="Of gebruik het formulier"></div>
+    <p class="contact-form__intro">Je kunt je idee ook via het formulier versturen:</p>
+
+    <form class="contact-form"
+          action="{{ form_endpoint }}"
+          method="POST"
+          accept-charset="UTF-8">
+      <input type="hidden" name="form_type" value="idea">
+      <input type="hidden" name="pagina" value="{{ form_context | escape }}">
+
+      <fieldset class="contact-form__section">
+        <legend class="contact-form__section-title">Contact</legend>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="idea-name">Naam</label>
+          <input class="contact-form__input"
+                 type="text"
+                 id="idea-name"
+                 name="name"
+                 autocomplete="name"
+                 required>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="idea-email">E-mail</label>
+          <input class="contact-form__input"
+                 type="email"
+                 id="idea-email"
+                 name="email"
+                 autocomplete="email"
+                 required>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="idea-phone">Telefoonnummer</label>
+          <input class="contact-form__input"
+                 type="tel"
+                 id="idea-phone"
+                 name="phone"
+                 autocomplete="tel">
+        </div>
+      </fieldset>
+
+      <fieldset class="contact-form__section">
+        <legend class="contact-form__section-title">Je idee</legend>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="idea-description">Vertel ons over je idee</label>
+          <textarea class="contact-form__textarea"
+                    id="idea-description"
+                    name="idee"
+                    rows="4"
+                    required></textarea>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="idea-what">Wat zou je willen maken?</label>
+          <textarea class="contact-form__textarea"
+                    id="idea-what"
+                    name="wat_maken"
+                    rows="3"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="contact-form__section">
+        <legend class="contact-form__section-title">Context</legend>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="idea-audience">Voor wie is het bedoeld?</label>
+          <input class="contact-form__input"
+                 type="text"
+                 id="idea-audience"
+                 name="voor_wie">
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="idea-problem">Welk probleem lost het op?</label>
+          <textarea class="contact-form__textarea"
+                    id="idea-problem"
+                    name="probleem"
+                    rows="3"></textarea>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="idea-progress">Hoe ver ben je al?</label>
+          <textarea class="contact-form__textarea"
+                    id="idea-progress"
+                    name="voortgang"
+                    rows="3"></textarea>
+        </div>
+      </fieldset>
+
+      <input type="text" name="_gotcha" class="contact-form__gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <button class="btn btn--primary contact-form__submit" type="submit">Versturen</button>
+    </form>
+  {% endif %}
+</div>

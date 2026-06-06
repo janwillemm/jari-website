@@ -1,5 +1,5 @@
 @use "sass:color";
-@import "variables";
+@use "variables" as *;
 
 // Buttons
 .btn {
@@ -25,22 +25,24 @@
 .btn--primary {
   background: $color-primary;
   color: white;
+  border: $border-weight solid $color-primary;
+  box-shadow: $shadow-offset $color-accent-warm;
 
   &:hover {
     color: white;
     background: $color-primary-dark;
-    box-shadow: $shadow-soft;
+    box-shadow: 6px 6px 0 $color-accent-warm;
   }
 }
 
 .btn--secondary {
   background: $color-surface;
-  color: $color-primary-dark;
-  border-color: $color-primary-light;
+  color: $color-primary;
+  border: $border-weight solid $color-primary;
 
   &:hover {
-    background: $color-primary-light;
-    color: $color-primary-dark;
+    background: color.mix($color-accent, #ffffff, 15%);
+    color: $color-primary;
   }
 }
 
@@ -54,11 +56,8 @@
 // Hero
 .hero {
   padding-block: $space-xl $space-2xl;
-  background:
-    radial-gradient(ellipse 80% 60% at 70% 20%, rgba($color-primary-light, 0.5), transparent),
-    radial-gradient(ellipse 50% 40% at 85% 75%, rgba($color-accent-soft, 0.55), transparent),
-    radial-gradient(ellipse 35% 30% at 5% 90%, rgba($color-accent-warm-soft, 0.35), transparent),
-    linear-gradient(180deg, $color-bg-hero 0%, $color-bg 100%);
+  background: $color-surface;
+  border-bottom: 4px solid $color-primary;
   overflow: hidden;
 }
 
@@ -75,31 +74,37 @@
 .hero__eyebrow {
   display: inline-block;
   padding: 0.35rem 0.875rem;
-  background: $color-accent-warm-soft;
+  background: $color-accent-warm;
   border-radius: $radius-pill;
   font-size: 0.8125rem;
-  font-weight: 600;
-  color: $color-accent-warm;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: $color-primary-dark;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   margin-bottom: $space-sm;
-  box-shadow: $shadow-soft;
+  box-shadow: $shadow-offset $color-primary;
 }
 
 .hero__title {
   margin-bottom: $space-sm;
+  color: $color-primary;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .hero__lead {
-  font-size: 1.2rem;
-  color: $color-text-muted;
-  max-width: 34rem;
+  font-size: 1.125rem;
+  color: $color-text;
+  font-weight: 500;
+  max-width: 36rem;
   line-height: 1.65;
 }
 
 .hero__visual {
   position: relative;
-  border-radius: $radius-lg;
+  border-radius: $radius-sm;
   background: $color-surface;
+  border: $border-bold solid $color-primary;
   box-shadow: $shadow-card;
   padding: $space-md;
   display: flex;
@@ -124,8 +129,8 @@
 
 .tool-slider__viewport {
   overflow: hidden;
-  border-radius: $radius-md;
-  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  border: $border-weight solid $color-primary;
   background: $color-bg-alt;
 }
 
@@ -170,13 +175,15 @@
 }
 
 .tool-slider__badge--live {
-  background: $color-primary-light;
-  color: $color-primary-dark;
+  background: $color-accent;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .tool-slider__badge--beta {
-  background: $color-accent-soft;
-  color: #9a6b58;
+  background: $color-accent-warm;
+  color: $color-primary-dark;
+  font-weight: 700;
 }
 
 .tool-slider__title {
@@ -255,8 +262,8 @@
 
   &.is-active,
   &[aria-selected="true"] {
-    background: $color-primary;
-    transform: scale(1.15);
+    background: $color-accent-warm;
+    transform: scale(1.3);
   }
 
   &:focus-visible {
@@ -294,10 +301,11 @@
 // Sections
 .section {
   padding-block: $space-xl;
+  background: $color-bg-section;
 }
 
 .section--alt {
-  background: $color-bg-alt;
+  background: $color-bg-section;
 }
 
 .section__header {
@@ -307,15 +315,19 @@
 
 .section__eyebrow {
   font-size: 0.8125rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: $color-accent;
   margin-bottom: $space-xs;
 }
 
+.section__header h2 {
+  color: $color-primary;
+}
+
 .section__lead {
-  color: $color-text-muted;
+  color: $color-text;
   font-size: 1.0625rem;
 }
 
@@ -333,16 +345,36 @@
   }
 }
 
+.card-grid--two {
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .card {
   background: $color-surface;
-  border: 1px solid $color-border;
-  border-radius: $radius-md;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-sm;
+  border-top-width: 5px;
   padding: $space-lg;
+  box-shadow: $shadow-offset rgba($color-primary, 0.08);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 
+  &:nth-child(1) {
+    border-top-color: $color-accent-warm;
+  }
+
+  &:nth-child(2) {
+    border-top-color: $color-accent;
+  }
+
+  &:nth-child(3) {
+    border-top-color: $color-accent-blue-gray;
+  }
+
   &:hover {
-    box-shadow: $shadow-soft;
-    transform: translateY(-2px);
+    box-shadow: 6px 6px 0 rgba($color-primary, 0.12);
+    transform: translateY(-4px);
   }
 }
 
@@ -350,7 +382,8 @@
   width: 2.75rem;
   height: 2.75rem;
   border-radius: $radius-sm;
-  background: $color-primary-light;
+  background: $color-primary;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -369,9 +402,10 @@
 }
 
 .card__link {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9375rem;
   text-decoration: none;
+  color: $color-primary;
 
   &::after {
     content: " →";
@@ -390,12 +424,13 @@
 
 .team-card {
   background: $color-surface;
-  border: 1px solid $color-border;
-  border-radius: $radius-md;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-sm;
   padding: $space-lg;
   display: flex;
   gap: $space-md;
   align-items: flex-start;
+  box-shadow: $shadow-offset rgba($color-primary, 0.06);
 }
 
 .team-card__avatar {
@@ -963,7 +998,6 @@
     color: $color-text-muted;
     font-size: 1.0625rem;
     line-height: 1.6;
-    max-width: 40rem;
   }
 }
 
@@ -984,14 +1018,117 @@
   margin: $space-md 0 $space-xl;
 }
 
-// Contactformulier (Formspree + Jekyll include)
+.pricing-drivers {
+  margin: 0 0 $space-md;
+  padding-left: 1.25rem;
+  color: $color-text-muted;
+
+  li + li {
+    margin-top: 0.35rem;
+  }
+}
+
+// Processtappen (Samen ontwikkelen)
+.process-steps__indicator {
+  margin: 0 0 $space-sm;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-accent;
+}
+
+.process-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 $space-lg;
+  display: grid;
+  gap: $space-md;
+  position: relative;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: $space-md;
+  align-items: start;
+  padding: $space-md $space-md $space-md $space-lg;
+  background: $color-surface;
+  border: $border-weight solid $color-primary;
+  border-top-width: 5px;
+  border-radius: $radius-sm;
+  box-shadow: $shadow-offset rgba($color-primary, 0.08);
+  position: relative;
+
+  &:nth-child(1) {
+    border-top-color: $color-accent-warm;
+  }
+
+  &:nth-child(2) {
+    border-top-color: $color-accent;
+  }
+
+  &:nth-child(3) {
+    border-top-color: $color-accent-blue-gray;
+  }
+
+  &:nth-child(4) {
+    border-top-color: $color-accent-warm;
+  }
+
+  &:nth-child(5) {
+    border-top-color: $color-accent;
+  }
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: calc(1.125rem + #{$space-lg});
+    top: calc(100% + 2px);
+    width: 2px;
+    height: calc(#{$space-md} - 4px);
+    background: rgba($color-primary, 0.2);
+  }
+}
+
+.process-step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: $color-primary-light;
+  color: $color-primary-dark;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  flex-shrink: 0;
+  border: $border-weight solid rgba($color-primary, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.process-step__title {
+  font-size: 1.0625rem;
+  margin: 0 0 0.25rem;
+  color: $color-primary-dark;
+}
+
+.process-step p {
+  margin: 0;
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+// Contactformulier (jari-portal API + Jekyll include)
 .contact-form-block {
   margin-block: $space-lg;
   padding: $space-lg;
   background: $color-surface;
-  border: 1px solid $color-border;
-  border-radius: $radius-lg;
-  box-shadow: $shadow-soft;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-sm;
+  box-shadow: $shadow-offset rgba($color-primary, 0.08);
 }
 
 .contact-form__heading {
@@ -1005,13 +1142,11 @@
   font-size: 0.9375rem;
   line-height: 1.6;
   margin: 0 0 $space-md;
-  max-width: 40rem;
 }
 
 .contact-form {
   display: grid;
   gap: $space-sm;
-  max-width: 32rem;
 }
 
 .contact-form__field {
@@ -1029,9 +1164,9 @@
 .contact-form__textarea {
   width: 100%;
   padding: 0.65rem 0.85rem;
-  border: 1px solid $color-border;
+  border: $border-weight solid $color-primary;
   border-radius: $radius-sm;
-  background: $color-bg;
+  background: $color-surface;
   font-family: $font-body;
   font-size: 1rem;
   color: $color-text;
@@ -1039,8 +1174,8 @@
 
   &:focus {
     outline: none;
-    border-color: rgba($color-primary, 0.5);
-    box-shadow: 0 0 0 3px rgba($color-primary, 0.12);
+    border-color: $color-accent;
+    box-shadow: 0 0 0 3px rgba($color-accent, 0.25);
   }
 }
 
@@ -1062,33 +1197,126 @@
   margin-top: 0.25rem;
 }
 
+.contact-form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $space-sm;
+  margin-bottom: $space-md;
+}
+
+.contact-form__email-link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.contact-form__divider {
+  margin: $space-lg 0 $space-md;
+  border: 0;
+  border-top: 1px solid $color-border;
+}
+
+.contact-form__section {
+  margin: 0 0 $space-md;
+  padding: $space-md;
+  background: $color-bg-alt;
+  border: 1px solid $color-border;
+  border-radius: $radius-sm;
+  min-width: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+fieldset.contact-form__section {
+  border: 1px solid $color-border;
+}
+
+.contact-form__section-title {
+  font-family: $font-heading;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $color-primary-dark;
+  margin: 0 0 $space-sm;
+  padding: 0;
+}
+
+fieldset.contact-form__section .contact-form__section-title {
+  float: left;
+  width: 100%;
+}
+
+.mail-template__hint {
+  margin: 0 0 $space-md;
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.mail-template__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+
+  li + li {
+    margin-top: 0.25rem;
+  }
+}
+
+.mail-template__optional {
+  font-weight: 400;
+  color: $color-text-light;
+  font-size: 0.875rem;
+}
+
+.mail-template__copy {
+  width: 100%;
+  margin-top: $space-md;
+  padding: $space-sm;
+  border: $border-weight solid $color-border;
+  border-radius: $radius-sm;
+  background: $color-surface;
+  font-family: $font-body;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: $color-text-muted;
+  resize: vertical;
+}
+
 // CTA band
 .cta-band {
   padding-block: $space-xl;
-  background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
-  color: white;
+  background: $color-accent-warm;
+  border-top: 4px solid $color-primary;
+  color: $color-primary-dark;
   text-align: center;
 }
 
 .cta-band h2 {
-  color: white;
+  color: $color-primary-dark;
   margin-bottom: $space-sm;
 }
 
 .cta-band p {
-  color: rgba(white, 0.88);
+  color: $color-primary-dark;
   max-width: 32rem;
   margin-inline: auto;
   margin-bottom: $space-md;
 }
 
 .cta-band .btn--secondary {
-  background: white;
-  border-color: white;
-  color: $color-primary-dark;
+  background: $color-surface;
+  border: $border-bold solid $color-primary;
+  color: $color-primary;
+  box-shadow: $shadow-offset $color-primary;
+  font-weight: 700;
 
   &:hover {
-    background: $color-primary-light;
+    background: $color-primary;
+    color: #ffffff;
   }
 }
 
@@ -1126,11 +1354,23 @@
   color: $color-primary-dark;
 }
 
+.highlight-boxes {
+  display: grid;
+  gap: $space-md;
+  margin: $space-md 0 $space-lg;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .highlight-box {
-  background: $color-primary-light;
-  border-radius: $radius-md;
+  background: $color-accent-soft;
+  border-radius: $radius-sm;
   padding: $space-lg;
-  border-left: 4px solid $color-primary;
+  border: $border-weight solid $color-primary;
+  border-left-width: 5px;
+  border-left-color: $color-accent;
 
   p {
     margin: 0;

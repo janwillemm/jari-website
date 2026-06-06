@@ -1,8 +1,8 @@
 title: Interact-GGZ
 description: >-
-  Wij zijn een innovatiestudio voor de jeugd-ggz. Innovatie en creatieviteit in de jeugd-ggz.
-tagline: Innovatie en creatieviteit in de jeugd-ggz.
-mission: Wij zijn een innovatiestudio voor de jeugd-ggz
+  Innovatiestudio voor de jeugd-ggz. Wij maken de jeugd-GGZ creatiever, speelser en innovatiever.
+tagline: Innovatie en creativiteit in de (jeugd-)ggz
+mission: Innovatiestudio voor de jeugd-ggz
 url: "https://interact-ggz.nl"
 baseurl: ""
 lang: nl
@@ -27,27 +27,21 @@ exclude:
 header_pages:
   - title: Home
     url: /
+  - title: Interactieve interventies
+    url: /interactieve-interventies/
+  - title: Samen ontwikkelen
+    url: /samen-ontwikkelen/
   - title: Over ons
     url: /over-ons/
-  - title: Aan de slag
-    url: /aan-de-slag/
-  - title: Prijs
-    url: /prijs/
-  - title: Visie
-    url: /visie/
 
 contact:
   email: info@interact-ggz.nl
   tools_email: ggztools@manenschijn.com
 
-# Formspree — standaard voor contactformulieren op statische Jekyll-sites.
-# 1. Maak gratis account op https://formspree.io
-# 2. Klik "+ New form" en stel ggztools@manenschijn.com in als ontvanger
-# 3. Kopieer het form ID (8 tekens) uit de endpoint-URL
-# Zie: https://formspree.io/guides/jekyll/
-formspree:
-  production_id: ""
-  development_id: ""
+# Contactformulieren — POST naar jari-portal API.
+# Lokaal testen: zet endpoint op http://localhost:3100/api/contact
+contact_form:
+  endpoint: "https://portal.interact-ggz.nl/api/contact"
 
 # Umami analytics (self-hosted). Leave website_id empty to disable tracking locally.
 umami:

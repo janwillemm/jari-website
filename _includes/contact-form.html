@@ -1,15 +1,9 @@
 {% comment %}
-  Standaard Jekyll-contactformulier via Formspree.
-  Gebruik: {% include contact-form.html heading="..." subject="..." context="..." %}
-  Zie https://formspree.io/guides/jekyll/
+  Standaard Jekyll-contactformulier via jari-portal API.
+  Gebruik: {% include contact-form.html heading="..." context="..." %}
 {% endcomment %}
 
-{% assign formspree_id = site.formspree.production_id %}
-{% if jekyll.environment != "production" and site.formspree.development_id != "" %}
-  {% assign formspree_id = site.formspree.development_id %}
-{% endif %}
-
-{% assign form_subject = include.subject | default: "Bericht via interact-ggz.nl" %}
+{% assign form_endpoint = site.contact_form.endpoint %}
 {% assign form_context = include.context | default: page.heading | default: "Website" %}
 
 <div class="contact-form-block">
@@ -21,18 +15,17 @@
     <p class="contact-form__intro">{{ include.intro }}</p>
   {% endif %}
 
-  {% if formspree_id == "" or formspree_id == nil %}
+  {% if form_endpoint == "" or form_endpoint == nil %}
     <p class="contact-form__fallback">
       Het formulier is nog niet gekoppeld. Mail ons op
       <a href="mailto:{{ site.contact.tools_email }}">{{ site.contact.tools_email }}</a>.
     </p>
   {% else %}
     <form class="contact-form"
-          action="https://formspree.io/f/{{ formspree_id }}"
+          action="{{ form_endpoint }}"
           method="POST"
           accept-charset="UTF-8">
-      <input type="hidden" name="_subject" value="{{ form_subject | escape }}">
-      <input type="hidden" name="_next" value="{{ '/bedankt/' | absolute_url }}">
+      <input type="hidden" name="form_type" value="contact">
       <input type="hidden" name="pagina" value="{{ form_context | escape }}">
 
       <div class="contact-form__field">
