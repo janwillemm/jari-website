@@ -657,76 +657,64 @@
   margin: 0;
 }
 
-// Values / visie
-.values-list {
-  display: flex;
-  flex-direction: column;
-  gap: $space-md;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.value-item {
+// Values tabs (over ons)
+.values-tabs {
   background: $color-surface;
   border: $border-weight solid $color-primary;
   border-radius: $radius-sm;
   padding: $space-lg;
   box-shadow: $shadow-offset rgba($color-primary, 0.06);
+}
 
-  @media (min-width: $bp-md) {
-    max-width: 46rem;
+.values-tabs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: $space-md;
+  padding-bottom: $space-md;
+  border-bottom: 1px solid $color-border;
+}
+
+.values-tabs__tab {
+  padding: 0.5rem 1rem;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-pill;
+  background: $color-surface;
+  font-family: $font-body;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: $color-primary;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+
+  &.is-active,
+  &[aria-selected="true"] {
+    background: $color-primary;
+    color: #ffffff;
   }
 
-  &:nth-child(even) {
-    @media (min-width: $bp-md) {
-      margin-left: auto;
-      margin-right: 0;
-    }
+  &:hover:not(.is-active):not([aria-selected="true"]) {
+    background: $color-primary-light;
   }
 
-  &:nth-child(odd) {
-    @media (min-width: $bp-md) {
-      margin-right: auto;
-      margin-left: 0;
-    }
-  }
-
-  &:last-child {
-    @media (min-width: $bp-md) {
-      max-width: none;
-      margin-left: 0;
-      margin-right: 0;
-    }
+  &:focus-visible {
+    outline: 2px solid $color-accent;
+    outline-offset: 2px;
   }
 }
 
-.value-item__number {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background: $color-primary-light;
-  color: $color-primary-dark;
-  font-weight: 700;
-  font-size: 0.875rem;
-  margin-bottom: $space-sm;
-}
-
-.value-item h3 {
-  color: $color-primary-dark;
-}
-
-.value-item p {
+.values-tabs__panel {
   color: $color-text-muted;
   font-size: 0.9375rem;
-  margin: 0;
-}
+  line-height: 1.65;
 
-.value-item p + p {
-  margin-top: 0.75rem;
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 0.75rem;
+  }
 }
 
 // Tool cards (aan de slag)

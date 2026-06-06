@@ -119,71 +119,122 @@ technologie, serious gaming en AI samenkomen.
 
 ## Onze waarden
 
-<ul class="values-list">
-  <li class="value-item">
-    <h3>Ontwikkeling</h3>
-    <p>
-      Wij geloven dat mensen, ideeën en organisaties zich kunnen blijven ontwikkelen.
-      En wij vinden het geweldig om daaraan mee te werken. Wij denken niet snel in kaders
-      als problemen oplossen, symptomen verminderen of resultaten verbeteren. Wij denken
-      in termen als ontdekken, groeien, leren, perspectieven veranderen en mogelijkheden
-      vergroten. Wij hopen ook onszelf altijd te blijven ontwikkelen en nieuwe dingen te
-      leren. Dat maakt het leven interessant. We staan zeer open voor feedback. Zie je
-      iets aan onze tools wat kan verbeteren, laat het ons weten! Op die manier kunnen we
-      de tools steeds beter maken en nog bruikbaarder voor meer professionals.
-    </p>
-  </li>
+<div class="values-tabs" data-values-tabs>
+  <div class="values-tabs__list" role="tablist" aria-label="Onze waarden">
+    <button type="button"
+            class="values-tabs__tab is-active"
+            role="tab"
+            id="value-tab-ontwikkeling"
+            aria-selected="true"
+            aria-controls="value-panel-ontwikkeling">
+      Ontwikkeling
+    </button>
+    <button type="button"
+            class="values-tabs__tab"
+            role="tab"
+            id="value-tab-verbinding"
+            aria-selected="false"
+            aria-controls="value-panel-verbinding"
+            tabindex="-1">
+      Verbinding
+    </button>
+    <button type="button"
+            class="values-tabs__tab"
+            role="tab"
+            id="value-tab-creativiteit"
+            aria-selected="false"
+            aria-controls="value-panel-creativiteit"
+            tabindex="-1">
+      Creativiteit
+    </button>
+    <button type="button"
+            class="values-tabs__tab"
+            role="tab"
+            id="value-tab-verantwoordelijkheid"
+            aria-selected="false"
+            aria-controls="value-panel-verantwoordelijkheid"
+            tabindex="-1">
+      Verantwoordelijkheid
+    </button>
+  </div>
 
-  <li class="value-item">
-    <h3>Verbinding</h3>
-    <p>
-      Wij geloven dat de beste ideeën in verbinding ontstaan. Daarom zoeken wij actief
-      de verbinding tussen mensen, disciplines, kennis en ervaringen. We proberen de
-      technische wereld en de zorg met elkaar te verbinden. We verbinden theorie en praktijk,
-      wetenschap en creativiteit. En de verbinding tussen ons tweeën is de motor achter
-      onze missie.
-    </p>
-  </li>
+  <div class="values-tabs__panels">
+    <div class="values-tabs__panel is-active"
+         role="tabpanel"
+         id="value-panel-ontwikkeling"
+         aria-labelledby="value-tab-ontwikkeling">
+      <p>
+        Wij geloven dat mensen, ideeën en organisaties zich kunnen blijven ontwikkelen.
+        En wij vinden het geweldig om daaraan mee te werken. Wij denken niet snel in kaders
+        als problemen oplossen, symptomen verminderen of resultaten verbeteren. Wij denken
+        in termen als ontdekken, groeien, leren, perspectieven veranderen en mogelijkheden
+        vergroten. Wij hopen ook onszelf altijd te blijven ontwikkelen en nieuwe dingen te
+        leren. Dat maakt het leven interessant. We staan zeer open voor feedback. Zie je
+        iets aan onze tools wat kan verbeteren, laat het ons weten! Op die manier kunnen we
+        de tools steeds beter maken en nog bruikbaarder voor meer professionals.
+      </p>
+    </div>
 
-  <li class="value-item">
-    <h3>Creativiteit</h3>
-    <p>
-      Wij zoeken altijd naar nieuwe manieren om leren, begrijpen en veranderen mogelijk
-      te maken. De reden dat ons leven nooit saai wordt. We zijn beiden allergisch voor
-      standaardoplossingen en uitspraken zoals ‘zo doen we het altijd’. We denken graag
-      buiten de gebaande paden en stellen onszelf vaak de vraag ‘kan dit ook anders?’.
-      Door nieuwsgierig te blijven en vragen te stellen ontstaan oplossingen die beter
-      aansluiten bij de leefwereld van kinderen, jongeren, gezinnen en professionals.
-    </p>
-  </li>
+    <div class="values-tabs__panel"
+         role="tabpanel"
+         id="value-panel-verbinding"
+         aria-labelledby="value-tab-verbinding"
+         hidden>
+      <p>
+        Wij geloven dat de beste ideeën in verbinding ontstaan. Daarom zoeken wij actief
+        de verbinding tussen mensen, disciplines, kennis en ervaringen. We proberen de
+        technische wereld en de zorg met elkaar te verbinden. We verbinden theorie en praktijk,
+        wetenschap en creativiteit. En de verbinding tussen ons tweeën is de motor achter
+        onze missie.
+      </p>
+    </div>
 
-  <li class="value-item">
-    <h3>Verantwoordelijkheid</h3>
-    <p>
-      We voelen ons verantwoordelijk voor de ervaringen die we neerzetten en de wereld
-      om ons heen. We vinden het belangrijk om daar over na te denken en aandacht aan
-      te besteden.
-    </p>
-    <p>
-      Onze tools ontstaan op het snijvlak van wetenschappelijke kennis, praktijkervaring
-      en creativiteit. Tegelijkertijd zijn onze tools zelf niet wetenschappelijk onderzocht
-      en doen wij geen uitspraken over specifieke effecten of behandelresultaten. We zien
-      ze als hulpmiddelen die professionals kunnen ondersteunen in hun werk, niet als
-      vervanging van professionele expertise of klinisch oordeel. Hoe en wanneer een tool
-      wordt ingezet, blijft altijd een professionele afweging van de gebruiker.
-    </p>
-    <p>
-      Daarnaast zijn wij enthousiast over de mogelijkheden van technologie en AI.
-      Tegelijkertijd realiseren we ons dat deze technologieën energie en grondstoffen
-      verbruiken en daarmee impact hebben op het milieu. Daarom proberen we bewust om
-      te gaan met de technologie die we gebruiken. We bouwen zo efficiënt mogelijk,
-      vermijden onnodige digitale verspilling en zoeken voortdurend naar manieren om
-      onze ecologische voetafdruk te verkleinen. We doneren elke maand een percentage
-      van onze omzet aan een klimaatvriendelijk doel om op deze wijze het energiegebruik
-      enigszins te compenseren.
-    </p>
-  </li>
-</ul>
+    <div class="values-tabs__panel"
+         role="tabpanel"
+         id="value-panel-creativiteit"
+         aria-labelledby="value-tab-creativiteit"
+         hidden>
+      <p>
+        Wij zoeken altijd naar nieuwe manieren om leren, begrijpen en veranderen mogelijk
+        te maken. De reden dat ons leven nooit saai wordt. We zijn beiden allergisch voor
+        standaardoplossingen en uitspraken zoals ‘zo doen we het altijd’. We denken graag
+        buiten de gebaande paden en stellen onszelf vaak de vraag ‘kan dit ook anders?’.
+        Door nieuwsgierig te blijven en vragen te stellen ontstaan oplossingen die beter
+        aansluiten bij de leefwereld van kinderen, jongeren, gezinnen en professionals.
+      </p>
+    </div>
+
+    <div class="values-tabs__panel"
+         role="tabpanel"
+         id="value-panel-verantwoordelijkheid"
+         aria-labelledby="value-tab-verantwoordelijkheid"
+         hidden>
+      <p>
+        We voelen ons verantwoordelijk voor de ervaringen die we neerzetten en de wereld
+        om ons heen. We vinden het belangrijk om daar over na te denken en aandacht aan
+        te besteden.
+      </p>
+      <p>
+        Onze tools ontstaan op het snijvlak van wetenschappelijke kennis, praktijkervaring
+        en creativiteit. Tegelijkertijd zijn onze tools zelf niet wetenschappelijk onderzocht
+        en doen wij geen uitspraken over specifieke effecten of behandelresultaten. We zien
+        ze als hulpmiddelen die professionals kunnen ondersteunen in hun werk, niet als
+        vervanging van professionele expertise of klinisch oordeel. Hoe en wanneer een tool
+        wordt ingezet, blijft altijd een professionele afweging van de gebruiker.
+      </p>
+      <p>
+        Daarnaast zijn wij enthousiast over de mogelijkheden van technologie en AI.
+        Tegelijkertijd realiseren we ons dat deze technologieën energie en grondstoffen
+        verbruiken en daarmee impact hebben op het milieu. Daarom proberen we bewust om
+        te gaan met de technologie die we gebruiken. We bouwen zo efficiënt mogelijk,
+        vermijden onnodige digitale verspilling en zoeken voortdurend naar manieren om
+        onze ecologische voetafdruk te verkleinen. We doneren elke maand een percentage
+        van onze omzet aan een klimaatvriendelijk doel om op deze wijze het energiegebruik
+        enigszins te compenseren.
+      </p>
+    </div>
+  </div>
+</div>
 
 {% include contact-form.html
    heading="Neem contact op"
