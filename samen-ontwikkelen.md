@@ -107,7 +107,7 @@ mogelijk is binnen korte tijd.
 </div>
 
 <p>
-  Daarom proberen we onze tarieven toegankelijk te houden, zodat innovatieve ideeën uit de
+  We proberen onze tarieven toegankelijk te houden, zodat innovatieve ideeën uit de
   jeugd-GGZ daadwerkelijk gerealiseerd kunnen worden. We investeren veel plezier, creativiteit,
   tijd en expertise in wat we maken en vinden het belangrijk dat samenwerking met ons voor
   zoveel mogelijk professionals haalbaar blijft.
