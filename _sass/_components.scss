@@ -1197,23 +1197,10 @@
   margin-top: 0.25rem;
 }
 
-.contact-form__actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: $space-sm;
-  margin-bottom: $space-md;
-}
-
-.contact-form__email-link {
-  font-size: 0.9375rem;
-  font-weight: 600;
-}
-
-.contact-form__divider {
-  margin: $space-lg 0 $space-md;
-  border: 0;
-  border-top: 1px solid $color-border;
+.contact-form__optional {
+  font-weight: 400;
+  color: $color-text-light;
+  font-size: 0.875rem;
 }
 
 .contact-form__section {
@@ -1245,45 +1232,6 @@ fieldset.contact-form__section {
 fieldset.contact-form__section .contact-form__section-title {
   float: left;
   width: 100%;
-}
-
-.mail-template__hint {
-  margin: 0 0 $space-md;
-  color: $color-text-muted;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-}
-
-.mail-template__list {
-  margin: 0;
-  padding-left: 1.1rem;
-  color: $color-text-muted;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-
-  li + li {
-    margin-top: 0.25rem;
-  }
-}
-
-.mail-template__optional {
-  font-weight: 400;
-  color: $color-text-light;
-  font-size: 0.875rem;
-}
-
-.mail-template__copy {
-  width: 100%;
-  margin-top: $space-md;
-  padding: $space-sm;
-  border: $border-weight solid $color-border;
-  border-radius: $radius-sm;
-  background: $color-surface;
-  font-family: $font-body;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  color: $color-text-muted;
-  resize: vertical;
 }
 
 // CTA band

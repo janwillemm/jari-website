@@ -39,9 +39,9 @@ contact:
   tools_email: ggztools@manenschijn.com
 
 # Contactformulieren — POST naar jari-portal API.
-# Lokaal testen: zet endpoint op http://localhost:3100/api/contact
 contact_form:
   endpoint: "https://portal.interact-ggz.nl/api/contact"
+  development_endpoint: "http://localhost:3100/api/contact"
 
 # Umami analytics (self-hosted). Leave website_id empty to disable tracking locally.
 umami:

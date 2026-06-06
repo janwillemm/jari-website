@@ -4,6 +4,9 @@
 {% endcomment %}
 
 {% assign form_endpoint = site.contact_form.endpoint %}
+{% if jekyll.environment != "production" and site.contact_form.development_endpoint != "" %}
+  {% assign form_endpoint = site.contact_form.development_endpoint %}
+{% endif %}
 {% assign form_context = include.context | default: page.heading | default: "Website" %}
 
 <div class="contact-form-block">

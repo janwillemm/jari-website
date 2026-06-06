@@ -1,92 +1,26 @@
 {% comment %}
-  Contactblok voor Samen ontwikkelen — mailto als primaire actie.
-  Webformulier via jari-portal API wanneer site.contact_form.endpoint is ingevuld.
+  Idee-formulier voor Samen ontwikkelen via jari-portal API.
   Gebruik: {% include idea-form.html %}
 {% endcomment %}
 
 {% assign form_endpoint = site.contact_form.endpoint %}
+{% if jekyll.environment != "production" and site.contact_form.development_endpoint != "" %}
+  {% assign form_endpoint = site.contact_form.development_endpoint %}
+{% endif %}
 {% assign form_context = "Samen ontwikkelen" %}
-{% assign mail_subject = "Idee via Samen ontwikkelen" %}
-
-{% capture mail_body %}Naam:
-
-
-E-mail:
-
-
-Telefoon:
-
-
---- Je idee ---
-Vertel ons over je idee:
-
-
-Wat zou je willen maken?
-
-
---- Context ---
-Voor wie is het bedoeld?
-
-
-Welk probleem lost het op?
-
-
-Hoe ver ben je al?
-
-{% endcapture %}
 
 <div class="contact-form-block" id="contact-idee">
   <h2 class="contact-form__heading">Vertel ons over je idee</h2>
   <p class="contact-form__intro">
-    Mail ons je idee — hoe concreter, hoe beter we kunnen meedenken. We reageren zo snel mogelijk.
+    Hoe concreter je idee, hoe beter we kunnen meedenken. We reageren zo snel mogelijk.
   </p>
 
-  <div class="contact-form__actions">
-    <a class="btn btn--primary contact-form__submit"
-       href="mailto:{{ site.contact.email }}?subject={{ mail_subject | uri_escape }}&body={{ mail_body | strip | uri_escape }}">
-      Open in e-mail
-    </a>
-    <a class="contact-form__email-link" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
-  </div>
-
-  <div class="mail-template" aria-label="Mailsjabloon">
-    <p class="mail-template__hint">
-      Vul onderstaande punten in je e-mail in, of kopieer het sjabloon als je liever zelf mailt.
+  {% if form_endpoint == "" or form_endpoint == nil %}
+    <p class="contact-form__fallback">
+      Het formulier is nog niet gekoppeld. Mail ons op
+      <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>.
     </p>
-
-    <div class="contact-form__section">
-      <h3 class="contact-form__section-title">Contact</h3>
-      <ul class="mail-template__list">
-        <li><strong>Naam</strong></li>
-        <li><strong>E-mail</strong></li>
-        <li><strong>Telefoon</strong> <span class="mail-template__optional">(optioneel)</span></li>
-      </ul>
-    </div>
-
-    <div class="contact-form__section">
-      <h3 class="contact-form__section-title">Je idee</h3>
-      <ul class="mail-template__list">
-        <li><strong>Vertel ons over je idee</strong></li>
-        <li><strong>Wat zou je willen maken?</strong></li>
-      </ul>
-    </div>
-
-    <div class="contact-form__section">
-      <h3 class="contact-form__section-title">Context</h3>
-      <ul class="mail-template__list">
-        <li><strong>Voor wie is het bedoeld?</strong></li>
-        <li><strong>Welk probleem lost het op?</strong></li>
-        <li><strong>Hoe ver ben je al?</strong></li>
-      </ul>
-    </div>
-
-    <textarea class="mail-template__copy" readonly rows="16" aria-label="Kopieerbaar mailsjabloon">{{ mail_body | strip }}</textarea>
-  </div>
-
-  {% if form_endpoint != "" and form_endpoint != nil %}
-    <div class="contact-form__divider" role="separator" aria-label="Of gebruik het formulier"></div>
-    <p class="contact-form__intro">Je kunt je idee ook via het formulier versturen:</p>
-
+  {% else %}
     <form class="contact-form"
           action="{{ form_endpoint }}"
           method="POST"
@@ -118,7 +52,7 @@ Hoe ver ben je al?
         </div>
 
         <div class="contact-form__field">
-          <label class="contact-form__label" for="idea-phone">Telefoonnummer</label>
+          <label class="contact-form__label" for="idea-phone">Telefoonnummer <span class="contact-form__optional">(optioneel)</span></label>
           <input class="contact-form__input"
                  type="tel"
                  id="idea-phone"
