@@ -53,10 +53,6 @@ mogelijk is binnen korte tijd.
   </article>
 </div>
 
-<div class="highlight-box">
-  <p>Wij begrijpen de inhoud én kunnen het bouwen.</p>
-</div>
-
 ## Hoe werkt het?
 
 <p class="process-steps__indicator" aria-hidden="true">Vijf stappen van idee naar tool</p>
