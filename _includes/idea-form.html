@@ -28,8 +28,8 @@
       <input type="hidden" name="form_type" value="idea">
       <input type="hidden" name="pagina" value="{{ form_context | escape }}">
 
-      <fieldset class="contact-form__section">
-        <legend class="contact-form__section-title">Contact</legend>
+      <div class="contact-form__section">
+        <h3 class="contact-form__section-title">Contact</h3>
 
         <div class="contact-form__field">
           <label class="contact-form__label" for="idea-name">Naam</label>
@@ -59,10 +59,10 @@
                  name="phone"
                  autocomplete="tel">
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset class="contact-form__section">
-        <legend class="contact-form__section-title">Je idee</legend>
+      <div class="contact-form__section">
+        <h3 class="contact-form__section-title">Je idee</h3>
 
         <div class="contact-form__field">
           <label class="contact-form__label" for="idea-description">Vertel ons over je idee</label>
@@ -80,10 +80,10 @@
                     name="wat_maken"
                     rows="3"></textarea>
         </div>
-      </fieldset>
+      </div>
 
-      <fieldset class="contact-form__section">
-        <legend class="contact-form__section-title">Context</legend>
+      <div class="contact-form__section">
+        <h3 class="contact-form__section-title">Context</h3>
 
         <div class="contact-form__field">
           <label class="contact-form__label" for="idea-audience">Voor wie is het bedoeld?</label>
@@ -108,7 +108,7 @@
                     name="voortgang"
                     rows="3"></textarea>
         </div>
-      </fieldset>
+      </div>
 
       <input type="text" name="_gotcha" class="contact-form__gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
 

@@ -1204,6 +1204,8 @@
 }
 
 .contact-form__section {
+  display: grid;
+  gap: $space-sm;
   margin: 0 0 $space-md;
   padding: $space-md;
   background: $color-bg-alt;
@@ -1216,22 +1218,13 @@
   }
 }
 
-fieldset.contact-form__section {
-  border: 1px solid $color-border;
-}
-
 .contact-form__section-title {
   font-family: $font-heading;
   font-size: 1rem;
   font-weight: 600;
   color: $color-primary-dark;
-  margin: 0 0 $space-sm;
+  margin: 0;
   padding: 0;
-}
-
-fieldset.contact-form__section .contact-form__section-title {
-  float: left;
-  width: 100%;
 }
 
 // CTA band
