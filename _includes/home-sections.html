@@ -4,12 +4,11 @@
       <span class="hero__eyebrow">{{ site.tagline }}</span>
       <h1 class="hero__title">Innovatiestudio voor de jeugd-ggz</h1>
       <p class="hero__lead">
-        Wij maken de jeugd-GGZ creatiever, speelser en innovatiever. We vertalen ideeën uit de GGZ
-        naar spellen, tools en interactieve interventies die direct bruikbaar zijn in de praktijk.
+        Wij maken de jeugd-GGZ creatiever, innovatiever en meer ervaringsgericht. We vertalen ideeën uit de GGZ
+        naar spellen en tools die direct bruikbaar zijn in de praktijk.
       </p>
       <div class="btn-group">
         <a class="btn btn--primary" href="{{ '/samen-ontwikkelen/' | relative_url }}">Heb jij een gaaf idee?</a>
-        <a class="btn btn--secondary" href="{{ '/interactieve-interventies/' | relative_url }}">Interactieve interventies</a>
       </div>
     </div>
 
@@ -36,7 +35,7 @@
                   <span class="tool-slider__badge tool-slider__badge--{{ tool.status }}">{{ tool.status_label }}</span>
                   <h3 class="tool-slider__title">{{ tool.name }}</h3>
                   <p class="tool-slider__summary">{{ tool.summary }}</p>
-                  <a class="tool-slider__link" href="{{ '/interactieve-interventies/' | relative_url }}">Meer over deze tool</a>
+                  <a class="tool-slider__link" href="{{ '/tools/' | relative_url }}">Meer over deze tool</a>
                 </div>
               </article>
             {% endfor %}
@@ -69,9 +68,9 @@
 <section class="section">
   <div class="container">
     <div class="section__header">
-      <p class="section__eyebrow">Wat we doen</p>
-      <h2>Creatieve werkplaats voor de jeugd-GGZ</h2>
+      <h2>Wat we doen</h2>
       <p class="section__lead">
+        <strong>Creatieve werkplaats voor de jeugd-GGZ.</strong>
         Wij vertalen goede behandelideeën naar ervaringen die kinderen, jongeren en professionals
         echt kunnen gebruiken.
       </p>
@@ -83,19 +82,19 @@
         <h3 class="card__title">Wij digitaliseren behandelideeën</h3>
         <p class="card__text">
           Ben jij psycholoog, orthopedagoog of behandelaar en heb je een goed idee?
-          Wij bouwen daar samen een digitale interventie van.
+          Wij bouwen daar samen een digitale tool van.
         </p>
         <a class="card__link" href="{{ '/samen-ontwikkelen/' | relative_url }}">Samen ontwikkelen</a>
       </article>
 
       <article class="card">
         <div class="card__icon" aria-hidden="true">🎮</div>
-        <h3 class="card__title">Interactieve interventies</h3>
+        <h3 class="card__title">Tools</h3>
         <p class="card__text">
           Spellen, tools en digitale ervaringen — direct bruikbaar in de praktijk.
           Bekijk wat we al hebben gemaakt.
         </p>
-        <a class="card__link" href="{{ '/interactieve-interventies/' | relative_url }}">Bekijk de interventies</a>
+        <a class="card__link" href="{{ '/tools/' | relative_url }}">Bekijk de tools</a>
       </article>
 
       <article class="card">
@@ -115,7 +114,7 @@
   <div class="container">
     <h2>Heb jij een gaaf idee?</h2>
     <p>
-      Een idee voor een tool, spel of interactieve interventie waarvan je altijd al dacht:
+      Een idee voor een tool of spel waarvan je altijd al dacht:
       <em>“Dit zou eigenlijk moeten bestaan”?</em> Wij gaan er graag mee aan de slag.
     </p>
     <a class="btn btn--secondary" href="{{ '/samen-ontwikkelen/' | relative_url }}">Naar Samen ontwikkelen</a>
