@@ -67,7 +67,7 @@ technologie, serious gaming en AI samenkomen.
     </div>
   </article>
 
-  <article class="team-card team-card--profile">
+  <article class="team-card team-card--profile team-card--reverse">
     <img class="team-card__photo"
          src="{{ '/assets/images/team/rianne-manenschijn.jpg' | relative_url }}"
          alt="Foto van Rianne Manenschijn"

@@ -424,12 +424,9 @@
 
 // Team cards
 .team-grid {
-  display: grid;
-  gap: $space-md;
-
-  @media (min-width: $bp-md) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
 }
 
 .team-card {
@@ -472,15 +469,27 @@
   align-items: flex-start;
 
   @media (min-width: $bp-md) {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: $space-lg;
+    padding: $space-lg $space-xl;
+  }
+}
+
+.team-card--profile.team-card--reverse {
+  @media (min-width: $bp-md) {
+    flex-direction: row-reverse;
   }
 }
 
 .team-card--profile .team-card__photo {
   width: 7rem;
   height: 7rem;
+
+  @media (min-width: $bp-md) {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
 }
 
 .team-card__tagline {
@@ -590,15 +599,12 @@
 
 // Values / visie
 .values-list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: $space-md;
   list-style: none;
   padding: 0;
   margin: 0;
-
-  @media (min-width: $bp-md) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .value-item {
@@ -607,6 +613,32 @@
   border-radius: $radius-sm;
   padding: $space-lg;
   box-shadow: $shadow-offset rgba($color-primary, 0.06);
+
+  @media (min-width: $bp-md) {
+    max-width: 46rem;
+  }
+
+  &:nth-child(even) {
+    @media (min-width: $bp-md) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(odd) {
+    @media (min-width: $bp-md) {
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $bp-md) {
+      max-width: none;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 .value-item__number {
@@ -1301,23 +1333,27 @@
 
 // Open editorial statements (missie / visie)
 .statement-pair {
-  display: grid;
-  gap: $space-lg;
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
   margin: $space-sm 0 $space-lg;
-
-  @media (min-width: $bp-md) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: $space-xl;
-  }
 }
 
 .statement {
   margin: 0;
   padding-left: $space-md;
   border-left: 4px solid $color-accent;
+  max-width: 38rem;
 
   &--warm {
     border-left-color: $color-accent-warm;
+  }
+
+  @media (min-width: $bp-md) {
+    &:nth-child(2) {
+      margin-left: clamp(2rem, 14vw, 9rem);
+      max-width: 34rem;
+    }
   }
 }
 
