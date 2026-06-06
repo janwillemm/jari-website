@@ -38,8 +38,6 @@ technologie, serious gaming en AI samenkomen.
   </p>
 </div>
 
-## Het team
-
 <div class="team-grid">
 
   <article class="team-card team-card--profile">
