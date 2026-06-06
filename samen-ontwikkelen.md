@@ -2,7 +2,6 @@
 layout: page
 content_measure: true
 heading: Samen ontwikkelen
-subtitle: Van idee naar tool
 intro: >-
   Heb jij een idee voor een interactieve interventie? Denk aan een werkvorm, spel
   of model? Wij helpen je graag om dat idee werkelijkheid te maken.
