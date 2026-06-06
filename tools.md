@@ -1,7 +1,6 @@
 ---
 layout: page
-heading: Tools
-subtitle: Onze tools
+heading: Onze tools
 intro: >-
   Hier vind je onze tools — rustig vormgegeven en gemaakt om
   direct te gebruiken in je werk met kinderen en jongeren.
