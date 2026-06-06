@@ -2,8 +2,7 @@
 layout: page
 heading: Over ons
 intro: >-
-  Jan-Willem en Rianne — techneut en orthopedagoog-generalist. Samen maken ze
-  tools voor de jeugd-GGZ die in de praktijk landen.
+  Jan-Willem en Rianne: Creatieve techneut en orthopedagoog-generalist. Wij begrijpen de inhoud én kunnen het bouwen.
 ---
 
 In januari 2020 ontmoeten wij elkaar. Jan-Willem een spelletjesfanaat en bedrijfseigenaar
