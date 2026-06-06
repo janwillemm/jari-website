@@ -5,6 +5,8 @@ intro: >-
   Jan-Willem en Rianne: Creatieve techneut en orthopedagoog-generalist. Wij begrijpen de inhoud én kunnen het bouwen.
 ---
 
+## Ons verhaal
+
 In januari 2020 ontmoeten wij elkaar. Jan-Willem een spelletjesfanaat en bedrijfseigenaar
 van een serious game bedrijf en Rianne een orthopedagoog in hart en nieren (die eigenlijk
 niet zo van spelletjes houdt). We hadden beiden van onze passie ons werk gemaakt en werk
@@ -24,8 +26,9 @@ tools in de GGZ werkelijkheid kunnen maken. Tijd dus om deze met de wereld te
 delen! Tijd voor onze innovatiestudio voor de jeugd-GGZ waar behandelinhoud, pedagogiek,
 technologie, serious gaming en AI samenkomen.
 
-<div class="team-together">
-  <h2>Samen sterker</h2>
+## Samen sterker
+
+<div class="highlight-box">
   <p>
     Wij vullen elkaar op persoonlijk en professioneel gebied enorm aan. We bruisen beiden
     van de ideeën, Rianne is degene die ervoor zorgt dat we overgaan tot actie, Jan-Willem
@@ -34,6 +37,8 @@ technologie, serious gaming en AI samenkomen.
     de wereld te delen.
   </p>
 </div>
+
+## Het team
 
 <div class="team-grid">
 
@@ -45,16 +50,16 @@ technologie, serious gaming en AI samenkomen.
          width="112"
          height="112">
     <div>
-      <h2 style="margin-bottom: 0.25rem; font-size: 1.25rem;">Jan-Willem Manenschijn</h2>
+      <h3 class="team-card__name">Jan-Willem Manenschijn</h3>
       <p class="team-card__role">Creatieve techneut</p>
-      <p class="team-card__tagline">“Vage ideeën concreet maken — met oog voor de mens.”</p>
+      <p class="team-card__tagline">“Vage ideeën concreet maken met oog voor de mens.”</p>
       <p class="team-card__bio">
         Jan-Willem is een enthousiaste creatieveling met een hart voor onderwijs, techniek
         en maatschappelijke impact. Met een achtergrond in informatica (TU Delft) en jaren
         ervaring als serious game designer en CTO, weet hij complexe vraagstukken te
         vertalen naar heldere, werkende oplossingen.
       </p>
-      <p class="team-card__bio" style="margin-top: 0.75rem;">
+      <p class="team-card__bio">
         Hij onderneemt niet voor de winst, maar voor het verschil dat je kunt maken.
         Snelle denker, prototype-bouwer, optimist. Altijd met een open blik naar
         de wereld én naar de mensen om hem heen.
@@ -70,9 +75,9 @@ technologie, serious gaming en AI samenkomen.
          width="112"
          height="112">
     <div>
-      <h2 style="margin-bottom: 0.25rem; font-size: 1.25rem;">Rianne Manenschijn</h2>
+      <h3 class="team-card__name">Rianne Manenschijn</h3>
       <p class="team-card__role">Creatieve orthopedagoog-generalist</p>
-      <p class="team-card__tagline">“Kijken naar het hele plaatje — met warmte en nieuwsgierigheid.”</p>
+      <p class="team-card__tagline">“Kijken naar het hele plaatje”</p>
       <p class="team-card__bio">
         Rianne is een gepassioneerde orthopedagoog-generalist en een positief kritische denker.
         Ze heeft een duidelijke visie voor de GGZ en werkt mee aan een wereld waarin
@@ -81,7 +86,7 @@ technologie, serious gaming en AI samenkomen.
         willen. Op die manier probeert ze de klachten van een kind en gezin in hun context
         te begrijpen.
       </p>
-      <p class="team-card__bio" style="margin-top: 0.75rem;">
+      <p class="team-card__bio">
         Rianne is dol op zaadjes planten. Ze probeert kritisch denken en andere perspectieven
         te stimuleren. Dit doet ze binnen therapie, in het contact met collega’s, als docent
         aan de universiteit en als redactielid van de Pedagoog (NVO). Rianne heeft oneindig
@@ -93,25 +98,27 @@ technologie, serious gaming en AI samenkomen.
 
 </div>
 
-## Missie
+## Missie en visie
 
-<div class="highlight-box">
-  <p>
-    Wij vertalen ideeën uit de jeugd-GGZ naar spellen en tools die direct bruikbaar zijn in de praktijk. Door pedagogiek,
-    psychologie, technologie en creativiteit te combineren helpen we professionals om
-    kinderen, jongeren en gezinnen op nieuwe manieren te ondersteunen.
-  </p>
-</div>
+<div class="highlight-boxes">
+  <div class="highlight-box">
+    <h3 class="highlight-box__title">Missie</h3>
+    <p>
+      Wij vertalen ideeën uit de jeugd-GGZ naar spellen en tools die direct bruikbaar zijn in de praktijk. Door pedagogiek,
+      psychologie, technologie en creativiteit te combineren helpen we professionals om
+      kinderen, jongeren en gezinnen op nieuwe manieren te ondersteunen.
+    </p>
+  </div>
 
-## Visie
-
-<div class="highlight-box">
-  <p>
-    Wij geloven dat zorg niet alleen effectief, maar ook begrijpelijk, ervaringsgericht
-    en inspirerend mag zijn. Daarom werken we aan een jeugd-GGZ waarin goede ideeën,
-    wetenschappelijke kennis en praktijkervaring samenkomen in tools die mensen
-    raken en in beweging brengen.
-  </p>
+  <div class="highlight-box">
+    <h3 class="highlight-box__title">Visie</h3>
+    <p>
+      Wij geloven dat zorg niet alleen effectief, maar ook begrijpelijk, ervaringsgericht
+      en inspirerend mag zijn. Daarom werken we aan een jeugd-GGZ waarin goede ideeën,
+      wetenschappelijke kennis en praktijkervaring samenkomen in tools die mensen
+      raken en in beweging brengen.
+    </p>
+  </div>
 </div>
 
 ## Onze waarden
@@ -161,7 +168,7 @@ technologie, serious gaming en AI samenkomen.
       om ons heen. We vinden het belangrijk om daar over na te denken en aandacht aan
       te besteden.
     </p>
-    <p style="margin-top: 0.75rem;">
+    <p>
       Onze tools ontstaan op het snijvlak van wetenschappelijke kennis, praktijkervaring
       en creativiteit. Tegelijkertijd zijn onze tools zelf niet wetenschappelijk onderzocht
       en doen wij geen uitspraken over specifieke effecten of behandelresultaten. We zien
@@ -169,7 +176,7 @@ technologie, serious gaming en AI samenkomen.
       vervanging van professionele expertise of klinisch oordeel. Hoe en wanneer een tool
       wordt ingezet, blijft altijd een professionele afweging van de gebruiker.
     </p>
-    <p style="margin-top: 0.75rem;">
+    <p>
       Daarnaast zijn wij enthousiast over de mogelijkheden van technologie en AI.
       Tegelijkertijd realiseren we ons dat deze technologieën energie en grondstoffen
       verbruiken en daarmee impact hebben op het milieu. Daarom proberen we bewust om

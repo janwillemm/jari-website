@@ -481,25 +481,14 @@
   font-style: italic;
 }
 
-.team-together {
-  margin-top: $space-xl;
-  padding: $space-xl;
-  background: linear-gradient(145deg, $color-bg-hero, $color-accent-soft);
-  border-radius: $radius-lg;
-  border: 1px solid $color-border;
+.team-card__name {
+  margin: 0 0 0.25rem;
+  font-size: 1.25rem;
+  color: $color-primary-dark;
 }
 
-.team-together h2 {
-  margin-bottom: $space-sm;
-}
-
-.team-together p {
-  color: $color-text-muted;
-  max-width: 40rem;
-}
-
-.team-together p + p {
-  margin-top: $space-sm;
+.team-card__bio + .team-card__bio {
+  margin-top: 0.75rem;
 }
 
 .unique-position {
@@ -604,9 +593,10 @@
 
 .value-item {
   background: $color-surface;
-  border: 1px solid $color-border;
-  border-radius: $radius-md;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-sm;
   padding: $space-lg;
+  box-shadow: $shadow-offset rgba($color-primary, 0.06);
 }
 
 .value-item__number {
@@ -631,6 +621,10 @@
   color: $color-text-muted;
   font-size: 0.9375rem;
   margin: 0;
+}
+
+.value-item p + p {
+  margin-top: 0.75rem;
 }
 
 // Tool cards (aan de slag)
@@ -1303,6 +1297,14 @@
   @media (min-width: $bp-md) {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.highlight-box__title {
+  margin: 0 0 $space-sm;
+  font-family: $font-heading;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: $color-primary;
 }
 
 .highlight-box {
