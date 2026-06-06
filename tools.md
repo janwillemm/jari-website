@@ -219,7 +219,7 @@ intro: >-
   </figure>
 </dialog>
 
-## Binnenkort beschikbaar
+## Waar we op dit moment aan werken
 
 We werken aan meer tools op basis van wat professionals in de praktijk nodig hebben.
 Heb je vragen? Neem gerust contact op via
