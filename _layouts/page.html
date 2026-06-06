@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<article class="page">
+<article class="page{% if page.content_measure %} page--measure{% endif %}">
   <header class="page-header">
-    <div class="container">
+    <div class="container{% if page.content_measure %} container--measure{% endif %}">
       {% if page.subtitle %}
         <p class="page-eyebrow">{{ page.subtitle }}</p>
       {% endif %}
@@ -13,7 +13,7 @@ layout: default
       {% endif %}
     </div>
   </header>
-  <div class="page-content container">
+  <div class="page-content container{% if page.content_measure %} container--measure{% endif %}">
     {{ content }}
   </div>
 </article>

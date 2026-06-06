@@ -1,6 +1,6 @@
 ---
 layout: page
-heading: Aan de slag
+heading: Interactieve interventies
 subtitle: Onze tools
 intro: >-
   Hier vind je onze interactieve interventies — rustig vormgegeven en gemaakt om
@@ -222,23 +222,8 @@ voor wat in de praktijk werkt voor behandelaren én kinderen.
   </figure>
 </dialog>
 
-<div class="ideas-cta">
-  <h2>Heb jij een idee?</h2>
-  <p>
-    Iets creatiefs. Iets waarvan je denkt: <em>waarom is dit er niet?!</em>
-    Een idee voor een handige tool — en wie weet kunnen we ’m voor je maken!
-  </p>
-</div>
-
-{% include contact-form.html
-   heading="Deel je idee"
-   intro="Vertel wat je mist in de praktijk. Hoe concreter, hoe beter."
-   subject="Tool-idee via Aan de slag"
-   context="Aan de slag"
-%}
-
 ## Binnenkort beschikbaar
 
-We werken aan meer tools op basis van wat professionals in de praktijk nodig hebben.
+We werken aan meer interventies op basis van wat professionals in de praktijk nodig hebben.
 Heb je vragen? Neem gerust contact op via
 [{{ site.contact.email }}](mailto:{{ site.contact.email }}).

@@ -3,7 +3,7 @@ description: >-
   Innovatiestudio voor de jeugd-ggz. Wij maken de jeugd-GGZ creatiever, speelser en innovatiever.
 tagline: Innovatie en creativiteit in de (jeugd-)ggz
 mission: Innovatiestudio voor de jeugd-ggz
-url: "https://interact-ggz.nl"
+url: "https://interactggz.nl"
 baseurl: ""
 lang: nl
 locale: nl_NL
@@ -35,18 +35,18 @@ header_pages:
     url: /over-ons/
 
 contact:
-  email: info@interact-ggz.nl
+  email: info@interactggz.nl
   tools_email: ggztools@manenschijn.com
 
 # Contactformulieren — POST naar jari-portal API.
 contact_form:
-  endpoint: "https://portal.interact-ggz.nl/api/contact"
+  endpoint: "https://portal.interactggz.nl/api/contact"
   development_endpoint: "http://localhost:3100/api/contact"
 
 # Umami analytics (self-hosted). Leave website_id empty to disable tracking locally.
 umami:
   website_id: ""
-  script_url: "https://analytics.interact-ggz.nl/script.js"
+  script_url: "https://analytics.interactggz.nl/script.js"
 
 authors:
   - name: Jan-Willem Manenschijn

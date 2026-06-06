@@ -1,13 +1,12 @@
-@import "variables";
+@use "variables" as *;
 
 // Header
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba($color-bg, 0.92);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid $color-border;
+  background: $color-surface;
+  border-bottom: $border-bold solid $color-primary;
 }
 
 .site-header__inner {
@@ -116,10 +115,12 @@
       padding: $space-sm;
       text-decoration: none;
       border-radius: $radius-sm;
+      font-weight: 600;
 
       &:hover,
       &[aria-current="page"] {
-        background: $color-bg-alt;
+        background: $color-primary;
+        color: #ffffff;
       }
     }
   }
@@ -146,16 +147,16 @@
       display: block;
       padding: 0.5rem 1rem;
       text-decoration: none;
-      color: $color-text-muted;
+      color: $color-text;
       border-radius: $radius-pill;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 0.9375rem;
       transition: background 0.2s ease, color 0.2s ease;
 
       &:hover,
       &[aria-current="page"] {
-        color: $color-primary-dark;
-        background: $color-primary-light;
+        color: #ffffff;
+        background: $color-primary;
       }
     }
   }
@@ -164,8 +165,9 @@
 // Footer
 .site-footer {
   margin-top: auto;
-  background: $color-bg-alt;
-  border-top: 1px solid $color-border;
+  background: $color-primary;
+  border-top: none;
+  color: rgba(#ffffff, 0.9);
 }
 
 .site-footer__grid {
@@ -175,6 +177,10 @@
 
   @media (min-width: $bp-md) {
     grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  p {
+    color: rgba(#ffffff, 0.85);
   }
 }
 
@@ -190,7 +196,7 @@
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: $color-text-muted;
+  color: rgba(#ffffff, 0.7);
   margin-bottom: $space-sm;
 }
 
@@ -201,10 +207,10 @@
 
   a {
     text-decoration: none;
-    color: $color-text;
+    color: $color-accent;
 
     &:hover {
-      color: $color-primary;
+      color: $color-accent-warm;
     }
   }
 
@@ -214,37 +220,47 @@
 }
 
 .site-footer__bottom {
-  border-top: 1px solid $color-border;
+  border-top: 1px solid rgba(#ffffff, 0.2);
   padding-block: $space-md;
 
   p {
     margin: 0;
     font-size: 0.875rem;
-    color: $color-text-light;
+    color: rgba(#ffffff, 0.6);
   }
 }
 
 // Page layout
 .page-header {
   padding-block: $space-xl $space-lg;
-  background: linear-gradient(180deg, $color-bg-hero 0%, $color-bg 100%);
+  background: $color-surface;
+  border-bottom: 4px solid $color-primary;
 }
 
 .page-eyebrow {
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: $color-primary;
+  color: $color-accent;
   margin-bottom: $space-xs;
+}
+
+.page-header h1 {
+  color: $color-primary;
+  font-weight: 700;
 }
 
 .page-intro {
   font-size: 1.25rem;
   color: $color-text-muted;
-  max-width: 42rem;
+  max-width: $content-measure;
   margin-top: $space-sm;
   line-height: 1.6;
+}
+
+.container--measure {
+  width: min(100% - 2rem, $content-measure);
 }
 
 .page-content {
