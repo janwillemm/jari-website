@@ -2,13 +2,11 @@
 layout: page
 heading: Onze tools
 intro: >-
-  Hier vind je onze tools — rustig vormgegeven en gemaakt om
-  direct te gebruiken in je werk met kinderen en jongeren.
+  Hier vind je onze tools, wij noemen ze zelf graag interactieve interventies.
+  Ze ondersteunen je als zorgprofessional in de jeugd-GGZ. Elke tool is gericht
+  op directe toepasbaarheid — zonder ingewikkelde systemen, met aandacht voor
+  wat in de praktijk werkt voor behandelaren én kinderen.
 ---
-
-Onze tools ondersteunen je als zorgprofessional in de jeugd-GGZ. Elke tool
-is gericht op directe toepasbaarheid — zonder ingewikkelde systemen, met aandacht
-voor wat in de praktijk werkt voor behandelaren én kinderen.
 
 <div class="tool-showcases">
 
