@@ -17,7 +17,7 @@ Juist daar helpen wij graag bij.
 
 Alles is welkom. Denk groots en buiten de box. Er kan met behulp van AI waarschijnlijk
 zoveel meer dan je denkt. Je kunt kijken [welke tools wij al hebben gemaakt]({{ '/tools/' | relative_url }})
-en aan welke we werken om te zien welke mogelijkheden er in ieder geval zijn. Je kunt
+en [aan welke we werken]({{ '/tools/#waar-we-op-dit-moment-aan-werken' | relative_url }}) om te zien welke mogelijkheden er in ieder geval zijn. Je kunt
 bijvoorbeeld denken aan een spel voor je team of een spel voor cliënten, een ervaring
 om een therapievorm meer voelbaar te maken, een werkblad dat interactief is, een e-learning,
 een animatie, een interactieve strip etc.
