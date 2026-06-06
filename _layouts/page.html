@@ -17,3 +17,6 @@ layout: default
     {{ content }}
   </div>
 </article>
+{% unless page.url == '/samen-ontwikkelen/' %}
+  {% include cta-band.html %}
+{% endunless %}
