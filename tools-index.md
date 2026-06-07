@@ -2,7 +2,6 @@
 layout: tools
 permalink: /tools/
 heading: Onze tools
-subtitle: Interactieve interventies
 intro: >-
   Hier vind je onze tools, wij noemen ze zelf graag interactieve interventies.
   Elke tool is gericht op directe toepasbaarheid, zonder ingewikkelde systemen,
