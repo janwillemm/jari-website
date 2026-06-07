@@ -61,6 +61,7 @@ contact_form:
 # Portal — "Probeer" en "Koop" knoppen linken hierheen.
 portal:
   url: "https://portal.interactggz.nl"
+  development_url: "http://localhost:3100"
 
 # Umami analytics (self-hosted). Leave website_id empty to disable tracking locally.
 umami:

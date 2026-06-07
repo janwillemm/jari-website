@@ -1,0 +1,10 @@
+{% comment %}
+  Portal-knop (Probeer / Koop). Gebruik:
+  {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer uit" %}
+{% endcomment %}
+{% assign portal_base_url = site.portal.url %}
+{% if jekyll.environment != "production" and site.portal.development_url != "" %}
+  {% assign portal_base_url = site.portal.development_url %}
+{% endif %}
+<a class="btn btn--{{ include.variant | default: 'primary' }}"
+   href="{{ portal_base_url }}/{{ include.action }}/{{ include.slug }}">{{ include.label }}</a>

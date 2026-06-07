@@ -1,50 +1,117 @@
 ---
-name: Context Driehoek
+name: Driehoekmodel
 order: 1
 status: live
 status_label: Beschikbaar
-summary: Gezins-, kind- en omgevingfactoren in één overzicht voor casusconceptualisatie.
-lead: >-
-  Gezins-, kind- en omgevingfactoren in één overzicht. Een visuele hulp bij
-  casusconceptualisatie: wat verklaart hoe het met dit kind gaat?
+summary: Het driehoekmodel helpt om informatie snel overzichtelijk te maken, te ordenen en verbanden zichtbaar te maken.
+lead: van informatie naar inzicht
 image: /assets/images/tools/context-driehoek.png
+video: /assets/videos/tools/context-driehoek.mp4
 image_caption: Voorbeeld van een ingevulde casus
 alt: Screenshot van Context Driehoek met factoren in de drie secties gezin, kind en omgeving
 available: true
 portal_slug: context-driehoek
-features:
-  - title: Factoren plaatsen
-    text: Sleep labels in de driehoek en zie in één oogopslag waar de zwaarte ligt.
-  - title: Hypotheses formuleren
-    text: Noteer hypotheses, ideeën en open vragen naast het beeld.
-  - title: Basisgegevens vastleggen
-    text: Houd casusinformatie zichtbaar tijdens teamoverleg of supervisie.
-  - title: Opslaan & delen
-    text: Sla je werk op als .jari-bestand of exporteer naar PDF voor verslaglegging.
 ---
 
-## Wat is het?
+<div class="tool-detail__hero-body">
+<div class="tool-detail__hero-text" markdown="1">
 
-Context Driehoek is een digitaal werkblad voor professionals in de jeugd- en geestelijke
-gezondheidszorg. De tool helpt je om factoren rondom een kind systematisch in kaart te brengen
-en te bespreken met collega's, ouders of het behandelteam.
+Wanneer een kind en gezin zich aanmelden bij de GGZ spelen er vaak veel factoren  tegelijkertijd een rol. Factoren bij het kind, factoren in de opvoeding en het gezin, en factoren vanuit eerdere  ervaringen of de omgeving beïnvloeden elkaar voortdurend.
 
-In het midden staat de vraag: _“Wat verklaart hoe het met dit kind gaat?”_
-Rondom die vraag werk je in drie domeinen:
+Het driehoekmodel helpt om deze informatie snel overzichtelijk te maken, te ordenen en verbanden zichtbaar te maken. Dit kan voor jezelf als professional helpend zijn om van informatie naar inzicht te gaan, maar het kan ook bijdragen aan efficiëntere casuïstiekbesprekingen. Want wie herkent er niet dat je soms al twintig minuten bezig bent met het toelichten van een casus voordat je toekomt aan de vraag waar je het met collega’s eigenlijk over wil hebben?
 
-- **Ervaringen & omgeving**: school, woonomgeving, sociale context
-- **Gezinscontext & opvoeding**: opvoeding, relaties thuis, gezinssystemiek
-- **Ontwikkeling kind**: gedrag, emoties, ontwikkelingskenmerken
+Door het invullen van dit model ontstaat een gedeeld beeld van de casus en wordt het eenvoudiger om hypotheses te formuleren, ontbrekende informatie te signaleren en vervolgstappen te bepalen.
 
-## Waarom werkt het?
+De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en gezinnen, maar kan ook samen met ouders of cliënten worden gebruikt om overzicht en inzicht te creëren. Door de interactieve opzet van het model kun je als professional zelf bepalen welke onderdelen van het model zichtbaar zijn voor anderen en welke niet.
 
-Complexe casussen worden vaak besproken in losse fragmenten: school ziet het ene,
-het gezin het andere. De driehoek dwingt een gedeeld kader af en maakt verbanden zichtbaar.
-Doordat factoren fysiek in het beeld staan, ontstaat er sneller een gedeeld begrip:
-rustig, overzichtelijk en zonder eindeloze tekst.
+[Wat verklaart hoe het met dít kind gaat?’]
 
-## Voor wie?
+</div>
 
-Bedoeld voor (jeugd)psychologen, orthopedagogen, systeemtherapeuten, gezinsbehandelaars
-en andere professionals die casussen visueel willen ordenen in intake, teamoverleg
-of supervisie.
+<div class="highlight-box tool-detail__uses">
+  <h2 class="highlight-box__title">Waarvoor kun je deze tool gebruiken?</h2>
+  <ul>
+    <li>Structureren van intake-informatie, voor jezelf of met het cliëntsysteem samen</li>
+    <li>Hypothesevorming</li>
+    <li>Voorbereiden van een MDO of casuïstiekbespreking</li>
+    <li>Tijdens een MDO of casuïstiekbespreking</li>
+    <li>Opstellen van een verklarende analyses en/of integratief beeld</li>
+    <li>Het bespreken van een verklarende analyse en/of integratief beeld met een cliëntsysteem</li>
+    <li>Onderwijs en supervisie binnen psychologie en orthopedagogiek</li>
+  </ul>
+</div>
+</div>
+
+<div class="section__header">
+  <span class="section__eyebrow">Bijzonder</span>
+  <h2>Wat maakt deze tool bijzonder?</h2>
+</div>
+
+<div class="tool-accordion tool-accordion--list">
+  <details class="tool-accordion__item">
+    <summary class="tool-accordion__summary">
+      <span class="tool-accordion__title">Samen komen tot een gedeeld beeld</span>
+      <span class="tool-accordion__chevron" aria-hidden="true"></span>
+    </summary>
+    <div class="tool-accordion__body">
+      <p>
+        Professionals, ouders en cliënten kunnen samen factoren, vragen en hypothesen verkennen
+        en ordenen. Zo ontstaat een gezamenlijk begrip van wat er speelt en welke factoren
+        mogelijk een rol spelen. Je kunt in het model de verschillende onderdelen in- en
+        uitklappen. Bepaal dus zelf welke onderdelen jij belangrijk vindt in een overleg.
+      </p>
+    </div>
+  </details>
+  <details class="tool-accordion__item">
+    <summary class="tool-accordion__summary">
+      <span class="tool-accordion__title">Efficiëntere casusbesprekingen</span>
+      <span class="tool-accordion__chevron" aria-hidden="true"></span>
+    </summary>
+    <div class="tool-accordion__body">
+      <p>
+        Collega’s hebben sneller een duidelijk overzicht van een casus, waardoor overlegtijd
+        besteed wordt aan analyse en besluitvorming in plaats van informatieverzameling.
+      </p>
+    </div>
+  </details>
+  <details class="tool-accordion__item">
+    <summary class="tool-accordion__summary">
+      <span class="tool-accordion__title">Ondersteunt breed kijken</span>
+      <span class="tool-accordion__chevron" aria-hidden="true"></span>
+    </summary>
+    <div class="tool-accordion__body">
+      <p>
+        De driehoek stimuleert professionals om systematisch aandacht te besteden aan
+        kindfactoren, gezinsfactoren én omgevingsfactoren.
+      </p>
+    </div>
+  </details>
+  <details class="tool-accordion__item">
+    <summary class="tool-accordion__summary">
+      <span class="tool-accordion__title">Ondersteunt zorgvuldig klinisch redeneren</span>
+      <span class="tool-accordion__chevron" aria-hidden="true"></span>
+    </summary>
+    <div class="tool-accordion__body">
+      <p>
+        Maak onderscheid tussen informatie, hypotheses, vragen en ideeën. Zo blijft zichtbaar
+        wat al bekend is en wat nog onderzocht of besproken moet worden.
+      </p>
+    </div>
+  </details>
+  <details class="tool-accordion__item">
+    <summary class="tool-accordion__summary">
+      <span class="tool-accordion__title">Direct bruikbaar</span>
+      <span class="tool-accordion__chevron" aria-hidden="true"></span>
+    </summary>
+    <div class="tool-accordion__body">
+      <p>
+        Geen ingewikkelde methodiek of training nodig. De tool sluit aan bij de manier waarop
+        veel professionals al denken en werken.
+      </p>
+    </div>
+  </details>
+</div>
+
+## Hoe worden gegevens in deze tool opgeslagen?
+
+Het Driehoekmodel wordt geopend in een internetbrowser, maar is geen openbare website. Het bestand draait lokaal op de computer van de gebruiker. Gegevens worden niet automatisch naar een server verstuurd en zijn niet zichtbaar voor andere gebruikers. De gebruiker bepaalt zelf of en hoe informatie wordt opgeslagen. Het model is daarmee vergelijkbaar met een Word- of Excel-document dat op de eigen computer wordt gebruikt. Het blijft de verantwoordelijkheid van de gebruiker om zorgvuldig om te gaan met cliëntgegevens en te voldoen aan de privacyrichtlijnen van de eigen organisatie.

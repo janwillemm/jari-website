@@ -5,124 +5,96 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const outDir = path.resolve(__dirname, '../assets/images/tools');
-const viewport = { width: 1920, height: 1080 };
 
-const driehoekData = {
-  filename: 'voorbeeld-case',
-  basisgegevens:
-    'Jongen, 9 jaar. Verwijzing vanuit school wegens zorgen over gedrag en concentratie.',
-  topSections: {
-    hypotheses: [
-      { id: 'h1', text: 'Spanning thuis beïnvloedt schoolprestaties' },
-      { id: 'h2', text: 'Lage frustratietolerantie past bij ontwikkelingsleeftijd' },
-    ],
-    ideeen: [{ id: 'i1', text: 'Systeemgesprek met ouders plannen' }],
-    vragen: [{ id: 'v1', text: 'Hoe is de omgang tussen broer en zus?' }],
-  },
-  items: [
-    { id: '1', text: 'Veel ruzie thuis', factor: 'gezin', x: 260, y: 200 },
-    { id: '2', text: 'Moeite met structuur', factor: 'gezin', x: 280, y: 230 },
-    { id: '3', text: 'Snel overprikkeld', factor: 'kind', x: 200, y: 310 },
-    { id: '4', text: 'Concentratieproblemen', factor: 'kind', x: 170, y: 330 },
-    { id: '5', text: 'Pestervaringen op school', factor: 'omgeving', x: 130, y: 190 },
-    { id: '6', text: 'Wisselende woonsituatie', factor: 'omgeving', x: 110, y: 220 },
-  ],
+const TOOLS = {
+  'context-driehoek': 'http://localhost:8082/',
+  emdr: 'http://localhost:8083/',
+  'act-avontuur': 'http://localhost:8084/',
 };
 
-async function clipFromSelectors(page, selectors) {
-  return page.evaluate((ids) => {
-    const rects = ids
-      .map((id) => document.querySelector(id)?.getBoundingClientRect())
-      .filter(Boolean);
-    if (!rects.length) return null;
+const viewport = { width: 1440, height: 900 };
 
-    const top = Math.min(...rects.map((r) => r.top)) + window.scrollY;
-    const left = Math.min(...rects.map((r) => r.left));
-    const right = Math.max(...rects.map((r) => r.right));
-    const bottom = Math.max(...rects.map((r) => r.bottom)) + window.scrollY;
+async function prepareToolPage(page, slug, { paid = false } = {}) {
+  await page.addInitScript(
+    ({ toolSlug, devPaid }) => {
+      localStorage.setItem(`jari-tool-${toolSlug}-onboarded`, '1');
+      if (devPaid) localStorage.setItem('jari:dev-access-override', 'paid');
+    },
+    { toolSlug: slug, devPaid: paid }
+  );
+}
 
-    return {
-      x: Math.max(0, Math.round(left - 24)),
-      y: Math.max(0, Math.round(top - 12)),
-      width: Math.round(right - left + 48),
-      height: Math.round(bottom - top + 24),
-    };
-  }, selectors);
+async function hideDevChrome(page) {
+  await page.evaluate(() => {
+    document.querySelector('.jari-dev-access-pill')?.remove();
+    document.querySelector('.jari-onboarding-backdrop')?.remove();
+    document.querySelector('.act-game__quit')?.remove();
+    document.querySelector('.act-debug-panel')?.remove();
+    document.querySelector('.cd-debug-panel')?.remove();
+    document.querySelector('.cd-debug-svg')?.remove();
+    document.querySelector('.cd-triangle-container')?.classList.remove('cd-debug-mode');
+  });
+}
+
+async function screenshotElement(page, selector, filename) {
+  const element = page.locator(selector).first();
+  await element.waitFor({ state: 'visible', timeout: 15000 });
+  await hideDevChrome(page);
+  await page.waitForTimeout(300);
+  await element.screenshot({
+    path: path.join(outDir, filename),
+    animations: 'disabled',
+  });
 }
 
 async function captureDriehoek(page) {
-  await page.goto('https://playground.creatievemaan.nl/tools/driehoek/', {
-    waitUntil: 'networkidle',
-  });
-
-  await page.evaluate((data) => {
-    localStorage.setItem('driehoek-data', JSON.stringify(data));
-  }, driehoekData);
-
-  await page.reload({ waitUntil: 'networkidle' });
-  await page.locator('#welcome-btn-autosaved').click({ timeout: 5000 }).catch(() => {});
-
+  await prepareToolPage(page, 'context-driehoek');
+  await page.goto(TOOLS['context-driehoek'], { waitUntil: 'networkidle' });
+  await page.keyboard.press('Control+d');
+  await page.waitForTimeout(800);
   await page.evaluate(() => {
-    document.querySelector('.back')?.remove();
-    document.getElementById('welcome-modal-overlay')?.remove();
-    document.getElementById('naam-modal-overlay')?.remove();
-    document.getElementById('new-confirm-modal-overlay')?.remove();
-    document.querySelector('.credits')?.remove();
-    const panel = document.getElementById('input-panel');
-    if (panel) panel.style.display = 'none';
-    const toolbar = document.getElementById('driehoek-toolbar');
-    if (toolbar) toolbar.hidden = false;
+    for (const section of document.querySelectorAll('.cd-collapse--sidebar')) {
+      section.open = true;
+    }
   });
-
-  await page.waitForTimeout(1200);
-
-  const clip = await clipFromSelectors(page, [
-    '.header',
-    '#content-area',
-    '#hypotheses-below',
-  ]);
-
-  if (!clip) throw new Error('Could not determine Driehoek clip region');
-
-  await page.screenshot({
-    path: path.join(outDir, 'context-driehoek.png'),
-    clip,
-  });
+  await screenshotElement(page, '.cd-content-area', 'context-driehoek.png');
 }
 
 async function captureEmdr(page) {
-  await page.goto('https://playground.creatievemaan.nl/tools/emdr/', {
-    waitUntil: 'networkidle',
-  });
-
-  await page.evaluate(() => {
-    document.querySelector('.back')?.remove();
-    document.querySelector('.disclaimer-banner')?.remove();
-    document.getElementById('info-panel')?.remove();
-    document.getElementById('page-header')?.remove();
-    document.querySelector('.credits')?.remove();
-  });
-
+  await prepareToolPage(page, 'emdr');
+  await page.goto(TOOLS.emdr, { waitUntil: 'networkidle' });
   await page.locator('#btn-play').click();
-  await page.waitForTimeout(1500);
+  await page.waitForTimeout(1200);
+  await screenshotElement(page, '.layout', 'emdr-lichtbol.png');
+}
 
-  const clip = await clipFromSelectors(page, ['.layout']);
-  if (!clip) throw new Error('Could not determine EMDR clip region');
+async function captureActAvontuur(page) {
+  await prepareToolPage(page, 'act-avontuur');
+  await page.goto(TOOLS['act-avontuur'], { waitUntil: 'networkidle' });
 
-  await page.screenshot({
-    path: path.join(outDir, 'emdr-lichtbol.png'),
-    clip,
-  });
+  await page
+    .locator('.act-adventure-card')
+    .filter({ hasText: 'Ruimtereis' })
+    .click();
+  await page.getByRole('button', { name: 'Start avontuur' }).click();
+  await page.waitForTimeout(500);
+
+  await page.keyboard.press('Control+d');
+  await page.locator('.act-debug-panel__round-btn').nth(2).click();
+  await page.waitForTimeout(600);
+
+  await screenshotElement(page, '.act-stage', 'act-avontuur.png');
 }
 
 await mkdir(outDir, { recursive: true });
 
 const browser = await chromium.launch({ headless: true });
-const page = await browser.newPage({ viewport });
+const page = await browser.newPage({ viewport, deviceScaleFactor: 2 });
 
 try {
   await captureDriehoek(page);
   await captureEmdr(page);
+  await captureActAvontuur(page);
   console.log('Screenshots saved to', outDir);
 } finally {
   await browser.close();

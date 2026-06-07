@@ -28,6 +28,7 @@ is op dit moment dus nog niet alles mogelijk. Maar we verbazen je graag met wat 
 mogelijk is binnen korte tijd.
 
 <div class="highlight-box">
+  <span class="highlight-box__tab">Onze belofte</span>
   <p>Laten we samen iets maken dat nog niet bestaat.</p>
 </div>
 
@@ -133,6 +134,7 @@ mogelijk is binnen korte tijd.
 ## Tevredenheid voorop
 
 <div class="highlight-box">
+  <span class="highlight-box__tab">Tevredenheid voorop</span>
   <p>
     Samen ontwikkelen betekent voor ons ook samen verantwoordelijkheid nemen voor het
     eindresultaat. Mocht je het gevoel hebben dat we jouw idee onvoldoende hebben vertaald
