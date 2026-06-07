@@ -1,7 +1,6 @@
 ---
 layout: about
 heading: Over ons
-subtitle: Jan-Willem & Rianne
 intro: >-
   Creatieve techneut en orthopedagoog-generalist. Wij begrijpen de inhoud én kunnen het bouwen.
 ---

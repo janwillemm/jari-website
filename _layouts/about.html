@@ -2,14 +2,11 @@
 layout: default
 ---
 <article class="page page--about">
-  <header class="about-hero">
-    <div class="container about-hero__inner">
-      {% if page.subtitle %}
-        <span class="hero__eyebrow">{{ page.subtitle }}</span>
-      {% endif %}
-      <h1 class="about-hero__title">{{ page.heading }}</h1>
+  <header class="page-header">
+    <div class="container">
+      <h1>{{ page.heading }}</h1>
       {% if page.intro %}
-        <p class="about-hero__lead">{{ page.intro }}</p>
+        <p class="page-intro">{{ page.intro }}</p>
       {% endif %}
     </div>
   </header>
