@@ -65,7 +65,7 @@ portal:
 
 # Umami analytics (self-hosted). Leave website_id empty to disable tracking locally.
 umami:
-  website_id: ""
+  website_id: "3e23b9ca-fe79-447a-8187-fab3f8689351"
   script_url: "https://analytics.interactggz.nl/script.js"
 
 authors:
