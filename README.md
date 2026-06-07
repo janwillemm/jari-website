@@ -24,10 +24,22 @@ Open [http://localhost:4000](http://localhost:4000).
 
 ## Deployen naar GitHub Pages
 
-1. Push deze repository naar GitHub
-2. Ga naar **Settings → Pages**
-3. Onder **Build and deployment**, kies **GitHub Actions** als source
-4. Bij push naar `main` wordt de site automatisch gebouwd en gepubliceerd
+De live site draait vanuit de aparte repository [`janwillemm/jari-website`](https://github.com/janwillemm/jari-website) (GitHub Pages + custom domain `interactggz.nl`). Ontwikkel in deze monorepo-map; publiceer met:
+
+```bash
+cd jari-website
+node scripts/deploy.mjs
+```
+
+Opties:
+
+| Flag | Doel |
+|------|------|
+| `-m "bericht"` | Commit message (default: laatste monorepo-commit op `jari-website/`) |
+| `--dry-run` | Toon rsync zonder commit of push |
+| `--no-push` | Commit lokaal in `.deploy/checkout`, push niet |
+
+GitHub Actions in `janwillemm/jari-website` bouwt en publiceert automatisch na elke push naar `main`.
 
 ### Custom domain
 

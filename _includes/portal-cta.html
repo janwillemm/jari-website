@@ -1,10 +1,16 @@
 {% comment %}
   Portal-knop (Probeer / Koop). Gebruik:
   {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer uit" %}
+  {% include portal-cta.html variant="secondary" action="kopen" slug=page.portal_slug label="Koop" price=tool_price_excl %}
 {% endcomment %}
 {% assign portal_base_url = site.portal.url %}
 {% if jekyll.environment != "production" and site.portal.development_url != "" %}
   {% assign portal_base_url = site.portal.development_url %}
 {% endif %}
+{% assign cta_label = include.label %}
+{% if include.action == "kopen" %}
+  {% assign price_excl = include.price | default: site.tool_yearly_price_excl | default: "7.99" %}
+  {% assign cta_label = include.label | append: " — €" | append: price_excl | append: " excl. btw" %}
+{% endif %}
 <a class="btn btn--{{ include.variant | default: 'primary' }}"
-   href="{{ portal_base_url }}/{{ include.action }}/{{ include.slug }}">{{ include.label }}</a>
+   href="{{ portal_base_url }}/{{ include.action }}/{{ include.slug }}">{{ cta_label }}</a>
