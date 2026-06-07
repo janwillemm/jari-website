@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign tool_price_excl = page.price_excl | default: site.tool_yearly_price_excl %}
+{% assign tool_price = page.price | default: site.tool_yearly_price %}
 <article class="tool-detail">
   <header class="tool-detail__header">
     <div class="container">
@@ -40,7 +40,7 @@ layout: default
       {% if page.available %}
         <div class="btn-group tool-detail__cta">
           {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer uit" %}
-          {% include portal-cta.html variant="secondary" action="kopen" slug=page.portal_slug label="Koop" price=tool_price_excl %}
+          {% include portal-cta.html variant="secondary" action="kopen" slug=page.portal_slug label="Koop" price=tool_price %}
         </div>
       {% endif %}
     </div>
@@ -77,7 +77,7 @@ layout: default
           <p>Probeer {{ page.name }} vrijblijvend uit of schaf de tool aan.</p>
           <div class="btn-group">
             {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer uit" %}
-            {% include portal-cta.html variant="secondary" action="kopen" slug=page.portal_slug label="Koop" price=tool_price_excl %}
+            {% include portal-cta.html variant="secondary" action="kopen" slug=page.portal_slug label="Koop" price=tool_price %}
           </div>
         </div>
       {% endif %}
