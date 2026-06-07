@@ -494,7 +494,7 @@
 // Over ons pagina
 .about-hero {
   padding-block: $space-xl $space-lg;
-  background: linear-gradient(160deg, $color-bg-hero, $color-primary-light);
+  background: $color-surface;
   border-bottom: 4px solid $color-primary;
 }
 
@@ -508,7 +508,7 @@
 
 .about-hero__title {
   margin: 0;
-  color: $color-primary-dark;
+  color: $color-primary;
   font-weight: 700;
 }
 
@@ -1014,7 +1014,7 @@
 // Tool detailpagina
 .tool-detail__header {
   padding-block: $space-lg $space-xl;
-  background: linear-gradient(160deg, $color-bg-hero, $color-primary-light);
+  background: $color-surface;
   border-bottom: 4px solid $color-primary;
 }
 
@@ -1736,20 +1736,41 @@
 }
 
 .highlight-box {
-  background: $color-accent-soft;
-  border-radius: $radius-sm;
+  position: relative;
+  margin: $space-md 0 $space-lg;
   padding: $space-lg;
-  border: $border-weight solid $color-primary;
-  border-left-width: 5px;
-  border-left-color: $color-accent;
+  background: $color-surface;
+  border: $border-bold solid $color-primary;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+
+  &:has(.highlight-box__tab) {
+    margin-top: calc(#{$space-lg} + 0.5rem);
+  }
 
   p {
     margin: 0;
     font-family: $font-heading;
     font-size: 1.125rem;
-    line-height: 1.5;
+    line-height: 1.55;
     color: $color-primary-dark;
   }
+}
+
+.highlight-box__tab {
+  position: absolute;
+  top: -0.95rem;
+  left: $space-lg;
+  padding: 0.35rem 0.9rem;
+  background: $color-accent-warm;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-pill;
+  font-family: $font-body;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-primary-dark;
 }
 
 // Callout-alternatieven — vier aanpakken voor de oude .highlight-box
@@ -1866,40 +1887,13 @@
   padding: 0 0.05em;
 }
 
-// 4. Sticker — speelse witte kaart met offset-schaduw en gedraaid label-tabje
+// 4. Sticker — alias voor preview (zelfde als .highlight-box)
 .callout-sticker {
-  position: relative;
-  margin: calc(#{$space-lg} + 0.5rem) 0 $space-lg;
-  padding: $space-lg;
-  background: $color-surface;
-  border: $border-bold solid $color-primary;
-  border-radius: $radius-md;
-  box-shadow: $shadow-card;
+  @extend .highlight-box;
 }
 
 .callout-sticker__tab {
-  position: absolute;
-  top: -0.95rem;
-  left: $space-lg;
-  padding: 0.35rem 0.9rem;
-  background: $color-accent-warm;
-  border: $border-weight solid $color-primary;
-  border-radius: $radius-pill;
-  font-family: $font-body;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: $color-primary-dark;
-  transform: rotate(-2deg);
-}
-
-.callout-sticker p {
-  margin: 0;
-  font-family: $font-heading;
-  font-size: 1.125rem;
-  line-height: 1.55;
-  color: $color-primary-dark;
+  @extend .highlight-box__tab;
 }
 
 // Privacy — kernboodschap
