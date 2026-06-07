@@ -24,21 +24,23 @@ layout: default
   <div class="container tool-detail__body">
     {% if page.image %}
       <figure class="tool-detail__preview">
-        <button type="button"
-                class="tool-detail__thumb"
-                data-lightbox-src="{{ page.image | relative_url }}"
-                data-lightbox-caption="{{ page.image_caption | default: page.name }}"
-                aria-label="Screenshot {{ page.name }} vergroten">
-          <img src="{{ page.image | relative_url }}"
-               alt="{{ page.alt }}"
-               loading="eager"
-               width="960"
-               height="540">
-          <span class="tool-detail__expand" aria-hidden="true">Vergroten</span>
-        </button>
-        {% if page.image_caption %}
-          <figcaption>{{ page.image_caption }}</figcaption>
-        {% endif %}
+        <div class="tool-detail__preview-pin">
+          <button type="button"
+                  class="tool-detail__thumb"
+                  data-lightbox-src="{{ page.image | relative_url }}"
+                  data-lightbox-caption="{{ page.image_caption | default: page.name }}"
+                  aria-label="Screenshot {{ page.name }} vergroten">
+            <img src="{{ page.image | relative_url }}"
+                 alt="{{ page.alt }}"
+                 loading="eager"
+                 width="960"
+                 height="540">
+            <span class="tool-detail__expand" aria-hidden="true">Vergroten</span>
+          </button>
+          {% if page.image_caption %}
+            <figcaption>{{ page.image_caption }}</figcaption>
+          {% endif %}
+        </div>
       </figure>
     {% endif %}
 
