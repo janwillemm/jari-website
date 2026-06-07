@@ -392,15 +392,6 @@
   margin-bottom: $space-lg;
 }
 
-.section__eyebrow {
-  font-size: 0.8125rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: $color-accent;
-  margin-bottom: $space-xs;
-}
-
 .section__header h2 {
   color: $color-primary;
 }
@@ -545,7 +536,7 @@
   }
 
   .pricing-cta {
-    margin: 0;
+    margin: $space-lg 0 0;
   }
 }
 
@@ -868,7 +859,7 @@
   margin: 0;
 }
 
-// Tools overzicht — compacte klikbare kaarten
+// Tools overzicht: compacte klikbare kaarten
 .tool-card-grid {
   list-style: none;
   padding: 0;
@@ -911,6 +902,18 @@
 
   &--beta {
     border-top-color: $color-accent-warm;
+  }
+
+  &--coming {
+    border-top-color: $color-primary-light;
+    cursor: default;
+    box-shadow: $shadow-offset rgba($color-primary, 0.06);
+
+    &:hover,
+    &:focus-visible {
+      transform: none;
+      box-shadow: $shadow-offset rgba($color-primary, 0.06);
+    }
   }
 
   &:hover,
@@ -1011,6 +1014,11 @@
 
 .tool-card__badge--beta {
   background: $color-accent-warm;
+  color: $color-primary-dark;
+}
+
+.tool-card__badge--coming {
+  background: $color-primary-light;
   color: $color-primary-dark;
 }
 
@@ -1151,6 +1159,14 @@
 .tool-detail__hero-text {
   min-width: 0;
 
+  h2 {
+    margin: 0 0 $space-sm;
+    font-family: $font-heading;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $color-primary-dark;
+  }
+
   p {
     margin: 0 0 $space-sm;
     color: $color-text-muted;
@@ -1188,6 +1204,20 @@
     font-size: 0.9375rem;
     line-height: 1.55;
     color: $color-primary-dark;
+
+    ul {
+      margin-top: $space-xs;
+      padding-left: $space-md;
+      list-style: disc;
+      display: block;
+    }
+
+    li {
+      padding: 0;
+      background: none;
+      border: 0;
+      border-radius: 0;
+    }
   }
 }
 
@@ -1342,6 +1372,31 @@
   color: $color-primary-dark;
 }
 
+.tools-update-note {
+  margin: $space-md 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: $color-text-muted;
+
+  .page-header & {
+    max-width: 42rem;
+  }
+
+  .hero__visual & {
+    margin-top: $space-sm;
+  }
+
+  .tool-detail__content & {
+    margin-top: $space-lg;
+    padding: $space-sm $space-md;
+    background: $color-primary-light;
+    border-radius: $radius-md;
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: $color-primary-dark;
+  }
+}
+
 .tool-detail__footer-cta {
   margin-top: $space-lg;
   padding: $space-lg;
@@ -1361,7 +1416,7 @@
   }
 }
 
-// Tool highlights — "Wat maakt deze tool bijzonder?" varianten
+// Tool highlights: "Wat maakt deze tool bijzonder?" varianten
 .tool-highlights-band {
   margin: $space-lg 0;
   padding: $space-lg $space-md;
@@ -2174,9 +2229,9 @@
   color: $color-primary-dark;
 }
 
-// Callout-alternatieven — vier aanpakken voor de oude .highlight-box
+// Callout-alternatieven: vier aanpakken voor de oude .highlight-box
 
-// 1. Statement — luchtig redactioneel citaat met groot aanhalingsteken
+// 1. Statement: luchtig redactioneel citaat met groot aanhalingsteken
 .callout-statement {
   position: relative;
   margin: $space-lg 0;
@@ -2209,7 +2264,7 @@
   }
 }
 
-// 2. Spotlight — donkere teal-gradient met oranje label
+// 2. Spotlight: donkere teal-gradient met oranje label
 .callout-spotlight {
   margin: $space-md 0 $space-lg;
   padding: $space-lg;
@@ -2243,7 +2298,7 @@
   color: #ffffff;
 }
 
-// 3. Marker — vriendelijke witte kaart met icoon en highlighter-effect
+// 3. Marker: vriendelijke witte kaart met icoon en highlighter-effect
 .callout-marker {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -2288,7 +2343,7 @@
   padding: 0 0.05em;
 }
 
-// 4. Sticker — alias voor preview (zelfde als .highlight-box)
+// 4. Sticker: alias voor preview (zelfde als .highlight-box)
 .callout-sticker {
   @extend .highlight-box;
 }
@@ -2297,7 +2352,7 @@
   @extend .highlight-box__tab;
 }
 
-// Privacy — kernboodschap
+// Privacy: kernboodschap
 .privacy-core {
   margin: 0 0 $space-lg;
   padding: $space-lg;
@@ -2330,7 +2385,7 @@
   color: #ffffff;
 }
 
-// Privacy — kernpunten
+// Privacy: kernpunten
 .privacy-points {
   list-style: none;
   padding: 0;
@@ -2408,7 +2463,7 @@
   }
 }
 
-// Privacy — juridische tekst
+// Privacy: juridische tekst
 .legal {
   margin-top: $space-md;
   color: $color-text-muted;

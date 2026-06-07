@@ -11,7 +11,6 @@ intro: >-
 <section class="tools-section">
   <div class="container">
     <div class="section__header">
-      <span class="section__eyebrow">Beschikbaar</span>
       <h2>Direct te gebruiken in de praktijk</h2>
     </div>
 
@@ -23,7 +22,9 @@ intro: >-
             {% include tool-card-media.html tool=tool %}
             <span class="tool-card__body">
               <span class="tool-card__title">{{ tool.name }}</span>
-              <span class="tool-card__summary">{{ tool.summary }}</span>
+              {% if tool.summary %}
+                <span class="tool-card__summary">{{ tool.summary }}</span>
+              {% endif %}
               <span class="tool-card__cta">Bekijk tool <span aria-hidden="true">→</span></span>
             </span>
           </a>
@@ -51,13 +52,10 @@ intro: >-
 <section class="tools-section tools-section--surface" id="waar-we-op-dit-moment-aan-werken">
   <div class="container">
     <div class="section__header">
-      <span class="section__eyebrow">In ontwikkeling</span>
       <h2>Waar we op dit moment aan werken</h2>
-      <p class="section__lead">
-        We werken aan meer tools op basis van wat professionals in de praktijk nodig hebben.
-        Heb je een idee of wil je meedenken? Neem gerust contact op.
-      </p>
     </div>
+
+    {% include tools-in-progress.html %}
 
     <div class="pricing-cta">
       <a class="btn btn--secondary" href="mailto:{{ site.contact.email }}">Neem contact op</a>

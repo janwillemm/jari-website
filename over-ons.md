@@ -8,7 +8,6 @@ intro: >-
 <section class="about-section">
   <div class="container">
     <div class="section__header">
-      <span class="section__eyebrow">Ons verhaal</span>
       <h2>Van twee werelden naar één missie</h2>
     </div>
 
@@ -56,7 +55,6 @@ intro: >-
 <section class="about-section about-section--surface">
   <div class="container">
     <div class="section__header">
-      <span class="section__eyebrow">Het team</span>
       <h2>Samen sterker</h2>
       <p class="section__lead">
         Wij vullen elkaar op persoonlijk en professioneel gebied enorm aan. We bruisen beiden
@@ -125,7 +123,6 @@ intro: >-
 <section class="about-section">
   <div class="container">
     <div class="section__header">
-      <span class="section__eyebrow">Waar we voor staan</span>
       <h2>Missie &amp; visie</h2>
     </div>
 
@@ -155,7 +152,6 @@ intro: >-
 <section class="about-section about-section--surface">
   <div class="container">
     <div class="section__header">
-      <span class="section__eyebrow">Wat ons drijft</span>
       <h2>Onze waarden</h2>
     </div>
 

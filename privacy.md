@@ -74,7 +74,7 @@ sitemap: true
       <h3>Een account: iets meer</h3>
       <p>
         Maak je een account aan, dan houden we iets meer bij: je e-mailadres en
-        (optioneel) je naam en organisatie. We onthouden dan wel wie je bent —
+        (optioneel) je naam en organisatie. We onthouden dan wel wie je bent;
         dat lijkt ons niet meer dan logisch.
       </p>
     </div>

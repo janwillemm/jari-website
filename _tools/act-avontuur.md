@@ -37,7 +37,6 @@ ACT Avontuur laat kinderen en jongeren (10+) op een speelse manier kennismaken m
 </div>
 
 <div class="section__header">
-  <span class="section__eyebrow">Bijzonder</span>
   <h2>Wat maakt deze tool bijzonder?</h2>
 </div>
 

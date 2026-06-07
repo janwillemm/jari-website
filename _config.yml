@@ -53,12 +53,12 @@ contact:
   email: info@interactggz.nl
   tools_email: ggztools@manenschijn.com
 
-# Contactformulieren — POST naar jari-portal API.
+# Contactformulieren: POST naar jari-portal API.
 contact_form:
   endpoint: "https://portal.interactggz.nl/api/contact"
   development_endpoint: "http://localhost:3100/api/contact"
 
-# Portal — "Probeer" en "Koop" knoppen linken hierheen.
+# Portal: "Probeer" en "Koop" knoppen linken hierheen.
 portal:
   url: "https://portal.interactggz.nl"
   development_url: "http://localhost:3100"

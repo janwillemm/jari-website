@@ -8,7 +8,7 @@ content_measure: true
 
 ## Wat is het?
 
-Het Ontdekkersjaar geeft je een jaar lang toegang tot onze interactieve interventies —
+Het Ontdekkersjaar geeft je een jaar lang toegang tot onze interactieve interventies:
 de tools die er al zijn én alles wat we dit jaar nog ontwikkelen.
 
 <article class="discovery-plan">
@@ -22,13 +22,15 @@ de tools die er al zijn én alles wat we dit jaar nog ontwikkelen.
   </ul>
 </article>
 
+{% include tools-update-note.html %}
+
 ## Waarom we dit doen
 
 Interact GGZ is een jonge startup. We bouwen geen kant-en-klaar product dat af is, maar
 een groeiende verzameling tools die we samen met professionals uit de praktijk steeds beter
-maken. Als ontdekker kun je daar aan bijdragen als je dat leuk vind. Je kunt vrijblijvend
+maken. Als ontdekker kun je daar aan bijdragen als je dat leuk vindt. Je kunt vrijblijvend
 meetesten, meedenken en helpen ons koers bepalen. Zo ontstaan tools die echt aansluiten bij
-wat in de praktijk werkt. We zullen je af en toe een mail sturen om je te vragen of je het leuk vind om iets te testen of feedback te geven. Dit is vanuit geen verwachting, maar een hoop op feedback, zodat we tools kunnen ontwikkelen die aansluiten bij wat in de praktijk werkt.
+wat in de praktijk werkt. We zullen je af en toe een mail sturen om je te vragen of je het leuk vindt om iets te testen of feedback te geven. Dit is vanuit ons geen verwachting, maar een hoop op feedback, zodat we tools kunnen ontwikkelen die aansluiten bij wat in de praktijk werkt.
 
 ## Waarom nu beginnen
 

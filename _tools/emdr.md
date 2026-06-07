@@ -1,14 +1,15 @@
 ---
-name: EMDR
+name: EMDR Toolkit
 order: 2
-status: beta
-status_label: In ontwikkeling
-summary: Visuele bilaterale stimulatie met werkgeheugentaken, figuren en mobiele bediening — afgestemd op elke sessie.
-lead: Bilaterale stimulatie
+status: live
+status_label: Beschikbaar
+summary: Met extra werkgeheugenbelasting opties!
+lead: Met extra werkgeheugenbelasting opties!
 image: /assets/images/tools/emdr-lichtbol.png
 image_caption: Het stimulatieveld met bilaterale lichtbol of bewegend figuur
 alt: Screenshot van het EMDR stimulatieveld met een bewegende lichtbol
-available: false
+available: true
+portal_slug: emdr
 note: >-
   Experimenteel hulpmiddel ter ondersteuning van sessies. Optionele trauma-woorden en
   visuele effecten zijn alleen bedoeld binnen een veilig therapeutisch kader. Vervangt
@@ -18,94 +19,114 @@ note: >-
 <div class="tool-detail__hero-body">
 <div class="tool-detail__hero-text" markdown="1">
 
-Tijdens een EMDR-sessie volgt de cliënt ritmische, afwisselende prikkels met de ogen. Bilaterale stimulatie helpt het brein om vastgelopen herinneringen te verwerken — vergelijkbaar met verwerking tijdens REM-slaap.
+## Intro
 
-Maar hoe stem je snelheid, patroon en belasting van het werkgeheugen af terwijl de cliënt naar het stimulatieveld kijkt? En hoe houd je de omgeving rustig genoeg om je te kunnen richten op contact, observatie en protocol?
+Tijdens EMDR stem je voortdurend af op wat een cliënt nodig heeft. Soms is de standaard werkgeheugenbelasting voldoende. In de meeste gevallen volgt een cliënt dan een lichtje of vinger en/of hoort geluidjes en ervaart trillingen via buzzers. Soms helpt het om extra werkgeheugenbelasting toe te voegen, bijvoorbeeld met rekensommen, telreeksen of spellingstaken. En soms vraagt een behandeling om nog meer creativiteit.
 
-Deze tool biedt visuele bilaterale stimulatie in een overzichtelijke omgeving. Een lichtbol of bewegend figuur beweegt door het gezichtsveld; jij stelt snelheid, patroon, grootte en extra taken in. Optioneel belast je het werkgeheugen verder met gesproken opdrachten, piepjes of kleurtaak — passend bij desensitisatie of installatie.
-
-De tool is rustig vormgegeven: donker stimulatieveld, zachte gloed en bediening die uit de weg blijft. In volledig scherm ziet de cliënt alleen het beeld; jij bedient alles vanaf het scherm of via je mobiel. De tool is ontwikkeld voor EMDR-therapeuten en andere professionals die bilaterale stimulatie inzetten als onderdeel van een behandelprotocol.
+De EMDR Toolkit ondersteunt therapeuten bij het afstemmen van werkgeheugenbelasting tijdens EMDR. De tool combineert een digitale EMDR-lamp met verschillende visuele en auditieve werkgeheugentaken en een uitgebreide inspiratiebibliotheek vol ideeën voor aanvullende werkgeheugenbelasting. Zo heb je tijdens de behandeling snel toegang tot zowel praktische hulpmiddelen als nieuwe inspiratie.
 
 </div>
 
 <div class="highlight-box tool-detail__uses">
   <h2 class="highlight-box__title">Waarvoor kun je deze tool gebruiken?</h2>
   <ul>
-    <li>Desensitisatie tijdens EMDR-sessies</li>
-    <li>Installatie van positieve cognities</li>
-    <li>Bilaterale stimulatie binnen een behandelprotocol</li>
-    <li>Extra belasting van het werkgeheugen tijdens sets</li>
-    <li>Sessies met kinderen en jongeren</li>
-    <li>Demonstratie, training of supervisie</li>
+    <li>
+      <strong>EMDR behandelingen</strong><br>
+      Je kunt de tool gebruiken op dezelfde manier waarop je nu EMDR sessies geeft middels bewegingen met je vinger en/of een lichtbalk.
+    </li>
+    <li>
+      <strong>Aanvullende werkgeheugenbelasting</strong><br>
+      Voeg tijdens een set direct extra belasting toe met:
+      <ul>
+        <li>Rekensommen</li>
+        <li>Rekenreeksen</li>
+        <li>Woorden spellen</li>
+        <li>Woorden achterstevoren spellen</li>
+      </ul>
+      Je hoeft zelf niks te bedenken en te zeggen, dit doet de tool voor jou. De moeilijkheidsgraad kan worden aangepast aan leeftijd en niveau van de cliënt. De moeilijkheidsgraad kun je op elk moment tijdens de sessie eenvoudig aanpassen op het scherm op je telefoon.
+    </li>
+    <li>
+      <strong>EMDR bij kinderen</strong><br>
+      Maak de werkgeheugenbelasting speelser door het standaard bolletje te vervangen door bijvoorbeeld een vliegtuig, ruimteschip of ander kindvriendelijk object.
+    </li>
+    <li>
+      <strong>Inspiratie bij vastlopende trajecten</strong><br>
+      Werkt de gebruikelijke werkgeheugenbelasting onvoldoende? Raadpleeg dan de ingebouwde database met ideeën voor verbale, auditieve, visuele, motorische en creatieve werkgeheugentaken.
+    </li>
   </ul>
 </div>
 </div>
 
 <div class="section__header">
-  <span class="section__eyebrow">Bijzonder</span>
   <h2>Wat maakt deze tool bijzonder?</h2>
 </div>
 
 <div class="tool-accordion tool-accordion--list">
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Afgestemd op elke sessie</span>
+      <span class="tool-accordion__title">Besturen met je mobiel</span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
       <p>
-        Kies snelheid, bewegingspatroon, veldbreedte, positie en bewegingsverloop. Van vloeiend
-        sweeping tot diagonaal, figure-8 of chaos — pas het aan op desensitisatie, installatie
-        en wat de cliënt op dat moment aankan.
+        Je kunt de EMDR-lichtbol fullscreen op je laptop openen. Scan de QR-code om je mobiel
+        te koppelen en bedien de animatie vanaf je telefoon, zonder bij de cliënt te hoeven
+        zitten. Ook de extra werkgeheugenbelasting schakel je daar eenvoudig in en uit.
       </p>
     </div>
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Extra werkgeheugentaken</span>
+      <span class="tool-accordion__title">EMDR-lamp én inspiratiebibliotheek in één</span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
       <p>
-        Optionele taken die het werkgeheugen verder belasten tijdens actieve BLS: bilaterale
-        piepjes, gesproken rekensommen, rekenreeksen, woorden spellen (ook achterstevoren) of
-        kleuren benoemen. Met vier moeilijkheidsniveaus en instelbaar interval tussen opgaven.
+        Naast bilaterale stimulatie biedt de tool direct toegang tot tientallen ideeën voor
+        aanvullende vormen van werkgeheugenbelasting. Je hoeft niet meer te zoeken op internet,
+        in artikelen, protocollen of eigen aantekeningen.
       </p>
     </div>
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Kindvriendelijke beelden</span>
+      <span class="tool-accordion__title">Overal inzetbaar</span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
       <p>
-        Naast de klassieke lichtbol kies je uit bewegende figuren zoals een draak, ruimteschip,
-        vuurvliegje, vlinder of wesp — handig wanneer een neutrale bol de aandacht niet vasthoudt.
+        Je hebt alleen een laptop en telefoon nodig. Daardoor kun je de tool eenvoudig gebruiken
+        in de behandelkamer, bij een gezin thuis, op school of op andere locaties waar een
+        EMDR-sessie plaatsvindt. Binnenkort is ook online behandelen met deze tool mogelijk.
+        We verwachten dat de functionaliteiten voor beeldbellen binnen een paar weken
+        beschikbaar zijn.
       </p>
     </div>
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Bedienen via mobiel</span>
+      <span class="tool-accordion__title">Kindvriendelijk</span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
       <p>
-        Scan een QR-code en stuur het stimulatieveld aan vanaf je telefoon. De cliënt kijkt naar
-        het grote scherm; jij past instellingen aan zonder het beeld te overlappen.
+        Veel EMDR-tools zijn ontworpen voor volwassenen. Deze tool bevat verschillende
+        mogelijkheden om de aandacht van kinderen vast te houden en werkvormen af te stemmen
+        op hun leeftijd en interesses.
       </p>
     </div>
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Uitleg waar je die nodig hebt</span>
+      <span class="tool-accordion__title">Eenvoudig in gebruik</span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
       <p>
-        Bij vrijwel elke instelling staat een (i)-knop met korte, praktische toelichting.
-        Exporteer en importeer je instellingen om ze te bewaren of te delen met collega's.
+        Geen ingewikkelde instellingen of uitgebreide menu's. De belangrijkste functies zijn
+        direct beschikbaar zodat de aandacht kan blijven bij de cliënt en het behandelproces.
+        In principe spreekt de tool in het gebruik voor zich, maar voor wie dat nodig heeft is
+        er een korte handleiding ingebouwd.
       </p>
     </div>
   </details>

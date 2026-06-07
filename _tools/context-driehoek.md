@@ -3,12 +3,11 @@ name: Driehoekmodel
 order: 1
 status: live
 status_label: Beschikbaar
-summary: Het driehoekmodel helpt om informatie snel overzichtelijk te maken, te ordenen en verbanden zichtbaar te maken.
-lead: van informatie naar inzicht
+summary: Van informatie naar inzicht
 image: /assets/images/tools/context-driehoek.png
 video: /assets/videos/tools/context-driehoek.mp4
 image_caption: Voorbeeld van een ingevulde casus
-alt: Screenshot van Context Driehoek met factoren in de drie secties gezin, kind en omgeving
+alt: Screenshot van Driehoekmodel met factoren in de drie secties gezin, kind en omgeving
 available: true
 portal_slug: context-driehoek
 ---
@@ -43,7 +42,6 @@ De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en ge
 </div>
 
 <div class="section__header">
-  <span class="section__eyebrow">Bijzonder</span>
   <h2>Wat maakt deze tool bijzonder?</h2>
 </div>
 

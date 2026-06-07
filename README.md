@@ -4,10 +4,10 @@ Website voor [interactggz.nl](https://interactggz.nl), gebouwd met [Jekyll](http
 
 ## Pagina's
 
-- **Home** — introductie en overzicht
-- **Tools** — overzicht van beschikbare tools
-- **Samen ontwikkelen** — samenwerking, proces en tarieven
-- **Over ons** — Jan-Willem Manenschijn & Rianne Manenschijn, missie, visie en waarden
+- **Home**: introductie en overzicht
+- **Tools**: overzicht van beschikbare tools
+- **Samen ontwikkelen**: samenwerking, proces en tarieven
+- **Over ons**: Jan-Willem Manenschijn & Rianne Manenschijn, missie, visie en waarden
 
 Visuele stijl: contrast design system met logo-kleuren (gedeeld met portal en tools). Tokens staan in `@jari-tools/shared/src/tokens.css`; website-SCSS in `_sass/_variables.scss`.
 

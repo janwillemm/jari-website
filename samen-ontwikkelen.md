@@ -28,7 +28,6 @@ is op dit moment dus nog niet alles mogelijk. Maar we verbazen je graag met wat 
 mogelijk is binnen korte tijd.
 
 <div class="highlight-box">
-  <span class="highlight-box__tab">Onze belofte</span>
   <p>Laten we samen iets maken dat nog niet bestaat.</p>
 </div>
 
@@ -70,7 +69,7 @@ mogelijk is binnen korte tijd.
     <span class="process-step__number">2</span>
     <div>
       <h3 class="process-step__title">Samen verkennen</h3>
-      <p>We vertellen je voor welk bedrag we je idee kunnen realiseren.</p>
+      <p>We denken mee over mogelijkheden, doelgroep en vorm. We vertellen je voor welk bedrag we je idee kunnen realiseren.</p>
     </div>
   </li>
   <li class="process-step">
@@ -98,7 +97,6 @@ mogelijk is binnen korte tijd.
 
 <div class="section__header">
   <h2>Onze tarieven</h2>
-  <span class="hero__eyebrow">We kunnen al vanaf 50 euro een tool maken!</span>
 </div>
 
 <div class="pricing-status">
@@ -107,6 +105,8 @@ mogelijk is binnen korte tijd.
     We geloven dat goede ideeën niet op de plank hoeven te blijven liggen omdat tijd, techniek
     of budget ontbreken. Ons doel is niet om zo veel mogelijk winst te maken, maar om duurzame
     ruimte te creëren voor het ontwikkelen van nieuwe interactieve ervaringen.
+    Soms kunnen we een eenvoudig idee al realiseren voor ongeveer €50, terwijl grotere of
+    complexere projecten vanzelfsprekend meer tijd en investering vragen.
   </p>
 </div>
 

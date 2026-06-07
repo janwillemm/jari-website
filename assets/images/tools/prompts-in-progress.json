@@ -1,0 +1,32 @@
+{
+  "adventureId": "website-tool-cards",
+  "styleGuide": "Clean modern web app UI mockup for Dutch youth mental healthcare (GGZ). Flat design, soft shadows, rounded corners. Brand palette: teal #48a898, dark teal #285858, warm cream background #faf8f5, accent orange #f1b062. Professional but approachable. Readable Dutch UI text is allowed and encouraged. No watermarks, no logos.",
+  "stylePrefix": "Clean modern web app UI mockup screenshot for Dutch youth mental healthcare professionals. Flat design, soft shadows, rounded corners. Brand palette: teal #48a898, dark teal #285858, warm cream background #faf8f5, accent orange #f1b062. Professional but approachable. Readable Dutch UI text. No watermarks, no logos.",
+  "notes": "Tool card preview images for website in-progress section. 16:9 landscape.",
+  "slots": [
+    {
+      "key": "act-waardenspel",
+      "filename": "act-waardenspel.png",
+      "width": 960,
+      "height": 540,
+      "transparent": false,
+      "prompt": "Web app UI screenshot of an ACT values card game for teens in therapy. Tabletop-style digital card layout on cream background: colorful value cards spread out (Vriendschap, Avontuur, Zorgzaamheid), a hand selecting one card, subtle teal header bar with title Waardenkaartspel. Warm playful but professional GGZ tool aesthetic. Landscape 16:9."
+    },
+    {
+      "key": "act-hexaflex",
+      "filename": "act-hexaflexanalyse.png",
+      "width": 960,
+      "height": 540,
+      "transparent": false,
+      "prompt": "Web app UI screenshot of an interactive ACT hexaflex analysis tool. Central hexagon diagram with six labeled segments in Dutch (Acceptatie, Defusie, Aanwezig zijn, Zelf als context, Waarden, Committed action) on cream background. Draggable sticky notes around the hexagon, teal and orange accents, sidebar with casusnotities. Professional therapy workspace for GGZ professionals. Landscape 16:9."
+    },
+    {
+      "key": "elearning-classificaties",
+      "filename": "elearning-classificaties.png",
+      "width": 960,
+      "height": 540,
+      "transparent": false,
+      "prompt": "Web app UI screenshot of an e-learning module about diagnostic classifications for youth GGZ professionals. Split layout: left side shows a lesson slide with heading Classificatiesystemen and bullet points about DSM-5 and ICD-11, right side shows a simple quiz question with multiple choice answers. Teal progress bar at top, cream and white surfaces, clean LMS design. Landscape 16:9."
+    }
+  ]
+}
