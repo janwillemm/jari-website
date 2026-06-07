@@ -11,9 +11,8 @@ alt: Screenshot van het EMDR stimulatieveld met een bewegende lichtbol
 available: true
 portal_slug: emdr
 note: >-
-  Experimenteel hulpmiddel ter ondersteuning van sessies. Optionele trauma-woorden en
-  visuele effecten zijn alleen bedoeld binnen een veilig therapeutisch kader. Vervangt
-  geen gecertificeerd EMDR-protocol of behandeling door een gecertificeerde therapeut.
+  Hulpmiddel ter ondersteuning van sessies. Vervangt geen professioneel EMDR-protocol
+  of behandeling door een gecertificeerde therapeut.
 ---
 
 <div class="tool-detail__hero-body">
