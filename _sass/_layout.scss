@@ -232,6 +232,18 @@
   }
 }
 
+.site-footer__bottom-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-xs $space-md;
+}
+
+.site-footer__legal a {
+  font-size: 0.875rem;
+}
+
 // Page layout
 .page-header {
   padding-block: $space-xl $space-lg;

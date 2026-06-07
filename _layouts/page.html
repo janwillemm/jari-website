@@ -17,6 +17,10 @@ layout: default
     {{ content }}
   </div>
 </article>
-{% unless page.url == '/samen-ontwikkelen/' %}
-  {% include cta-band.html %}
+{% unless page.url == '/samen-ontwikkelen/' or page.no_cta %}
+  {% if page.url == '/tools/' %}
+    {% include cta-band-feedback.html %}
+  {% else %}
+    {% include cta-band.html %}
+  {% endif %}
 {% endunless %}

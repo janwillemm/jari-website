@@ -374,6 +374,19 @@
   }
 }
 
+.discovery-plan__link {
+  display: inline-block;
+  margin-top: $space-md;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  color: $color-primary;
+
+  &::after {
+    content: " →";
+  }
+}
+
 .section__header {
   max-width: 38rem;
   margin-bottom: $space-lg;
@@ -1458,4 +1471,173 @@
     line-height: 1.5;
     color: $color-primary-dark;
   }
+}
+
+// Privacy — kernboodschap
+.privacy-core {
+  margin: 0 0 $space-lg;
+  padding: $space-lg;
+  background: linear-gradient(145deg, $color-primary, $color-primary-dark);
+  border-radius: $radius-md;
+  border: $border-weight solid $color-primary-dark;
+  box-shadow: $shadow-offset rgba($color-primary, 0.18);
+  color: #ffffff;
+}
+
+.privacy-core__label {
+  display: inline-block;
+  margin: 0 0 $space-sm;
+  padding: 0.35rem 0.875rem;
+  background: $color-accent-warm;
+  border-radius: $radius-pill;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-primary-dark;
+}
+
+.privacy-core__text {
+  margin: 0;
+  font-family: $font-heading;
+  font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+// Privacy — kernpunten
+.privacy-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 $space-xl;
+  display: grid;
+  gap: $space-md;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  li + li {
+    margin-top: 0;
+  }
+}
+
+.privacy-point {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: $space-sm $space-md;
+  align-items: start;
+  padding: $space-md $space-md $space-md $space-md;
+  background: $color-surface;
+  border: $border-weight solid $color-primary;
+  border-top-width: 5px;
+  border-radius: $radius-sm;
+  box-shadow: $shadow-offset rgba($color-primary, 0.08);
+
+  &:nth-child(3n + 1) {
+    border-top-color: $color-accent-warm;
+  }
+
+  &:nth-child(3n + 2) {
+    border-top-color: $color-accent;
+  }
+
+  &:nth-child(3n + 3) {
+    border-top-color: $color-accent-blue-gray;
+  }
+}
+
+.privacy-point__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: $color-primary-light;
+  color: $color-primary-dark;
+  font-family: $font-heading;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.privacy-point__body {
+  min-width: 0;
+
+  h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1.0625rem;
+    color: $color-primary-dark;
+  }
+
+  p {
+    margin: 0;
+    color: $color-text-muted;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  p + p {
+    margin-top: 0.5rem;
+  }
+}
+
+// Privacy — juridische tekst
+.legal {
+  margin-top: $space-md;
+  color: $color-text-muted;
+
+  h2 {
+    color: $color-primary;
+    margin-top: $space-xl;
+    padding-top: $space-md;
+    border-top: 1px solid $color-border;
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+
+  h3 {
+    color: $color-primary-dark;
+    margin-top: $space-md;
+  }
+
+  p,
+  li {
+    color: $color-text-muted;
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: $space-sm 0 $space-md;
+    font-size: 0.875rem;
+  }
+
+  th,
+  td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid $color-border;
+  }
+
+  th {
+    background: $color-bg-alt;
+    color: $color-text;
+    font-weight: 600;
+  }
+}
+
+.legal__updated {
+  margin-bottom: $space-lg;
+  font-size: 0.875rem;
+  color: $color-text-light;
 }

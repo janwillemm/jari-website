@@ -22,8 +22,11 @@
   </div>
 
   <div class="site-footer__bottom">
-    <div class="container">
+    <div class="container site-footer__bottom-inner">
       <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}</p>
+      <p class="site-footer__legal">
+        <a href="{{ '/privacy/' | relative_url }}">Privacybeleid</a>
+      </p>
     </div>
   </div>
 </footer>
