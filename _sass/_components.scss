@@ -616,8 +616,14 @@
 }
 
 .team-card--profile {
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-md;
   border-top-color: $color-accent;
+
+  > div {
+    width: 100%;
+  }
 
   @media (min-width: $bp-md) {
     flex-direction: row;
@@ -636,8 +642,8 @@
 }
 
 .team-card--profile .team-card__photo {
-  width: 7rem;
-  height: 7rem;
+  width: 8rem;
+  height: 8rem;
   border: $border-weight solid $color-primary;
   box-shadow: $shadow-offset rgba($color-primary, 0.1);
 
