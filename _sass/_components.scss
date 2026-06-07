@@ -527,14 +527,16 @@
 }
 
 .tools-section {
-  .tools-notice {
-    margin: 0 0 $space-lg;
+  &--disclaimer {
+    padding-top: 0;
+  }
+
+  .tools-disclaimer {
+    margin-bottom: 0;
 
     p {
-      font-family: $font-body;
-      font-size: 0.9375rem;
+      font-size: 1rem;
       line-height: 1.65;
-      color: $color-text-muted;
     }
   }
 
@@ -1082,13 +1084,6 @@
 .tool-detail__preview {
   margin: 0;
   min-width: 0;
-}
-
-.tool-detail__preview-pin {
-  @media (min-width: $bp-lg) {
-    position: sticky;
-    top: calc(4.5rem + #{$space-md});
-  }
 }
 
 .tool-detail__thumb {
