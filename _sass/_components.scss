@@ -520,12 +520,14 @@
   font-weight: 500;
 }
 
-.about-content {
+.about-content,
+.tools-content {
   display: flex;
   flex-direction: column;
 }
 
-.about-section {
+.about-section,
+.tools-section {
   padding-block: $space-xl;
 
   &--surface {
@@ -533,12 +535,14 @@
     border-block: 1px solid $color-border;
   }
 
-  &--contact {
-    padding-bottom: $space-2xl;
-  }
-
   .section__header {
     margin-bottom: $space-lg;
+  }
+}
+
+.about-section {
+  &--contact {
+    padding-bottom: $space-2xl;
   }
 
   .highlight-box {
@@ -547,6 +551,27 @@
 
   .contact-form-block {
     margin-block: 0;
+  }
+}
+
+.tools-section {
+  .tools-notice {
+    margin: 0 0 $space-lg;
+
+    p {
+      font-family: $font-body;
+      font-size: 0.9375rem;
+      line-height: 1.65;
+      color: $color-text-muted;
+    }
+  }
+
+  .tool-card-grid {
+    margin-top: 0;
+  }
+
+  .pricing-cta {
+    margin: 0;
   }
 }
 
@@ -863,32 +888,17 @@
   margin: 0;
 }
 
-// Tools page — disclaimer / toelichting
-.tools-notice {
-  margin: 0 0 $space-lg;
-  padding: $space-md $space-lg;
-  background: $color-primary-light;
-  border-left: 4px solid rgba($color-primary, 0.45);
-  border-radius: $radius-md;
-
-  p {
-    margin: 0;
-    font-size: 0.9375rem;
-    line-height: 1.6;
-    color: $color-primary-dark;
-  }
-}
-
 // Tools overzicht — compacte klikbare kaarten
 .tool-card-grid {
   list-style: none;
   padding: 0;
-  margin: $space-md 0 0;
+  margin: 0;
   display: grid;
   gap: $space-md;
 
   @media (min-width: $bp-md) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: $space-lg;
   }
 
   li {
@@ -908,18 +918,26 @@
   text-decoration: none;
   color: inherit;
   background: $color-surface;
-  border: $border-weight solid $color-border;
-  border-radius: $radius-lg;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-sm;
+  border-top-width: 5px;
   overflow: hidden;
-  box-shadow: $shadow-soft;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: $shadow-offset rgba($color-primary, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &--live {
+    border-top-color: $color-accent;
+  }
+
+  &--beta {
+    border-top-color: $color-accent-warm;
+  }
 
   &:hover,
   &:focus-visible {
     color: inherit;
     transform: translateY(-4px);
-    border-color: rgba($color-primary, 0.35);
-    box-shadow: $shadow-card;
+    box-shadow: 6px 6px 0 rgba($color-primary, 0.12);
     outline: none;
   }
 
@@ -933,7 +951,7 @@
   position: relative;
   display: block;
   background: $color-bg-alt;
-  border-bottom: 1px solid $color-border;
+  border-bottom: $border-weight solid $color-border;
 
   img {
     width: 100%;
@@ -944,7 +962,7 @@
   }
 
   .tool-card:hover & img {
-    transform: scale(1.03);
+    transform: scale(1.02);
   }
 }
 
@@ -976,13 +994,13 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 0.4rem;
-  padding: $space-md;
+  gap: 0.5rem;
+  padding: $space-lg;
 }
 
 .tool-card__title {
   font-family: $font-heading;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.25;
   color: $color-primary-dark;
