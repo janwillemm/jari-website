@@ -491,22 +491,104 @@
   }
 }
 
+// Over ons pagina
+.about-hero {
+  padding-block: $space-xl $space-lg;
+  background: linear-gradient(160deg, $color-bg-hero, $color-primary-light);
+  border-bottom: 4px solid $color-primary;
+}
+
+.about-hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $space-sm;
+  max-width: 42rem;
+}
+
+.about-hero__title {
+  margin: 0;
+  color: $color-primary-dark;
+  font-weight: 700;
+}
+
+.about-hero__lead {
+  margin: 0;
+  font-size: 1.1875rem;
+  line-height: 1.6;
+  color: $color-text;
+  font-weight: 500;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section {
+  padding-block: $space-xl;
+
+  &--surface {
+    background: $color-bg-section;
+    border-block: 1px solid $color-border;
+  }
+
+  &--contact {
+    padding-bottom: $space-2xl;
+  }
+
+  .section__header {
+    margin-bottom: $space-lg;
+  }
+
+  .highlight-box {
+    margin-top: $space-md;
+  }
+
+  .contact-form-block {
+    margin-block: 0;
+  }
+}
+
+.about-story {
+  max-width: $content-measure;
+  color: $color-text-muted;
+  font-size: 1rem;
+  line-height: 1.7;
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 1rem;
+  }
+}
+
+.about-story__lead {
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: $color-text;
+  font-weight: 500;
+}
+
 // Team cards
 .team-grid {
   display: flex;
   flex-direction: column;
-  gap: $space-lg;
+  gap: $space-md;
 }
 
 .team-card {
   background: $color-surface;
   border: $border-weight solid $color-primary;
   border-radius: $radius-sm;
+  border-top-width: 5px;
   padding: $space-lg;
   display: flex;
   gap: $space-md;
   align-items: flex-start;
-  box-shadow: $shadow-offset rgba($color-primary, 0.06);
+  box-shadow: $shadow-offset rgba($color-primary, 0.08);
 }
 
 .team-card__avatar {
@@ -536,6 +618,7 @@
 
 .team-card--profile {
   align-items: flex-start;
+  border-top-color: $color-accent;
 
   @media (min-width: $bp-md) {
     flex-direction: row;
@@ -543,14 +626,12 @@
     gap: $space-lg;
     padding: $space-lg $space-xl;
   }
-}
 
-.team-card--profile.team-card--reverse {
-  @media (min-width: $bp-md) {
-    flex-direction: row-reverse;
+  &.team-card--reverse {
+    border-top-color: $color-accent-warm;
 
-    > div {
-      text-align: right;
+    @media (min-width: $bp-md) {
+      flex-direction: row-reverse;
     }
   }
 }
@@ -558,6 +639,8 @@
 .team-card--profile .team-card__photo {
   width: 7rem;
   height: 7rem;
+  border: $border-weight solid $color-primary;
+  box-shadow: $shadow-offset rgba($color-primary, 0.1);
 
   @media (min-width: $bp-md) {
     width: 8.5rem;
@@ -575,7 +658,8 @@
 
 .team-card__name {
   margin: 0 0 0.25rem;
-  font-size: 1.25rem;
+  font-family: $font-heading;
+  font-size: 1.375rem;
   color: $color-primary-dark;
 }
 
@@ -675,8 +759,10 @@
   background: $color-surface;
   border: $border-weight solid $color-primary;
   border-radius: $radius-sm;
+  border-top-width: 5px;
+  border-top-color: $color-accent-blue-gray;
   padding: $space-lg;
-  box-shadow: $shadow-offset rgba($color-primary, 0.06);
+  box-shadow: $shadow-offset rgba($color-primary, 0.08);
 }
 
 .values-tabs__list {
@@ -1579,35 +1665,44 @@
 // Open editorial statements (missie / visie)
 .statement-pair {
   display: grid;
-  gap: $space-lg;
-  margin: $space-lg 0;
+  gap: $space-md;
 
   @media (min-width: $bp-md) {
     grid-template-columns: repeat(2, 1fr);
-    gap: $space-xl;
+    gap: $space-lg;
   }
 }
 
 .statement {
   margin: 0;
-  padding-left: $space-md;
-  border-left: 4px solid $color-accent;
+  padding: $space-lg;
+  background: $color-surface;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-sm;
+  border-top-width: 5px;
+  border-top-color: $color-accent;
+  box-shadow: $shadow-offset rgba($color-primary, 0.08);
 
   &--warm {
-    border-left-color: $color-accent-warm;
+    border-top-color: $color-accent-warm;
   }
 }
 
 .statement__label {
-  margin: 0 0 $space-xs;
-  font-size: 0.8125rem;
+  margin: 0 0 $space-sm;
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background: $color-accent-soft;
+  border-radius: $radius-pill;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: $color-accent;
+  letter-spacing: 0.06em;
+  color: color.adjust($color-accent, $lightness: -18%);
 
   .statement--warm & {
-    color: color.adjust($color-accent-warm, $lightness: -18%);
+    background: $color-accent-warm-soft;
+    color: color.adjust($color-accent-warm, $lightness: -22%);
   }
 }
 
@@ -1616,7 +1711,7 @@
   padding: 0;
   border: none;
   font-family: $font-heading;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.55;
   color: $color-primary-dark;

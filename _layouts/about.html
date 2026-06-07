@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="page page--about">
+  <header class="about-hero">
+    <div class="container about-hero__inner">
+      {% if page.subtitle %}
+        <span class="hero__eyebrow">{{ page.subtitle }}</span>
+      {% endif %}
+      <h1 class="about-hero__title">{{ page.heading }}</h1>
+      {% if page.intro %}
+        <p class="about-hero__lead">{{ page.intro }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="about-content">
+    {{ content }}
+  </div>
+</article>
+{% unless page.no_cta %}
+  {% include cta-band.html %}
+{% endunless %}
