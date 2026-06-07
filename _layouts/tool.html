@@ -1,0 +1,81 @@
+---
+layout: default
+---
+<article class="tool-detail">
+  <header class="tool-detail__header">
+    <div class="container tool-detail__header-inner">
+      <a class="tool-detail__back" href="{{ '/tools/' | relative_url }}">
+        <span aria-hidden="true">←</span> Alle tools
+      </a>
+      <span class="tool-detail__badge tool-detail__badge--{{ page.status }}">{{ page.status_label }}</span>
+      <h1 class="tool-detail__title">{{ page.name }}</h1>
+      {% if page.lead %}
+        <p class="tool-detail__lead">{{ page.lead }}</p>
+      {% endif %}
+      {% if page.available %}
+        <div class="btn-group tool-detail__cta">
+          <a class="btn btn--primary" href="{{ site.portal.url }}/probeer/{{ page.portal_slug }}">Probeer uit</a>
+          <a class="btn btn--secondary" href="{{ site.portal.url }}/kopen/{{ page.portal_slug }}">Koop</a>
+        </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="container tool-detail__body">
+    {% if page.image %}
+      <figure class="tool-detail__preview">
+        <button type="button"
+                class="tool-detail__thumb"
+                data-lightbox-src="{{ page.image | relative_url }}"
+                data-lightbox-caption="{{ page.image_caption | default: page.name }}"
+                aria-label="Screenshot {{ page.name }} vergroten">
+          <img src="{{ page.image | relative_url }}"
+               alt="{{ page.alt }}"
+               loading="eager"
+               width="960"
+               height="540">
+          <span class="tool-detail__expand" aria-hidden="true">Vergroten</span>
+        </button>
+        {% if page.image_caption %}
+          <figcaption>{{ page.image_caption }}</figcaption>
+        {% endif %}
+      </figure>
+    {% endif %}
+
+    <div class="tool-detail__content">
+      {% if page.features %}
+        <section class="tool-detail__section tool-detail__section--features">
+          <h2>Wat kun je ermee?</h2>
+          <ul class="tool-feature-grid">
+            {% for feature in page.features %}
+              <li class="tool-feature">
+                <strong>{{ feature.title }}</strong>
+                <span>{{ feature.text }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endif %}
+
+      <div class="tool-detail__prose">
+        {{ content }}
+      </div>
+
+      {% if page.note %}
+        <p class="tool-detail__note">{{ page.note }}</p>
+      {% endif %}
+
+      {% if page.available %}
+        <div class="tool-detail__footer-cta">
+          <p>Probeer {{ page.name }} vrijblijvend uit of schaf de tool aan.</p>
+          <div class="btn-group">
+            <a class="btn btn--primary" href="{{ site.portal.url }}/probeer/{{ page.portal_slug }}">Probeer uit</a>
+            <a class="btn btn--secondary" href="{{ site.portal.url }}/kopen/{{ page.portal_slug }}">Koop</a>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</article>
+
+{% include image-lightbox.html %}

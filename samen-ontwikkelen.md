@@ -39,7 +39,7 @@ mogelijk is binnen korte tijd.
     <h3 class="card__title">Behandelinhoud &amp; praktijk</h3>
     <p class="card__text">
       Rianne brengt kennis uit de jeugd-GGZ, diagnostiek en behandeling mee. We denken
-      mee over wat in de praktijk daadwerkelijk werkt — niet alleen wat mooi klinkt.
+      mee over wat in de praktijk daadwerkelijk werkt, niet alleen wat mooi klinkt.
     </p>
   </article>
 
@@ -48,7 +48,7 @@ mogelijk is binnen korte tijd.
     <h3 class="card__title">Serious gaming &amp; technologie</h3>
     <p class="card__text">
       Jan-Willem brengt expertise mee op het gebied van serious gaming, interactieontwerp,
-      productontwikkeling en technologie. We kunnen bouwen wat je bedenkt — en het werkend maken.
+      productontwikkeling en technologie. We kunnen bouwen wat je bedenkt en het werkend maken.
     </p>
   </article>
 </div>
@@ -69,7 +69,7 @@ mogelijk is binnen korte tijd.
     <span class="process-step__number">2</span>
     <div>
       <h3 class="process-step__title">Samen verkennen</h3>
-      <p>We denken mee over mogelijkheden, doelgroep en vorm. We vertellen voor welk bedrag we dit kunnen doen.</p>
+      <p>We vertellen je voor welk bedrag we je idee kunnen realiseren.</p>
     </div>
   </li>
   <li class="process-step">
@@ -95,7 +95,10 @@ mogelijk is binnen korte tijd.
   </li>
 </ol>
 
-## Onze tarieven
+<div class="section__header">
+  <h2>Onze tarieven</h2>
+  <span class="hero__eyebrow">We kunnen al vanaf 50 euro een tool maken!</span>
+</div>
 
 <div class="pricing-status">
   <span class="pricing-status__badge">Maatwerk</span>
@@ -116,8 +119,9 @@ mogelijk is binnen korte tijd.
 <p>
   Een belangrijk onderdeel van ons model is dat tools die we samen ontwikkelen,
   uiteraard in overleg, ook beschikbaar kunnen worden gesteld aan andere professionals.
-  Daardoor kunnen meer mensen profiteren van een goed idee en blijven de kosten voor
-  individuele opdrachtgevers relatief laag.
+  Dat betekent dat we ze met jouw toestemming op onze website aanbieden. Daardoor kunnen
+  meer mensen profiteren van een goed idee en blijven de kosten voor individuele
+  opdrachtgevers relatief laag.
 </p>
 
 <p>De exacte prijs bespreken we in stap 2: <strong>Samen verkennen</strong>.</p>

@@ -1,4 +1,4 @@
-title: Interact-GGZ
+title: Interact GGZ
 description: >-
   Innovatiestudio voor de jeugd-ggz. Wij maken de jeugd-GGZ creatiever, innovatiever en meer ervaringsgericht.
 tagline: Innovatie en creativiteit in de (jeugd-)ggz
@@ -13,6 +13,19 @@ permalink: pretty
 markdown: kramdown
 kramdown:
   input: GFM
+
+# Tools als collection: elke tool krijgt een eigen detailpagina onder /tools/<slug>/
+collections:
+  tools:
+    output: true
+    permalink: /tools/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: tool
 
 plugins:
   - jekyll-seo-tag
@@ -45,6 +58,10 @@ contact_form:
   endpoint: "https://portal.interactggz.nl/api/contact"
   development_endpoint: "http://localhost:3100/api/contact"
 
+# Portal — "Probeer" en "Koop" knoppen linken hierheen.
+portal:
+  url: "https://portal.interactggz.nl"
+
 # Umami analytics (self-hosted). Leave website_id empty to disable tracking locally.
 umami:
   website_id: ""
@@ -55,17 +72,3 @@ authors:
     role: Creatieve techneut
   - name: Rianne Manenschijn
     role: Creatieve orthopedagoog-generalist
-
-tools:
-  - name: Context Driehoek
-    status: live
-    status_label: Beschikbaar
-    summary: Gezins-, kind- en omgevingfactoren in één overzicht voor casusconceptualisatie.
-    image: /assets/images/tools/context-driehoek.png
-    alt: Screenshot van Context Driehoek
-  - name: EMDR — Bilaterale lichtbol
-    status: beta
-    status_label: In ontwikkeling
-    summary: Visuele bilaterale stimulatie om tempo, beeld en duur af te stemmen.
-    image: /assets/images/tools/emdr-lichtbol.png
-    alt: Screenshot van het EMDR stimulatieveld

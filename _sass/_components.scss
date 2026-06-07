@@ -777,83 +777,253 @@
   margin: 0;
 }
 
-// Tool showcase (aan de slag — compacte toolkaarten)
-.tool-showcases {
-  display: grid;
-  gap: $space-lg;
-  margin-top: $space-md;
-}
-
-.tool-showcase {
-  background: $color-surface;
-  border: 1px solid $color-border;
-  border-radius: $radius-lg;
-  box-shadow: $shadow-soft;
-}
-
-.tool-showcase__header {
-  padding: $space-md $space-md 0;
-}
-
-.tool-showcase__meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: $space-xs $space-sm;
-}
-
-.tool-showcase__badge {
-  display: inline-block;
-  padding: 0.2rem 0.65rem;
-  border-radius: $radius-pill;
-  font-size: 0.6875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  flex-shrink: 0;
-}
-
-.tool-showcase__badge--live {
+// Tools page — disclaimer / toelichting
+.tools-notice {
+  margin: 0 0 $space-lg;
+  padding: $space-md $space-lg;
   background: $color-primary-light;
-  color: $color-primary-dark;
-}
+  border-left: 4px solid rgba($color-primary, 0.45);
+  border-radius: $radius-md;
 
-.tool-showcase__badge--beta {
-  background: $color-accent-soft;
-  color: #9a6b58;
-}
-
-.tool-showcase__title {
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  margin: 0;
-}
-
-.tool-showcase__intro {
-  display: grid;
-  gap: $space-md;
-  padding: $space-md;
-  align-items: start;
-
-  @media (min-width: $bp-md) {
-    grid-template-columns: min(16rem, 38%) 1fr;
-    gap: $space-md $space-lg;
+  p {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: $color-primary-dark;
   }
 }
 
-.tool-showcase__preview {
-  margin: 0;
+// Tools overzicht — compacte klikbare kaarten
+.tool-card-grid {
+  list-style: none;
+  padding: 0;
+  margin: $space-md 0 0;
+  display: grid;
+  gap: $space-md;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  li {
+    margin: 0;
+    display: flex;
+  }
+
+  li + li {
+    margin-top: 0;
+  }
 }
 
-.tool-showcase__thumb {
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  background: $color-surface;
+  border: $border-weight solid $color-border;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-soft;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: inherit;
+    transform: translateY(-4px);
+    border-color: rgba($color-primary, 0.35);
+    box-shadow: $shadow-card;
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $color-accent;
+    outline-offset: 2px;
+  }
+}
+
+.tool-card__media {
+  position: relative;
+  display: block;
+  background: $color-bg-alt;
+  border-bottom: 1px solid $color-border;
+
+  img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .tool-card:hover & img {
+    transform: scale(1.03);
+  }
+}
+
+.tool-card__badge {
+  position: absolute;
+  top: $space-sm;
+  left: $space-sm;
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: $radius-pill;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: $shadow-soft;
+}
+
+.tool-card__badge--live {
+  background: $color-primary;
+  color: #ffffff;
+}
+
+.tool-card__badge--beta {
+  background: $color-accent-warm;
+  color: $color-primary-dark;
+}
+
+.tool-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.4rem;
+  padding: $space-md;
+}
+
+.tool-card__title {
+  font-family: $font-heading;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: $color-primary-dark;
+}
+
+.tool-card__summary {
+  color: $color-text-muted;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  margin-bottom: $space-xs;
+}
+
+.tool-card__cta {
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: $color-primary;
+
+  span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  .tool-card:hover & span {
+    transform: translateX(4px);
+  }
+}
+
+// Tool detailpagina
+.tool-detail__header {
+  padding-block: $space-lg $space-xl;
+  background: linear-gradient(160deg, $color-bg-hero, $color-primary-light);
+  border-bottom: 4px solid $color-primary;
+}
+
+.tool-detail__header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: $space-sm;
+}
+
+.tool-detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: $space-xs;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: $color-primary;
+
+  &:hover {
+    color: $color-primary-dark;
+    text-decoration: underline;
+  }
+}
+
+.tool-detail__badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: $radius-pill;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tool-detail__badge--live {
+  background: $color-primary;
+  color: #ffffff;
+}
+
+.tool-detail__badge--beta {
+  background: $color-accent-warm;
+  color: $color-primary-dark;
+}
+
+.tool-detail__title {
+  margin: 0;
+  color: $color-primary-dark;
+}
+
+.tool-detail__lead {
+  margin: 0;
+  max-width: 40rem;
+  font-size: 1.1875rem;
+  line-height: 1.6;
+  color: $color-text;
+}
+
+.tool-detail__cta {
+  margin-top: $space-sm;
+}
+
+.tool-detail__body {
+  display: grid;
+  gap: $space-lg;
+  padding-block: $space-lg $space-xl;
+  align-items: start;
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: $space-xl;
+  }
+}
+
+.tool-detail__preview {
+  margin: 0;
+
+  @media (min-width: $bp-lg) {
+    position: sticky;
+    top: calc(4.5rem + #{$space-md});
+  }
+}
+
+.tool-detail__thumb {
   display: block;
   width: 100%;
   padding: 0;
-  border: 1px solid $color-border;
-  border-radius: $radius-md;
+  border: $border-weight solid $color-border;
+  border-radius: $radius-lg;
   background: $color-bg-alt;
   cursor: zoom-in;
   overflow: hidden;
   position: relative;
+  box-shadow: $shadow-soft;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
   img {
@@ -871,129 +1041,141 @@
   }
 }
 
-.tool-showcase__expand {
+.tool-detail__expand {
   position: absolute;
   inset: auto $space-xs $space-xs auto;
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.3rem 0.55rem;
+  padding: 0.3rem 0.6rem;
   border-radius: $radius-pill;
   background: rgba($color-text, 0.78);
   color: #fff;
   font-size: 0.75rem;
   font-weight: 500;
-  opacity: 0.88;
+  opacity: 0.9;
   transition: opacity 0.2s ease;
   pointer-events: none;
 }
 
 @media (hover: hover) {
-  .tool-showcase__expand {
+  .tool-detail__expand {
     opacity: 0;
   }
 
-  .tool-showcase__thumb:hover .tool-showcase__expand,
-  .tool-showcase__thumb:focus-visible .tool-showcase__expand {
+  .tool-detail__thumb:hover .tool-detail__expand,
+  .tool-detail__thumb:focus-visible .tool-detail__expand {
     opacity: 1;
   }
 }
 
-.tool-showcase__preview figcaption {
-  margin-top: 0.4rem;
+.tool-detail__preview figcaption {
+  margin-top: 0.5rem;
   font-size: 0.8125rem;
   color: $color-text-light;
   line-height: 1.4;
+  text-align: center;
 }
 
-.tool-showcase__summary {
+.tool-detail__content {
   min-width: 0;
 }
 
-.tool-showcase__lead {
-  color: $color-text;
-  font-size: 1rem;
-  line-height: 1.55;
+.tool-detail__section h2,
+.tool-detail__prose h2 {
+  font-size: 1.25rem;
+  color: $color-primary-dark;
   margin: 0 0 $space-sm;
 }
 
-.tool-showcase__details {
-  display: grid;
-  gap: $space-md;
-  padding: 0 $space-md $space-md;
-  border-top: 1px solid $color-border;
-
-  @media (min-width: $bp-md) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: $space-md $space-lg;
-    padding-top: $space-md;
-  }
+.tool-detail__section--features {
+  margin-bottom: $space-lg;
 }
 
-.tool-showcase__section {
-  h3 {
-    color: $color-primary-dark;
-    font-size: 0.9375rem;
-    margin: 0 0 $space-xs;
-  }
-
-  p {
-    color: $color-text-muted;
-    font-size: 0.875rem;
-    line-height: 1.55;
-    margin: 0 0 0.65rem;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  ul:not(.tool-showcase__features) {
-    margin: 0;
-    padding-left: 1.1rem;
-    color: $color-text-muted;
-    font-size: 0.875rem;
-    line-height: 1.5;
-
-    li + li {
-      margin-top: 0.35rem;
-    }
-  }
-}
-
-.tool-showcase__features {
+.tool-feature-grid {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 0.45rem;
-}
+  gap: $space-sm;
 
-.tool-showcase__features li {
-  padding: 0.45rem 0.65rem;
-  background: $color-bg-alt;
-  border-radius: $radius-sm;
-  font-size: 0.8125rem;
-  line-height: 1.45;
-  color: $color-text-muted;
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-  strong {
-    color: $color-text;
-    display: block;
-    font-size: 0.875rem;
-    margin-bottom: 0.1rem;
+  li + li {
+    margin-top: 0;
   }
 }
 
-.tool-showcase__note {
-  grid-column: 1 / -1;
+.tool-feature {
+  padding: $space-sm $space-md;
+  background: $color-bg-alt;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  border-left: 4px solid $color-accent;
+
+  strong {
+    display: block;
+    color: $color-text;
+    font-size: 0.9375rem;
+    margin-bottom: 0.2rem;
+  }
+
+  span {
+    display: block;
+    color: $color-text-muted;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
+
+.tool-detail__prose {
+  h2 {
+    margin-top: $space-lg;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p,
+  li {
+    color: $color-text-muted;
+    line-height: 1.7;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+  }
+}
+
+.tool-detail__note {
+  margin: $space-lg 0 0;
   padding: $space-sm $space-md;
   background: $color-primary-light;
   border-radius: $radius-md;
-  font-size: 0.8125rem;
-  line-height: 1.5;
+  font-size: 0.875rem;
+  line-height: 1.55;
   color: $color-primary-dark;
-  margin: 0;
+}
+
+.tool-detail__footer-cta {
+  margin-top: $space-lg;
+  padding: $space-lg;
+  background: linear-gradient(145deg, $color-accent-soft, $color-bg-hero);
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+
+  p {
+    margin: 0 0 $space-sm;
+    color: $color-primary-dark;
+    font-family: $font-heading;
+    font-size: 1.0625rem;
+  }
+
+  .btn-group {
+    margin-top: 0;
+  }
 }
 
 // Lightbox voor tool-screenshots
@@ -1471,6 +1653,156 @@
     line-height: 1.5;
     color: $color-primary-dark;
   }
+}
+
+// Callout-alternatieven — vier aanpakken voor de oude .highlight-box
+
+// 1. Statement — luchtig redactioneel citaat met groot aanhalingsteken
+.callout-statement {
+  position: relative;
+  margin: $space-lg 0;
+  padding-left: $space-xl;
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -0.25em;
+    left: -0.04em;
+    font-family: $font-heading;
+    font-size: 5rem;
+    line-height: 1;
+    color: $color-accent;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  p {
+    margin: 0;
+    font-family: $font-heading;
+    font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+    font-weight: 500;
+    line-height: 1.4;
+    color: $color-primary-dark;
+  }
+
+  p + p {
+    margin-top: $space-sm;
+  }
+}
+
+// 2. Spotlight — donkere teal-gradient met oranje label
+.callout-spotlight {
+  margin: $space-md 0 $space-lg;
+  padding: $space-lg;
+  background: linear-gradient(145deg, $color-primary, $color-primary-dark);
+  border-radius: $radius-md;
+  border: $border-weight solid $color-primary-dark;
+  box-shadow: $shadow-offset rgba($color-primary, 0.18);
+  color: #ffffff;
+}
+
+.callout-spotlight__label {
+  display: inline-block;
+  margin: 0 0 $space-sm;
+  padding: 0.35rem 0.875rem;
+  background: $color-accent-warm;
+  border-radius: $radius-pill;
+  font-family: $font-body;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-primary-dark;
+}
+
+.callout-spotlight p {
+  margin: 0;
+  font-family: $font-heading;
+  font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+  font-weight: 500;
+  line-height: 1.45;
+  color: #ffffff;
+}
+
+// 3. Marker — vriendelijke witte kaart met icoon en highlighter-effect
+.callout-marker {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: $space-md;
+  align-items: start;
+  margin: $space-md 0 $space-lg;
+  padding: $space-md $space-lg;
+  background: $color-surface;
+  border: $border-weight solid $color-border;
+  border-radius: $radius-md;
+}
+
+.callout-marker__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: $color-accent-soft;
+  color: $color-primary;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.callout-marker p {
+  margin: 0;
+  font-family: $font-heading;
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: $color-primary-dark;
+}
+
+.callout-marker mark {
+  background-color: transparent;
+  background-image: linear-gradient(
+    180deg,
+    transparent 58%,
+    rgba($color-accent-warm, 0.5) 58%
+  );
+  color: inherit;
+  padding: 0 0.05em;
+}
+
+// 4. Sticker — speelse witte kaart met offset-schaduw en gedraaid label-tabje
+.callout-sticker {
+  position: relative;
+  margin: calc(#{$space-lg} + 0.5rem) 0 $space-lg;
+  padding: $space-lg;
+  background: $color-surface;
+  border: $border-bold solid $color-primary;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+}
+
+.callout-sticker__tab {
+  position: absolute;
+  top: -0.95rem;
+  left: $space-lg;
+  padding: 0.35rem 0.9rem;
+  background: $color-accent-warm;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-pill;
+  font-family: $font-body;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $color-primary-dark;
+  transform: rotate(-2deg);
+}
+
+.callout-sticker p {
+  margin: 0;
+  font-family: $font-heading;
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: $color-primary-dark;
 }
 
 // Privacy — kernboodschap

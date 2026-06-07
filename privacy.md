@@ -99,7 +99,7 @@ sitemap: true
 
 <p class="legal__updated">Laatst bijgewerkt: 7 juni 2026</p>
 
-Interact-GGZ ("wij", "ons", "Interact-GGZ") respecteert jouw privacy en gaat
+Interact GGZ ("wij", "ons", "Interact GGZ") respecteert jouw privacy en gaat
 zorgvuldig om met persoonsgegevens. In deze privacyverklaring leggen we uit
 welke gegevens we verwerken, waarom, op welke grondslag, hoe lang we ze bewaren
 en welke rechten je hebt. Deze verklaring is opgesteld in lijn met de Algemene
@@ -108,10 +108,10 @@ Telecommunicatiewet.
 
 ### 1. Verwerkingsverantwoordelijke
 
-Interact-GGZ is de verwerkingsverantwoordelijke voor de verwerking van
+Interact GGZ is de verwerkingsverantwoordelijke voor de verwerking van
 persoonsgegevens zoals beschreven in deze verklaring.
 
-- **Organisatie:** Interact-GGZ (Jan-Willem en Rianne Manenschijn)
+- **Organisatie:** Interact GGZ (Jan-Willem en Rianne Manenschijn)
 - **E-mail:** [info@interactggz.nl](mailto:info@interactggz.nl)
 - **Website:** [interactggz.nl](https://interactggz.nl)
 
