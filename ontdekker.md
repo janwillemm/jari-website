@@ -26,16 +26,20 @@ de tools die er al zijn én alles wat we dit jaar nog ontwikkelen.
 
 ## Waarom we dit doen
 
-Interact GGZ is een jonge startup. We bouwen geen kant-en-klaar product dat af is, maar
-een groeiende verzameling tools die we samen met professionals uit de praktijk steeds beter
-maken. Als ontdekker kun je daar aan bijdragen als je dat leuk vindt. Je kunt vrijblijvend
-meetesten, meedenken en helpen ons koers bepalen. Zo ontstaan tools die echt aansluiten bij
-wat in de praktijk werkt. We zullen je af en toe een mail sturen om je te vragen of je het leuk vindt om iets te testen of feedback te geven. Dit is vanuit ons geen verwachting, maar een hoop op feedback, zodat we tools kunnen ontwikkelen die aansluiten bij wat in de praktijk werkt.
+Interact GGZ is net gestart. Daarom houden we het Ontdekkersjaar voorlopig bewust
+laagdrempelig. Niet omdat we denken dat de tools weinig waarde hebben, maar omdat we
+willen dat professionals ze makkelijk kunnen uitproberen in hun eigen praktijk.
+
+We bouwen aan een groeiende verzameling praktische, interactieve tools voor de jeugd-GGZ.
+In deze fase leren we graag van gebruikers: wat werkt goed, wat kan duidelijker en welke
+ideeën ontstaan er in de praktijk? Feedback is welkom, maar nooit verplicht. Je koopt
+gewoon toegang tot de tools; meedenken mag alleen als dat voor jou passend voelt.
 
 ## Waarom nu beginnen
 
-Hoe eerder je instapt, hoe meer je eraan hebt. Het Ontdekkersjaar is bewust laag geprijsd
-omdat we nog aan het begin staan. Groeit Interact GGZ door, dan groeien de tarieven mee.
+Het Ontdekkersjaar is een introductieprijs voor onze startfase. Je krijgt een jaar
+toegang tot de tools die er nu zijn én tot nieuwe tools die we binnen dat jaar beschikbaar
+maken. Naarmate Interact GGZ en de tools verder groeien, kunnen prijzen veranderen.
 
 
 <div class="pricing-cta">

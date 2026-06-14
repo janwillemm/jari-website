@@ -10,7 +10,8 @@
 {% assign cta_label = include.label %}
 {% if include.action == "kopen" %}
   {% assign price = include.price | default: site.tool_yearly_price | default: "7.99" %}
-  {% assign cta_label = include.label | append: " — €" | append: price %}
+  {% assign price_display = price | replace: ".", "," %}
+  {% assign cta_label = include.label | append: " — €" | append: price_display %}
 {% endif %}
 <a class="btn btn--{{ include.variant | default: 'primary' }}"
    href="{{ portal_base_url }}/{{ include.action }}/{{ include.slug }}">{{ cta_label }}</a>

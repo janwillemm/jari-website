@@ -2,6 +2,7 @@
 layout: default
 ---
 {% assign tool_price = page.price | default: site.tool_yearly_price %}
+{% assign tool_price_display = tool_price | replace: ".", "," %}
 <article class="tool-detail">
   <header class="tool-detail__header">
     <div class="container">
@@ -42,6 +43,7 @@ layout: default
           {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer uit" %}
           {% include portal-cta.html variant="secondary" action="kopen" slug=page.portal_slug label="Koop" price=tool_price %}
         </div>
+        <p class="tool-price-note">Introductieprijs zolang we in de startfase zitten.</p>
       {% endif %}
     </div>
   </header>

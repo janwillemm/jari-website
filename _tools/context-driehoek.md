@@ -23,8 +23,6 @@ Door het invullen van dit model ontstaat een gedeeld beeld van de casus en wordt
 
 De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en gezinnen, maar kan ook samen met ouders of cliënten worden gebruikt om overzicht en inzicht te creëren. Door de interactieve opzet van het model kun je als professional zelf bepalen welke onderdelen van het model zichtbaar zijn voor anderen en welke niet.
 
-[Wat verklaart hoe het met dít kind gaat?’]
-
 </div>
 
 <div class="highlight-box tool-detail__uses">

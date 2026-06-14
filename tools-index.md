@@ -49,6 +49,23 @@ intro: >-
   </div>
 </section>
 
+<section class="tools-section">
+  <div class="container">
+    <div class="pricing-overview__notes">
+      <p>
+        <strong><a href="mailto:info@interactggz.nl">Praktijklicentie:</a></strong> wil je met
+        meerdere collega’s of een hele praktijk gebruikmaken van de tools? Mail ons via
+        <a href="mailto:info@interactggz.nl">info@interactggz.nl</a>, dan kijken we samen wat passend is.
+      </p>
+      <p>
+        <strong><a href="{{ '/samen-ontwikkelen/' | relative_url }}">Maatwerk:</a></strong> heb je
+        een idee voor een interactieve werkvorm, spel of hulpmiddel voor de jeugd-GGZ? Op de pagina
+        Samen ontwikkelen lees je hoe we zo’n idee zorgvuldig kunnen verkennen.
+      </p>
+    </div>
+  </div>
+</section>
+
 <section class="tools-section tools-section--surface" id="waar-we-op-dit-moment-aan-werken">
   <div class="container">
     <div class="section__header">

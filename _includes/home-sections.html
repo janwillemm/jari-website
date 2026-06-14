@@ -108,19 +108,47 @@
   </div>
 </section>
 
-<section class="section section--surface">
+<section class="section section--surface" id="prijzen">
   <div class="container">
-    <article class="discovery-plan">
-      <h2>Ontdekkersjaar</h2>
-      <p class="discovery-plan__price">€49</p>
-      <ul class="discovery-plan__features">
-        <li>Toegang tot alle huidige interventies</li>
-        <li>Toegang tot alle nieuwe interventies die we dit jaar ontwikkelen</li>
-        <li>Meetesten met nieuwe tools (vrijblijvend)</li>
-        <li>Ideeën en feedback met ons delen (vrijblijvend)</li>
-      </ul>
-      <a class="discovery-plan__link" href="{{ '/ontdekker/' | relative_url }}">Meer over het Ontdekkersjaar</a>
-    </article>
+    <div class="pricing-overview">
+      <div class="pricing-overview__intro">
+        <h2>Bewust laagdrempelig in onze startfase</h2>
+        <p>
+          Interact GGZ is net gestart. Daarom houden we onze tools voorlopig bewust
+          laag geprijst: €7,99 per tool per jaar of €49 voor een Ontdekkersjaar.
+          Niet omdat we denken dat de tools weinig waarde hebben, maar omdat we willen
+          dat professionals ze makkelijk kunnen uitproberen.
+        </p>
+        <p>
+          In deze fase leren we graag van ervaringen uit de praktijk: wat werkt goed,
+          wat kan duidelijker en welke ideeën ontstaan er onderweg? Feedback is welkom,
+          maar nooit verplicht. Naarmate de tools en ons bedrijf verder groeien, kunnen prijzen veranderen.
+        </p>
+      </div>
+
+      <div class="pricing-options" aria-label="Prijsopties">
+        <article class="pricing-option">
+          <p class="pricing-option__label">Eén tool</p>
+          <h3>€7,99</h3>
+          <p>
+            Voor professionals die één specifieke tool willen gebruiken of eerst rustig
+            willen kennismaken. Inclusief verbeteringen die we in dat jaar doorvoeren.
+          </p>
+          <a class="card__link" href="{{ '/tools/' | relative_url }}">Bekijk de tools</a>
+        </article>
+
+        <article class="pricing-option pricing-option--featured">
+          <p class="pricing-option__label">Alle tools</p>
+          <h3>€49</h3>
+          <p>
+            Voor professionals die toegang willen tot alle huidige tools én nieuwe tools
+            die binnen het jaar beschikbaar komen.
+          </p>
+          <a class="card__link" href="{{ '/ontdekker/' | relative_url }}">Meer over het Ontdekkersjaar</a>
+        </article>
+      </div>
+
+    </div>
   </div>
 </section>
 

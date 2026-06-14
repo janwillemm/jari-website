@@ -3,8 +3,8 @@ name: EMDR Toolkit
 order: 2
 status: live
 status_label: Beschikbaar
-summary: Met extra werkgeheugenbelasting opties!
-lead: Met extra werkgeheugenbelasting opties!
+summary: Met extra werkgeheugenbelasting opties, te bedienen met je mobiel!
+lead: Met extra werkgeheugenbelasting opties, te bedienen met je mobiel!
 image: /assets/images/tools/emdr-lichtbol.png
 image_caption: Het stimulatieveld met bilaterale lichtbol of bewegend figuur
 alt: Screenshot van het EMDR stimulatieveld met een bewegende lichtbol
