@@ -97,7 +97,7 @@ sitemap: true
 
 ## Volledige privacyverklaring
 
-<p class="legal__updated">Laatst bijgewerkt: 7 juni 2026</p>
+<p class="legal__updated">Laatst bijgewerkt: 16 juni 2026</p>
 
 Interact GGZ ("wij", "ons", "Interact GGZ") respecteert jouw privacy en gaat
 zorgvuldig om met persoonsgegevens. In deze privacyverklaring leggen we uit
@@ -194,6 +194,25 @@ Vul je een contact- of ideeënformulier in of mail je ons, dan verwerken we de
 gegevens die je zelf verstrekt (zoals naam, e-mailadres, eventueel
 telefoonnummer en je bericht) om je vraag te beantwoorden.
 
+#### f. Nieuwsbrief
+
+Schrijf je in voor de nieuwsbrief op onze website, dan verwerken we:
+
+| Gegeven | Verplicht? | Doel |
+|---------|-----------|------|
+| E-mailadres | Ja | Inschrijving en verzending van de nieuwsbrief |
+| Naam | Optioneel | Persoonlijke aanhef in mail |
+| Inschrijfdatum en status | Ja | Beheren van de abonneelijst |
+
+Inschrijven verloopt via **dubbele opt-in**: je ontvangt eerst een
+bevestigingsmail (via onze e-mailprovider Resend, hetzelfde als bij
+inloglinks). Pas na bevestiging kom je op de actieve lijst. We gebruiken geen
+externe mailing-partij voor het beheer van de lijst; die staat in onze eigen
+database. We verkopen je gegevens niet door.
+
+Afmelden kan door te antwoorden op een nieuwsbrief-mail met "afmelden", of
+door ons te mailen. Je kunt ook verzoeken om wissing van je gegevens.
+
 ### 4. Doeleinden en grondslagen
 
 | Doel | Grondslag (AVG) |
@@ -203,14 +222,17 @@ telefoonnummer en je bericht) om je vraag te beantwoorden.
 | Account aanmaken en beheren | Uitvoering van de overeenkomst |
 | Betalingen en facturatie afhandelen | Uitvoering van de overeenkomst en wettelijke (administratie)plicht |
 | Reageren op contact- en ideeënberichten | Gerechtvaardigd belang |
+| Nieuwsbrief: inschrijving en mail over tools/input | Toestemming |
 
 ### 5. Delen met anderen
 
 Wij delen jouw persoonsgegevens niet met derden, behalve:
 
 - met **verwerkers** die in onze opdracht en onder onze instructie diensten
-  leveren, zoals Moneybird voor facturatie. Met deze partijen zijn de wettelijk
-  vereiste afspraken (verwerkersovereenkomsten) gemaakt;
+  leveren, zoals Moneybird voor facturatie en Resend voor transactionele
+  e-mails (inloglinks en bevestiging van nieuwsbrief-inschrijvingen). Met
+  deze partijen zijn de wettelijk vereiste afspraken (verwerkersovereenkomsten)
+  gemaakt;
 - wanneer wij daartoe wettelijk verplicht zijn (bijvoorbeeld op grond van een
   rechtmatig verzoek van een bevoegde autoriteit).
 
@@ -227,6 +249,9 @@ We bewaren persoonsgegevens niet langer dan nodig:
   (in Nederland doorgaans zeven jaar).
 - **Contactberichten:** zo lang als nodig om je vraag af te handelen en
   daarna een redelijke periode voor opvolging.
+- **Nieuwsbrief:** zolang je ingeschreven bent. Niet-bevestigde inschrijvingen
+  verwijderen we na 30 dagen. Na afmelding markeren we je als afgemeld; op
+  verzoek verwijderen we je gegevens.
 - **Statistieken:** in geaggregeerde, niet tot een persoon herleidbare vorm.
 
 ### 7. Beveiliging

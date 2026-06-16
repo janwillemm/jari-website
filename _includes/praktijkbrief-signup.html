@@ -1,0 +1,85 @@
+{% comment %}
+  Praktijkbrief-inschrijving via jari-portal API.
+  Gebruik: {% include praktijkbrief-signup.html variant="home" %}
+  variant: home | footer
+{% endcomment %}
+
+{% assign form_endpoint = site.newsletter_form.endpoint %}
+{% if jekyll.environment != "production" and site.newsletter_form.development_endpoint != "" %}
+  {% assign form_endpoint = site.newsletter_form.development_endpoint %}
+{% endif %}
+{% assign form_context = include.context | default: page.heading | default: "Website" %}
+{% assign variant = include.variant | default: "home" %}
+
+{% if variant == "footer" %}
+  <div class="praktijkbrief-signup praktijkbrief-signup--footer">
+    <p class="praktijkbrief-signup__footer-intro">
+      Wil je het horen wanneer er een nieuwe tool beschikbaar is? Meld je dan aan voor onze nieuwsbrief!
+    </p>
+{% else %}
+  <section class="section section--surface praktijkbrief-section">
+    <div class="container">
+      <div class="contact-form-block">
+        <p class="contact-form__intro">
+          Wil je het horen wanneer er een nieuwe tool beschikbaar is? Meld je dan aan voor onze nieuwsbrief!
+        </p>
+{% endif %}
+
+        {% if form_endpoint == "" or form_endpoint == nil %}
+          <p class="contact-form__fallback">
+            Inschrijven is nog niet beschikbaar. Mail ons op
+            <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>.
+          </p>
+        {% else %}
+          <form class="contact-form"
+                action="{{ form_endpoint }}"
+                method="POST"
+                accept-charset="UTF-8">
+            <input type="hidden" name="pagina" value="{{ form_context | escape }}">
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="praktijkbrief-email-{{ variant }}">E-mail</label>
+              <input class="contact-form__input"
+                     type="email"
+                     id="praktijkbrief-email-{{ variant }}"
+                     name="email"
+                     autocomplete="email"
+                     required>
+            </div>
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="praktijkbrief-name-{{ variant }}">
+                Naam <span class="contact-form__optional">(optioneel)</span>
+              </label>
+              <input class="contact-form__input"
+                     type="text"
+                     id="praktijkbrief-name-{{ variant }}"
+                     name="name"
+                     autocomplete="name">
+            </div>
+
+            <div class="contact-form__field">
+              <label class="contact-form__checkbox">
+                <input type="checkbox" name="consent" value="1" required>
+                <span>
+                  Ja, ik wil de nieuwsbrief ontvangen. Je mag me mailen over nieuwe tools
+                  en af en toe input vragen. Afmelden kan altijd.
+                </span>
+              </label>
+            </div>
+
+            <input type="text" name="_gotcha" class="contact-form__gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <button class="btn btn--secondary contact-form__submit{% if variant == 'footer' %} contact-form__submit--footer{% endif %}" type="submit">
+              {% if variant == "footer" %}Aanmelden{% else %}Bevestig je inschrijving{% endif %}
+            </button>
+          </form>
+        {% endif %}
+
+{% if variant == "footer" %}
+  </div>
+{% else %}
+      </div>
+    </div>
+  </section>
+{% endif %}

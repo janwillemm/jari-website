@@ -2154,6 +2154,104 @@
   padding: 0;
 }
 
+.contact-form__checkbox {
+  display: flex;
+  gap: 0.65rem;
+  align-items: flex-start;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: $color-text-muted;
+  cursor: pointer;
+
+  input {
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+  }
+}
+
+// Nieuwsbrief signup — hergebruikt contact-form-block (zelfde kader als contactformulier)
+.praktijkbrief-section {
+  border-top: 4px solid $color-accent-warm;
+}
+
+.praktijkbrief-section .contact-form-block {
+  margin-block: 0;
+  margin-inline: auto;
+  max-width: 38rem;
+  border-top: 5px solid $color-accent-warm;
+}
+
+.praktijkbrief-signup--footer {
+  display: block;
+  width: 100%;
+  margin-top: $space-sm;
+  padding-top: $space-sm;
+  border-top: 1px solid rgba(#ffffff, 0.15);
+
+  .praktijkbrief-signup__footer-intro {
+    margin: 0 0 $space-sm;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: rgba(#ffffff, 0.72);
+  }
+
+  .contact-form {
+    gap: 0.65rem;
+  }
+
+  .contact-form__label {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: rgba(#ffffff, 0.82);
+  }
+
+  .contact-form__input {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.875rem;
+    border-color: rgba(#ffffff, 0.3);
+    background: rgba(#ffffff, 0.07);
+    color: #ffffff;
+
+    &::placeholder {
+      color: rgba(#ffffff, 0.45);
+    }
+
+    &:focus {
+      border-color: rgba(#ffffff, 0.55);
+      box-shadow: 0 0 0 2px rgba(#ffffff, 0.12);
+    }
+  }
+
+  .contact-form__optional {
+    color: rgba(#ffffff, 0.5);
+  }
+
+  .contact-form__checkbox {
+    font-size: 0.75rem;
+    line-height: 1.45;
+    color: rgba(#ffffff, 0.62);
+    gap: 0.5rem;
+  }
+
+  .contact-form__submit--footer {
+    justify-self: start;
+    margin-top: 0.15rem;
+    padding: 0.45rem 0.875rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    background: transparent;
+    color: rgba(#ffffff, 0.88);
+    border: 1px solid rgba(#ffffff, 0.35);
+    box-shadow: none;
+
+    &:hover {
+      background: rgba(#ffffff, 0.1);
+      color: #ffffff;
+      transform: none;
+    }
+  }
+}
+
 // CTA band
 .cta-band {
   padding-block: $space-xl;

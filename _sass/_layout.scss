@@ -208,10 +208,26 @@
 
   @media (min-width: $bp-md) {
     grid-template-columns: 2fr 1fr 1fr;
+    align-items: start;
   }
 
   p {
     color: rgba(#ffffff, 0.92);
+  }
+}
+
+.site-footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  min-width: 0;
+
+  @media (min-width: $bp-md) {
+    justify-content: space-between;
+  }
+
+  > p {
+    margin: 0;
   }
 }
 
