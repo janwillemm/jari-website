@@ -1,27 +1,11 @@
 {% if tool.video %}
 <span class="tool-card__media tool-card__media--video" data-tool-media>
-  <img src="{{ tool.image | relative_url }}"
-       alt="{{ tool.alt }}"
-       loading="lazy"
-       width="480"
-       height="270">
-  <video class="tool-card__video"
-         src="{{ tool.video | relative_url }}"
-         muted
-         loop
-         playsinline
-         preload="auto"
-         poster="{{ tool.image | relative_url }}"
-         aria-hidden="true"></video>
+  {% include browser-frame.html slug=tool.portal_slug image=tool.image alt=tool.alt video=tool.video variant="embedded" %}
   <span class="tool-card__badge tool-card__badge--{{ tool.status }}">{{ tool.status_label }}</span>
 </span>
 {% else %}
 <span class="tool-card__media">
-  <img src="{{ tool.image | relative_url }}"
-       alt="{{ tool.alt }}"
-       loading="lazy"
-       width="480"
-       height="270">
+  {% include browser-frame.html slug=tool.portal_slug image=tool.image alt=tool.alt variant="embedded" %}
   <span class="tool-card__badge tool-card__badge--{{ tool.status }}">{{ tool.status_label }}</span>
 </span>
 {% endif %}

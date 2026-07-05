@@ -1,0 +1,31 @@
+{% assign frame_class = 'browser-frame' %}
+{% if include.variant == 'embedded' %}
+  {% assign frame_class = frame_class | append: ' browser-frame--embedded' %}
+{% elsif include.variant == 'elevated' %}
+  {% assign frame_class = frame_class | append: ' browser-frame--elevated' %}
+{% endif %}
+<div class="{{ frame_class }}">
+  <div class="browser-frame__viewport">
+    {% if include.video %}
+      <img src="{{ include.image | relative_url }}"
+           alt="{{ include.alt }}"
+           loading="{{ include.loading | default: 'lazy' }}"
+           width="{{ include.width | default: 480 }}"
+           height="{{ include.height | default: 270 }}">
+      <video class="tool-card__video"
+             src="{{ include.video | relative_url }}"
+             muted
+             loop
+             playsinline
+             preload="auto"
+             poster="{{ include.image | relative_url }}"
+             aria-hidden="true"></video>
+    {% else %}
+      <img src="{{ include.image | relative_url }}"
+           alt="{{ include.alt }}"
+           loading="{{ include.loading | default: 'lazy' }}"
+           width="{{ include.width | default: 480 }}"
+           height="{{ include.height | default: 270 }}">
+    {% endif %}
+  </div>
+</div>

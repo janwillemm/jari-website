@@ -5,9 +5,8 @@ status: live
 status_label: Beschikbaar
 summary: Van informatie naar inzicht
 image: /assets/images/tools/context-driehoek.png
-video: /assets/videos/tools/context-driehoek.mp4
-image_caption: Voorbeeld van een ingevulde casus
-alt: Screenshot van Driehoekmodel met factoren in de drie secties gezin, kind en omgeving
+image_caption: Leeg driehoekmodel klaar om in te vullen
+alt: Screenshot van het lege Driehoekmodel met de drie secties gezin, kind en omgeving
 available: true
 portal_slug: context-driehoek
 ---
@@ -43,10 +42,13 @@ De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en ge
   <h2>Wat maakt deze tool bijzonder?</h2>
 </div>
 
-<div class="tool-accordion tool-accordion--list">
+<div class="tool-accordion tool-accordion--band">
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Samen komen tot een gedeeld beeld</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">1</span>
+        <span class="tool-accordion__title">Samen komen tot een gedeeld beeld</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
@@ -60,7 +62,10 @@ De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en ge
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Efficiëntere casusbesprekingen</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">2</span>
+        <span class="tool-accordion__title">Efficiëntere casusbesprekingen</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
@@ -72,7 +77,10 @@ De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en ge
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Ondersteunt breed kijken</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">3</span>
+        <span class="tool-accordion__title">Ondersteunt breed kijken</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
@@ -84,7 +92,10 @@ De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en ge
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Ondersteunt zorgvuldig klinisch redeneren</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">4</span>
+        <span class="tool-accordion__title">Ondersteunt zorgvuldig klinisch redeneren</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
@@ -96,7 +107,10 @@ De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en ge
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Direct bruikbaar</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">5</span>
+        <span class="tool-accordion__title">Direct bruikbaar</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">

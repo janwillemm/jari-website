@@ -121,6 +121,44 @@
 }
 
 // Tool slider (homepage hero)
+.browser-frame {
+  --browser-bevel: 0.625rem;
+  padding: var(--browser-bevel);
+  border: $border-weight solid $color-border;
+  border-radius: $radius-md;
+  background: #eef2f3;
+  box-shadow: $shadow-soft;
+  overflow: hidden;
+}
+
+.browser-frame--elevated {
+  border-color: rgba($color-primary, 0.25);
+  box-shadow: $shadow-card;
+}
+
+.browser-frame--embedded {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.browser-frame__viewport {
+  position: relative;
+  background: $color-bg-alt;
+  line-height: 0;
+  border-radius: calc(#{$radius-sm} * 0.75);
+  overflow: hidden;
+  border: 1px solid rgba($color-text, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+
+  img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+  }
+}
+
 .tool-slider {
   display: flex;
   flex-direction: column;
@@ -149,14 +187,6 @@
 
 .tool-slider__media {
   overflow: hidden;
-  border-bottom: 1px solid $color-border;
-
-  img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    display: block;
-  }
 }
 
 .tool-slider__body {
@@ -186,6 +216,12 @@
   font-weight: 700;
 }
 
+.tool-slider__badge--coming {
+  background: $color-primary-light;
+  color: $color-primary-dark;
+  font-weight: 700;
+}
+
 .tool-slider__title {
   font-size: 1.125rem;
   margin: 0 0 0.35rem;
@@ -196,6 +232,11 @@
   color: $color-text-muted;
   line-height: 1.5;
   margin: 0 0 0.5rem;
+  min-height: 3lh;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .tool-slider__link {
@@ -1039,8 +1080,8 @@
       transform: none;
     }
 
-    &:hover .tool-card__media img,
-    &:focus-visible .tool-card__media img {
+    &:hover .tool-card__media .browser-frame__viewport img,
+    &:focus-visible .tool-card__media .browser-frame__viewport img {
       transform: none;
     }
   }
@@ -1049,28 +1090,22 @@
 .tool-card__media {
   position: relative;
   display: block;
-  background: $color-bg-alt;
-  border-bottom: $border-weight solid $color-border;
   overflow: hidden;
 
-  img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    display: block;
+  .browser-frame__viewport img {
     transition: opacity 0.25s ease, transform 0.3s ease;
   }
 
-  .tool-card:hover & img {
+  .tool-card:hover & .browser-frame__viewport img {
     transform: scale(1.02);
   }
 
   &--video {
-    img {
+    .browser-frame__viewport img {
       transition: opacity 0.2s ease;
     }
 
-    &.is-playing img {
+    &.is-playing .browser-frame__viewport img {
       opacity: 0;
     }
   }
@@ -1232,6 +1267,22 @@
   color: $color-primary-dark;
 }
 
+.tool-detail__badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: $radius-pill;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tool-detail__badge--coming {
+  background: $color-primary-light;
+  color: $color-primary-dark;
+}
+
 .tool-detail__lead {
   margin: 0;
   max-width: 40rem;
@@ -1334,33 +1385,33 @@
   display: block;
   width: 100%;
   padding: 0;
-  border: $border-weight solid $color-border;
-  border-radius: $radius-lg;
-  background: $color-bg-alt;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   cursor: zoom-in;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
-  box-shadow: $shadow-soft;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: none;
+  transition: none;
 
-  img {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    display: block;
+  .browser-frame--elevated {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
   }
 
   &:hover,
   &:focus-visible {
-    border-color: rgba($color-primary, 0.45);
-    box-shadow: $shadow-card;
     outline: none;
+
+    .browser-frame--elevated {
+      border-color: rgba($color-primary, 0.45);
+      box-shadow: $shadow-card;
+    }
   }
 }
 
 .tool-detail__expand {
   position: absolute;
-  inset: auto $space-xs $space-xs auto;
+  inset: auto calc(#{$space-xs} + 0.625rem) calc(#{$space-xs} + 0.625rem) auto;
   display: inline-flex;
   align-items: center;
   padding: 0.3rem 0.6rem;
@@ -1453,6 +1504,10 @@
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  .tool-accordion + .section__header {
+    margin-top: $space-xl;
   }
 
   p,
@@ -1823,6 +1878,244 @@
       align-items: center;
       min-width: 0;
     }
+  }
+}
+
+// FAQ-varianten (preview + toolpagina's)
+.tool-faq-open {
+  display: grid;
+  gap: 0;
+
+  &__item {
+    padding: $space-md 0;
+    border-bottom: $border-weight solid $color-border;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__question {
+    margin: 0 0 $space-xs;
+    font-family: $font-heading;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: $color-primary-dark;
+  }
+
+  &__answer {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: $color-text-muted;
+  }
+}
+
+.tool-faq-nav {
+  display: grid;
+  gap: $space-md;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: minmax(0, 14rem) minmax(0, 1fr);
+    gap: $space-lg;
+    align-items: start;
+  }
+
+  &__index {
+    display: flex;
+    flex-direction: column;
+    gap: $space-xs;
+    padding: $space-sm;
+    background: $color-bg-section;
+    border: $border-weight solid $color-border;
+    border-radius: $radius-md;
+
+    @media (min-width: $bp-md) {
+      position: sticky;
+      top: $space-md;
+    }
+  }
+
+  &__index-label {
+    margin: 0 0 $space-xs;
+    font-family: $font-body;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $color-accent;
+  }
+
+  &__link {
+    display: block;
+    padding: 0.35rem 0.5rem;
+    border-radius: $radius-sm;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: $color-text-muted;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      background: $color-surface;
+      color: $color-primary-dark;
+    }
+  }
+
+  &__entries {
+    display: grid;
+    gap: $space-lg;
+  }
+
+  &__entry {
+    scroll-margin-top: $space-md;
+  }
+
+  &__question {
+    margin: 0 0 $space-xs;
+    font-family: $font-heading;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: $color-primary-dark;
+  }
+
+  &__answer {
+    margin: 0;
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: $color-text-muted;
+  }
+}
+
+.tool-faq-slides {
+  &.tool-slider {
+    gap: $space-md;
+  }
+
+  .tool-slider__viewport {
+    border-color: rgba($color-primary, 0.2);
+    background: linear-gradient(145deg, $color-bg-section, rgba($color-accent-soft, 0.35));
+    box-shadow: $shadow-soft;
+  }
+
+  &__slide.tool-slider__slide {
+    padding: $space-lg $space-md;
+    min-height: 14rem;
+
+    @media (min-width: $bp-md) {
+      padding: $space-xl $space-lg;
+      min-height: 16rem;
+    }
+  }
+
+  &__counter {
+    margin: 0 0 $space-sm;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $color-accent;
+  }
+
+  &__question {
+    margin: 0 0 $space-md;
+    max-width: $content-measure;
+    font-family: $font-heading;
+    font-size: clamp(1.25rem, 2.5vw, 1.625rem);
+    font-weight: 600;
+    line-height: 1.35;
+    color: $color-primary-dark;
+  }
+
+  &__answer {
+    margin: 0;
+    max-width: $content-measure;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: $color-text-muted;
+  }
+}
+
+.tool-faq-cards {
+  display: grid;
+  gap: $space-sm;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  &__item {
+    padding: $space-md;
+    border: $border-weight solid $color-primary;
+    border-top-width: 5px;
+    border-radius: $radius-sm;
+    background: $color-surface;
+    box-shadow: $shadow-offset rgba($color-primary, 0.08);
+
+    &:nth-child(3n + 1) { border-top-color: $color-accent-warm; }
+    &:nth-child(3n + 2) { border-top-color: $color-accent; }
+    &:nth-child(3n) { border-top-color: $color-accent-blue-gray; }
+  }
+
+  &__question {
+    margin: 0 0 $space-xs;
+    font-family: $font-heading;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: $color-primary-dark;
+  }
+
+  &__answer {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: $color-text-muted;
+  }
+}
+
+.tool-faq-dialog {
+  display: grid;
+  gap: $space-md;
+
+  &__item {
+    display: grid;
+    gap: $space-xs;
+  }
+
+  &__question {
+    margin: 0;
+    padding: $space-sm $space-md;
+    border-radius: $radius-md $radius-md $radius-md $radius-sm;
+    background: $color-primary;
+    color: $color-surface;
+    font-family: $font-heading;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 90%;
+    justify-self: start;
+  }
+
+  &__answer {
+    margin: 0;
+    padding: $space-sm $space-md;
+    border-radius: $radius-sm $radius-md $radius-md $radius-md;
+    background: $color-accent-soft;
+    border: $border-weight solid rgba($color-primary, 0.12);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: $color-text-muted;
+    max-width: 92%;
+    justify-self: end;
   }
 }
 

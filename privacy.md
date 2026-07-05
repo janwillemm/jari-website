@@ -145,12 +145,20 @@ We meten onder andere:
 
 - welke pagina's worden bezocht en hoe lang;
 - op welke knoppen of links wordt geklikt;
-- bij het openen van een tool: welke tool en hoe lang die geopend is;
+- bij het openen van een tool: welke tool, hoe lang die geopend is en (voor de
+  EMDR-tool) welke soorten werkgeheugenbelasting je gebruikt en hoelang;
 - technische, niet tot een persoon herleidbare gegevens (zoals
   browsertype, globale regio en verwijzende pagina).
 
-We verzamelen hierbij geen klinische of inhoudelijke gegevens. Verlaat je de
-site en kom je later terug, dan herkennen we je niet als dezelfde persoon.
+Voor **anonieme** bezoekers verwerken we hierbij geen klinische of
+inhoudelijke gegevens en niet tot een persoon herleidbare gegevens; we gebruiken
+hiervoor enkel de hierboven genoemde `_vid`-cookie. Verlaat je de site en kom je
+later terug, dan herkennen we je niet als dezelfde persoon.
+
+Heb je een **account**, dan koppelen we bovenstaande gebruiksstatistieken aan je
+account, zodat we ons gebruik inzichtelijk kunnen maken en onze tools gericht
+kunnen verbeteren. Dit betreft uitsluitend welke tool je opent, hoelang, en welke
+soorten oefeningen je gebruikt — nooit de inhoud die je invoert. Zie ook §3c.
 
 #### b. Functionele/analytische cookie
 
@@ -176,6 +184,7 @@ Maak je een account aan in ons portaal, dan verwerken we:
 | Organisatie | Optioneel | Context over je werkomgeving |
 | Toegangs- en sessiegegevens | Ja | Veilig inloggen en toegang tot tools |
 | Toegekende toegang tot tools | Ja | Bepalen welke tools je mag gebruiken |
+| Gebruiksstatistieken per tool | Ja | Inzicht in gebruik en gericht verbeteren van tools (welke tool, duur, en voor EMDR welke oefentypes — nooit invoerinhoud) |
 
 Wachtwoorden of inloglinks worden uitsluitend versleuteld/gehasht opgeslagen.
 

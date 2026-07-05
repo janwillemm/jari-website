@@ -3,11 +3,7 @@
     <li>
       <article class="tool-card tool-card--coming" aria-label="{{ tool.name }} — in ontwikkeling">
         <span class="tool-card__media">
-          <img src="{{ tool.image | relative_url }}"
-               alt="{{ tool.alt }}"
-               loading="lazy"
-               width="480"
-               height="270">
+          {% include browser-frame.html slug=tool.slug image=tool.image alt=tool.alt variant="embedded" %}
           <span class="tool-card__badge tool-card__badge--coming">In ontwikkeling</span>
         </span>
         <span class="tool-card__body">

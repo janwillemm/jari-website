@@ -6,8 +6,8 @@ status_label: Beschikbaar
 summary: Laat kinderen en jongeren (10+) op een speelse manier kennismaken met defusie tijdens een spannende missie.
 lead: Defusie ervaren
 image: /assets/images/tools/act-avontuur.png
-image_caption: Voorbeeld van een avontuur in het spel
-alt: Screenshot van ACT Avontuur met berichten van navigatiesystemen en scanners tijdens een missie
+image_caption: Het ruimteschip aan het begin van een missie
+alt: Screenshot van ACT Avontuur met het ruimteschip aan het begin van de ruimtereis
 available: true
 portal_slug: act-avontuur
 ---
@@ -40,10 +40,13 @@ ACT Avontuur laat kinderen en jongeren (10+) op een speelse manier kennismaken m
   <h2>Wat maakt deze tool bijzonder?</h2>
 </div>
 
-<div class="tool-accordion tool-accordion--list">
+<div class="tool-accordion tool-accordion--band">
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Ervaren vóór begrijpen</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">1</span>
+        <span class="tool-accordion__title">Ervaren vóór begrijpen</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
@@ -54,7 +57,10 @@ ACT Avontuur laat kinderen en jongeren (10+) op een speelse manier kennismaken m
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">In slechts 5 minuten</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">2</span>
+        <span class="tool-accordion__title">In slechts 5 minuten</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
@@ -65,7 +71,10 @@ ACT Avontuur laat kinderen en jongeren (10+) op een speelse manier kennismaken m
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Aansluitend bij de leefwereld van jongeren</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">3</span>
+        <span class="tool-accordion__title">Aansluitend bij de leefwereld van jongeren</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
@@ -76,7 +85,10 @@ ACT Avontuur laat kinderen en jongeren (10+) op een speelse manier kennismaken m
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Geen ingewikkelde psychologische taal</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">4</span>
+        <span class="tool-accordion__title">Geen ingewikkelde psychologische taal</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">
@@ -87,7 +99,10 @@ ACT Avontuur laat kinderen en jongeren (10+) op een speelse manier kennismaken m
   </details>
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
-      <span class="tool-accordion__title">Stimuleert reflectie en gesprek</span>
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">5</span>
+        <span class="tool-accordion__title">Stimuleert reflectie en gesprek</span>
+      </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
     </summary>
     <div class="tool-accordion__body">

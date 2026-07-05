@@ -12,6 +12,9 @@ layout: default
       <div class="tool-detail__header-grid">
         <div class="tool-detail__header-main">
           <h1 class="tool-detail__title">{{ page.name }}</h1>
+          {% if page.status and page.status != "live" and page.status_label %}
+            <span class="tool-detail__badge tool-detail__badge--{{ page.status }}">{{ page.status_label }}</span>
+          {% endif %}
           {% if page.summary %}
             <p class="tool-detail__lead">{{ page.summary }}</p>
           {% elsif page.lead %}
@@ -25,11 +28,7 @@ layout: default
                     data-lightbox-src="{{ page.image | relative_url }}"
                     data-lightbox-caption="{{ page.image_caption | default: page.name }}"
                     aria-label="Screenshot {{ page.name }} vergroten">
-              <img src="{{ page.image | relative_url }}"
-                   alt="{{ page.alt }}"
-                   loading="eager"
-                   width="960"
-                   height="540">
+              {% include browser-frame.html slug=page.portal_slug image=page.image alt=page.alt loading="eager" width=960 height=540 variant="elevated" %}
               <span class="tool-detail__expand" aria-hidden="true">Vergroten</span>
             </button>
             {% if page.image_caption %}

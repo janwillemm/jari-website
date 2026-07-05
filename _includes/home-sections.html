@@ -26,18 +26,13 @@
                        aria-label="{{ forloop.index }} van {{ slider_tools.size }}: {{ tool.name }}"
                        {% unless forloop.first %}hidden{% endunless %}>
                 <div class="tool-slider__media">
-                  <img src="{{ tool.image | relative_url }}"
-                       alt="{{ tool.alt }}"
-                       loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
-                       width="480"
-                       height="270">
+                  {% capture slide_loading %}{% if forloop.first %}eager{% else %}lazy{% endif %}{% endcapture %}
+                  {% include browser-frame.html slug=tool.portal_slug image=tool.image alt=tool.alt loading=slide_loading variant="embedded" %}
                 </div>
                 <div class="tool-slider__body">
                   <span class="tool-slider__badge tool-slider__badge--{{ tool.status }}">{{ tool.status_label }}</span>
                   <h3 class="tool-slider__title">{{ tool.name }}</h3>
-                  {% if tool.summary %}
-                    <p class="tool-slider__summary">{{ tool.summary }}</p>
-                  {% endif %}
+                  <p class="tool-slider__summary">{{ tool.summary }}</p>
                   <a class="tool-slider__link" href="{{ '/tools/' | append: tool.slug | append: '/' | relative_url }}">Meer over deze tool</a>
                 </div>
               </article>

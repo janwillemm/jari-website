@@ -3,13 +3,6 @@
   summary: Speels ontdekken wat echt belangrijk is
   image: /assets/images/tools/act-waardenspel.png
   alt: Voorbeeld van het ACT waardenspel met waardekaarten op tafel
-
-- slug: act-hexaflexanalyse
-  name: ACT interactieve hexaflexanalyse
-  summary: Hexaflex interactief invullen en bespreken
-  image: /assets/images/tools/act-hexaflexanalyse.png
-  alt: Voorbeeld van de interactieve ACT hexaflexanalyse met zes processen
-
 - slug: elearning-classificaties
   name: E-learning classificaties
   summary: De zin en onzin van classificaties
