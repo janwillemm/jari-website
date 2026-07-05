@@ -1,6 +1,6 @@
 ---
 name: EMDR Toolkit
-order: 2
+order: 1
 status: live
 status_label: Beschikbaar
 summary: Voor kinderen, jongeren en volwassenen. Digitale EMDR-lamp met ingebouwde aanvullende werkgeheugentaken
