@@ -1,5 +1,5 @@
 ---
-name: Bloom — ACT Profiel Jeugd
+name: Bloom ACT Profiel Jeugd
 order: 2
 status: live
 status_label: Beschikbaar
@@ -18,13 +18,13 @@ note: >-
 <div class="tool-detail__hero-body">
 <div class="tool-detail__hero-text" markdown="1">
 
-Bloom — ACT Profiel Jeugd helpt kinderen en jongeren op een visuele en speelse manier ontdekken hoe zij omgaan met gedachten, gevoelens, aandacht, zichzelf, waarden en stappen zetten. Aan de hand van korte vragen ontstaat een persoonlijk ACT-profiel op basis van de zes pijlers van ACT.
+Bloom ACT Profiel Jeugd helpt kinderen en jongeren op een visuele en speelse manier ontdekken hoe zij omgaan met gedachten, gevoelens, aandacht, zichzelf, waarden en stappen zetten. Aan de hand van korte vragen ontstaat een persoonlijk ACT-profiel op basis van de zes pijlers van ACT.
 
 De uitkomst wordt weergegeven als een persoonlijke Bloom-tuin. In die tuin zie je waar al veel kracht zit en waar nog ruimte is om te groeien. Zo krijgen kind, ouders en behandelaar op een laagdrempelige manier inzicht in mogelijke aanknopingspunten voor behandeling.
 
 Bloom is geen diagnostische test, maar een praktisch hulpmiddel om samen te onderzoeken: wat helpt al, waar loopt iemand vast en welke ACT-vaardigheden verdienen extra aandacht?
 
-Voor volwassenen bestaan er ACT-vragenlijsten, zoals de FIT-60, die inzicht geven in psychologische flexibiliteit en de zes ACT-processen. Voor kinderen en jongeren misten wij een laagdrempelige, visuele manier om diezelfde processen zichtbaar en bespreekbaar te maken. Daarom ontwikkelden we Bloom — ACT Profiel Jeugd.
+Voor volwassenen bestaan er ACT-vragenlijsten, zoals de FIT-60, die inzicht geven in psychologische flexibiliteit en de zes ACT-processen. Voor kinderen en jongeren misten wij een laagdrempelige, visuele manier om diezelfde processen zichtbaar en bespreekbaar te maken. Daarom ontwikkelden we Bloom ACT Profiel Jeugd.
 
 </div>
 

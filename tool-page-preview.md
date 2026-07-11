@@ -470,7 +470,7 @@ sitemap: false
         <a class="tool-detail__back" href="#"><span aria-hidden="true">←</span> Alle tools</a>
         <div class="tool-detail__header-grid" style="grid-template-columns: 1fr;">
           <div class="tool-detail__header-main">
-            <h1 class="tool-detail__title">Bloom — ACT Profiel Jeugd</h1>
+            <h1 class="tool-detail__title">Bloom ACT Profiel Jeugd</h1>
             <span class="tool-detail__badge tool-detail__badge--coming">Binnenkort beschikbaar</span>
             <p class="tool-detail__lead">
               In 5–10 minuten een visueel ACT-profiel voor kinderen en jongeren (10+) —
@@ -621,7 +621,7 @@ sitemap: false
         <a class="tool-detail__back" href="#"><span aria-hidden="true">←</span> Alle tools</a>
         <div class="tool-detail__header-grid" style="grid-template-columns: 1fr;">
           <div class="tool-detail__header-main">
-            <h1 class="tool-detail__title">Bloom — ACT Profiel Jeugd</h1>
+            <h1 class="tool-detail__title">Bloom ACT Profiel Jeugd</h1>
             <span class="tool-detail__badge tool-detail__badge--coming">Binnenkort beschikbaar</span>
             <p class="tool-detail__lead">
               Een visueel ACT-profiel voor kinderen en jongeren (10+) als
@@ -815,7 +815,7 @@ sitemap: false
         <a class="tool-detail__back" href="#"><span aria-hidden="true">←</span> Alle tools</a>
         <div class="tool-detail__header-grid" style="grid-template-columns: 1fr;">
           <div class="tool-detail__header-main">
-            <h1 class="tool-detail__title">Bloom — ACT Profiel Jeugd</h1>
+            <h1 class="tool-detail__title">Bloom ACT Profiel Jeugd</h1>
             <span class="tool-detail__badge tool-detail__badge--coming">Binnenkort beschikbaar</span>
             <p class="tool-detail__lead">
               Een persoonlijke tuin als visueel ACT-profiel — voor kinderen en
