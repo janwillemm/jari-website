@@ -1,6 +1,6 @@
 ---
 name: ACT Avontuur
-order: 3
+order: 4
 status: live
 status_label: Beschikbaar
 summary: Laat kinderen en jongeren (10+) op een speelse manier kennismaken met defusie tijdens een spannende missie.

@@ -1,14 +1,14 @@
 ---
 name: Bloom — ACT Profiel Jeugd
-order: 4
-status: coming
-status_label: Binnenkort beschikbaar
+order: 2
+status: live
+status_label: Beschikbaar
 summary: Helpt kinderen en jongeren (10+) op een speelse manier ontdekken hoe ze omgaan met de zes ACT-pijlers. De uitkomst verschijnt als een persoonlijke Bloom-tuin.
 lead: ACT-profiel voor de jeugd
 image: /assets/images/tools/bloom.png
 image_caption: Voorbeeld van een persoonlijke Bloom-tuin in volle bloei
 alt: Screenshot van de Bloom-tuin met zes thema's op niveau 3
-available: false
+available: true
 portal_slug: bloom
 note: >-
   Hulpmiddel ter ondersteuning van gesprekken en behandelrichting. Vervangt geen

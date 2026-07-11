@@ -1,6 +1,6 @@
 ---
 name: Driehoekmodel
-order: 2
+order: 3
 status: live
 status_label: Beschikbaar
 summary: Van informatie naar inzicht
