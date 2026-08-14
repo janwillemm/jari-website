@@ -14,6 +14,14 @@ image_caption: Het ruimteschip aan het begin van een missie
 alt: Screenshot van ACT Avontuur met het ruimteschip aan het begin van de ruimtereis
 available: true
 portal_slug: act-avontuur
+uses_title: Waarvoor kun je deze tool gebruiken?
+uses:
+  - Psycho-educatie over gedachten
+  - Introductie op ACT en defusie
+  - Als startpunt voor een gesprek over piekeren, twijfelen, onzekerheid of zelfkritiek
+  - Als thuis-oefening tussen therapiesessies in
+  - Kan gebruikt worden in trainingen, groepen of lessen rondom mentale gezondheid en veerkracht.
+  - Oudergesprekken
 ---
 
 <div class="tool-detail__hero-body">
@@ -25,18 +33,6 @@ Maar wat gebeurt er als er steeds meer berichten binnenkomen?
 
 ACT Avontuur laat kinderen en jongeren (10+) op een speelse manier kennismaken met defusie. In het spel kunnen ze ervaren hoe serieus we onze gedachtes soms nemen en hoe deze invloed kunnen hebben op keuzes die we maken. Vervolgens ontdekken ze hoe ze meer ruimte kunnen maken voor wat écht belangrijk is.
 
-</div>
-
-<div class="highlight-box tool-detail__uses">
-  <h2 class="highlight-box__title">Waarvoor kun je deze tool gebruiken?</h2>
-  <ul>
-    <li>Psycho-educatie over gedachten</li>
-    <li>Introductie op ACT en defusie</li>
-    <li>Als startpunt voor een gesprek over piekeren, twijfelen, onzekerheid of zelfkritiek</li>
-    <li>Als thuis-oefening tussen therapiesessies in</li>
-    <li>Kan gebruikt worden in trainingen, groepen of lessen rondom mentale gezondheid en veerkracht.</li>
-    <li>Oudergesprekken</li>
-  </ul>
 </div>
 </div>
 

@@ -17,6 +17,14 @@ portal_slug: bloom
 note: >-
   Hulpmiddel ter ondersteuning van gesprekken en behandelrichting. Vervangt geen
   diagnostische beoordeling of klinisch oordeel.
+uses_title: Waarvoor kun je Bloom gebruiken?
+uses:
+  - Inzicht in de zes ACT-pijlers
+  - Startpunt voor een ACT-behandeling
+  - Richting geven aan behandelkeuzes
+  - Gesprek met kind, jongere of ouders
+  - Monitoring tijdens behandeling
+  - Trainingen, groepen of lessen
 faq:
   - question: Is Bloom een diagnostische test?
     answer: >-
@@ -58,18 +66,6 @@ Bloom is geen diagnostische test, maar een praktisch hulpmiddel om samen te onde
 
 Voor volwassenen bestaan er ACT-vragenlijsten, zoals de FIT-60, die inzicht geven in psychologische flexibiliteit en de zes ACT-processen. Voor kinderen en jongeren misten wij een laagdrempelige, visuele manier om diezelfde processen zichtbaar en bespreekbaar te maken. Daarom ontwikkelden we Bloom ACT Profiel Jeugd.
 
-</div>
-
-<div class="highlight-box tool-detail__uses">
-  <h2 class="highlight-box__title">Waarvoor kun je Bloom gebruiken?</h2>
-  <ul>
-    <li>Inzicht in de zes ACT-pijlers</li>
-    <li>Startpunt voor een ACT-behandeling</li>
-    <li>Richting geven aan behandelkeuzes</li>
-    <li>Gesprek met kind, jongere of ouders</li>
-    <li>Monitoring tijdens behandeling</li>
-    <li>Trainingen, groepen of lessen</li>
-  </ul>
 </div>
 </div>
 

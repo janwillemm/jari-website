@@ -13,6 +13,15 @@ image_caption: Leeg driehoekmodel klaar om in te vullen
 alt: Screenshot van het lege Driehoekmodel met de drie secties gezin, kind en omgeving
 available: true
 portal_slug: context-driehoek
+uses_title: Waarvoor kun je deze tool gebruiken?
+uses:
+  - Structureren van intake-informatie, voor jezelf of met het cliëntsysteem samen
+  - Hypothesevorming
+  - Voorbereiden van een MDO of casuïstiekbespreking
+  - Tijdens een MDO of casuïstiekbespreking
+  - Opstellen van een verklarende analyses en/of integratief beeld
+  - Het bespreken van een verklarende analyse en/of integratief beeld met een cliëntsysteem
+  - Onderwijs en supervisie binnen psychologie en orthopedagogiek
 ---
 
 <div class="tool-detail__hero-body">
@@ -26,19 +35,6 @@ Door het invullen van dit model ontstaat een gedeeld beeld van de casus en wordt
 
 De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en gezinnen, maar kan ook samen met ouders of cliënten worden gebruikt om overzicht en inzicht te creëren. Door de interactieve opzet van het model kun je als professional zelf bepalen welke onderdelen van het model zichtbaar zijn voor anderen en welke niet.
 
-</div>
-
-<div class="highlight-box tool-detail__uses">
-  <h2 class="highlight-box__title">Waarvoor kun je deze tool gebruiken?</h2>
-  <ul>
-    <li>Structureren van intake-informatie, voor jezelf of met het cliëntsysteem samen</li>
-    <li>Hypothesevorming</li>
-    <li>Voorbereiden van een MDO of casuïstiekbespreking</li>
-    <li>Tijdens een MDO of casuïstiekbespreking</li>
-    <li>Opstellen van een verklarende analyses en/of integratief beeld</li>
-    <li>Het bespreken van een verklarende analyse en/of integratief beeld met een cliëntsysteem</li>
-    <li>Onderwijs en supervisie binnen psychologie en orthopedagogiek</li>
-  </ul>
 </div>
 </div>
 

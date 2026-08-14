@@ -1,0 +1,20 @@
+<section class="tool-makers" aria-labelledby="tool-makers-heading">
+  <div class="tool-makers__header">
+    <h2 id="tool-makers-heading">Wie maakte {{ include.name }}?</h2>
+  </div>
+  <div class="tool-makers__grid">
+    {% for author in site.authors %}
+      <article class="tool-maker">
+        <img src="{{ '/assets/images/team/' | append: author.id | append: '.jpg' | relative_url }}"
+             alt="{{ author.name }}"
+             width="72"
+             height="72">
+        <div>
+          <h3>{{ author.name }}</h3>
+          <p class="tool-maker__role">{{ author.job_title | default: author.role }}</p>
+          <p>{{ author.description }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

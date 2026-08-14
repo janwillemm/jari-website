@@ -17,6 +17,15 @@ portal_slug: emdr
 note: >-
   Hulpmiddel ter ondersteuning van sessies. Vervangt geen professioneel EMDR-protocol
   of behandeling door een gecertificeerde therapeut.
+uses_title: Waarvoor kun je de EMDR Toolkit gebruiken?
+uses:
+  - Digitale EMDR-lamp bij behandelingen
+  - Aanvullende werkgeheugenbelasting
+  - Snel op- en afschalen tijdens werkgeheugenbelasting
+  - EMDR met kinderen
+  - Storytelling
+  - Inspiratie voor andere vormen van werkgeheugenbelasting
+  - Ambulante EMDR-behandelingen
 faq:
   - question: Vervangt de EMDR Toolkit een EMDR-opleiding of protocol?
     answer: >-
@@ -62,19 +71,6 @@ De cliënt kijkt naar het scherm van de laptop. Jij bedient de sessie vanaf je t
 
 Van reguliere oogbewegingen tot aanvullende werkgeheugenbelasting: snel schakelen wanneer de behandeling daarom vraagt.
 
-</div>
-
-<div class="highlight-box tool-detail__uses">
-  <h2 class="highlight-box__title">Waarvoor kun je de EMDR Toolkit gebruiken?</h2>
-  <ul>
-    <li>Digitale EMDR-lamp bij behandelingen</li>
-    <li>Aanvullende werkgeheugenbelasting</li>
-    <li>Snel op- en afschalen tijdens werkgeheugenbelasting</li>
-    <li>EMDR met kinderen</li>
-    <li>Storytelling</li>
-    <li>Inspiratie voor andere vormen van werkgeheugenbelasting</li>
-    <li>Ambulante EMDR-behandelingen</li>
-  </ul>
 </div>
 </div>
 

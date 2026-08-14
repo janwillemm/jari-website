@@ -3,6 +3,10 @@ layout: default
 ---
 {% assign tool_price = page.price | default: site.tool_yearly_price %}
 {% assign tool_price_display = tool_price | replace: ".", "," %}
+{% assign has_faq = false %}
+{% if page.faq or page.uses %}
+  {% assign has_faq = true %}
+{% endif %}
 <article class="tool-detail">
   <header class="tool-detail__header">
     <div class="container">
@@ -39,7 +43,7 @@ layout: default
       </div>
       {% if page.available %}
         <div class="btn-group tool-detail__cta">
-          {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer uit" %}
+          {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer gratis uit" %}
           {% include portal-cta.html variant="secondary" action="kopen" slug=page.portal_slug label="Koop" price=tool_price %}
         </div>
         <p class="tool-price-note">Introductieprijs zolang we in de startfase zitten.</p>
@@ -67,31 +71,49 @@ layout: default
         {{ content }}
       </div>
 
-      {% if page.faq %}
+      {% if has_faq %}
         <div class="section__header">
           <h2>Veelgestelde vragen</h2>
         </div>
-        <div class="tool-faq-cards">
+        <div class="tool-faq-open">
           {% for item in page.faq %}
-            <article class="tool-faq-cards__item">
-              <h3 class="tool-faq-cards__question">{{ item.question }}</h3>
-              <p class="tool-faq-cards__answer">{{ item.answer }}</p>
+            <article class="tool-faq-open__item">
+              <h3 class="tool-faq-open__question">{{ item.question }}</h3>
+              <p class="tool-faq-open__answer">{{ item.answer }}</p>
             </article>
           {% endfor %}
+          {% if page.uses %}
+            <article class="tool-faq-open__item">
+              <h3 class="tool-faq-open__question">{{ page.uses_title }}</h3>
+              <div class="tool-faq-open__answer">
+                <ul>
+                  {% for use in page.uses %}
+                    <li>{{ use }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </article>
+          {% endif %}
         </div>
       {% endif %}
 
-      {% if page.note %}
-        <p class="tool-detail__note">{{ page.note }}</p>
-      {% endif %}
+      <div class="tool-grenzen" role="note">
+        {% if page.note %}
+          <p>{{ page.note }}</p>
+        {% endif %}
+        <p>
+          Onze tools worden zorgvuldig doorontwikkeld op basis van gebruikservaringen en
+          vrijblijvende feedback. Als je de tool koopt heb je altijd toegang tot de nieuwste versie.
+        </p>
+      </div>
 
-      {% include tools-update-note.html %}
+      {% include tool-makers.html name=page.name %}
 
       {% if page.available %}
         <div class="tool-detail__footer-cta">
           <p>Probeer {{ page.name }} vrijblijvend uit of schaf de tool aan.</p>
           <div class="btn-group">
-            {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer uit" %}
+            {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer gratis uit" %}
             {% include portal-cta.html variant="secondary" action="kopen" slug=page.portal_slug label="Koop" price=tool_price %}
           </div>
         </div>

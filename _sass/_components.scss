@@ -96,7 +96,7 @@
   font-size: 1.125rem;
   color: $color-text;
   font-weight: 500;
-  max-width: 36rem;
+  max-width: $content-measure;
   line-height: 1.65;
 }
 
@@ -533,7 +533,7 @@
 }
 
 .section__header {
-  max-width: 38rem;
+  max-width: $content-measure;
   margin-bottom: $space-lg;
 }
 
@@ -815,7 +815,7 @@
 .unique-position__intro,
 .unique-position__lead {
   color: $color-text-muted;
-  max-width: 40rem;
+  max-width: $content-measure;
   margin: 0 0 $space-md;
 }
 
@@ -827,7 +827,7 @@
   color: $color-text;
   font-size: 1.0625rem;
   line-height: 1.6;
-  max-width: 40rem;
+  max-width: $content-measure;
   margin: $space-md 0 0;
 }
 
@@ -1285,7 +1285,7 @@
 
 .tool-detail__lead {
   margin: 0;
-  max-width: 40rem;
+  max-width: $content-measure;
   font-size: 1.1875rem;
   line-height: 1.6;
   color: $color-text;
@@ -1300,19 +1300,12 @@
 }
 
 .tool-detail__hero-body {
-  display: grid;
-  gap: $space-lg;
   margin-bottom: $space-lg;
-
-  @media (min-width: $bp-lg) {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-    gap: $space-xl;
-    align-items: start;
-  }
 }
 
 .tool-detail__hero-text {
   min-width: 0;
+  max-width: $content-measure;
 
   h2 {
     margin: 0 0 $space-sm;
@@ -1506,8 +1499,20 @@
     }
   }
 
+  > .section__header {
+    margin-top: $space-xl;
+    margin-bottom: $space-md;
+    padding-top: $space-lg;
+    border-top: 1px solid $color-border;
+  }
+
   .tool-accordion + .section__header {
     margin-top: $space-xl;
+  }
+
+  // Accordion/grids blijven volle breedte; alleen doorlopende zinnen krijgen een maat.
+  > p {
+    max-width: $content-measure;
   }
 
   p,
@@ -1523,6 +1528,7 @@
 
 .tool-detail__note {
   margin: $space-lg 0 0;
+  max-width: $content-measure;
   padding: $space-sm $space-md;
   background: $color-primary-light;
   border-radius: $radius-md;
@@ -1538,7 +1544,7 @@
   color: $color-text-muted;
 
   .page-header & {
-    max-width: 42rem;
+    max-width: $content-measure;
   }
 
   .hero__visual & {
@@ -1547,6 +1553,7 @@
 
   .tool-detail__content & {
     margin-top: $space-lg;
+    max-width: $content-measure;
     padding: $space-sm $space-md;
     background: $color-primary-light;
     border-radius: $radius-md;
@@ -1556,22 +1563,128 @@
   }
 }
 
-.tool-detail__footer-cta {
-  margin-top: $space-lg;
-  padding: $space-lg;
-  background: linear-gradient(145deg, $color-accent-soft, $color-bg-hero);
-  border: 1px solid $color-border;
-  border-radius: $radius-lg;
+.tool-grenzen {
+  margin: $space-xl 0 0;
+  padding: $space-md $space-lg;
+  background: $color-accent-soft;
+  border-radius: $radius-md;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: $color-primary-dark;
 
   p {
     margin: 0 0 $space-sm;
-    color: $color-primary-dark;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tool-makers {
+  margin: $space-xl 0 0;
+  padding-top: $space-lg;
+  border-top: 1px solid $color-border;
+}
+
+.tool-makers__header {
+  margin: 0 0 $space-md;
+
+  h2 {
+    margin: 0;
     font-family: $font-heading;
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
+    color: $color-primary-dark;
+  }
+}
+
+.tool-makers__grid {
+  display: grid;
+  gap: $space-md;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.tool-maker {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0.875rem;
+  padding: $space-sm $space-md;
+  background: $color-surface;
+  border: $border-weight solid $color-border;
+  border-radius: $radius-md;
+  align-items: start;
+
+  img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: $border-weight solid $color-primary-dark;
+  }
+
+  h3 {
+    margin: 0 0 0.15rem;
+    font-family: $font-heading;
+    font-size: 1rem;
+    color: $color-primary-dark;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: $color-text-muted;
+  }
+}
+
+.tool-maker__role {
+  margin: 0 0 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: $color-accent;
+}
+
+.tool-detail__content > .section__header {
+  margin-top: $space-xl;
+  margin-bottom: $space-md;
+}
+
+.tool-detail__footer-cta {
+  margin-top: $space-xl;
+  padding: $space-lg;
+  background: $color-primary-dark;
+  color: #ffffff;
+  border-radius: $radius-md;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm $space-md;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+    color: #ffffff;
+    font-family: $font-body;
+    font-size: 0.9375rem;
   }
 
   .btn-group {
     margin-top: 0;
+  }
+
+  .btn--primary {
+    background: $color-primary-light;
+    border-color: $color-primary-light;
+    color: $color-primary-dark;
+  }
+
+  .btn--secondary {
+    background: transparent;
+    border-color: $color-primary-light;
+    color: $color-primary-light;
   }
 }
 
@@ -1864,7 +1977,7 @@
       justify-content: center;
       width: 1.75rem;
       height: 1.75rem;
-      margin-right: $space-xs;
+      margin-right: $space-sm;
       border-radius: 50%;
       background: $color-accent-soft;
       color: $color-primary-dark;
@@ -1878,6 +1991,10 @@
       align-items: center;
       min-width: 0;
     }
+
+    .tool-accordion__body {
+      padding-left: calc(#{$space-md} + 1.75rem + #{$space-sm});
+    }
   }
 }
 
@@ -1885,25 +2002,29 @@
 .tool-faq-open {
   display: grid;
   gap: 0;
+  max-width: $content-measure;
+  padding: $space-md;
+  background: $color-bg-section;
+  border-radius: $radius-md;
 
   &__item {
-    padding: $space-md 0;
-    border-bottom: $border-weight solid $color-border;
+    padding: $space-sm 0;
+    border-bottom: 1px solid $color-border;
 
     &:first-child {
-      padding-top: 0;
+      border-top: 1px solid $color-border;
     }
 
     &:last-child {
       border-bottom: none;
-      padding-bottom: 0;
+      padding-bottom: 0.25rem;
     }
   }
 
   &__question {
-    margin: 0 0 $space-xs;
+    margin: 0 0 0.35rem;
     font-family: $font-heading;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.35;
     color: $color-primary-dark;
@@ -1911,9 +2032,18 @@
 
   &__answer {
     margin: 0;
-    font-size: 0.9375rem;
-    line-height: 1.65;
+    font-size: 0.875rem;
+    line-height: 1.55;
     color: $color-text-muted;
+
+    ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.15rem;
+    }
+
+    li + li {
+      margin-top: 0.25rem;
+    }
   }
 }
 
@@ -2047,10 +2177,7 @@
 .tool-faq-cards {
   display: grid;
   gap: $space-sm;
-
-  @media (min-width: $bp-md) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  max-width: $content-measure;
 
   &__item {
     padding: $space-md;
@@ -2085,6 +2212,7 @@
 .tool-faq-dialog {
   display: grid;
   gap: $space-md;
+  max-width: $content-measure;
 
   &__item {
     display: grid;
@@ -2602,7 +2730,7 @@
   color: $color-text-muted;
   font-size: 1.0625rem;
   line-height: 1.65;
-  max-width: 42rem;
+  max-width: $content-measure;
 }
 
 .mission-statement__tagline {
