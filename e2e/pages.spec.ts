@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { attachConsoleGuard, expectPageHealthy } from './helpers';
+import { attachConsoleGuard, expectPageHealthy, openMobileNavIfNeeded } from './helpers';
 import { NAV_ITEMS, PREVIEW_PAGES, PUBLIC_PAGES, UTILITY_PAGES } from './pages';
 
 test.describe('Alle pagina\'s laden', () => {
@@ -34,6 +34,7 @@ test.describe('Alle pagina\'s laden', () => {
 test.describe('Navigatie & assets', () => {
   test('hoofdnavigatie linkt naar alle header-pagina\'s', async ({ page }) => {
     await page.goto('/');
+    await openMobileNavIfNeeded(page);
     const nav = page.locator('#site-nav');
 
     for (const item of NAV_ITEMS) {

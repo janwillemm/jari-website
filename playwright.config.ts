@@ -35,7 +35,8 @@ export default defineConfig({
   webServer: process.env.E2E_BASE_URL
     ? undefined
     : {
-        command: `bundle exec jekyll serve --host 127.0.0.1 --port ${port} --livereload false`,
+        // --no-watch avoids mid-test rebuild races that briefly 404 assets.
+        command: `bundle exec jekyll serve --host 127.0.0.1 --port ${port} --destination _site --no-watch`,
         url: baseURL,
         reuseExistingServer: !process.env.CI,
         timeout: 120_000,

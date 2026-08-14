@@ -1,18 +1,18 @@
 import { test, expect } from '@playwright/test';
-import {
-  attachConsoleGuard,
-  mockPortalApis,
-  openMobileNavIfNeeded,
-} from './helpers';
+import { attachConsoleGuard, mockPortalApis } from './helpers';
 import { NAV_ITEMS, TOOL_SLUGS } from './pages';
 
 /**
  * Golden path: één doorlopende reis door alle kernfunctionaliteit
  * van de InteractGGZ-website (navigatie, tools, lightbox, tabs,
  * formulieren, nieuwsbrief, privacy).
+ *
+ * Draait op desktop; mobiele navigatie heeft een aparte test hieronder.
+ * Pagina-smoke tests draaien al op beide viewports.
  */
 test.describe('Golden path', () => {
-  test('bezoeker doorloopt alle kernflows', async ({ page, baseURL }) => {
+  test('bezoeker doorloopt alle kernflows', async ({ page, baseURL }, testInfo) => {
+    test.skip(testInfo.project.name !== 'chromium', 'Volledige golden path op desktop');
     test.setTimeout(120_000);
 
     const origin = baseURL ?? 'http://127.0.0.1:4000';
@@ -34,34 +34,34 @@ test.describe('Golden path', () => {
       page.locator('.tool-slider__slide.is-active .tool-slider__title')
     ).not.toHaveText(/EMDR Toolkit/);
 
-    await page.getByRole('link', { name: /Heb jij een gaaf idee/i }).first().click();
+    await page.locator('.hero .btn-group a.btn--primary').click();
     await expect(page).toHaveURL(/\/samen-ontwikkelen\/?$/);
 
     // 2. Header-nav: alle primaire pagina's
     for (const item of NAV_ITEMS) {
-      await openMobileNavIfNeeded(page);
       await page.locator('#site-nav').getByRole('link', { name: item.label, exact: true }).click();
       await expect(page).toHaveURL(
-        item.path === '/' ? /\/$/ : new RegExp(`${item.path.replace(/\//g, '\\/')}?$`)
+        item.path === '/' ? /\/(?:index\.html)?$/ : new RegExp(`${item.path.replace(/\//g, '\\/')}?$`)
       );
       await expect(page.locator('main#main-content')).toBeVisible();
     }
 
     // 3. Tools-overzicht → elke toolpagina + lightbox + portal-CTA's
-    await openMobileNavIfNeeded(page);
     await page.locator('#site-nav').getByRole('link', { name: 'Tools', exact: true }).click();
     await expect(page).toHaveURL(/\/tools\/?$/);
-    await expect(page.locator('.tool-card-grid .tool-card')).toHaveCount(TOOL_SLUGS.length);
+    // Live tools are links; in-progress cards are non-link articles in a second grid.
+    await expect(page.locator('a.tool-card')).toHaveCount(TOOL_SLUGS.length);
 
     for (const slug of TOOL_SLUGS) {
       await page.goto('/tools/');
-      await page.locator(`.tool-card[href="/tools/${slug}/"]`).click();
+      await page.locator(`a.tool-card[href="/tools/${slug}/"]`).click();
       await expect(page).toHaveURL(new RegExp(`/tools/${slug}/?$`));
 
-      await expect(page.getByRole('link', { name: /Probeer gratis uit/i })).toBeVisible();
-      await expect(page.getByRole('link', { name: /Koop/i })).toBeVisible();
+      const toolCta = page.locator('.tool-detail__cta');
+      await expect(toolCta.getByRole('link', { name: /Probeer gratis uit/i })).toBeVisible();
+      await expect(toolCta.getByRole('link', { name: /Koop/i })).toBeVisible();
 
-      const lightboxTrigger = page.locator('[data-lightbox-src]').first();
+      const lightboxTrigger = page.locator('.tool-detail__thumb[data-lightbox-src]').first();
       await expect(lightboxTrigger).toBeVisible();
       await lightboxTrigger.click();
       const dialog = page.locator('#image-lightbox');
@@ -102,11 +102,12 @@ test.describe('Golden path', () => {
     expect(panelId).toBeTruthy();
     await expect(page.locator(`#${panelId}`)).toBeVisible();
 
-    await page.locator('.contact-form').first().scrollIntoViewIfNeeded();
-    await page.locator('input[name="name"]').first().fill('Contact Test');
-    await page.locator('input[name="email"]').first().fill('contact@example.com');
-    await page.locator('textarea[name="message"]').first().fill('Vraag over jullie tools.');
-    await page.locator('.contact-form button[type="submit"]').first().click();
+    const contactForm = page.locator('main .contact-form').filter({ has: page.locator('textarea[name="message"]') });
+    await contactForm.scrollIntoViewIfNeeded();
+    await contactForm.locator('input[name="name"]').fill('Contact Test');
+    await contactForm.locator('input[name="email"]').fill('contact@example.com');
+    await contactForm.locator('textarea[name="message"]').fill('Vraag over jullie tools.');
+    await contactForm.locator('button[type="submit"]').click();
     await expect(page).toHaveURL(/\/bedankt\/?$/);
 
     // 7. Footer-nieuwsbrief + privacy

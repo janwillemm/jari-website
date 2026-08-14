@@ -12,8 +12,8 @@ image: /assets/images/tools/context-driehoek.png
 image_caption: Leeg driehoekmodel klaar om in te vullen
 alt: Screenshot van het lege Driehoekmodel met de drie secties gezin, kind en omgeving
 hero_image: /assets/images/tools/context-driehoek-casus.png
-hero_image_caption: Fictief voorbeeld: Noor, 10 jaar, schoolweigering en piekeren
-hero_alt: Screenshot van een ingevuld Driehoekmodel met factoren bij kind, gezin en omgeving, plus hypotheses, ideeën en vragen
+hero_image_caption: "Fictief voorbeeld: Noor, 10 jaar, schoolweigering en piekeren"
+hero_alt: "Screenshot van een ingevuld Driehoekmodel met factoren bij kind, gezin en omgeving, plus hypotheses, ideeën en vragen"
 available: true
 portal_slug: context-driehoek
 uses_title: Waarvoor kun je deze tool gebruiken?
