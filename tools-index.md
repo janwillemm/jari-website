@@ -5,7 +5,7 @@ title: Tools voor de jeugd-ggz
 heading: Onze tools
 description: >-
   Interactieve interventies voor behandelaars: EMDR Toolkit, Bloom ACT Profiel
-  Jeugd, Driehoekmodel en ACT Avontuur. Direct te gebruiken, vanaf €7,99 per jaar.
+  Jeugd, Driehoekmodel en ACT Avontuur. Direct te gebruiken, vanaf €4,99 per jaar.
 intro: >-
   Hier vind je onze tools, wij noemen ze zelf graag interactieve interventies.
   Elke tool is gericht op directe toepasbaarheid, zonder ingewikkelde systemen,

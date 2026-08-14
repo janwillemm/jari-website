@@ -3,7 +3,8 @@ name: Driehoekmodel
 title: Driehoekmodel — van intake-informatie naar inzicht
 description: >-
   Orden kind-, gezins- en omgevingsfactoren voor intake, MDO of casuïstiek.
-  Draait lokaal, geen serveropslag. €7,99 per jaar.
+  Draait lokaal, geen serveropslag. €4,99 per jaar.
+price: "4.99"
 order: 3
 status: live
 status_label: Beschikbaar
@@ -46,7 +47,7 @@ faq:
       Nee. De tool draait in je browser, vergelijkbaar met een Word- of Excel-bestand op je eigen computer. Gegevens gaan niet automatisch naar een server en zijn niet zichtbaar voor andere gebruikers. Jij bepaalt of en hoe je iets opslaat. Zorgvuldig omgaan met cliëntgegevens blijft jouw verantwoordelijkheid, binnen de afspraken van je organisatie.
   - question: Wat is gratis en wat zit in de betaalde versie?
     answer: >-
-      Invullen en gebruiken kan gratis. Opslaan, een eerder bestand openen en exporteren naar PDF zitten in de betaalde versie (€7,99 per jaar). Zo kun je het model eerst uitproberen voordat je een casus bewaart of deelt.
+      Invullen en gebruiken kan gratis. Opslaan, een eerder bestand openen en exporteren naar PDF zitten in de betaalde versie (€4,99 per jaar). Zo kun je het model eerst uitproberen voordat je een casus bewaart of deelt.
   - question: Hoe sla ik een casus op?
     answer: >-
       In de betaalde versie sla je het model op als .jari-bestand op je eigen computer of in de map die jouw organisatie daarvoor gebruikt. Later open je dat bestand weer in de tool. Er is geen automatische cloudopslag: het bestand gaat mee zoals een document dat je zelf bewaart.

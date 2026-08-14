@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const outDir = path.resolve(__dirname, '../assets/images/tools');
+const marketingDir = path.resolve(__dirname, '../../sharedassets/export');
 
 const TOOLS = {
   'context-driehoek': 'http://localhost:8082/',
@@ -211,6 +212,43 @@ async function captureDriehoekCasus(page) {
   await page.setViewportSize(viewport);
 }
 
+/** Same 1280×720 frame as the site, but 2× pixels so a 1200px LinkedIn-export scherp blijft. */
+async function captureDriehoekCasusHiRes(page) {
+  const fixturePath = path.resolve(
+    __dirname,
+    '../../jari-tools/tools/context-driehoek/src/fixtures/example-casus.jari'
+  );
+  const fixture = JSON.parse(await readFile(fixturePath, 'utf8'));
+  const positions = Object.fromEntries(
+    fixture.data.items.map((item) => [item.id, { x: item.x, y: item.y }])
+  );
+  await prepareToolPage(page, 'context-driehoek', { paid: true });
+  await page.goto(TOOLS['context-driehoek'], { waitUntil: 'networkidle' });
+  await page.locator('.jari-tool-file-actions input[type=file]').setInputFiles(fixturePath);
+  await page.locator('.cd-triangle-item').first().waitFor({ state: 'visible', timeout: 10000 });
+  await openSidebarSections(page);
+  await frameDriehoek16x9(page);
+  await page.waitForTimeout(400);
+  await page.evaluate((placed) => {
+    for (const el of document.querySelectorAll('.cd-triangle-item')) {
+      const pos = placed[el.dataset.id];
+      if (!pos) continue;
+      el.dataset.x = String(pos.x);
+      el.dataset.y = String(pos.y);
+      el.style.left = `${(pos.x / 400) * 100}%`;
+      el.style.top = `${(pos.y / 400) * 100}%`;
+    }
+  }, positions);
+  await page.waitForTimeout(200);
+  await mkdir(marketingDir, { recursive: true });
+  await page.screenshot({
+    path: path.join(marketingDir, 'driehoekmodel-lotte-hdready.png'),
+    animations: 'disabled',
+    caret: 'hide',
+  });
+  await page.setViewportSize(viewport);
+}
+
 async function captureEmdr(page) {
   await prepareToolPage(page, 'emdr', { paid: true });
   await page.goto(TOOLS.emdr, { waitUntil: 'networkidle' });
@@ -274,6 +312,7 @@ try {
   const captures = [
     ['driehoek', captureDriehoek],
     ['driehoek-casus', captureDriehoekCasus],
+    ['driehoek-casus-hires', captureDriehoekCasusHiRes],
     ['emdr', captureEmdr],
     ['act', captureActAvontuur],
     ['bloom', captureBloom],

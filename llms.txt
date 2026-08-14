@@ -9,11 +9,11 @@ Rianne Manenschijn (orthopedagoog-generalist).
 ## Tools
 - EMDR Toolkit: /tools/emdr/ — digitale EMDR-lamp, €7,99/jaar
 - Bloom ACT Profiel Jeugd: /tools/bloom/ — ACT-profiel 10+, geen test
-- Driehoekmodel: /tools/context-driehoek/ — casusordening, lokaal
+- Driehoekmodel: /tools/context-driehoek/ — casusordening, lokaal, €4,99/jaar
 - ACT Avontuur: /tools/act-avontuur/ — defusie-spel 10+, ~5 min
 
 ## Prijzen
-€7,99 per tool per jaar. Ontdekkersjaar €49 (alle tools).
+Vanaf €4,99 per tool per jaar. Ontdekkersjaar €49 (alle tools).
 
 ## Contact
 info@interactggz.nl
