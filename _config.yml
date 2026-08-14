@@ -43,6 +43,14 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
+  - node_modules
+  - e2e
+  - package.json
+  - package-lock.json
+  - playwright.config.ts
+  - playwright-report
+  - test-results
+  - scripts
 
 header_pages:
   - title: Home

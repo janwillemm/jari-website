@@ -1,0 +1,14 @@
+{
+  "name": "jari-website",
+  "private": true,
+  "description": "InteractGGZ website — Playwright e2e tests",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2"
+  }
+}
