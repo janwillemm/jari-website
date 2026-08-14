@@ -11,6 +11,9 @@ summary: Van informatie naar inzicht
 image: /assets/images/tools/context-driehoek.png
 image_caption: Leeg driehoekmodel klaar om in te vullen
 alt: Screenshot van het lege Driehoekmodel met de drie secties gezin, kind en omgeving
+hero_image: /assets/images/tools/context-driehoek-casus.png
+hero_image_caption: Fictief voorbeeld: Noor, 10 jaar, schoolweigering en piekeren
+hero_alt: Screenshot van een ingevuld Driehoekmodel met factoren bij kind, gezin en omgeving, plus hypotheses, ideeën en vragen
 available: true
 portal_slug: context-driehoek
 uses_title: Waarvoor kun je deze tool gebruiken?
@@ -22,6 +25,43 @@ uses:
   - Opstellen van een verklarende analyses en/of integratief beeld
   - Het bespreken van een verklarende analyse en/of integratief beeld met een cliëntsysteem
   - Onderwijs en supervisie binnen psychologie en orthopedagogiek
+faq:
+  - question: Is het driehoekmodel een diagnostisch instrument?
+    answer: >-
+      Nee. Het is een ordeningshulpmiddel. Je zet informatie, hypotheses, vragen en ideeën naast elkaar, zodat je sneller tot een gedeeld beeld komt. Het vervangt geen klinische beoordeling, verklarende analyse of behandelbeslissing.
+  - question: Voor wie is de tool bedoeld?
+    answer: >-
+      Voor professionals die werken met kinderen, jongeren en gezinnen: intake, diagnostiek, behandeling, MDO of supervisie. Je kunt het alleen invullen, of samen met collega’s, ouders of het cliëntsysteem. De tool sluit aan bij hoe veel mensen in de jeugd-GGZ al kijken: kind, gezin en omgeving.
+  - question: Wat betekenen de drie hoeken?
+    answer: >-
+      Elke hoek verzamelt een ander type factor. Ontwikkeling kind gaat over het kind zelf. Gezinscontext & opvoeding over het gezin en de opvoeding. Ervaringen & omgeving over eerdere ervaringen en de bredere context. In het midden staat de vraag: wat verklaart hoe het met dit kind gaat?
+  - question: Wat is het verschil tussen factoren, hypotheses, vragen en ideeën?
+    answer: >-
+      Factoren zijn wat je al weet of observeert, en die plaats je in de driehoek. Hypotheses zijn hoe die factoren volgens jou samenhangen. Vragen markeren wat nog onduidelijk is. Ideeën zijn mogelijke vervolgstappen voor onderzoek of behandeling. Zo blijft zichtbaar wat bekend is en wat nog openstaat.
+  - question: Kan ik het samen met ouders of cliënten gebruiken?
+    answer: >-
+      Ja. Je kunt secties in- en uitklappen, zodat je zelf bepaalt wat anderen zien. In een gesprek met ouders of het cliëntsysteem kun je bijvoorbeeld alleen de driehoek tonen, en hypotheses of ideeën even dichtklappen. Zo blijft het overzichtelijk zonder dat alles tegelijk in beeld hoeft.
+  - question: Worden cliëntgegevens naar een server gestuurd?
+    answer: >-
+      Nee. De tool draait in je browser, vergelijkbaar met een Word- of Excel-bestand op je eigen computer. Gegevens gaan niet automatisch naar een server en zijn niet zichtbaar voor andere gebruikers. Jij bepaalt of en hoe je iets opslaat. Zorgvuldig omgaan met cliëntgegevens blijft jouw verantwoordelijkheid, binnen de afspraken van je organisatie.
+  - question: Wat is gratis en wat zit in de betaalde versie?
+    answer: >-
+      Invullen en gebruiken kan gratis. Opslaan, een eerder bestand openen en exporteren naar PDF zitten in de betaalde versie (€7,99 per jaar). Zo kun je het model eerst uitproberen voordat je een casus bewaart of deelt.
+  - question: Hoe sla ik een casus op?
+    answer: >-
+      In de betaalde versie sla je het model op als .jari-bestand op je eigen computer of in de map die jouw organisatie daarvoor gebruikt. Later open je dat bestand weer in de tool. Er is geen automatische cloudopslag: het bestand gaat mee zoals een document dat je zelf bewaart.
+  - question: Heb ik training of een specifieke methodiek nodig?
+    answer: >-
+      Nee. Er zit geen vast protocol achter. De tool volgt de manier waarop veel professionals al denken: eerst ordenen, dan verbanden leggen, dan vragen en ideeën. Handig als je wilt structureren, niet als je een nieuwe methodiek moet leren.
+  - question: Kan ik het gebruiken in een MDO of casuïstiekbespreking?
+    answer: >-
+      Ja. Dat is een van de bedoelde toepassingen. Als de driehoek al is ingevuld, hoef je minder tijd te steken in het toelichten van de casus. De overlegtijd kan naar wat ontbreekt, welke hypotheses het meest waarschijnlijk zijn en wat de volgende stap is.
+  - question: Wat betekent de plek van een label in de driehoek?
+    answer: >-
+      Je sleept labels naar de plek die voor jou klopt. Dichter bij een andere hoek kan betekenen dat een factor twee kanten raakt, bijvoorbeeld zowel kind als gezin. De plek is geen score: het is een visuele manier om samenhang zichtbaar te maken.
+  - question: Kan ik het model printen of als PDF delen?
+    answer: >-
+      Ja, in de betaalde versie. Exporteer PDF opent het afdrukvenster van je browser, zodat je een A4-overzicht kunt printen of als PDF bewaren. Handig voor een dossier, een overleg of om het beeld met collega’s te delen.
 ---
 
 <div class="tool-detail__hero-body">
@@ -37,24 +77,6 @@ De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en ge
 
 </div>
 </div>
-
-<div class="section__header">
-  <h2>Voorbeeld van een ingevulde casus</h2>
-</div>
-
-<p>Hieronder zie je een fictief voorbeeld. Factoren bij Noor, haar gezin en haar omgeving staan bij elkaar, met hypotheses, ideeën en vragen ernaast. Zo ontstaat in één oogopslag een gedeeld beeld van de casus.</p>
-
-<figure class="tool-detail__preview tool-detail__preview--inline">
-  <button type="button"
-          class="tool-detail__thumb"
-          data-lightbox-src="{{ '/assets/images/tools/context-driehoek-casus.png' | relative_url }}"
-          data-lightbox-caption="Fictief voorbeeld: Noor, 10 jaar, aangemeld vanwege schoolweigering en piekeren"
-          aria-label="Screenshot van een ingevuld Driehoekmodel vergroten">
-    {% include browser-frame.html slug="context-driehoek" image="/assets/images/tools/context-driehoek-casus.png" alt="Screenshot van een ingevuld Driehoekmodel met factoren bij kind, gezin en omgeving, plus hypotheses, ideeën en vragen" loading="lazy" width=960 height=540 variant="elevated" %}
-    <span class="tool-detail__expand" aria-hidden="true">Vergroten</span>
-  </button>
-  <figcaption>Fictief voorbeeld: Noor, 10 jaar, aangemeld vanwege schoolweigering en piekeren.</figcaption>
-</figure>
 
 <div class="section__header">
   <h2>Wat maakt deze tool bijzonder?</h2>

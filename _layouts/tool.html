@@ -25,18 +25,21 @@ layout: default
             <p class="tool-detail__lead">{{ page.lead }}</p>
           {% endif %}
         </div>
-        {% if page.image %}
+        {% assign preview_image = page.hero_image | default: page.image %}
+        {% assign preview_caption = page.hero_image_caption | default: page.image_caption %}
+        {% assign preview_alt = page.hero_alt | default: page.alt %}
+        {% if preview_image %}
           <figure class="tool-detail__preview">
             <button type="button"
                     class="tool-detail__thumb"
-                    data-lightbox-src="{{ page.image | relative_url }}"
-                    data-lightbox-caption="{{ page.image_caption | default: page.name }}"
+                    data-lightbox-src="{{ preview_image | relative_url }}"
+                    data-lightbox-caption="{{ preview_caption | default: page.name }}"
                     aria-label="Screenshot {{ page.name }} vergroten">
-              {% include browser-frame.html slug=page.portal_slug image=page.image alt=page.alt loading="eager" width=960 height=540 variant="elevated" %}
+              {% include browser-frame.html slug=page.portal_slug image=preview_image alt=preview_alt loading="eager" width=960 height=540 variant="elevated" %}
               <span class="tool-detail__expand" aria-hidden="true">Vergroten</span>
             </button>
-            {% if page.image_caption %}
-              <figcaption>{{ page.image_caption }}</figcaption>
+            {% if preview_caption %}
+              <figcaption>{{ preview_caption }}</figcaption>
             {% endif %}
           </figure>
         {% endif %}

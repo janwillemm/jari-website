@@ -1,5 +1,5 @@
 import { chromium } from 'playwright';
-import { mkdir } from 'node:fs/promises';
+import { mkdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -70,16 +70,31 @@ async function captureDriehoek(page) {
 }
 
 async function captureDriehoekCasus(page) {
-  const fixture = path.resolve(
+  const fixturePath = path.resolve(
     __dirname,
     '../../jari-tools/tools/context-driehoek/src/fixtures/example-casus.jari'
   );
+  const fixture = JSON.parse(await readFile(fixturePath, 'utf8'));
+  const positions = Object.fromEntries(
+    fixture.data.items.map((item) => [item.id, { x: item.x, y: item.y }])
+  );
   await prepareToolPage(page, 'context-driehoek', { paid: true });
   await page.goto(TOOLS['context-driehoek'], { waitUntil: 'networkidle' });
-  await page.locator('.jari-tool-file-actions input[type=file]').setInputFiles(fixture);
+  await page.locator('.jari-tool-file-actions input[type=file]').setInputFiles(fixturePath);
   await page.locator('.cd-triangle-item').first().waitFor({ state: 'visible', timeout: 10000 });
   await openSidebarSections(page);
-  await page.waitForTimeout(500);
+  await page.waitForTimeout(400);
+  await page.evaluate((placed) => {
+    for (const el of document.querySelectorAll('.cd-triangle-item')) {
+      const pos = placed[el.dataset.id];
+      if (!pos) continue;
+      el.dataset.x = String(pos.x);
+      el.dataset.y = String(pos.y);
+      el.style.left = `${(pos.x / 400) * 100}%`;
+      el.style.top = `${(pos.y / 400) * 100}%`;
+    }
+  }, positions);
+  await page.waitForTimeout(200);
   await screenshotElement(page, '.cd-content-area', 'context-driehoek-casus.png');
 }
 
