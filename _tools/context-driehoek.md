@@ -39,6 +39,24 @@ De tool is ontwikkeld voor professionals die werken met kinderen, jongeren en ge
 </div>
 
 <div class="section__header">
+  <h2>Voorbeeld van een ingevulde casus</h2>
+</div>
+
+<p>Hieronder zie je een fictief voorbeeld. Factoren bij Noor, haar gezin en haar omgeving staan bij elkaar, met hypotheses, ideeën en vragen ernaast. Zo ontstaat in één oogopslag een gedeeld beeld van de casus.</p>
+
+<figure class="tool-detail__preview tool-detail__preview--inline">
+  <button type="button"
+          class="tool-detail__thumb"
+          data-lightbox-src="{{ '/assets/images/tools/context-driehoek-casus.png' | relative_url }}"
+          data-lightbox-caption="Fictief voorbeeld: Noor, 10 jaar, aangemeld vanwege schoolweigering en piekeren"
+          aria-label="Screenshot van een ingevuld Driehoekmodel vergroten">
+    {% include browser-frame.html slug="context-driehoek" image="/assets/images/tools/context-driehoek-casus.png" alt="Screenshot van een ingevuld Driehoekmodel met factoren bij kind, gezin en omgeving, plus hypotheses, ideeën en vragen" loading="lazy" width=960 height=540 variant="elevated" %}
+    <span class="tool-detail__expand" aria-hidden="true">Vergroten</span>
+  </button>
+  <figcaption>Fictief voorbeeld: Noor, 10 jaar, aangemeld vanwege schoolweigering en piekeren.</figcaption>
+</figure>
+
+<div class="section__header">
   <h2>Wat maakt deze tool bijzonder?</h2>
 </div>
 

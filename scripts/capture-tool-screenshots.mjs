@@ -54,15 +54,33 @@ async function screenshotElement(page, selector, filename) {
   });
 }
 
-async function captureDriehoek(page) {
-  await prepareToolPage(page, 'context-driehoek');
-  await page.goto(TOOLS['context-driehoek'], { waitUntil: 'networkidle' });
+async function openSidebarSections(page) {
   await page.evaluate(() => {
     for (const section of document.querySelectorAll('.cd-collapse--sidebar')) {
       section.open = true;
     }
   });
+}
+
+async function captureDriehoek(page) {
+  await prepareToolPage(page, 'context-driehoek');
+  await page.goto(TOOLS['context-driehoek'], { waitUntil: 'networkidle' });
+  await openSidebarSections(page);
   await screenshotElement(page, '.cd-content-area', 'context-driehoek.png');
+}
+
+async function captureDriehoekCasus(page) {
+  const fixture = path.resolve(
+    __dirname,
+    '../../jari-tools/tools/context-driehoek/src/fixtures/example-casus.jari'
+  );
+  await prepareToolPage(page, 'context-driehoek', { paid: true });
+  await page.goto(TOOLS['context-driehoek'], { waitUntil: 'networkidle' });
+  await page.locator('.jari-tool-file-actions input[type=file]').setInputFiles(fixture);
+  await page.locator('.cd-triangle-item').first().waitFor({ state: 'visible', timeout: 10000 });
+  await openSidebarSections(page);
+  await page.waitForTimeout(500);
+  await screenshotElement(page, '.cd-content-area', 'context-driehoek-casus.png');
 }
 
 async function captureEmdr(page) {
@@ -127,6 +145,7 @@ try {
   const only = process.argv.slice(2);
   const captures = [
     ['driehoek', captureDriehoek],
+    ['driehoek-casus', captureDriehoekCasus],
     ['emdr', captureEmdr],
     ['act', captureActAvontuur],
     ['bloom', captureBloom],
