@@ -14,6 +14,7 @@ const TOOLS = {
 };
 
 const viewport = { width: 1440, height: 900 };
+const FRAME_16_9 = { width: 1280, height: 720 };
 
 async function prepareToolPage(page, slug, { paid = false } = {}) {
   await page.addInitScript(
@@ -62,11 +63,116 @@ async function openSidebarSections(page) {
   });
 }
 
+/** Fit triangle + sidebar into a 16:9 frame, matching website browser-frame crop. */
+async function frameDriehoek16x9(page) {
+  await page.setViewportSize(FRAME_16_9);
+  await hideDevChrome(page);
+  await page.evaluate(() => {
+    document.getElementById('demo-cursor')?.remove();
+    document.querySelector('.stage-toolbar')?.classList.remove('visible');
+    document.querySelector('.jari-tool-header')?.remove();
+    document.querySelector('.jari-tool-footer')?.remove();
+    document.querySelector('.cd-input-panel')?.remove();
+    document.querySelector('.cd-drag-hint')?.remove();
+
+    let shotStyle = document.getElementById('cd-screenshot-style');
+    if (!shotStyle) {
+      shotStyle = document.createElement('style');
+      shotStyle.id = 'cd-screenshot-style';
+      document.head.appendChild(shotStyle);
+    }
+    shotStyle.textContent = `
+      .cd-sidebar ul { font-size: 0.8rem; line-height: 1.35; }
+      .cd-sidebar ul li { padding: 0.2rem 0; }
+      .cd-collapse__summary { min-height: 2rem; padding: 0.35rem 0.5rem; }
+    `;
+
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.margin = '0';
+    document.body.style.overflow = 'hidden';
+
+    const layout = document.querySelector('.jari-tool-layout');
+    if (layout) {
+      layout.style.minHeight = '100vh';
+      layout.style.height = '100vh';
+    }
+
+    const main = document.querySelector('.jari-tool-main');
+    if (main) {
+      main.style.maxWidth = 'none';
+      main.style.margin = '0';
+      main.style.padding = '0.85rem 1rem';
+      main.style.height = '100vh';
+      main.style.boxSizing = 'border-box';
+    }
+
+    const workspace = document.querySelector('.cd-workspace');
+    if (workspace) {
+      workspace.style.gap = '0';
+      workspace.style.height = '100%';
+    }
+
+    const content = document.querySelector('.cd-content-area');
+    if (content) {
+      content.style.height = '100%';
+      content.style.margin = '0';
+      content.style.alignItems = 'stretch';
+    }
+
+    const left = document.querySelector('.cd-content-left');
+    if (left) {
+      left.style.flex = '0 0 auto';
+      left.style.height = '100%';
+      left.style.display = 'flex';
+      left.style.flexDirection = 'column';
+      left.style.minWidth = '0';
+    }
+
+    const wrap = document.querySelector('.cd-triangle-wrap');
+    if (wrap) {
+      wrap.style.flex = '1';
+      wrap.style.minHeight = '0';
+      wrap.style.height = '100%';
+    }
+
+    const triangle = document.querySelector('.cd-triangle-container');
+    if (triangle) {
+      triangle.style.width = 'auto';
+      triangle.style.height = '100%';
+      triangle.style.maxHeight = '100%';
+      triangle.style.minWidth = '0';
+      triangle.style.aspectRatio = '1';
+    }
+
+    const sidebar = document.querySelector('.cd-sidebar');
+    if (sidebar) {
+      sidebar.style.flex = '1 1 0';
+      sidebar.style.minWidth = '220px';
+      sidebar.style.maxHeight = '100%';
+      sidebar.style.overflow = 'auto';
+      sidebar.style.alignSelf = 'stretch';
+      sidebar.style.position = 'static';
+    }
+  });
+}
+
+async function screenshotDriehoekFrame(page, filename) {
+  await frameDriehoek16x9(page);
+  await page.waitForTimeout(300);
+  await page.screenshot({
+    path: path.join(outDir, filename),
+    animations: 'disabled',
+    caret: 'hide',
+    scale: 'css',
+  });
+}
+
 async function captureDriehoek(page) {
   await prepareToolPage(page, 'context-driehoek');
   await page.goto(TOOLS['context-driehoek'], { waitUntil: 'networkidle' });
   await openSidebarSections(page);
-  await screenshotElement(page, '.cd-content-area', 'context-driehoek.png');
+  await screenshotDriehoekFrame(page, 'context-driehoek.png');
+  await page.setViewportSize(viewport);
 }
 
 async function captureDriehoekCasus(page) {
@@ -83,6 +189,7 @@ async function captureDriehoekCasus(page) {
   await page.locator('.jari-tool-file-actions input[type=file]').setInputFiles(fixturePath);
   await page.locator('.cd-triangle-item').first().waitFor({ state: 'visible', timeout: 10000 });
   await openSidebarSections(page);
+  await frameDriehoek16x9(page);
   await page.waitForTimeout(400);
   await page.evaluate((placed) => {
     for (const el of document.querySelectorAll('.cd-triangle-item')) {
@@ -95,7 +202,13 @@ async function captureDriehoekCasus(page) {
     }
   }, positions);
   await page.waitForTimeout(200);
-  await screenshotElement(page, '.cd-content-area', 'context-driehoek-casus.png');
+  await page.screenshot({
+    path: path.join(outDir, 'context-driehoek-casus.png'),
+    animations: 'disabled',
+    caret: 'hide',
+    scale: 'css',
+  });
+  await page.setViewportSize(viewport);
 }
 
 async function captureEmdr(page) {

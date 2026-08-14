@@ -22,6 +22,34 @@ uses:
   - Als thuis-oefening tussen therapiesessies in
   - Kan gebruikt worden in trainingen, groepen of lessen rondom mentale gezondheid en veerkracht.
   - Oudergesprekken
+faq:
+  - question: Wat is defusie?
+    answer: >-
+      Defusie is een ACT-vaardigheid: gedachten zien als berichten die binnenkomen, zonder ze automatisch te geloven of ernaar te handelen. Sommige berichten zijn nuttig. Andere maken je vooral onzeker of trekken je aandacht weg van wat belangrijk is. ACT Avontuur laat kinderen en jongeren dat eerst ervaren in een spel, en legt daarna in gewone taal uit wat er gebeurde.
+  - question: Vanaf welke leeftijd is ACT Avontuur geschikt?
+    answer: >-
+      ACT Avontuur is bedoeld voor kinderen en jongeren vanaf ongeveer 10 jaar. Het spel vraagt om kort lezen en keuzes maken onder tijdsdruk. Bij jongere kinderen of kinderen die moeite hebben met lezen kun je het samen spelen en hardop meelezen.
+  - question: Hoe lang duurt een missie?
+    answer: >-
+      Een missie duurt ongeveer 5 minuten. Daarna volgt een korte uitleg over gedachten en defusie. Het kind kan dezelfde missie daarna opnieuw spelen, maar dan met meer ruimte om te kiezen wat helpt.
+  - question: Is ACT Avontuur een behandeling?
+    answer: >-
+      Nee. Het is een korte, speelse kennismaking met defusie. Het vervangt geen ACT-behandeling of klinisch oordeel. Gebruik het als psycho-educatie, als startpunt voor een gesprek, of als thuis-oefening tussen sessies.
+  - question: Moet een behandelaar ACT-ervaring hebben?
+    answer: >-
+      Nee. Het spel is zo gemaakt dat de ervaring voor zichzelf spreekt. Basiskennis van ACT helpt wel om het gesprek erna te verdiepen: wat herkende het kind, welke gedachten zitten in de weg, en wat is op dat moment belangrijk.
+  - question: Hoe werkt het spel?
+    answer: >-
+      Tijdens een missie komen er steeds meer berichten binnen. Sommige helpen, andere zaaien twijfel. Op een gegeven moment wordt kiezen bijna onmogelijk en crasht de missie. Daarna volgt een korte les: gedachten kun je niet stoppen, maar je hoeft ze ook niet allemaal te volgen. Daarna mag het kind het opnieuw proberen.
+  - question: Welk avontuur kies ik?
+    answer: >-
+      De drie avonturen werken hetzelfde. Alleen het verhaal verschilt: een ruimtereis, een schattenjacht in de jungle of een roadtrip naar het surfparadijs. Kies wat aansluit bij het kind. De Ruimtereis is gratis en vaak een goed startpunt.
+  - question: Wat is gratis en wat zit in de betaalde versie?
+    answer: >-
+      Je kunt één missie gratis spelen: de Ruimtereis. De jungletocht en de roadtrip zitten in de betaalde versie (€7,99 per jaar). Via een deel-link het spel met een client delen hoort ook bij de betaalde versie.
+  - question: Kan ik het spel delen met een kind of jongere?
+    answer: >-
+      Ja. In de betaalde versie maak je een deel-link voor een specifiek avontuur. Het kind speelt thuis of in de wachtkamer. Jij ziet of ze klaar zijn en welk avontuur ze speelden. Links vervallen automatisch na 4 weken.
 ---
 
 <div class="tool-detail__hero-body">
