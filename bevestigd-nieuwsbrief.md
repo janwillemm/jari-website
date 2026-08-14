@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Inschrijving bevestigd
 heading: Inschrijving bevestigd
 subtitle: Je staat op de lijst
 intro: >-

@@ -1,5 +1,9 @@
 ---
 name: ACT Avontuur
+title: ACT Avontuur — defusie-spel voor jeugd vanaf 10 jaar
+description: >-
+  Speels kennismaken met ACT-defusie in ongeveer 5 minuten. Voor kinderen en
+  jongeren vanaf 10 jaar. €7,99 per jaar.
 order: 4
 status: live
 status_label: Beschikbaar

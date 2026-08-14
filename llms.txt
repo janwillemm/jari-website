@@ -1,0 +1,19 @@
+# InteractGGZ
+https://interactggz.nl
+
+Innovatiestudio voor de jeugd-ggz. Digitale tools voor behandelaars.
+Merk van Creatieve M(a)an B.V. (KvK 73566888).
+Makers: Jan-Willem Manenschijn (serious games, TU Delft) en
+Rianne Manenschijn (orthopedagoog-generalist).
+
+## Tools
+- EMDR Toolkit: /tools/emdr/ — digitale EMDR-lamp, €7,99/jaar
+- Bloom ACT Profiel Jeugd: /tools/bloom/ — ACT-profiel 10+, geen test
+- Driehoekmodel: /tools/context-driehoek/ — casusordening, lokaal
+- ACT Avontuur: /tools/act-avontuur/ — defusie-spel 10+, ~5 min
+
+## Prijzen
+€7,99 per tool per jaar. Ontdekkersjaar €49 (alle tools).
+
+## Contact
+info@interactggz.nl

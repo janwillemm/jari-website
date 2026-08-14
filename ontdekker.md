@@ -1,6 +1,10 @@
 ---
 layout: page
+title: Ontdekkersjaar — alle tools voor €49
 heading: Ontdekkersjaar
+description: >-
+  Een jaar toegang tot alle InteractGGZ-tools voor €49, inclusief nieuwe tools
+  die we dit jaar ontwikkelen.
 intro: >-
   Voor één vast bedrag krijg je een jaar toegang tot alles wat we maken.
 content_measure: true
@@ -26,7 +30,7 @@ de tools die er al zijn én alles wat we dit jaar nog ontwikkelen.
 
 ## Waarom we dit doen
 
-Interact GGZ is net gestart. Daarom houden we het Ontdekkersjaar voorlopig bewust
+InteractGGZ is net gestart. Daarom houden we het Ontdekkersjaar voorlopig bewust
 laagdrempelig. Niet omdat we denken dat de tools weinig waarde hebben, maar omdat we
 willen dat professionals ze makkelijk kunnen uitproberen in hun eigen praktijk.
 
@@ -39,7 +43,7 @@ gewoon toegang tot de tools; meedenken mag alleen als dat voor jou passend voelt
 
 Het Ontdekkersjaar is een introductieprijs voor onze startfase. Je krijgt een jaar
 toegang tot de tools die er nu zijn én tot nieuwe tools die we binnen dat jaar beschikbaar
-maken. Naarmate Interact GGZ en de tools verder groeien, kunnen prijzen veranderen.
+maken. Naarmate InteractGGZ en de tools verder groeien, kunnen prijzen veranderen.
 
 
 <div class="pricing-cta">

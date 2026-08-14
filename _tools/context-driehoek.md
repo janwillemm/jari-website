@@ -1,5 +1,9 @@
 ---
 name: Driehoekmodel
+title: Driehoekmodel — van intake-informatie naar inzicht
+description: >-
+  Orden kind-, gezins- en omgevingsfactoren voor intake, MDO of casuïstiek.
+  Draait lokaal, geen serveropslag. €7,99 per jaar.
 order: 3
 status: live
 status_label: Beschikbaar

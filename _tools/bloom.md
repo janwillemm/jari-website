@@ -1,5 +1,9 @@
 ---
 name: Bloom ACT Profiel Jeugd
+title: Bloom ACT Profiel Jeugd — visueel ACT-profiel vanaf 10 jaar
+description: >-
+  36 vragen, 5–10 minuten, uitslag als Bloom-tuin. Geen diagnostische test.
+  Voor kinderen en jongeren vanaf ongeveer 10 jaar.
 order: 2
 status: live
 status_label: Beschikbaar
@@ -13,6 +17,34 @@ portal_slug: bloom
 note: >-
   Hulpmiddel ter ondersteuning van gesprekken en behandelrichting. Vervangt geen
   diagnostische beoordeling of klinisch oordeel.
+faq:
+  - question: Is Bloom een diagnostische test?
+    answer: >-
+      Nee. Bloom is geen diagnostisch instrument en vervangt geen klinische beoordeling. De tool geeft een indruk van hoe een kind of jongere omgaat met de zes ACT-processen. De uitkomst is bedoeld als gespreksstarter en als hulpmiddel om richting te geven aan behandeling.
+  - question: Vanaf welke leeftijd is Bloom geschikt?
+    answer: >-
+      Bloom is bedoeld voor kinderen en jongeren vanaf ongeveer 10 jaar. De vragen zijn kort en concreet geformuleerd. Bij jongere kinderen of kinderen die moeite hebben met lezen of zelfreflectie kan het helpend zijn om de tool samen met een behandelaar in te vullen.
+  - question: Hoe lang duurt het invullen?
+    answer: >-
+      De tool bestaat uit 36 korte vragen. De meeste kinderen en jongeren kunnen Bloom in ongeveer 5 tot 10 minuten invullen.
+  - question: Wat meet Bloom precies?
+    answer: >-
+      Bloom brengt zes ACT-processen in beeld: acceptatie, defusie, hier-en-nu, zelf-als-context, waarden en toegewijd handelen. Samen geven deze onderdelen een globale indruk van psychologische flexibiliteit: hoe iemand omgaat met gedachten en gevoelens, aanwezig kan blijven in het moment en stappen kan zetten richting wat belangrijk is.
+  - question: Kan Bloom gebruikt worden om voortgang te meten?
+    answer: >-
+      Bloom kan op verschillende momenten in de behandeling opnieuw worden ingevuld. Zo kun je samen bespreken wat er veranderd is en welke onderdelen nog aandacht vragen. De tool is vooral bedoeld voor reflectie en behandelrichting, niet als harde effectmeting.
+  - question: Moet een behandelaar ACT-ervaring hebben om Bloom te gebruiken?
+    answer: >-
+      Basiskennis van ACT is aan te raden. Bloom geeft een visueel profiel, maar de betekenis daarvan ontstaat vooral in het gesprek met kind, ouders en behandelaar. De behandelaar kan de uitkomst koppelen aan ACT-oefeningen, behandelthema's en doelen.
+  - question: Is de uitslag bedoeld voor het kind, ouders of behandelaar?
+    answer: >-
+      Voor alle drie. Het kind krijgt een begrijpelijk en visueel profiel. Ouders kunnen beter begrijpen waar hun kind in vastloopt en waar kracht zit. De behandelaar krijgt aanknopingspunten om de behandeling verder vorm te geven.
+  - question: Waarom is gekozen voor een tuinmetafoor?
+    answer: >-
+      Een tuin past goed bij ACT en ontwikkeling. Het is in principe een bekende metafoor die vaker wordt gebruikt in ACT-behandelingen. Sommige delen van de tuin staan al in bloei, andere delen vragen nog aandacht, verzorging of oefening. Dat maakt de uitslag minder beoordelend en helpt kinderen en jongeren om mild en nieuwsgierig naar zichzelf te kijken. Het geeft ruimte om het gesprek aan te gaan hoe bepaalde onderdelen van de tuin meer aandacht zouden kunnen krijgen.
+  - question: Wat kun je na de uitslag met Bloom doen?
+    answer: >-
+      Na de uitslag kun je samen bespreken welke onderdelen herkenbaar zijn, waar de meeste groeiruimte ligt en welke ACT-oefeningen daarbij passen. Denk bijvoorbeeld aan oefenen met meer afstand nemen tot je gedachten, gevoelens de ruimte geven, waarden onderzoeken of kleine stappen zetten richting wat belangrijk is.
 ---
 
 <div class="tool-detail__hero-body">
@@ -130,65 +162,4 @@ Voor volwassenen bestaan er ACT-vragenlijsten, zoals de FIT-60, die inzicht geve
       </p>
     </div>
   </details>
-</div>
-
-<div class="section__header">
-  <h2>Veelgestelde vragen</h2>
-</div>
-
-<div class="tool-faq-cards">
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Is Bloom een diagnostische test?</h3>
-    <p class="tool-faq-cards__answer">
-      Nee. Bloom is geen diagnostisch instrument en vervangt geen klinische beoordeling. De tool geeft een indruk van hoe een kind of jongere omgaat met de zes ACT-processen. De uitkomst is bedoeld als gespreksstarter en als hulpmiddel om richting te geven aan behandeling.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Vanaf welke leeftijd is Bloom geschikt?</h3>
-    <p class="tool-faq-cards__answer">
-      Bloom is bedoeld voor kinderen en jongeren vanaf ongeveer 10 jaar. De vragen zijn kort en concreet geformuleerd. Bij jongere kinderen of kinderen die moeite hebben met lezen of zelfreflectie kan het helpend zijn om de tool samen met een behandelaar in te vullen.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Hoe lang duurt het invullen?</h3>
-    <p class="tool-faq-cards__answer">
-      De tool bestaat uit 36 korte vragen. De meeste kinderen en jongeren kunnen Bloom in ongeveer 5 tot 10 minuten invullen.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Wat meet Bloom precies?</h3>
-    <p class="tool-faq-cards__answer">
-      Bloom brengt zes ACT-processen in beeld: acceptatie, defusie, hier-en-nu, zelf-als-context, waarden en toegewijd handelen. Samen geven deze onderdelen een globale indruk van psychologische flexibiliteit: hoe iemand omgaat met gedachten en gevoelens, aanwezig kan blijven in het moment en stappen kan zetten richting wat belangrijk is.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Kan Bloom gebruikt worden om voortgang te meten?</h3>
-    <p class="tool-faq-cards__answer">
-      Bloom kan op verschillende momenten in de behandeling opnieuw worden ingevuld. Zo kun je samen bespreken wat er veranderd is en welke onderdelen nog aandacht vragen. De tool is vooral bedoeld voor reflectie en behandelrichting, niet als harde effectmeting.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Moet een behandelaar ACT-ervaring hebben om Bloom te gebruiken?</h3>
-    <p class="tool-faq-cards__answer">
-      Basiskennis van ACT is aan te raden. Bloom geeft een visueel profiel, maar de betekenis daarvan ontstaat vooral in het gesprek met kind, ouders en behandelaar. De behandelaar kan de uitkomst koppelen aan ACT-oefeningen, behandelthema's en doelen.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Is de uitslag bedoeld voor het kind, ouders of behandelaar?</h3>
-    <p class="tool-faq-cards__answer">
-      Voor alle drie. Het kind krijgt een begrijpelijk en visueel profiel. Ouders kunnen beter begrijpen waar hun kind in vastloopt en waar kracht zit. De behandelaar krijgt aanknopingspunten om de behandeling verder vorm te geven.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Waarom is gekozen voor een tuinmetafoor?</h3>
-    <p class="tool-faq-cards__answer">
-      Een tuin past goed bij ACT en ontwikkeling. Het is in principe een bekende metafoor die vaker wordt gebruikt in ACT-behandelingen. Sommige delen van de tuin staan al in bloei, andere delen vragen nog aandacht, verzorging of oefening. Dat maakt de uitslag minder beoordelend en helpt kinderen en jongeren om mild en nieuwsgierig naar zichzelf te kijken. Het geeft ruimte om het gesprek aan te gaan hoe bepaalde onderdelen van de tuin meer aandacht zouden kunnen krijgen.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Wat kun je na de uitslag met Bloom doen?</h3>
-    <p class="tool-faq-cards__answer">
-      Na de uitslag kun je samen bespreken welke onderdelen herkenbaar zijn, waar de meeste groeiruimte ligt en welke ACT-oefeningen daarbij passen. Denk bijvoorbeeld aan oefenen met meer afstand nemen tot je gedachten, gevoelens de ruimte geven, waarden onderzoeken of kleine stappen zetten richting wat belangrijk is.
-    </p>
-  </article>
 </div>

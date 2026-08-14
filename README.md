@@ -1,4 +1,4 @@
-# Interact GGZ
+# InteractGGZ
 
 Website voor [interactggz.nl](https://interactggz.nl), gebouwd met [Jekyll](https://jekyllrb.com/) en gedeployed via GitHub Pages.
 

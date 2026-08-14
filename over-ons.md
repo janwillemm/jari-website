@@ -1,6 +1,10 @@
 ---
 layout: about
+title: Over ons — Jan-Willem en Rianne Manenschijn
 heading: Over ons
+description: >-
+  InteractGGZ is de innovatiestudio van Jan-Willem Manenschijn (serious games)
+  en Rianne Manenschijn (orthopedagoog-generalist).
 intro: >-
   Creatieve techneut en orthopedagoog-generalist. Wij begrijpen de inhoud én kunnen het bouwen.
 ---
@@ -278,7 +282,7 @@ intro: >-
   <div class="container">
     {% include contact-form.html
        heading="Neem contact op"
-       intro="Heb je een vraag over Interact GGZ of onze tools? Stuur ons een bericht."
+       intro="Heb je een vraag over InteractGGZ of onze tools? Stuur ons een bericht."
        context="Over ons" %}
   </div>
 </section>

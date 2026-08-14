@@ -1,5 +1,9 @@
 ---
 name: EMDR Toolkit
+title: EMDR Toolkit — digitale EMDR-lamp met werkgeheugentaken
+description: >-
+  Digitale EMDR-lamp voor kinderen, jongeren en volwassenen. Laptop + telefoon,
+  geen aparte lichtbalk. €7,99 per jaar.
 order: 1
 status: live
 status_label: Beschikbaar
@@ -13,6 +17,34 @@ portal_slug: emdr
 note: >-
   Hulpmiddel ter ondersteuning van sessies. Vervangt geen professioneel EMDR-protocol
   of behandeling door een gecertificeerde therapeut.
+faq:
+  - question: Vervangt de EMDR Toolkit een EMDR-opleiding of protocol?
+    answer: >-
+      Nee. De EMDR Toolkit is een praktisch hulpmiddel voor professioneel gebruik binnen EMDR-behandelingen. De tool vervangt geen opleiding, protocolkennis of klinische besluitvorming. De keuze voor het type werkgeheugenbelasting, de intensiteit en het moment van inzetten blijft altijd een professionele afweging van de behandelaar.
+  - question: Moet ik aanvullende werkgeheugenbelasting gebruiken?
+    answer: >-
+      Nee. De Toolkit is niet ontwikkeld vanuit het idee dat EMDR standaard complexer, intensiever of creatiever moet. Regelmatig zijn de gebruikelijke vormen van werkgeheugenbelasting voldoende. De aanvullende mogelijkheden zijn beschikbaar voor momenten waarop je als behandelaar op basis van het verloop van de sessie wilt opschalen, afschalen of variëren.
+  - question: Heb ik speciale apparatuur nodig?
+    answer: >-
+      Nee. Je hebt alleen een laptop en telefoon nodig. De cliënt kijkt naar de fullscreen weergave op de laptop en jij kunt de sessie vanaf je telefoon bedienen.
+  - question: Kan ik de tool gebruiken met kinderen?
+    answer: >-
+      Ja. De Toolkit bevat verschillende moeilijkheidsniveaus, kindvriendelijke volgobjecten en specifieke taken die ontwikkeld zijn met kinderen in gedachten. Welke taak passend is, blijft afhankelijk van de leeftijd, ontwikkeling, mogelijkheden en behoeften van de individuele cliënt.
+  - question: Kan ik de tool ook bij volwassenen gebruiken?
+    answer: >-
+      Ja. De EMDR Toolkit is inzetbaar bij alle leeftijden. Verschillende ingebouwde taken zijn beschikbaar in meerdere moeilijkheidsniveaus. Een groot deel van de taken is zeker uitdagend genoeg voor volwassenen.
+  - question: Wat staat er in de inspiratiebibliotheek?
+    answer: >-
+      De bibliotheek bevat ideeën voor verbale, auditieve, visuele, motorische, gecombineerde en speels-creatieve vormen van werkgeheugenbelasting. Niet alle taken in de bibliotheek zijn digitaal ingebouwd. De bibliotheek is juist bedoeld om snel nieuwe ideeën op te doen die je zelf in de behandeling kunt inzetten.
+  - question: Wordt de tool nog verder ontwikkeld?
+    answer: >-
+      Ja. We blijven de EMDR Toolkit verbeteren en uitbreiden op basis van ervaringen uit de praktijk. Ideeën en feedback van gebruikers nemen we actief mee in de doorontwikkeling. Wanneer je de Toolkit aanschaft heb je altijd toegang tot de nieuwste versie.
+  - question: Kan ik een taak laten toevoegen of een eigen versie laten ontwikkelen?
+    answer: >-
+      Ja. Heb je een idee voor een kleine toevoeging die ook voor andere behandelaars relevant kan zijn? Laat het ons weten. Passende suggesties nemen we waar mogelijk mee in de doorontwikkeling. Wil je grotere aanpassingen, specifieke functionaliteiten of een eigen versie voor jouw organisatie? Dan verkennen we graag de mogelijkheden voor maatwerk of samenwerking.
+  - question: Kan ik de tool ook online gebruiken?
+    answer: >-
+      We werken aan mogelijkheden om de EMDR Toolkit ook tijdens online behandelingen via beeldbellen eenvoudiger in te zetten. Deze functionaliteit is nog in ontwikkeling.
 ---
 
 <div class="tool-detail__hero-body">
@@ -149,65 +181,4 @@ Van reguliere oogbewegingen tot aanvullende werkgeheugenbelasting: snel schakele
       </p>
     </div>
   </details>
-</div>
-
-<div class="section__header">
-  <h2>Veelgestelde vragen</h2>
-</div>
-
-<div class="tool-faq-cards">
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Vervangt de EMDR Toolkit een EMDR-opleiding of protocol?</h3>
-    <p class="tool-faq-cards__answer">
-      Nee. De EMDR Toolkit is een praktisch hulpmiddel voor professioneel gebruik binnen EMDR-behandelingen. De tool vervangt geen opleiding, protocolkennis of klinische besluitvorming. De keuze voor het type werkgeheugenbelasting, de intensiteit en het moment van inzetten blijft altijd een professionele afweging van de behandelaar.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Moet ik aanvullende werkgeheugenbelasting gebruiken?</h3>
-    <p class="tool-faq-cards__answer">
-      Nee. De Toolkit is niet ontwikkeld vanuit het idee dat EMDR standaard complexer, intensiever of creatiever moet. Regelmatig zijn de gebruikelijke vormen van werkgeheugenbelasting voldoende. De aanvullende mogelijkheden zijn beschikbaar voor momenten waarop je als behandelaar op basis van het verloop van de sessie wilt opschalen, afschalen of variëren.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Heb ik speciale apparatuur nodig?</h3>
-    <p class="tool-faq-cards__answer">
-      Nee. Je hebt alleen een laptop en telefoon nodig. De cliënt kijkt naar de fullscreen weergave op de laptop en jij kunt de sessie vanaf je telefoon bedienen.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Kan ik de tool gebruiken met kinderen?</h3>
-    <p class="tool-faq-cards__answer">
-      Ja. De Toolkit bevat verschillende moeilijkheidsniveaus, kindvriendelijke volgobjecten en specifieke taken die ontwikkeld zijn met kinderen in gedachten. Welke taak passend is, blijft afhankelijk van de leeftijd, ontwikkeling, mogelijkheden en behoeften van de individuele cliënt.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Kan ik de tool ook bij volwassenen gebruiken?</h3>
-    <p class="tool-faq-cards__answer">
-      Ja. De EMDR Toolkit is inzetbaar bij alle leeftijden. Verschillende ingebouwde taken zijn beschikbaar in meerdere moeilijkheidsniveaus. Een groot deel van de taken is zeker uitdagend genoeg voor volwassenen.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Wat staat er in de inspiratiebibliotheek?</h3>
-    <p class="tool-faq-cards__answer">
-      De bibliotheek bevat ideeën voor verbale, auditieve, visuele, motorische, gecombineerde en speels-creatieve vormen van werkgeheugenbelasting. Niet alle taken in de bibliotheek zijn digitaal ingebouwd. De bibliotheek is juist bedoeld om snel nieuwe ideeën op te doen die je zelf in de behandeling kunt inzetten.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Wordt de tool nog verder ontwikkeld?</h3>
-    <p class="tool-faq-cards__answer">
-      Ja. We blijven de EMDR Toolkit verbeteren en uitbreiden op basis van ervaringen uit de praktijk. Ideeën en feedback van gebruikers nemen we actief mee in de doorontwikkeling. Wanneer je de Toolkit aanschaft heb je altijd toegang tot de nieuwste versie.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Kan ik een taak laten toevoegen of een eigen versie laten ontwikkelen?</h3>
-    <p class="tool-faq-cards__answer">
-      Ja. Heb je een idee voor een kleine toevoeging die ook voor andere behandelaars relevant kan zijn? Laat het ons weten. Passende suggesties nemen we waar mogelijk mee in de doorontwikkeling. Wil je grotere aanpassingen, specifieke functionaliteiten of een eigen versie voor jouw organisatie? Dan verkennen we graag de mogelijkheden voor maatwerk of samenwerking.
-    </p>
-  </article>
-  <article class="tool-faq-cards__item">
-    <h3 class="tool-faq-cards__question">Kan ik de tool ook online gebruiken?</h3>
-    <p class="tool-faq-cards__answer">
-      We werken aan mogelijkheden om de EMDR Toolkit ook tijdens online behandelingen via beeldbellen eenvoudiger in te zetten. Deze functionaliteit is nog in ontwikkeling.
-    </p>
-  </article>
 </div>

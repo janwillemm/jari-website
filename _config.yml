@@ -1,12 +1,18 @@
-title: Interact GGZ
+title: InteractGGZ
 description: >-
-  Innovatiestudio voor de jeugd-ggz. Wij maken de jeugd-GGZ creatiever, innovatiever en meer ervaringsgericht.
+  InteractGGZ is een innovatiestudio voor de jeugd-ggz. Digitale tools voor
+  behandelaars, zoals een EMDR-toolkit, ACT-profiel voor jeugd en een driehoekmodel.
 tagline: Innovatie en creativiteit in de (jeugd-)ggz
 mission: Innovatiestudio voor de jeugd-ggz
 url: "https://interactggz.nl"
 baseurl: ""
 lang: nl
 locale: nl_NL
+logo: /assets/images/brand/logo-with-text.png
+social:
+  name: InteractGGZ
+  links:
+    - https://creatievemaan.nl/
 
 permalink: pretty
 
@@ -26,10 +32,11 @@ defaults:
       type: tools
     values:
       layout: tool
+      seo:
+        type: SoftwareApplication
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-sitemap
 
 exclude:
   - Gemfile
@@ -77,6 +84,16 @@ umami:
 
 authors:
   - name: Jan-Willem Manenschijn
+    id: jan-willem-manenschijn
     role: Creatieve techneut
+    job_title: Serious game designer
+    description: >-
+      Informatica (TU Delft), serious game designer en CTO. Vertaalt complexe
+      vraagstukken naar heldere, werkende tools voor de jeugd-ggz.
   - name: Rianne Manenschijn
+    id: rianne-manenschijn
     role: Creatieve orthopedagoog-generalist
+    job_title: Orthopedagoog-generalist
+    description: >-
+      Orthopedagoog-generalist, docent aan de universiteit en redactielid van
+      de Pedagoog (NVO).

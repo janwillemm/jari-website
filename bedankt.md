@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Bedankt
 heading: Bedankt
 subtitle: Bericht ontvangen
 intro: >-

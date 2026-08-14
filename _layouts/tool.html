@@ -67,6 +67,20 @@ layout: default
         {{ content }}
       </div>
 
+      {% if page.faq %}
+        <div class="section__header">
+          <h2>Veelgestelde vragen</h2>
+        </div>
+        <div class="tool-faq-cards">
+          {% for item in page.faq %}
+            <article class="tool-faq-cards__item">
+              <h3 class="tool-faq-cards__question">{{ item.question }}</h3>
+              <p class="tool-faq-cards__answer">{{ item.answer }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      {% endif %}
+
       {% if page.note %}
         <p class="tool-detail__note">{{ page.note }}</p>
       {% endif %}

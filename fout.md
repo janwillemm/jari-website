@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Er ging iets mis
 heading: Er ging iets mis
 subtitle: Bericht niet verstuurd
 intro: >-

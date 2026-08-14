@@ -1,8 +1,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
+  {% if page.url == "/" %}
+    <title>{{ site.title }} — {{ site.mission }}</title>
+  {% elsif page.title %}
+    <title>{{ page.title }} | {{ site.title }}</title>
+  {% elsif page.name %}
+    <title>{{ page.name }} | {{ site.title }}</title>
+  {% elsif page.heading %}
+    <title>{{ page.heading }} | {{ site.title }}</title>
+  {% else %}
+    <title>{{ site.title }} — {{ site.mission }}</title>
+  {% endif %}
   {% seo title=false %}
+  {% include schema.html %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">

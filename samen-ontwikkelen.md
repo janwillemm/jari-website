@@ -1,6 +1,10 @@
 ---
 layout: page
+title: Samen ontwikkelen — van idee naar tool
 heading: Samen ontwikkelen
+description: >-
+  Heb je een idee voor een interactieve interventie in de jeugd-ggz? Wij bouwen
+  het samen met je, van kennismaken tot lanceren.
 intro: >-
   Heb jij een idee voor een interactieve interventie? Bijvoorbeeld een werkvorm, spel
   of model? Wij helpen je graag om dat idee werkelijkheid te maken.
