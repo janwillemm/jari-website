@@ -22,6 +22,23 @@ bundle exec jekyll serve
 
 Open [http://localhost:4000](http://localhost:4000).
 
+## E2E-tests (Playwright)
+
+De testsuite navigeert met [Playwright](https://playwright.dev/) door alle pagina's en bevat een **golden path** die de kernflows afdekt (navigatie, toolpagina's, lightbox, waarden-tabs, idee-/contactformulier, nieuwsbrief, privacy).
+
+```bash
+npm install
+npx playwright install chromium
+npm run test:e2e
+```
+
+Playwright start automatisch `jekyll serve` (tenzij `E2E_BASE_URL` is gezet). Handige varianten:
+
+```bash
+npm run test:e2e:headed   # zichtbare browser
+npm run test:e2e:ui       # Playwright UI
+```
+
 ## Deployen naar GitHub Pages
 
 De live site draait vanuit de aparte repository [`janwillemm/jari-website`](https://github.com/janwillemm/jari-website) (GitHub Pages + custom domain `interactggz.nl`). Ontwikkel in deze monorepo-map; publiceer met:
