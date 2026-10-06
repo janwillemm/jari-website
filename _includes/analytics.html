@@ -6,6 +6,9 @@
 <script>
 (function () {
   var COOKIE = "_vid";
+  var LM_COOKIE = "_lm";
+  var LM_PARAM = "lm";
+  var UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
   var MAX_AGE = 365 * 24 * 60 * 60;
   var WEBSITE_ID = {{ site.umami.website_id | jsonify }};
   var SCRIPT_URL = {{ site.umami.script_url | default: "https://analytics.interactggz.nl/script.js" | jsonify }};
@@ -50,12 +53,23 @@
 
   visitorId();
 
+  var listmonkId = (function () {
+    var query = new URLSearchParams(location.search).get(LM_PARAM);
+    var fromQuery = query && UUID_RE.test(query) ? query : null;
+    var stored = read(LM_COOKIE);
+    var fromCookie = stored && UUID_RE.test(stored) ? stored : null;
+    var id = fromQuery || fromCookie;
+    if (fromQuery) write(LM_COOKIE, fromQuery);
+    return id;
+  })();
+
   if (!WEBSITE_ID) return;
 
   var script = document.createElement("script");
   script.defer = true;
   script.src = SCRIPT_URL;
   script.setAttribute("data-website-id", WEBSITE_ID);
+  if (listmonkId) script.setAttribute("data-distinct-id", listmonkId);
   script.setAttribute("data-domains", "interactggz.nl,portal.interactggz.nl,staging.portal.interactggz.nl,emdr.portal.interactggz.nl,emdr.staging.portal.interactggz.nl,context-driehoek.portal.interactggz.nl,context-driehoek.staging.portal.interactggz.nl,act-avontuur.portal.interactggz.nl,act-avontuur.staging.portal.interactggz.nl");
   document.head.appendChild(script);
 })();

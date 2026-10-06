@@ -3,7 +3,7 @@ name: EMDR Toolkit
 title: EMDR Toolkit — digitale EMDR-lamp met werkgeheugentaken
 description: >-
   Digitale EMDR-lamp voor kinderen, jongeren en volwassenen. Laptop + telefoon,
-  geen aparte lichtbalk. €7,99 per jaar.
+  geen aparte lichtbalk. Ook via beeldbellen. €7,99 per jaar.
 order: 1
 status: live
 status_label: Beschikbaar
@@ -26,6 +26,7 @@ uses:
   - Storytelling
   - Inspiratie voor andere vormen van werkgeheugenbelasting
   - Ambulante EMDR-behandelingen
+  - Online EMDR via beeldbellen
 faq:
   - question: Vervangt de EMDR Toolkit een EMDR-opleiding of protocol?
     answer: >-
@@ -53,7 +54,13 @@ faq:
       Ja. Heb je een idee voor een kleine toevoeging die ook voor andere behandelaars relevant kan zijn? Laat het ons weten. Passende suggesties nemen we waar mogelijk mee in de doorontwikkeling. Wil je grotere aanpassingen, specifieke functionaliteiten of een eigen versie voor jouw organisatie? Dan verkennen we graag de mogelijkheden voor maatwerk of samenwerking.
   - question: Kan ik de tool ook online gebruiken?
     answer: >-
-      We werken aan mogelijkheden om de EMDR Toolkit ook tijdens online behandelingen via beeldbellen eenvoudiger in te zetten. Deze functionaliteit is nog in ontwikkeling.
+      Ja. Je stuurt je cliënt een link via de chat van je beeldbelgesprek, bijvoorbeeld Teams. De bal beweegt op het scherm van je cliënt zelf en hapert daardoor niet, ook niet bij een trage internetverbinding. Jij bedient alles op afstand.
+  - question: Wat moet mijn cliënt doen bij online EMDR?
+    answer: >-
+      Op de link klikken en daarna op één knop. Je cliënt hoeft niets te installeren en geen account aan te maken. Starten, pauzeren en instellen doe jij.
+  - question: Werken de werkgeheugentaken ook via beeldbellen?
+    answer: >-
+      Ja. Alle taken en de kindmodus werken ook online. Je ziet of je cliënt klaar is en of de bal in beeld staat. Valt de verbinding weg, dan krijg je direct een melding met wat je kunt doen.
 ---
 
 <div class="tool-detail__hero-body">
@@ -68,6 +75,8 @@ De EMDR Toolkit brengt die mogelijkheden samen in één eenvoudig hulpmiddel. Ge
 De EMDR Toolkit is bruikbaar voor alle leeftijden, maar heeft een specifieke kindmodus. Hierin zitten creatieve en speelse vormen van werkgeheugenbelasting ingebouwd zoals het volgen met de ogen van een raceauto, het zoeken naar dieren in een bos en figuurtjes tellen.
 
 De cliënt kijkt naar het scherm van de laptop. Jij bedient de sessie vanaf je telefoon. Zo kun je tijdens de verwerking snel schakelen zonder steeds terug te hoeven naar de laptop.
+
+Behandel je op afstand? Stuur je cliënt een link via je beeldbelgesprek. De bal beweegt op het scherm van je cliënt zelf, zonder haperingen.
 
 Van reguliere oogbewegingen tot aanvullende werkgeheugenbelasting: snel schakelen wanneer de behandeling daarom vraagt.
 
@@ -139,6 +148,20 @@ Van reguliere oogbewegingen tot aanvullende werkgeheugenbelasting: snel schakele
     <summary class="tool-accordion__summary">
       <span class="tool-accordion__summary-inner">
         <span class="tool-accordion__number" aria-hidden="true">5</span>
+        <span class="tool-accordion__title">Ook via beeldbellen, zonder haperingen</span>
+      </span>
+      <span class="tool-accordion__chevron" aria-hidden="true"></span>
+    </summary>
+    <div class="tool-accordion__body">
+      <p>
+        Bij scherm delen hapert een bewegende bal al snel. Daarom werkt de Toolkit anders: je cliënt opent een link en de bal beweegt op het eigen scherm. Eén klik, geen installatie en geen account. Jij bedient op afstand, naast je beeldbelvenster of met je telefoon, en ziet of je cliënt klaar is. Een korte opzet in de tool leidt je er stap voor stap doorheen.
+      </p>
+    </div>
+  </details>
+  <details class="tool-accordion__item">
+    <summary class="tool-accordion__summary">
+      <span class="tool-accordion__summary-inner">
+        <span class="tool-accordion__number" aria-hidden="true">6</span>
         <span class="tool-accordion__title">Inspiratie binnen handbereik</span>
       </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
@@ -152,7 +175,7 @@ Van reguliere oogbewegingen tot aanvullende werkgeheugenbelasting: snel schakele
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
       <span class="tool-accordion__summary-inner">
-        <span class="tool-accordion__number" aria-hidden="true">6</span>
+        <span class="tool-accordion__number" aria-hidden="true">7</span>
         <span class="tool-accordion__title">Eenvoudig in gebruik</span>
       </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
@@ -166,7 +189,7 @@ Van reguliere oogbewegingen tot aanvullende werkgeheugenbelasting: snel schakele
   <details class="tool-accordion__item">
     <summary class="tool-accordion__summary">
       <span class="tool-accordion__summary-inner">
-        <span class="tool-accordion__number" aria-hidden="true">7</span>
+        <span class="tool-accordion__number" aria-hidden="true">8</span>
         <span class="tool-accordion__title">Ontwikkeld in co-creatie met de praktijk</span>
       </span>
       <span class="tool-accordion__chevron" aria-hidden="true"></span>
