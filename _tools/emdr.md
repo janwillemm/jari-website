@@ -7,7 +7,7 @@ description: >-
 order: 1
 status: live
 status_label: Beschikbaar
-summary: Voor kinderen, jongeren en volwassenen. Digitale EMDR-lamp met ingebouwde aanvullende werkgeheugentaken
+summary: Voor kinderen, jongeren en volwassenen. Digitale EMDR-lamp met ingebouwde aanvullende werkgeheugentaken, ook via beeldbellen
 lead: Voor kinderen, jongeren en volwassenen
 image: /assets/images/tools/emdr-lichtbol.png
 image_caption: Het stimulatieveld met vlinder en instellingenpaneel
