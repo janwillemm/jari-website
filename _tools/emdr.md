@@ -54,7 +54,7 @@ faq:
       Ja. Heb je een idee voor een kleine toevoeging die ook voor andere behandelaars relevant kan zijn? Laat het ons weten. Passende suggesties nemen we waar mogelijk mee in de doorontwikkeling. Wil je grotere aanpassingen, specifieke functionaliteiten of een eigen versie voor jouw organisatie? Dan verkennen we graag de mogelijkheden voor maatwerk of samenwerking.
   - question: Kan ik de tool ook online gebruiken?
     answer: >-
-      Ja. Je stuurt je cliënt een link via de chat van je beeldbelgesprek, bijvoorbeeld Teams. De bal beweegt op het scherm van je cliënt zelf en hapert daardoor niet, ook niet bij een trage internetverbinding. Jij bedient alles op afstand.
+      Ja. Je stuurt je cliënt een link via de chat van je beeldbelgesprek, bijvoorbeeld Teams. De werkgeheugenbelasting is zichtbaar op het scherm van je cliënt en hapert daardoor niet, ook niet bij een trage internetverbinding. Jij bedient alles op afstand.
   - question: Wat moet mijn cliënt doen bij online EMDR?
     answer: >-
       Op de link klikken en daarna op één knop. Je cliënt hoeft niets te installeren en geen account aan te maken. Starten, pauzeren en instellen doe jij.
@@ -76,7 +76,7 @@ De EMDR Toolkit is bruikbaar voor alle leeftijden, maar heeft een specifieke kin
 
 De cliënt kijkt naar het scherm van de laptop. Jij bedient de sessie vanaf je telefoon. Zo kun je tijdens de verwerking snel schakelen zonder steeds terug te hoeven naar de laptop.
 
-Behandel je op afstand? Stuur je cliënt een link via je beeldbelgesprek. De bal beweegt op het scherm van je cliënt zelf, zonder haperingen.
+Behandel je op afstand? Stuur je cliënt een link via je beeldbelgesprek. De werkgeheugenbelasting is zichtbaar op het scherm van je cliënt, zonder haperingen.
 
 Van reguliere oogbewegingen tot aanvullende werkgeheugenbelasting: snel schakelen wanneer de behandeling daarom vraagt.
 
@@ -154,7 +154,7 @@ Van reguliere oogbewegingen tot aanvullende werkgeheugenbelasting: snel schakele
     </summary>
     <div class="tool-accordion__body">
       <p>
-        Bij scherm delen hapert een bewegende bal al snel. Daarom werkt de Toolkit anders: je cliënt opent een link en de bal beweegt op het eigen scherm. Eén klik, geen installatie en geen account. Jij bedient op afstand, naast je beeldbelvenster of met je telefoon, en ziet of je cliënt klaar is. Een korte opzet in de tool leidt je er stap voor stap doorheen.
+        Wanneer je een online EMDR-sessie hebt, kun je in de EMDR-toolkit een link aanmaken. Deze link stuur je naar de cliënt via Teams, of een andere beeldbelomgeving. Vervolgens opent de cliënt deze link en krijgt de werkgeheugenbelasting (het lichtje of een andere vorm) op het eigen scherm te zien. Eén klik, geen installatie en geen account voor je cliënt nodig. Jij bedient als behandelaar op afstand, met je laptop naast je beeldbelvenster of met je telefoon. Een korte uitleg in de tool leidt je er stap voor stap doorheen.
       </p>
     </div>
   </details>
