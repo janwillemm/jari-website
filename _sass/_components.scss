@@ -3143,3 +3143,150 @@
   font-size: 0.875rem;
   color: $color-text-light;
 }
+
+// Filmpjes (/filmpjes/)
+.filmpjes-gebruik,
+.filmpjes-faq {
+  max-width: $content-measure;
+  margin-bottom: $space-lg;
+}
+
+.filmpjes-kop {
+  margin-top: $space-lg;
+}
+
+.film {
+  display: grid;
+  gap: $space-md;
+  margin: $space-md 0 $space-lg;
+  padding: $space-md;
+  background: $color-surface;
+  border: $border-bold solid $color-primary;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+  scroll-margin-top: 6rem;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: 3fr 2fr;
+    padding: $space-lg;
+  }
+
+  h3 {
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  h4 {
+    margin: $space-md 0 0.25rem;
+    font-size: 1rem;
+  }
+}
+
+.film__bediening {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  font-size: 0.9375rem;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+  }
+
+  select {
+    padding: 0.35rem 0.75rem;
+    border: $border-weight solid $color-primary;
+    border-radius: $radius-pill;
+    background: $color-surface;
+    font: inherit;
+    font-weight: 400;
+  }
+}
+
+.film__youtube {
+  font-weight: 600;
+}
+
+.film__meta {
+  margin: 0;
+  font-size: 0.875rem;
+  color: $color-text-muted;
+}
+
+.film__kijker {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.2rem 0.75rem;
+  background: $color-accent-warm;
+  border-radius: $radius-pill;
+  font-weight: 700;
+  color: $color-primary-dark;
+}
+
+.film-player video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: $border-weight solid $color-primary;
+  border-radius: $radius-sm;
+}
+
+.tool-detail__preview--film figcaption {
+  margin-top: 0.5rem;
+}
+
+.filmpjes-lijst {
+  margin: $space-lg 0;
+}
+
+.film__voorbeeld {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: $color-bg-alt;
+    border: $border-weight solid $color-primary;
+    border-radius: $radius-sm;
+  }
+}
+
+.filmpjes-maken {
+  position: relative;
+  margin: calc(#{$space-lg} + 0.5rem) 0 $space-lg;
+  padding: $space-lg;
+  background: $color-accent-warm-soft;
+  border: $border-bold solid $color-primary;
+  border-radius: $radius-md;
+  box-shadow: $shadow-card;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .highlight-box__tab {
+    position: absolute;
+  }
+}
+
+.filmpjes-maken__prijs {
+  font-family: $font-heading;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: $color-primary;
+}
+
+.filmpjes-ontstaan {
+  max-width: $content-measure;
+  margin: $space-lg 0;
+}

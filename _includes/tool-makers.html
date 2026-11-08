@@ -1,6 +1,6 @@
 <section class="tool-makers" aria-labelledby="tool-makers-heading">
   <div class="tool-makers__header">
-    <h2 id="tool-makers-heading">Wie maakte {{ include.name }}?</h2>
+    <h2 id="tool-makers-heading">{% if include.title %}{{ include.title }}{% else %}Wie maakte {{ include.name }}?{% endif %}</h2>
   </div>
   <div class="tool-makers__grid">
     {% for author in site.authors %}

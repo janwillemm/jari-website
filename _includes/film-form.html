@@ -1,0 +1,94 @@
+{% comment %}
+  Aanvraagformulier voor een eigen filmpje via jari-portal API (form_type "film").
+  Gebruik: {% include film-form.html %}
+{% endcomment %}
+
+{% assign form_endpoint = site.contact_form.endpoint %}
+{% if jekyll.environment != "production" and site.contact_form.development_endpoint != "" %}
+  {% assign form_endpoint = site.contact_form.development_endpoint %}
+{% endif %}
+
+<div class="contact-form-block" id="aanvraag">
+  <h2 class="contact-form__heading">Vertel ons over je filmpje</h2>
+  <p class="contact-form__intro">
+    Hoe concreter je bent, hoe beter we kunnen meedenken. We reageren zo snel mogelijk.
+    Vul geen gegevens van cliënten in.
+  </p>
+
+  {% if form_endpoint == "" or form_endpoint == nil %}
+    <p class="contact-form__fallback">
+      Het formulier is nog niet gekoppeld. Mail ons op
+      <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>.
+    </p>
+  {% else %}
+    <form class="contact-form"
+          action="{{ form_endpoint }}"
+          method="POST"
+          accept-charset="UTF-8">
+      <input type="hidden" name="form_type" value="film">
+      <input type="hidden" name="pagina" value="Filmpje laten maken">
+
+      <div class="contact-form__section">
+        <h3 class="contact-form__section-title">Contact</h3>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="film-name">Naam</label>
+          <input class="contact-form__input" type="text" id="film-name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="film-email">E-mail</label>
+          <input class="contact-form__input" type="email" id="film-email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="film-praktijk">Naam van je praktijk of organisatie</label>
+          <input class="contact-form__input" type="text" id="film-praktijk" name="praktijk" autocomplete="organization" required>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="film-phone">Telefoonnummer <span class="contact-form__optional">(optioneel)</span></label>
+          <input class="contact-form__input" type="tel" id="film-phone" name="phone" autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="contact-form__section">
+        <h3 class="contact-form__section-title">Het filmpje</h3>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="film-onderwerp">Onderwerp</label>
+          <input class="contact-form__input" type="text" id="film-onderwerp" name="onderwerp"
+                 placeholder="Bijvoorbeeld: wat is EMDR?" required>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="film-voor-wie">Voor wie is het filmpje? <span class="contact-form__optional">(optioneel)</span></label>
+          <input class="contact-form__input" type="text" id="film-voor-wie" name="voor_wie"
+                 placeholder="Bijvoorbeeld: ouders, of kinderen van 8 tot 12 jaar">
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="film-beschrijving">Beschrijving van het filmpje</label>
+          <textarea class="contact-form__textarea" id="film-beschrijving" name="beschrijving" rows="5" required
+                    placeholder="Wat wil je uitleggen? Wat moet de kijker na het filmpje weten of begrijpen?"></textarea>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="film-ideeen">Ideeën <span class="contact-form__optional">(optioneel)</span></label>
+          <textarea class="contact-form__textarea" id="film-ideeen" name="ideeen" rows="4"
+                    placeholder="Heb je al ideeën voor een vergelijking, beelden, de stijl of de tekst?"></textarea>
+        </div>
+
+        <div class="contact-form__field">
+          <label class="contact-form__label" for="film-planning">Wanneer wil je het filmpje gebruiken? <span class="contact-form__optional">(optioneel)</span></label>
+          <input class="contact-form__input" type="text" id="film-planning" name="planning"
+                 placeholder="Bijvoorbeeld: vanaf maart">
+        </div>
+      </div>
+
+      <input type="text" name="_gotcha" class="contact-form__gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <button class="btn btn--primary contact-form__submit" type="submit">Aanvraag versturen</button>
+    </form>
+  {% endif %}
+</div>

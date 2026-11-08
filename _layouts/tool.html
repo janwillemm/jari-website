@@ -25,6 +25,14 @@ layout: default
             <p class="tool-detail__lead">{{ page.lead }}</p>
           {% endif %}
         </div>
+        {% if page.hero_film %}
+          {% assign hero_film = site.data.filmpjes.filmpjes | where: "slug", page.hero_film | first %}
+          <figure class="tool-detail__preview tool-detail__preview--film" id="voorbeeld">
+            {% include film-player.html film=hero_film %}
+            {% if page.hero_film_caption %}<figcaption>{{ page.hero_film_caption }}</figcaption>{% endif %}
+          </figure>
+        {% endif %}
+        {% unless page.hero_film %}
         {% assign preview_image = page.hero_image | default: page.image %}
         {% assign preview_caption = page.hero_image_caption | default: page.image_caption %}
         {% assign preview_alt = page.hero_alt | default: page.alt %}
@@ -43,7 +51,15 @@ layout: default
             {% endif %}
           </figure>
         {% endif %}
+        {% endunless %}
       </div>
+      {% if page.cta %}
+        <div class="btn-group tool-detail__cta">
+          <a class="btn btn--primary" href="{{ page.cta.url }}">{{ page.cta.label }}</a>
+          {% if page.cta.secondary_label %}<a class="btn btn--secondary" href="{{ page.cta.secondary_url }}">{{ page.cta.secondary_label }}</a>{% endif %}
+        </div>
+        {% if page.cta.note %}<p class="tool-price-note">{{ page.cta.note }}</p>{% endif %}
+      {% endif %}
       {% if page.available %}
         <div class="btn-group tool-detail__cta">
           {% include portal-cta.html variant="primary" action="probeer" slug=page.portal_slug label="Probeer gratis uit" %}
@@ -104,14 +120,24 @@ layout: default
         {% if page.note %}
           <p>{{ page.note }}</p>
         {% endif %}
+        {% unless page.cta %}
         <p>
           Onze tools worden zorgvuldig doorontwikkeld op basis van gebruikservaringen en
           vrijblijvende feedback. Als je de tool koopt heb je altijd toegang tot de nieuwste versie.
         </p>
+        {% endunless %}
       </div>
 
-      {% include tool-makers.html name=page.name %}
+      {% include tool-makers.html name=page.name title=page.makers_title %}
 
+      {% if page.cta %}
+        <div class="tool-detail__footer-cta">
+          <p>{{ page.cta.footer_text }}</p>
+          <div class="btn-group">
+            <a class="btn btn--primary" href="{{ page.cta.url }}">{{ page.cta.label }}</a>
+          </div>
+        </div>
+      {% endif %}
       {% if page.available %}
         <div class="tool-detail__footer-cta">
           <p>Probeer {{ page.name }} vrijblijvend uit of schaf de tool aan.</p>
@@ -126,3 +152,4 @@ layout: default
 </article>
 
 {% include image-lightbox.html %}
+{% if page.hero_film or page.films %}<script src="{{ '/assets/js/filmpjes.js' | relative_url }}" defer></script>{% endif %}

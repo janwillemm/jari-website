@@ -1,0 +1,30 @@
+{% comment %}
+  Videospeler met ondertitelkeuze. Gebruik: {% include film-player.html film=f %}
+  Gegevens: _data/filmpjes.json (bron: sharedassets/filmpjes/catalogus.json).
+{% endcomment %}
+{% assign c = site.data.filmpjes %}
+{% assign talen = site.data.filmpjes.talen %}
+{% assign f = include.film %}
+<div class="film-player">
+  <video controls playsinline preload="metadata" crossorigin="anonymous"
+         poster="{{ c.mediaBaseUrl }}/{{ f.poster }}" data-film
+         aria-label="Filmpje: {{ f.titel }}">
+    <source src="{{ c.mediaBaseUrl }}/{{ f.video }}" type="video/mp4">
+    {% for t in f.ondertitels %}{% assign taal = t[0] %}
+    <track kind="subtitles" srclang="{{ taal }}" label="{{ talen[taal] }}" src="{{ c.mediaBaseUrl }}/{{ t[1] }}"{% if forloop.first %} default{% endif %}>
+    {% endfor %}
+  </video>
+  <div class="film__bediening">
+    <label>Ondertitels
+      <select data-film-taal aria-label="Kies de taal van de ondertitels">
+        <option value="uit">Uit</option>
+        {% for t in f.ondertitels %}{% assign taal = t[0] %}
+        <option value="{{ taal }}"{% if forloop.first %} selected{% endif %}>{{ talen[taal] }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    {% if f.youtubeId %}
+    <a class="film__youtube" href="https://www.youtube.com/watch?v={{ f.youtubeId }}" target="_blank" rel="noopener">Bekijk op YouTube</a>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,50 @@
+{
+  "mediaBaseUrl": "https://jari-media.s3.nl-ams.scw.cloud",
+  "talen": {
+    "nl": "Nederlands",
+    "en": "English",
+    "pl": "Polski",
+    "tr": "Türkçe",
+    "ar": "العربية",
+    "ary": "الدارجة المغربية"
+  },
+  "filmpjes": [
+    {
+      "slug": "systeemtherapie",
+      "titel": "Wat is systeemtherapie?",
+      "kijker": "Ouders",
+      "duur": "3:37",
+      "duurSeconden": 217,
+      "gepubliceerd": "2026-11-08",
+      "samenvatting": "Animatie voor ouders over wat systeemtherapie is, waarom het gezin wordt betrokken en hoe de gesprekken eruitzien.",
+      "omschrijving": [
+        "Wordt systeemtherapie voorgesteld, dan vragen ouders zich vaak af wat dat is en waarom zij erbij betrokken worden. In dit filmpje vergelijken we een gezin met een orkest: iedereen speelt een eigen instrument en samen maken jullie muziek.",
+        "Het filmpje laat zien hoe patronen ontstaan, dat sommige melodieën van vroeger komen en dat het niet gaat om schuld. Daarna zie je hoe de gesprekken eruitzien: soms met ouders, soms met een kind of met het hele gezin. En hoe er door samen te oefenen langzaam een ander muziekstuk kan ontstaan."
+      ],
+      "gebruik": [
+        "Meesturen met de uitnodiging voor een eerste gesprek",
+        "Samen bekijken tijdens de intake",
+        "Op de website van je praktijk",
+        "In de wachtkamer, met ondertitels en zonder geluid",
+        "Als psycho-educatie bij ouders die twijfelen over systeemtherapie"
+      ],
+      "onderwerpen": [
+        "systeemtherapie",
+        "gezin",
+        "patronen",
+        "psycho-educatie"
+      ],
+      "video": "filmpjes/systeemtherapie-v2.mp4",
+      "poster": "filmpjes/systeemtherapie-v2.jpg",
+      "ondertitels": {
+        "nl": "filmpjes/systeemtherapie-v2.nl.vtt",
+        "en": "filmpjes/systeemtherapie-v2.en.vtt",
+        "pl": "filmpjes/systeemtherapie-v2.pl.vtt",
+        "tr": "filmpjes/systeemtherapie-v2.tr.vtt",
+        "ar": "filmpjes/systeemtherapie-v2.ar.vtt",
+        "ary": "filmpjes/systeemtherapie-v2.ary.vtt"
+      },
+      "youtubeId": "Km2S-oWamg4"
+    }
+  ]
+}
